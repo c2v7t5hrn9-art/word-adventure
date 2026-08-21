@@ -211,6 +211,19 @@
 
   /* ---------------- 工具函数 ---------------- */
   const $ = (id) => document.getElementById(id);
+  /* 安全事件绑定：元素缺失时只在控制台报警，绝不中断后续绑定与启动流程。
+     （教训：曾因子页面缺少某个按钮元素，addEventListener 抛错导致整个脚本中断，
+     首页不渲染、WA 桥接未导出。所有启动期绑定必须走 on/onAll。） */
+  function on(id, ev, fn) {
+    const el = $(id);
+    if (!el) { console.error('[单词冒险岛] 绑定失败：页面缺少元素 #' + id); return; }
+    el.addEventListener(ev, fn);
+  }
+  function onAll(id, selector, ev, fn) {
+    const root = $(id);
+    if (!root) { console.error('[单词冒险岛] 绑定失败：页面缺少元素 #' + id); return; }
+    root.querySelectorAll(selector).forEach((el) => el.addEventListener(ev, fn));
+  }
   function todayStr() {
     const d = new Date();
     const p = (n) => String(n).padStart(2, '0');
@@ -774,8 +787,8 @@
       '<div class="chat-btns">' +
       '<button class="chat-btn" id="chat-rel">🔊 再听一遍</button>' +
       '<button class="chat-btn primary" id="chat-pass">✋ 我读过了</button></div>';
-    $('chat-rel').addEventListener('click', () => speak(step.en));
-    $('chat-pass').addEventListener('click', () => passChatRepeat(step, step.en, '✋'));
+    on('chat-rel', 'click', () => speak(step.en));
+    on('chat-pass', 'click', () => passChatRepeat(step, step.en, '✋'));
   }
 
   // 跟读通过（识别通过或孩子自觉点 ✋）：音效 + 星星动画 + 自动下一步
@@ -811,7 +824,7 @@
     const input = $('chat-text-input');
     input.focus();
     input.addEventListener('keydown', (ev) => { if (ev.key === 'Enter') submitChatAsk(); });
-    $('chat-ask-submit').addEventListener('click', submitChatAsk);
+    on('chat-ask-submit', 'click', submitChatAsk);
   }
 
   // 语音识别已禁用（Google 服务器在中国大陆不可用）
@@ -1106,7 +1119,7 @@
     const input = $('fc-text');
     input.focus();
     input.addEventListener('keydown', (ev) => { if (ev.key === 'Enter') sendFreeChat(); });
-    $('fc-send').addEventListener('click', sendFreeChat);
+    on('fc-send', 'click', sendFreeChat);
   }
 
   // 匹配意图：关键词命中（不区分大小写）
@@ -1421,8 +1434,8 @@
     const input = $('dict-input');
     input.focus();
     input.addEventListener('keydown', (ev) => { if (ev.key === 'Enter') submitDictL3(); });
-    $('dict-speak').addEventListener('click', () => speak(e.text));
-    $('dict-submit').addEventListener('click', submitDictL3);
+    on('dict-speak', 'click', () => speak(e.text));
+    on('dict-submit', 'click', submitDictL3);
     // 自动播放一次
     setTimeout(() => speak(e.text), 300);
   }
@@ -2793,112 +2806,114 @@
   }
 
   /* ---------------- 事件绑定 ---------------- */
-  $('btn-quiz-back').addEventListener('click', () => {
+  on('btn-quiz-back', 'click', () => {
     stopTimer();
     if (window.speechSynthesis) speechSynthesis.cancel();
     showScreen('map-screen');
     say('下次再来挑战这扇门吧～');
   });
-  $('btn-back-map').addEventListener('click', () => {
+  on('btn-back-map', 'click', () => {
     showScreen('map-screen');
     if (pendingDialogues.length) processPendingDialogues();
     else say(randPick(LINES.greet));
   });
-  $('btn-replay').addEventListener('click', () => {
+  on('btn-replay', 'click', () => {
     if (quiz && quiz.door) startQuiz(quiz.door);
   });
-  $('btn-match-back').addEventListener('click', () => {
+  on('btn-match-back', 'click', () => {
     showScreen('map-screen');
     say('下次再来玩连连看吧～');
   });
-  $('btn-match-replay').addEventListener('click', () => {
+  on('btn-match-replay', 'click', () => {
     if (match && match.door) startMatch(match.door);
   });
-  $('btn-match-map').addEventListener('click', () => {
+  on('btn-match-map', 'click', () => {
     showScreen('map-screen');
     say(randPick(LINES.greet));
   });
-  $('btn-overview').addEventListener('click', () => showScreen('overview-screen'));
-  $('btn-ov-back').addEventListener('click', () => showScreen('map-screen'));
+  on('btn-overview', 'click', () => showScreen('overview-screen'));
+  on('btn-ov-back', 'click', () => showScreen('map-screen'));
 
   // 翻转卡片
-  $('btn-flashcard').addEventListener('click', () => startFlashcard());
-  $('btn-fc-back').addEventListener('click', () => {
+  on('btn-flashcard', 'click', () => startFlashcard());
+  on('btn-fc-back', 'click', () => {
     showScreen('map-screen');
     say('下次再来背诵吧～');
   });
-  $('fc-card').addEventListener('click', flipCard);
-  $('btn-fc-speak').addEventListener('click', (e) => {
+  on('fc-card', 'click', flipCard);
+  on('btn-fc-speak', 'click', (e) => {
     e.stopPropagation();
     if (flashcard && flashcard.entries[flashcard.idx]) {
       speak(flashcard.entries[flashcard.idx].text);
     }
   });
-  $('btn-fc-hard').addEventListener('click', () => nextCard(false));
-  $('btn-fc-easy').addEventListener('click', () => nextCard(true));
-  $('btn-fc-again').addEventListener('click', () => startFlashcard());
-  $('btn-fc-map').addEventListener('click', () => showScreen('map-screen'));
+  on('btn-fc-hard', 'click', () => nextCard(false));
+  on('btn-fc-easy', 'click', () => nextCard(true));
+  on('btn-fc-again', 'click', () => startFlashcard());
+  on('btn-fc-map', 'click', () => showScreen('map-screen'));
 
   // 趣味小游戏
-  $('btn-landlord-back').addEventListener('click', () => showScreen('map-screen'));
-  $('btn-ll-map').addEventListener('click', () => showScreen('map-screen'));
-  $('btn-ll-again').addEventListener('click', () => {
+  on('btn-landlord-back', 'click', () => showScreen('map-screen'));
+  on('btn-ll-map', 'click', () => showScreen('map-screen'));
+  on('btn-ll-again', 'click', () => {
     if (window.landlord && window.landlord.doorId) window.WAMinigames.startLandlord(window.landlord.doorId);
     else window.WAMinigames.startLandlord(null);
   });
-  $('btn-rush-back').addEventListener('click', () => showScreen('map-screen'));
-  $('btn-rush-map').addEventListener('click', () => showScreen('map-screen'));
-  $('btn-rush-again').addEventListener('click', () => {
+  on('btn-rush-back', 'click', () => showScreen('map-screen'));
+  on('btn-rush-map', 'click', () => showScreen('map-screen'));
+  on('btn-rush-again', 'click', () => {
     if (window.rush && window.rush.doorId) window.WAMinigames.startRush(window.rush.doorId);
     else window.WAMinigames.startRush(null);
   });
-  $('btn-strike-back').addEventListener('click', () => showScreen('map-screen'));
-  $('btn-strike-map').addEventListener('click', () => showScreen('map-screen'));
-  $('btn-strike-again').addEventListener('click', () => {
+  on('btn-strike-back', 'click', () => showScreen('map-screen'));
+  on('btn-strike-map', 'click', () => showScreen('map-screen'));
+  on('btn-strike-again', 'click', () => {
     if (window.strike && window.strike.doorId) window.WAMinigames.startStrike(window.strike.doorId);
     else window.WAMinigames.startStrike(null);
   });
 
   // 家长报告
-  $('btn-parent-report').addEventListener('click', showParentReport);
-  $('btn-pr-back').addEventListener('click', () => showScreen('map-screen'));
+  on('btn-parent-report', 'click', showParentReport);
+  on('btn-pr-back', 'click', () => showScreen('map-screen'));
 
   // 错题本
-  $('btn-errorbook').addEventListener('click', () => {
+  on('btn-errorbook', 'click', () => {
     showScreen('errorbook-screen');
     buildErrorBook();
   });
-  $('btn-eb-back').addEventListener('click', () => showScreen('map-screen'));
-  $('btn-sound').addEventListener('click', () => {
+  on('btn-eb-back', 'click', () => showScreen('map-screen'));
+  on('btn-sound', 'click', () => {
     save.settings.sound = !save.settings.sound;
     persist();
     updateHud();
     if (save.settings.sound) beep('correct');
   });
-  $('btn-settings').addEventListener('click', openSettings);
+  on('btn-settings', 'click', openSettings);
 
   // 商店与英语对话：入口按钮
-  $('btn-shop').addEventListener('click', () => showScreen('shop-screen'));
-  $('btn-shop-back').addEventListener('click', () => {
+  on('btn-shop', 'click', () => showScreen('shop-screen'));
+  on('btn-shop-back', 'click', () => {
     showScreen('map-screen');
     say('继续冒险赚星星，再来商店逛逛吧！🛒');
   });
-  $('btn-chat-back').addEventListener('click', () => {
+  on('btn-chat-back', 'click', () => {
     stopChatRecog();
     if (window.speechSynthesis) speechSynthesis.cancel();
     chat = null;
     showScreen('map-screen');
     say('下次再和泡泡聊天吧～💬');
   });
-  $('btn-chat-map').addEventListener('click', () => {
+  on('btn-chat-map', 'click', () => {
     showScreen('map-screen');
     say(randPick(LINES.greet));
   });
-  $('btn-chat-again').addEventListener('click', () => {
+  on('btn-chat-again', 'click', () => {
     if (chat && chat.unitId) startChat(chat.unitId);
   });
   // 点地图上的泡泡头像 → 弹出对话话题选择
-  document.querySelector('.guide-avatar').addEventListener('click', (e) => {
+  const guideAvatarEl = document.querySelector('.guide-avatar');
+  if (!guideAvatarEl) console.error('[单词冒险岛] 绑定失败：页面缺少元素 .guide-avatar');
+  if (guideAvatarEl) guideAvatarEl.addEventListener('click', (e) => {
     e.stopPropagation();
     hideDoorMenu();
     if ($('chat-menu').classList.contains('hidden')) showChatMenu();
@@ -2906,7 +2921,7 @@
   });
 
   // 对话翻页：点任意位置 / 空格 / 回车
-  $('dialogue-overlay').addEventListener('click', () => advanceDlg());
+  on('dialogue-overlay', 'click', () => advanceDlg());
   document.addEventListener('keydown', (e) => {
     if (!$('dialogue-overlay').classList.contains('hidden') &&
         (e.key === ' ' || e.key === 'Enter')) {
@@ -2916,51 +2931,47 @@
   });
 
   // 设置面板
-  $('set-sound').addEventListener('click', () => {
+  on('set-sound', 'click', () => {
     save.settings.sound = !save.settings.sound;
     persist();
     refreshSettingsUI();
     updateHud();
     if (save.settings.sound) beep('correct');
   });
-  $('set-voice').addEventListener('change', () => {
+  on('set-voice', 'change', () => {
     save.settings.voiceURI = $('set-voice').value || null;
     persist();
   });
-  $('set-voice-test').addEventListener('click', () => {
+  on('set-voice-test', 'click', () => {
     speak("Hello! Let\'s go on an adventure!", true); // 试听不受静音开关影响
   });
-  $('set-rate').addEventListener('input', () => {
+  on('set-rate', 'input', () => {
     save.settings.rate = Number($('set-rate').value);
     persist();
     $('set-rate-val').textContent = save.settings.rate.toFixed(2) + 'x';
   });
-  $('set-timelimit').querySelectorAll('button').forEach((b) => {
-    b.addEventListener('click', () => {
+  onAll('set-timelimit', 'button', 'click', (b) => {
       save.settings.timeLimit = Number(b.dataset.v);
       persist();
       refreshSettingsUI();
-    });
   });
-  $('set-dict-level').querySelectorAll('button').forEach((b) => {
-    b.addEventListener('click', () => {
+  onAll('set-dict-level', 'button', 'click', (b) => {
       save.settings.dictationDefaultLevel = Number(b.dataset.v);
       persist();
       refreshSettingsUI();
-    });
   });
-  $('set-auto-level').addEventListener('click', () => {
+  on('set-auto-level', 'click', () => {
     save.settings.dictationAutoLevel = !(save.settings.dictationAutoLevel !== false);
     persist();
     refreshSettingsUI();
   });
-  $('set-unlock').addEventListener('click', () => {
+  on('set-unlock', 'click', () => {
     save.settings.parentUnlockAll = !save.settings.parentUnlockAll;
     persist();
     refreshSettingsUI();
     buildMap();
   });
-  $('set-reset').addEventListener('click', () => {
+  on('set-reset', 'click', () => {
     if (confirm('确定要清空所有闯关记录，重新开始冒险吗？')) {
       try { localStorage.removeItem(SAVE_KEY); } catch (e) {}
       save = defaultSave();
@@ -2974,22 +2985,22 @@
       say('冒险重新开始啦！加油！');
     }
   });
-  $('set-close').addEventListener('click', closeSettings);
+  on('set-close', 'click', closeSettings);
 
   // 默写训练营按钮
-  $('btn-dict-back').addEventListener('click', () => {
+  on('btn-dict-back', 'click', () => {
     showScreen('map-screen');
     say('下次再来默写吧～');
   });
-  $('btn-dict-replay').addEventListener('click', () => {
+  on('btn-dict-replay', 'click', () => {
     if (dictation && dictation.doorId) startDictation(dictation.doorId);
   });
-  $('btn-dict-map').addEventListener('click', () => {
+  on('btn-dict-map', 'click', () => {
     showScreen('map-screen');
     say(randPick(LINES.greet));
   });
   // 自由聊天按钮
-  $('btn-fc-back').addEventListener('click', () => {
+  on('btn-fc-back', 'click', () => {
     showScreen('map-screen');
     say('下次再聊吧～💬');
   });
@@ -2998,8 +3009,8 @@
   window.addEventListener('resize', () => { hideDoorMenu(); hideChatMenu(); });
 
   // 存档导出/导入事件
-  $('set-export').addEventListener('click', exportSave);
-  $('set-import').addEventListener('change', (e) => { if (e.target.files[0]) importSave(e.target.files[0]); });
+  on('set-export', 'click', exportSave);
+  on('set-import', 'change', (e) => { if (e.target.files[0]) importSave(e.target.files[0]); });
 
   // 嗓音列表异步加载
   if (window.speechSynthesis) {

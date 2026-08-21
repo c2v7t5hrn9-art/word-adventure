@@ -348,6 +348,17 @@
       <span class="set-label">🔓 家长选项：解锁全部岛屿</span>
       <button id="set-unlock" class="toggle-btn off">关</button>
     </div>
+    <div class="set-row set-col">
+      <span class="set-label">💾 存档管理</span>
+      <div class="set-save-row">
+        <button id="set-export" class="btn-secondary">💾 导出存档</button>
+        <label class="btn-secondary set-import-label">
+          📁 导入存档
+          <input type="file" id="set-import" accept=".json" style="display:none">
+        </label>
+      </div>
+      <small class="set-save-hint">出游前导出存档，到新设备上再导入即可继续冒险</small>
+    </div>
     <div class="set-row">
       <button id="set-reset" class="btn-danger">🗑️ 清空记录，重新开始</button>
     </div>
@@ -473,7 +484,7 @@
 </div>
 
 <script src="data/words-data.js?v=8"></script>
-<script src="game.js?v=9"></script>
+<script src="game.js?v=10"></script>
 <script src="minigames.js?v=1"></script>
 <script src="flow.js?v=1"></script>
 <script src="sync.js?v=1"></script>
