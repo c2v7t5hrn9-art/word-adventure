@@ -10,5 +10,9 @@
       "binding": "SAVES",
       "id": "fc84fdb94834a9df01fc2ecb8b7dd83b"
     }
+  ],
+  "routes": [
+    { "pattern": "jasmine-study.top", "custom_domain": true },
+    { "pattern": "www.jasmine-study.top", "custom_domain": true }
   ]
 }
