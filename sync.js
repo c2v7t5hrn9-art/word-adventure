@@ -251,7 +251,9 @@
     if (apiAvailable !== null) return Promise.resolve(apiAvailable);
     return fetch('/api/progress/0000').then(function (r) {
       var ct = r.headers.get('Content-Type') || '';
-      apiAvailable = ct.indexOf('application/json') >= 0;
+      // 只有「404 + JSON」才代表同步接口真实存在且工作正常：
+      // 静态托管返回 HTML 404；Worker 未绑 KV 时返回 503 JSON
+      apiAvailable = r.status === 404 && ct.indexOf('application/json') >= 0;
       return apiAvailable;
     }).catch(function () {
       apiAvailable = false;

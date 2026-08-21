@@ -18,6 +18,8 @@ function json(obj, status) {
 }
 
 async function handleProgress(request, env, code) {
+  if (!env.SAVES) return json({ error: 'sync_not_configured' }, 503);
+
   if (request.method === 'GET') {
     const text = await env.SAVES.get(code);
     if (!text) return json({ error: 'no_save' }, 404);
