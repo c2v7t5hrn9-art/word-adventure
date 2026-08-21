@@ -1,0 +1,14 @@
+{
+  "name": "word-adventure",
+  "compatibility_date": "2026-08-20",
+  "main": "src/worker.js",
+  "assets": {
+    "directory": "."
+  },
+  "kv_namespaces": [
+    {
+      "binding": "SAVES",
+      "id": "PASTE_KV_NAMESPACE_ID_HERE"
+    }
+  ]
+}

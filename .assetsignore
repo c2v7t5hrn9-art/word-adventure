@@ -1,0 +1,22 @@
+# Cloudflare Workers 静态资产忽略清单（语法同 .gitignore）
+# 只上传游戏运行需要的文件，开发/部署工具一律排除
+.git/
+.github/
+node_modules/
+functions/
+src/
+saves/
+tools/
+assets/handouts/
+*.py
+*.md
+*.log
+*.bak
+.DS_Store
+start.command
+server.js
+serve.js
+smoke_boot.js
+package.json
+package-lock.json
+wrangler.jsonc
