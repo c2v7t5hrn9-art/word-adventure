@@ -40,3 +40,15 @@ jobs:
 
       - name: 启动冒烟测试（模拟页面元素缺失，验证启动不中断）
         run: SIMULATE_MISSING=set-export,set-import,btn-settings node smoke_boot.js
+
+      - name: Worker 接口契约测试（内存 KV 模拟）
+        run: node test_worker.mjs
+
+      # 推送后等 Cloudflare 重新部署，再从 GitHub 网络（无污染）探测线上站点。
+      # Cloudflare 构建耗时不可控，失败不阻塞 CI，仅作提示。
+      - name: 线上健康检查（提示性，不阻塞）
+        continue-on-error: true
+        run: |
+          sleep 100
+          curl -sf --max-time 20 https://word-adventure.xiaolu-pan.workers.dev/ | grep -q "单词冒险岛" && echo "✓ 首页可达"
+          curl -s --max-time 20 https://word-adventure.xiaolu-pan.workers.dev/api/progress/0000 | grep -q "no_save" && echo "✓ 同步 API 正常（404 no_save 为预期）"

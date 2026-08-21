@@ -50,8 +50,12 @@ async function handleProgress(request, env, code) {
 
 export default {
   async fetch(request, env) {
-    const m = new URL(request.url).pathname.match(/^\/api\/progress\/([0-9a-zA-Z-]{3,20})$/);
-    if (m) return handleProgress(request, env, m[1]);
+    const pathname = new URL(request.url).pathname;
+    if (pathname.startsWith('/api/')) {
+      const m = pathname.match(/^\/api\/progress\/([0-9a-zA-Z-]{3,20})$/);
+      if (!m) return json({ error: 'not_found' }, 404);
+      return handleProgress(request, env, m[1]);
+    }
     return env.ASSETS.fetch(request);
   }
 };
