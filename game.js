@@ -3122,6 +3122,7 @@
     } else if (hash === '#freechat') {
       startFreeChat();
     } else {
+      showScreen('map-screen');
       dailyReviewReminder();
     }
   })();
