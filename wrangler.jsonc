@@ -4,5 +4,11 @@
   "main": "src/worker.js",
   "assets": {
     "directory": "."
-  }
+  },
+  "kv_namespaces": [
+    {
+      "binding": "SAVES",
+      "id": "fc84fdb94834a9df01fc2ecb8b7dd83b"
+    }
+  ]
 }
