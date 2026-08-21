@@ -2,6 +2,16 @@
 (function () {
   'use strict';
 
+  // 防护：确保词库数据已加载
+  if (!window.WORDS_DATA) {
+    document.body.innerHTML = '<div style="padding:40px;text-align:center;font-size:18px;color:#c53030">' +
+      '<h2>😅 词库数据加载失败</h2>' +
+      '<p>请按 <b>Cmd+Shift+R</b> (Mac) 或 <b>Ctrl+F5</b> (Windows) 强制刷新。</p>' +
+      '<p>如果还是不行，请检查网络连接或联系开发者。</p></div>';
+    console.error('WORDS_DATA 不存在：words-data.js 可能未加载');
+    return;
+  }
+
   const DATA = window.WORDS_DATA;
   const SAVE_KEY = 'word-adventure-save-v2';
   const SAVE_KEY_V1 = 'word-adventure-save-v1'; // 旧版存档键（仅用于迁移）
