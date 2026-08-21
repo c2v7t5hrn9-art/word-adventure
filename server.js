@@ -1,6 +1,6 @@
 /* 单词冒险岛 · 轻后端
  * 功能：
- *   1. 静态文件服务（同 serve.js，'/' 默认打开新版式 index-v2.html）
+ *   1. 静态文件服务（'/' 默认打开 index.html）
  *   2. 进度同步 API（无需数据库，存档以 JSON 文件存于 saves/ 目录）
  *      GET  /api/progress/:code   → { save, updatedAt } | 404
  *      PUT  /api/progress/:code   ← { save }  → { ok, updatedAt }
@@ -102,7 +102,7 @@ http.createServer((req, res) => {
   const urlPath = decodeURIComponent(req.url.split('?')[0]);
   if (urlPath.startsWith('/api/')) { handleApi(req, res, urlPath); return; }
 
-  let file = urlPath === '/' ? '/index-v2.html' : urlPath;
+  let file = urlPath === '/' ? '/index.html' : urlPath;
   const filePath = path.normalize(path.join(root, file));
   if (!filePath.startsWith(root)) { res.writeHead(403); res.end(); return; }
   fs.readFile(filePath, (err, data) => {

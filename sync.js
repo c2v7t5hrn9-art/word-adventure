@@ -243,6 +243,22 @@
     }
   };
 
+  /* ---------------- API 可用性探测 ---------------- */
+  // 静态托管（如 GitHub Pages）上没有 /api 接口：404 返回的是 HTML 而非 JSON。
+  // 以此区分「接口存在但密码不存在」（JSON 404）和「根本没有接口」（HTML 404）。
+  var apiAvailable = null; // null=未探测 / true / false
+  function probeApi() {
+    if (apiAvailable !== null) return Promise.resolve(apiAvailable);
+    return fetch('/api/progress/0000').then(function (r) {
+      var ct = r.headers.get('Content-Type') || '';
+      apiAvailable = ct.indexOf('application/json') >= 0;
+      return apiAvailable;
+    }).catch(function () {
+      apiAvailable = false;
+      return false;
+    });
+  }
+
   /* ---------------- 动态加载游戏脚本 ---------------- */
   function inject(src) {
     return new Promise(function (resolve, reject) {
@@ -268,15 +284,22 @@
         if (!pulled && !lsGet(TS_KEY)) pushNow(); // 云端还没有 → 把本机传上去
       });
     } else if (!mode) {
-      // 完全首次：展示欢迎页
-      ready = showSetup(false);
+      // 完全首次：先探测同步接口是否可用
+      ready = probeApi().then(function (ok) {
+        if (ok) return showSetup(false); // 有接口 → 展示欢迎页选模式
+        // 无接口（纯静态托管 / 离线）→ 直接进入仅本机模式，不打扰孩子
+        lsSet(MODE_KEY, 'local');
+        setDot('local');
+      });
     } else {
       setDot('local');
       ready = Promise.resolve();
     }
 
     ready.then(function () {
-      return inject('game.js?v=8');
+      return inject('game.js?v=10');
+    }).then(function () {
+      return inject('minigames.js?v=1');
     }).then(function () {
       return inject('flow.js?v=1');
     }).then(function () {
@@ -284,6 +307,12 @@
       setDot(lsGet(MODE_KEY) === 'cloud' ? 'synced' : 'local');
     }).catch(function (e) {
       console.error('启动失败:', e);
+      var world = document.getElementById('world');
+      if (world) {
+        world.innerHTML = '<div style="padding:30px;color:#c53030;font-size:16px;line-height:1.8;">' +
+          '<h3>😅 游戏脚本加载失败</h3>' +
+          '<p>请检查网络后刷新页面（Cmd+Shift+R / Ctrl+F5）。</p></div>';
+      }
     });
   }
 

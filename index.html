@@ -4,7 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>单词冒险岛 🏝️</title>
-<link rel="stylesheet" href="style.css?v=10">
+<link rel="stylesheet" href="style.css?v=8">
+<link rel="stylesheet" href="layout-v2.css?v=1">
 </head>
 <body>
 
@@ -12,18 +13,27 @@
 <div id="map-screen" class="screen">
   <div class="hud">
     <div class="hud-title">🏝️ 单词冒险岛</div>
-    <div class="hud-stats">
-      <span id="hud-stars" class="hud-pill">⭐ 0</span>
-      <span id="hud-shards" class="hud-pill">💠 0/6</span>
-      <button id="btn-shop" class="hud-btn" title="星星商店">🛒</button>
-      <button id="btn-daily-mission" class="hud-btn" title="今日任务">📋</button>
-      <button id="btn-overview" class="hud-btn" title="冒险总览">📊</button>
-      <button id="btn-flashcard" class="hud-btn" title="翻转卡片">🃏</button>
-      <button id="btn-parent-report" class="hud-btn" title="家长报告">👨‍👩‍👧</button>
+    <div class="hud-right">
+      <div class="hud-wallet">
+        <span id="hud-stars" class="hud-pill">⭐ 0</span>
+        <span id="hud-shards" class="hud-pill">💠 0/6</span>
+      </div>
       <button id="btn-sound" class="hud-btn" title="声音开关">🔊</button>
-      <button id="btn-errorbook" class="hud-btn" title="错题本">📚</button>
-      <button id="btn-bomb" class="hud-btn" title="单词炸弹">💣</button>
-      <button id="btn-settings" class="hud-btn" title="设置">⚙️</button>
+      <button id="btn-treasure" class="hud-btn hud-treasure" title="百宝箱">🧰</button>
+    </div>
+  </div>
+
+  <!-- 百宝箱：收纳全部工具入口 -->
+  <div id="toolbox" class="toolbox hidden">
+    <div class="toolbox-caption">百 宝 箱</div>
+    <div class="toolbox-grid">
+      <button id="btn-shop" class="tool-btn"><span class="tool-emoji">🛒</span>星星商店</button>
+      <button id="btn-daily-mission" class="tool-btn"><span class="tool-emoji">📋</span>今日任务</button>
+      <button id="btn-overview" class="tool-btn"><span class="tool-emoji">📊</span>冒险总览</button>
+      <button id="btn-flashcard" class="tool-btn"><span class="tool-emoji">🃏</span>翻转卡片</button>
+      <button id="btn-parent-report" class="tool-btn"><span class="tool-emoji">👨‍👩‍👧</span>家长报告</button>
+      <button id="btn-errorbook" class="tool-btn"><span class="tool-emoji">📚</span>错题本</button>
+      <button id="btn-settings" class="tool-btn"><span class="tool-emoji">⚙️</span>设置</button>
     </div>
   </div>
 
@@ -356,27 +366,13 @@
   </div>
 </div>
 
-<!-- ========== 单词炸弹 ========== -->
-<div id="bomb-screen" class="screen hidden">
-  <div class="bomb-header">
-    <button id="btn-bomb-back-map" class="back-btn" title="返回地图">✖</button>
-    <div class="bomb-title">🎈 单词气球保卫战</div>
-    <div class="bomb-hud">
-      <span id="bomb-lives">❤️❤️❤️</span>
-      <span id="bomb-score">0</span>
-      <span id="bomb-combo"></span>
-      <span id="bomb-highscore" class="bomb-highscore"></span>
-    </div>
+<!-- ========== 打印预览（复习卡片） ========== -->
+<div id="print-overlay" class="print-overlay hidden">
+  <div class="print-header">
+    <button id="btn-print-close" class="back-btn">✖ 关闭</button>
+    <button id="btn-print-do" class="print-btn">🖨️ 打印</button>
   </div>
-  <div class="balloon-sky" id="balloon-sky">
-    <div class="balloon-question-area">
-      <div id="balloon-q-type" class="q-type"></div>
-      <div id="balloon-q-prompt" class="q-prompt"></div>
-      <button id="balloon-q-speak" class="q-speak hidden">🔊</button>
-    </div>
-    <div id="balloon-container" class="balloon-container"></div>
-    <div class="balloon-ground">🌿</div>
-  </div>
+  <div id="print-cards" class="print-cards"></div>
 </div>
 
 <!-- ========== 单词斗地主 ========== -->
@@ -432,14 +428,13 @@
     <div class="strike-hud">
       <span id="strike-score">🎯 0</span>
       <span id="strike-time">⏱️ 30</span>
-      <span id="strike-bullets">🔫 20</span>
+      <span id="strike-bullets">🔫 15</span>
     </div>
   </div>
   <div class="strike-canvas-wrap">
     <canvas id="strike-canvas" class="strike-canvas"></canvas>
     <div class="strike-legend">
-      <span class="strike-leg-real">⭕ 真单词 → 射击</span>
-      <span class="strike-leg-fake">❌ 假单词 → 避开</span>
+      <span>◉ 正确单词 · ◈ 错误单词</span>
     </div>
   </div>
 </div>
@@ -456,17 +451,62 @@
   </div>
 </div>
 
-<!-- ========== 打印预览（复习卡片） ========== -->
-<div id="print-overlay" class="print-overlay hidden">
-  <div class="print-header">
-    <button id="btn-print-close" class="back-btn">✖ 关闭</button>
-    <button id="btn-print-do" class="print-btn">🖨️ 打印</button>
+<!-- ========== 今日航海（首页动线：复习 → 新课 → 薄弱词 → 自由探索） ========== -->
+<div id="today-screen" class="today-screen hidden"></div>
+
+<!-- ========== 首次欢迎：进度同步设置 ========== -->
+<div id="sync-setup" class="sync-setup hidden">
+  <div class="ss-card">
+    <div class="ss-logo">🏝️</div>
+    <div class="ss-title">欢迎来到单词冒险岛！</div>
+
+    <div id="ss-main" class="ss-step">
+      <p class="ss-desc">选一个方式开始，进度就能在不同设备间同步：</p>
+      <button id="ss-btn-new" class="ss-btn ss-primary">✨ 开始新的冒险<br><small>生成一个 4 位冒险密码</small></button>
+      <button id="ss-btn-have" class="ss-btn">🔑 继续我的冒险<br><small>输入已有设备的密码</small></button>
+      <button id="ss-btn-local" class="ss-btn ss-dim">📱 只在这台设备玩<br><small>进度保存在本机</small></button>
+    </div>
+
+    <div id="ss-code" class="ss-step hidden">
+      <p class="ss-desc">输入另一台设备上的 4 位冒险密码：</p>
+      <input id="ss-code-input" class="ss-code-input" type="tel" inputmode="numeric" maxlength="4" placeholder="····">
+      <div id="ss-error" class="ss-error"></div>
+      <button id="ss-code-go" class="ss-btn ss-primary">🔍 找到我的进度</button>
+    </div>
+
+    <div id="ss-new" class="ss-step hidden">
+      <p class="ss-desc">你的冒险密码（记在便签上哦）：</p>
+      <div id="ss-new-code" class="ss-code-num"></div>
+      <p id="ss-new-note" class="ss-note"></p>
+      <button id="ss-new-go" class="ss-btn ss-primary">🏴‍☠️ 出发！</button>
+    </div>
   </div>
-  <div id="print-cards" class="print-cards"></div>
 </div>
 
-<script src="data/words-data.js?v=9"></script>
-<script src="game.js?v=11"></script>
-<script src="minigames.js?v=3"></script>
+<script src="data/words-data.js?v=8"></script>
+<!-- 游戏脚本由 sync.js 在完成云端进度对账后按序注入（game → minigames → flow），
+     请勿在此静态引用 game.js / minigames.js / flow.js，否则会被加载两遍。 -->
+<script src="sync.js?v=2"></script>
+<script>
+/* 版式 V2 · 百宝箱开合 */
+(function () {
+  var box = document.getElementById('toolbox');
+  var btn = document.getElementById('btn-treasure');
+  if (!box || !btn) return;
+  function close() { box.classList.add('hidden'); btn.classList.remove('open'); }
+  btn.addEventListener('click', function (e) {
+    e.stopPropagation();
+    box.classList.toggle('hidden');
+    btn.classList.toggle('open', !box.classList.contains('hidden'));
+  });
+  document.addEventListener('click', function (e) {
+    if (box.classList.contains('hidden')) return;
+    if (!box.contains(e.target) && e.target !== btn && !btn.contains(e.target)) close();
+  });
+  box.addEventListener('click', function (e) {
+    if (e.target.closest('.tool-btn')) close();
+  });
+})();
+</script>
 </body>
 </html>

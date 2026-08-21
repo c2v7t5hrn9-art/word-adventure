@@ -24,6 +24,13 @@ jobs:
           node --check flow.js
           node --check sync.js
           node --check server.js
+          node --input-type=module --check < "functions/api/progress/[code].js"
+
+      - name: 防回归：index.html 不得静态引用游戏脚本（由 sync.js 按序注入）
+        run: |
+          ! grep -q '<script src="game.js' index.html
+          ! grep -q '<script src="minigames.js' index.html
+          ! grep -q '<script src="flow.js' index.html
 
       - name: 词库结构校验
         run: python3 validate_data.py
