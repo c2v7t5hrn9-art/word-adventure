@@ -4,3 +4,6 @@ node_modules/
 *.log
 assets/handouts/
 *.py
+# 可复用工具脚本需要入库（CI 依赖 validate_data.py）
+!validate_data.py
+!bump-version.py

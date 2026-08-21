@@ -25,6 +25,9 @@ jobs:
           node --check sync.js
           node --check server.js
 
+      - name: 词库结构校验
+        run: python3 validate_data.py
+
       - name: 启动冒烟测试（正常场景）
         run: node smoke_boot.js
 
