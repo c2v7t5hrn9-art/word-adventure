@@ -1,0 +1,416 @@
+/* ============================================================
+   单词冒险岛 · 版式 V2「船长百宝箱」
+   用法：在 style.css 之后加载（见 index-v2.html）。
+   只覆盖地图 HUD 区域，其余场景样式沿用 style.css。
+   设计要点：
+   - 右上角 9 个分散小图标 → 1 个「百宝箱」按钮，点开后
+     工具以贴纸卡形式弹性展开（扇出/弹出式收纳）
+   - 星星/碎片两颗胶囊 → 合并成一只「钱包」整体
+   - 标题 → 悬挂木牌，轻微摆动
+   - 所有按钮改为「厚描边 + 底部实影」的实体玩具手感：
+     悬停浮起、按下影子塌缩（物理按压）
+   ============================================================ */
+
+/* ---------- 顶栏骨架 ---------- */
+.hud {
+  padding: 16px 24px;
+  align-items: flex-start;
+  pointer-events: none;          /* 顶栏不挡地图点击 */
+}
+.hud > * { pointer-events: auto; }
+
+.hud-right { display: flex; gap: 12px; align-items: center; }
+
+/* ---------- 标题：悬挂木牌 ---------- */
+.hud-title {
+  font-size: 23px;
+  font-weight: 800;
+  color: #fff8ec;
+  text-shadow: 0 2px 0 rgba(70, 40, 10, .35);
+  background: #b07a3f;
+  border: 3px solid #5d3a17;
+  border-radius: 18px;
+  padding: 10px 22px;
+  box-shadow: 0 5px 0 #5d3a17, 0 10px 18px rgba(0, 60, 100, .25);
+  transform-origin: 50% -8px;    /* 从上方钉子处摆动 */
+  animation: signSway 5.2s ease-in-out infinite;
+}
+@keyframes signSway {
+  0%, 100% { transform: rotate(-1.2deg); }
+  50%      { transform: rotate(1.2deg); }
+}
+
+/* ---------- 资源钱包：两颗胶囊合一 ---------- */
+.hud-wallet {
+  display: flex; align-items: stretch;
+  background: #ffffff;
+  border: 3px solid #1565a8;
+  border-radius: 999px;
+  box-shadow: 0 5px 0 #1565a8, 0 10px 16px rgba(0, 60, 100, .2);
+  overflow: hidden;
+}
+.hud-wallet .hud-pill {
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 10px 16px;
+  font-size: 17px;
+  color: #1565a8;
+  display: flex; align-items: center;
+}
+.hud-wallet .hud-pill + .hud-pill {
+  border-left: 2px dashed rgba(21, 101, 168, .35);
+}
+
+/* ---------- 顶栏圆钮：实体玩具按压 ---------- */
+.hud-btn {
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 3px solid #1565a8;
+  font-size: 21px;
+  box-shadow: 0 5px 0 #1565a8;
+  transition: transform .18s cubic-bezier(.33, 1, .68, 1),
+              box-shadow .18s cubic-bezier(.33, 1, .68, 1);
+}
+.hud-btn:hover {
+  transform: translateY(-2px) scale(1.06);
+  box-shadow: 0 7px 0 #1565a8;
+}
+.hud-btn:active {
+  transform: translateY(3px) scale(.97);
+  box-shadow: 0 1px 0 #1565a8;
+}
+
+/* 百宝箱按钮：唯一的金色，视觉锚点 */
+.hud-treasure {
+  background: #ffd94d;
+  border-color: #8a6d1a;
+  box-shadow: 0 5px 0 #8a6d1a;
+}
+.hud-treasure:hover { box-shadow: 0 7px 0 #8a6d1a; }
+.hud-treasure:active { box-shadow: 0 1px 0 #8a6d1a; }
+.hud-treasure.open {
+  background: #fff3c4;
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #8a6d1a;
+}
+
+/* ---------- 百宝箱托盘 ---------- */
+.toolbox {
+  position: absolute;
+  top: 86px; right: 24px;
+  z-index: 40;
+  background: #fffdf4;
+  border: 3px solid #1565a8;
+  border-radius: 24px;
+  box-shadow: 0 8px 0 rgba(21, 101, 168, .35), 0 18px 34px rgba(0, 60, 100, .25);
+  padding: 14px 14px 12px;
+  transform-origin: top right;
+}
+.toolbox.hidden { display: none !important; }
+.toolbox:not(.hidden) { animation: trayIn .32s cubic-bezier(.33, 1, .68, 1); }
+@keyframes trayIn {
+  from { transform: scale(.55); opacity: 0; }
+  to   { transform: scale(1);   opacity: 1; }
+}
+
+.toolbox-caption {
+  font-size: 12px; font-weight: 800; letter-spacing: 2px;
+  color: rgba(21, 101, 168, .55);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.toolbox-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 96px);
+  gap: 10px;
+}
+
+/* 工具贴纸卡：糖果色 + 深色厚描边 */
+.tool-btn {
+  display: flex; flex-direction: column; align-items: center; gap: 5px;
+  padding: 11px 6px 9px;
+  border-radius: 18px;
+  border: 3px solid #22303a;
+  background: var(--tool-bg, #fff);
+  color: #22303a;
+  font-size: 12.5px; font-weight: 800;
+  box-shadow: 0 4px 0 #22303a;
+  transition: transform .16s cubic-bezier(.33, 1, .68, 1),
+              box-shadow .16s cubic-bezier(.33, 1, .68, 1);
+}
+.tool-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 0 #22303a; }
+.tool-btn:active {
+  transform: translateY(3px) scale(.95);
+  box-shadow: 0 1px 0 #22303a;
+}
+.tool-emoji { font-size: 25px; line-height: 1; display: inline-block; }
+.tool-btn:hover .tool-emoji { animation: emojiWiggle .5s ease-in-out; }
+@keyframes emojiWiggle {
+  0%, 100% { transform: rotate(0); }
+  25%      { transform: rotate(-18deg); }
+  75%      { transform: rotate(14deg); }
+}
+
+/* 每张贴纸一种糖果色 */
+.tool-btn:nth-child(1) { --tool-bg: #ffe066; }  /* 星星商店 */
+.tool-btn:nth-child(2) { --tool-bg: #ffd6a5; }  /* 今日任务 */
+.tool-btn:nth-child(3) { --tool-bg: #bde0fe; }  /* 冒险总览 */
+.tool-btn:nth-child(4) { --tool-bg: #ffc8dd; }  /* 翻转卡片 */
+.tool-btn:nth-child(5) { --tool-bg: #caffbf; }  /* 家长报告 */
+.tool-btn:nth-child(6) { --tool-bg: #fdffb6; }  /* 错题本   */
+.tool-btn:nth-child(7) { --tool-bg: #e9e4f0; }  /* 设置     */
+
+/* 展开时逐张弹出（68ms 级联节奏） */
+.toolbox:not(.hidden) .tool-btn { animation: toolPop .4s cubic-bezier(.33, 1, .68, 1) backwards; }
+.toolbox:not(.hidden) .tool-btn:nth-child(1) { animation-delay: .02s; }
+.toolbox:not(.hidden) .tool-btn:nth-child(2) { animation-delay: .088s; }
+.toolbox:not(.hidden) .tool-btn:nth-child(3) { animation-delay: .156s; }
+.toolbox:not(.hidden) .tool-btn:nth-child(4) { animation-delay: .224s; }
+.toolbox:not(.hidden) .tool-btn:nth-child(5) { animation-delay: .292s; }
+.toolbox:not(.hidden) .tool-btn:nth-child(6) { animation-delay: .36s; }
+.toolbox:not(.hidden) .tool-btn:nth-child(7) { animation-delay: .428s; }
+@keyframes toolPop {
+  from { transform: scale(.4) translateY(10px); opacity: 0; }
+  to   { transform: scale(1)  translateY(0);    opacity: 1; }
+}
+
+/* ---------- 小屏适配 ---------- */
+@media (max-width: 720px) {
+  .hud { padding: 12px 12px; }
+  .hud-title { font-size: 17px; padding: 8px 14px; border-radius: 14px; }
+  .hud-btn { width: 42px; height: 42px; font-size: 18px; }
+  .hud-wallet .hud-pill { font-size: 14px; padding: 8px 10px; }
+  .toolbox {
+    top: 76px; right: 10px; left: 10px;
+    padding: 12px 10px 10px;
+  }
+  .toolbox-grid { grid-template-columns: repeat(4, 1fr); }
+}
+@media (max-width: 460px) {
+  .toolbox-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ============================================================
+   今日航海首页 + 进度同步（V2 动线）
+   ============================================================ */
+
+/* ---------- 今日航海首页 ---------- */
+.today-screen {
+  position: absolute; inset: 0; z-index: 60;
+  background: rgba(20, 80, 130, .45);
+  backdrop-filter: blur(3px);
+  display: flex; align-items: center; justify-content: center;
+  padding: 18px;
+  overflow-y: auto;
+}
+.today-screen.hidden { display: none !important; }
+
+.today-card {
+  position: relative;
+  width: min(560px, 96vw);
+  max-height: 92vh;
+  overflow-y: auto;
+  background: #fffdf4;
+  border: 3px solid #1565a8;
+  border-radius: 26px;
+  box-shadow: 0 8px 0 rgba(21, 101, 168, .4), 0 24px 50px rgba(0, 40, 70, .35);
+  padding: 20px 22px 18px;
+  animation: trayIn .38s cubic-bezier(.33, 1, .68, 1);
+}
+.today-close {
+  position: absolute; top: 12px; right: 12px;
+  width: 34px; height: 34px; border-radius: 50%;
+  background: #fff; border: 2px solid #b9d2e2;
+  color: #6b8aa0; font-size: 15px; font-weight: 800;
+}
+.today-close:hover { border-color: #1565a8; color: #1565a8; }
+
+.today-head { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+.today-avatar {
+  font-size: 34px;
+  background: #e8f4fd; border: 3px solid #1565a8; border-radius: 50%;
+  width: 58px; height: 58px; display: flex; align-items: center; justify-content: center;
+  animation: bob 3s ease-in-out infinite;
+}
+.today-greet { font-size: 21px; font-weight: 800; color: #14486e; }
+.today-date { font-size: 13px; color: #6b8aa0; margin-top: 2px; }
+
+.today-tasks { display: flex; flex-direction: column; gap: 12px; }
+.today-task {
+  background: #fff;
+  border: 2.5px solid #cfe2f0;
+  border-radius: 18px;
+  padding: 12px 14px;
+}
+.today-task-title { font-size: 15.5px; font-weight: 800; color: #14486e; margin-bottom: 8px; }
+.today-task-sub { font-size: 11.5px; font-weight: 600; color: #8aa5b8; margin-left: 4px; }
+.today-empty { font-size: 13.5px; color: #7d99ad; padding: 4px 2px; }
+
+.today-chips { display: flex; flex-direction: column; gap: 8px; }
+.today-chip {
+  display: flex; align-items: center; gap: 10px;
+  width: 100%; text-align: left;
+  background: #fff6dc;
+  border: 2.5px solid #22303a;
+  border-radius: 14px;
+  padding: 9px 12px;
+  box-shadow: 0 3px 0 #22303a;
+  transition: transform .16s cubic-bezier(.33, 1, .68, 1), box-shadow .16s;
+}
+.today-chip:hover { transform: translateY(-2px); box-shadow: 0 5px 0 #22303a; }
+.today-chip:active { transform: translateY(2px) scale(.98); box-shadow: 0 1px 0 #22303a; }
+.today-chip-new { background: #dcf5e3; }
+.today-chip-weak { background: #ffe3e3; }
+.chip-no {
+  flex: none;
+  background: #22303a; color: #fff;
+  font-size: 12px; font-weight: 800;
+  border-radius: 999px; padding: 2px 9px;
+}
+.chip-emoji { font-size: 22px; flex: none; }
+.chip-name { flex: 1; font-size: 15px; font-weight: 800; color: #22303a; }
+.chip-isl { flex: none; font-size: 11.5px; color: #7d99ad; }
+
+.today-free {
+  margin-top: 14px;
+  border-top: 2px dashed #cfe2f0;
+  padding-top: 12px;
+}
+.today-free-label { font-size: 13px; font-weight: 800; color: #6b8aa0; margin-bottom: 8px; }
+.today-free-btns { display: flex; gap: 10px; margin-bottom: 10px; }
+.today-free-btn {
+  flex: 1;
+  background: #eef7ff;
+  border: 2.5px solid #1565a8;
+  border-radius: 14px;
+  padding: 9px 8px;
+  font-size: 13.5px; font-weight: 800; color: #1565a8; line-height: 1.4;
+  box-shadow: 0 3px 0 #1565a8;
+  transition: transform .16s cubic-bezier(.33, 1, .68, 1), box-shadow .16s;
+}
+.today-free-btn small { font-weight: 600; color: #7d99ad; }
+.today-free-btn:hover { transform: translateY(-2px); box-shadow: 0 5px 0 #1565a8; }
+.today-free-btn:active { transform: translateY(2px); box-shadow: 0 1px 0 #1565a8; }
+.today-map-btn {
+  width: 100%;
+  background: #ffd94d;
+  border: 3px solid #8a6d1a;
+  border-radius: 16px;
+  padding: 13px;
+  font-size: 17px; font-weight: 800; color: #5d470f;
+  box-shadow: 0 4px 0 #8a6d1a;
+  transition: transform .16s cubic-bezier(.33, 1, .68, 1), box-shadow .16s;
+}
+.today-map-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 0 #8a6d1a; }
+.today-map-btn:active { transform: translateY(3px); box-shadow: 0 1px 0 #8a6d1a; }
+
+/* ---------- 首次欢迎：进度同步设置 ---------- */
+.sync-setup {
+  position: absolute; inset: 0; z-index: 90;
+  background: linear-gradient(180deg, #87CEEB 0%, #2e8fc4 60%, #1565a8 100%);
+  display: flex; align-items: center; justify-content: center;
+  padding: 18px;
+}
+.sync-setup.hidden { display: none !important; }
+.ss-card {
+  width: min(420px, 94vw);
+  background: #fffdf4;
+  border: 3px solid #1565a8;
+  border-radius: 26px;
+  box-shadow: 0 8px 0 rgba(21, 101, 168, .4), 0 24px 50px rgba(0, 40, 70, .35);
+  padding: 26px 24px 22px;
+  text-align: center;
+  animation: trayIn .4s cubic-bezier(.33, 1, .68, 1);
+}
+.ss-logo { font-size: 52px; animation: bob 3s ease-in-out infinite; }
+.ss-title { font-size: 21px; font-weight: 800; color: #14486e; margin: 8px 0 14px; }
+.ss-desc { font-size: 14px; color: #5b7e96; margin-bottom: 14px; }
+.ss-step { display: flex; flex-direction: column; gap: 10px; }
+.ss-btn {
+  background: #fff;
+  border: 2.5px solid #1565a8;
+  border-radius: 16px;
+  padding: 13px;
+  font-size: 15.5px; font-weight: 800; color: #1565a8; line-height: 1.45;
+  box-shadow: 0 4px 0 #1565a8;
+  transition: transform .16s cubic-bezier(.33, 1, .68, 1), box-shadow .16s;
+}
+.ss-btn small { font-weight: 600; color: #7d99ad; }
+.ss-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 0 #1565a8; }
+.ss-btn:active { transform: translateY(3px); box-shadow: 0 1px 0 #1565a8; }
+.ss-btn.ss-primary { background: #ffd94d; border-color: #8a6d1a; color: #5d470f; box-shadow: 0 4px 0 #8a6d1a; }
+.ss-btn.ss-primary:hover { box-shadow: 0 6px 0 #8a6d1a; }
+.ss-btn.ss-primary:active { box-shadow: 0 1px 0 #8a6d1a; }
+.ss-btn.ss-dim { background: #f2f6f9; border-color: #b9d2e2; color: #6b8aa0; box-shadow: 0 4px 0 #b9d2e2; }
+.ss-code-input {
+  font-size: 30px; font-weight: 800; letter-spacing: 12px; text-align: center;
+  padding: 10px; border: 3px solid #1565a8; border-radius: 14px;
+  color: #14486e; outline: none; width: 100%;
+}
+.ss-error { min-height: 20px; font-size: 13px; color: #c0392b; font-weight: 700; }
+.ss-code-num {
+  font-size: 38px; font-weight: 800; letter-spacing: 14px; color: #14486e;
+  background: #fff6dc; border: 3px dashed #d9b840; border-radius: 16px;
+  padding: 12px 0 12px 14px; margin-bottom: 4px;
+}
+.ss-note { font-size: 13px; color: #7d99ad; }
+
+/* ---------- 同步状态点 + 密码面板 ---------- */
+.wa-sync-dot { font-size: 17px; }
+.wa-sync-dot[data-state="offline"] { background: #ffe3e3; border-color: #c0392b; box-shadow: 0 5px 0 #c0392b; }
+.wa-sync-dot[data-state="syncing"] { animation: spinPulse 1.1s linear infinite; }
+@keyframes spinPulse { 0% { transform: rotate(0); } 100% { transform: rotate(360deg); } }
+
+.wa-code-panel {
+  position: absolute; top: 86px; right: 24px; z-index: 70;
+  width: min(300px, 90vw);
+  background: #fffdf4;
+  border: 3px solid #1565a8; border-radius: 20px;
+  box-shadow: 0 8px 0 rgba(21, 101, 168, .35), 0 18px 34px rgba(0, 60, 100, .25);
+  padding: 14px;
+  text-align: center;
+  animation: trayIn .3s cubic-bezier(.33, 1, .68, 1);
+}
+.wa-code-title { font-size: 15px; font-weight: 800; color: #14486e; margin-bottom: 8px; }
+.wa-code-tip { font-size: 12.5px; color: #5b7e96; margin-bottom: 8px; }
+.wa-code-tip.wa-dim { color: #9db4c4; }
+.wa-code-num {
+  font-size: 30px; font-weight: 800; letter-spacing: 10px; color: #14486e;
+  background: #fff6dc; border: 3px dashed #d9b840; border-radius: 14px;
+  padding: 8px 0 8px 10px; margin-bottom: 10px;
+}
+.wa-code-btns { display: flex; flex-direction: column; gap: 8px; }
+.wa-btn {
+  border: 2px solid #1565a8; border-radius: 12px;
+  background: #fff; color: #1565a8;
+  font-size: 13px; font-weight: 800; padding: 8px;
+}
+.wa-btn.wa-primary { background: #ffd94d; border-color: #8a6d1a; color: #5d470f; }
+.wa-btn.wa-warn { background: #ffe3e3; border-color: #c0392b; color: #c0392b; }
+
+/* ---------- 门菜单：复习 / 自由练习 分组 ---------- */
+.dm-group-label {
+  font-size: 11px; font-weight: 800; letter-spacing: 1px;
+  color: rgba(21, 101, 168, .55);
+  margin: 8px 2px 4px;
+}
+.dm-group-label:first-of-type { margin-top: 6px; }
+
+/* ---------- 长页面滚动修复 ----------
+   全局 overflow:hidden，以下场景内容超过一屏时必须自己可滚 */
+#overview-screen,
+#parent-report-screen,
+#errorbook-screen,
+#print-overlay {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.today-card,
+.today-screen {
+  -webkit-overflow-scrolling: touch;
+}
+/* 总览/报告/错题本内容贴底留白，避免最后一行被视口边缘吃掉 */
+.ov-body, .pr-body, .eb-body { padding-bottom: 40px; }

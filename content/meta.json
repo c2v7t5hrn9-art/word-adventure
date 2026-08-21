@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "updated": "2026-07-17",
+  "description": "单词冒险岛词库。收录讲义全部内容：主词条 + 延伸词(派生/词转) + 短语搭配 + 例句。新增讲义时按 entries 结构追加，并更新 doors。",
+  "schema": {
+    "entry": {
+      "id": "唯一ID(单元缩写-序号)",
+      "no": "讲义原编号",
+      "type": "word=单词 | phrase=短语/词组",
+      "text": "词条英文",
+      "phonetic": "音标(可空)",
+      "pos": "词性",
+      "meaning": "中文释义",
+      "door": "所属关卡门编号",
+      "extensions": "延伸词/派生词数组 [{text,phonetic?,pos,meaning,phrases?}]",
+      "phrases": "短语搭配数组 [{text,meaning}]",
+      "examples": "例句数组 [{en,zh}]",
+      "notes": "补充说明(构词法、对比、订正记录等)"
+    }
+  }
+}

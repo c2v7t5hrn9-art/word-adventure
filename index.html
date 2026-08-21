@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>单词冒险岛 🏝️</title>
+<link rel="stylesheet" href="style.css?v=10">
+</head>
+<body>
+
+<!-- ========== 地图场景（世界地图：多岛屿） ========== -->
+<div id="map-screen" class="screen">
+  <div class="hud">
+    <div class="hud-title">🏝️ 单词冒险岛</div>
+    <div class="hud-stats">
+      <span id="hud-stars" class="hud-pill">⭐ 0</span>
+      <span id="hud-shards" class="hud-pill">💠 0/6</span>
+      <button id="btn-shop" class="hud-btn" title="星星商店">🛒</button>
+      <button id="btn-daily-mission" class="hud-btn" title="今日任务">📋</button>
+      <button id="btn-overview" class="hud-btn" title="冒险总览">📊</button>
+      <button id="btn-flashcard" class="hud-btn" title="翻转卡片">🃏</button>
+      <button id="btn-parent-report" class="hud-btn" title="家长报告">👨‍👩‍👧</button>
+      <button id="btn-sound" class="hud-btn" title="声音开关">🔊</button>
+      <button id="btn-errorbook" class="hud-btn" title="错题本">📚</button>
+      <button id="btn-bomb" class="hud-btn" title="单词炸弹">💣</button>
+      <button id="btn-settings" class="hud-btn" title="设置">⚙️</button>
+    </div>
+  </div>
+
+  <!-- 今日任务卡片 -->
+  <div id="daily-mission" class="daily-mission hidden">
+    <div class="dm-header">
+      <span>📋 今日任务</span>
+      <span id="dm-streak">🔥 0天</span>
+      <button id="btn-dm-close" class="dm-close">✕</button>
+    </div>
+    <div id="dm-body" class="dm-body"></div>
+  </div>
+
+  <div id="island" class="island">
+    <div class="cloud cloud-1"></div>
+    <div class="cloud cloud-2"></div>
+    <div class="cloud cloud-3"></div>
+    <div class="sea-deco sea-deco-1">🐬</div>
+    <div class="sea-deco sea-deco-2">⛵</div>
+    <div class="sea-deco sea-deco-3">🐠</div>
+
+    <div id="world" class="world"></div>
+    <div id="map-decos" class="map-decos"></div>
+
+    <div id="guide" class="guide">
+      <div id="guide-pet" class="guide-pet hidden"></div>
+      <div class="guide-avatar" title="点我，和泡泡英语对话！">🧚‍♀️<span id="guide-acc" class="guide-acc hidden"></span></div>
+      <div id="guide-bubble" class="guide-bubble"></div>
+    </div>
+  </div>
+
+  <!-- 门的行动菜单（闯关 / 连连看） -->
+  <div id="door-menu" class="door-menu hidden"></div>
+
+  <!-- 泡泡对话的话题选择菜单 -->
+  <div id="chat-menu" class="door-menu chat-menu hidden"></div>
+</div>
+
+<!-- ========== 闯关场景 ========== -->
+<div id="quiz-screen" class="screen hidden">
+  <div class="quiz-header">
+    <button id="btn-quiz-back" class="back-btn" title="返回地图">✖</button>
+    <div id="quiz-door-name" class="quiz-door-name"></div>
+    <div id="quiz-dots" class="quiz-dots"></div>
+  </div>
+  <div id="q-timer" class="q-timer hidden"><div id="q-timer-fill" class="q-timer-fill"></div></div>
+  <div class="quiz-body">
+    <div id="q-type" class="q-type"></div>
+    <div id="q-prompt" class="q-prompt"></div>
+    <button id="q-speak" class="speak-btn hidden">🔊 再听一遍</button>
+    <div id="q-options" class="q-options"></div>
+  </div>
+  <div class="quiz-guide">
+    <span class="quiz-guide-avatar">🧚‍♀️</span>
+    <span id="quiz-guide-text" class="quiz-guide-text"></span>
+  </div>
+</div>
+
+<!-- ========== 连连看场景 ========== -->
+<div id="match-screen" class="screen hidden">
+  <div class="match-header">
+    <button id="btn-match-back" class="back-btn" title="返回地图">✖</button>
+    <div id="match-door-name" class="match-door-name"></div>
+    <div id="match-round" class="match-round"></div>
+  </div>
+  <div id="match-body" class="match-body">
+    <svg id="match-lines" class="match-lines"></svg>
+    <div id="match-left" class="match-col"></div>
+    <div id="match-right" class="match-col"></div>
+  </div>
+  <div class="quiz-guide">
+    <span class="quiz-guide-avatar">🧚‍♀️</span>
+    <span id="match-guide-text" class="quiz-guide-text"></span>
+  </div>
+</div>
+
+<!-- ========== 闯关结算场景 ========== -->
+<div id="result-screen" class="screen hidden">
+  <div class="result-card">
+    <div id="result-emoji" class="result-emoji">🎉</div>
+    <h2 id="result-title" class="result-title"></h2>
+    <div id="result-stars" class="result-stars"></div>
+    <p id="result-msg" class="result-msg"></p>
+    <div class="result-btns">
+      <button id="btn-replay" class="btn-secondary">再玩一次</button>
+      <button id="btn-back-map" class="btn-primary">回到地图</button>
+    </div>
+  </div>
+</div>
+
+<!-- ========== 连连看结算（词族树） ========== -->
+<div id="match-result-screen" class="screen hidden">
+  <div class="result-card match-result-card">
+    <div class="result-emoji">🌳</div>
+    <h2 class="result-title">词族树</h2>
+    <p class="result-msg">同一家的单词放在一起记，越记越牢哦！🌱</p>
+    <div id="family-tree" class="family-tree"></div>
+    <div class="result-btns">
+      <button id="btn-match-replay" class="btn-secondary">再玩一次</button>
+      <button id="btn-match-map" class="btn-primary">回到地图</button>
+    </div>
+  </div>
+</div>
+
+<!-- ========== 总览场景 ========== -->
+<div id="overview-screen" class="screen hidden">
+  <div class="ov-header">
+    <button id="btn-ov-back" class="back-btn" title="返回地图">✖</button>
+    <div class="ov-title">📊 冒险总览</div>
+  </div>
+  <div id="ov-body" class="ov-body"></div>
+</div>
+
+<!-- ========== 翻转卡片背诵场景 ========== -->
+<div id="flashcard-screen" class="screen hidden">
+  <div class="fc-header">
+    <button id="btn-fc-back" class="back-btn" title="返回地图">✖</button>
+    <div class="fc-title">🃏 翻转卡片</div>
+    <div class="fc-meta">
+      <span id="fc-progress"></span>
+      <button id="btn-fc-speak" class="fc-speak-btn">🔊</button>
+    </div>
+  </div>
+  <div class="fc-body">
+    <div class="fc-card-wrap">
+      <div id="fc-card" class="fc-card">
+        <div class="fc-front">
+          <div id="fc-word" class="fc-word"></div>
+          <div id="fc-phonetic" class="fc-phonetic"></div>
+          <div class="fc-tip">点击翻转 ↻</div>
+        </div>
+        <div class="fc-back">
+          <div id="fc-meaning" class="fc-meaning"></div>
+          <div id="fc-pos" class="fc-pos"></div>
+          <div id="fc-example" class="fc-example"></div>
+          <div id="fc-phrases" class="fc-phrases"></div>
+        </div>
+      </div>
+    </div>
+    <div class="fc-actions">
+      <button id="btn-fc-hard" class="fc-btn fc-btn-hard">🤔 没记住</button>
+      <button id="btn-fc-easy" class="fc-btn fc-btn-easy">😊 记住了</button>
+    </div>
+  </div>
+</div>
+
+<!-- ========== 翻转卡片结算 ========== -->
+<div id="flashcard-result-screen" class="screen hidden">
+  <div class="result-card">
+    <div class="result-emoji">🃏</div>
+    <h2 class="result-title">卡片背诵完成！</h2>
+    <div id="fc-result-stats" class="result-stars"></div>
+    <p id="fc-result-msg" class="result-msg"></p>
+    <div class="result-btns">
+      <button id="btn-fc-again" class="btn-secondary">再来一轮</button>
+      <button id="btn-fc-map" class="btn-primary">回到地图</button>
+    </div>
+  </div>
+</div>
+
+<!-- ========== 家长报告场景 ========== -->
+<div id="parent-report-screen" class="screen hidden">
+  <div class="pr-header">
+    <button id="btn-pr-back" class="back-btn" title="返回地图">✖</button>
+    <div class="pr-title">👨‍👩‍👧 家长报告</div>
+  </div>
+  <div id="pr-body" class="pr-body"></div>
+</div>
+
+<!-- ========== 英语对话场景（和泡泡聊天） ========== -->
+<div id="chat-screen" class="screen hidden">
+  <div class="chat-header">
+    <button id="btn-chat-back" class="back-btn" title="返回地图">✖</button>
+    <div id="chat-title" class="chat-title"></div>
+  </div>
+  <div id="chat-body" class="chat-body"></div>
+  <div id="chat-input" class="chat-input"></div>
+</div>
+
+<!-- ========== 英语对话结算 ========== -->
+<div id="chat-result-screen" class="screen hidden">
+  <div class="result-card">
+    <div class="result-emoji">🎉</div>
+    <h2 id="chat-result-title" class="result-title">对话完成！</h2>
+    <div id="chat-result-stars" class="result-stars"></div>
+    <p id="chat-result-msg" class="result-msg"></p>
+    <div class="result-btns">
+      <button id="btn-chat-again" class="btn-secondary">再聊一次</button>
+      <button id="btn-chat-map" class="btn-primary">回到地图</button>
+    </div>
+  </div>
+</div>
+
+<!-- ========== 星星商店 ========== -->
+<div id="shop-screen" class="screen hidden">
+  <div class="shop-header">
+    <button id="btn-shop-back" class="back-btn" title="返回地图">✖</button>
+    <div class="shop-title">🛒 星星商店</div>
+    <div id="shop-balance" class="hud-pill">⭐ 0</div>
+  </div>
+  <div id="shop-body" class="shop-body"></div>
+  <div id="shop-toast" class="shop-toast"></div>
+</div>
+
+<!-- ========== 默写训练营场景 ========== -->
+<div id="dictation-screen" class="screen hidden">
+  <div class="dict-header">
+    <button id="btn-dict-back" class="back-btn" title="返回地图">✖</button>
+    <div id="dictation-door-name" class="dict-door-name"></div>
+    <div class="dict-meta">
+      <span id="dictation-level" class="dict-level"></span>
+      <span id="dictation-progress" class="dict-progress"></span>
+    </div>
+  </div>
+  <div class="dict-body">
+    <div id="dictation-meaning" class="dict-meaning"></div>
+    <div id="dictation-input-area" class="dict-input-area"></div>
+    <div id="dictation-feedback" class="dictation-feedback"></div>
+  </div>
+</div>
+
+<!-- ========== 默写训练营结算 ========== -->
+<div id="dictation-result-screen" class="screen hidden">
+  <div class="result-card">
+    <div class="result-emoji">✍️</div>
+    <h2 class="result-title">默写完成！</h2>
+    <div id="dict-result-door" class="dict-result-door"></div>
+    <div id="dict-result-stars" class="result-stars"></div>
+    <div id="dict-result-level" class="dict-result-level"></div>
+    <p id="dict-result-msg" class="result-msg"></p>
+    <div id="dict-result-list" class="dict-result-list"></div>
+    <div class="result-btns">
+      <button id="btn-dict-replay" class="btn-secondary">再练一次</button>
+      <button id="btn-dict-map" class="btn-primary">回到地图</button>
+    </div>
+  </div>
+</div>
+
+<!-- ========== 泡泡自由聊天室 ========== -->
+<div id="freechat-screen" class="screen hidden">
+  <div class="chat-header">
+    <button id="btn-fc-back" class="back-btn" title="返回地图">✖</button>
+    <div id="freechat-title" class="chat-title">💬 泡泡自由聊天室</div>
+  </div>
+  <div id="freechat-body" class="chat-body"></div>
+  <div id="freechat-input" class="chat-input"></div>
+</div>
+
+<!-- ========== 对话模态框（泡泡） ========== -->
+<div id="dialogue-overlay" class="screen hidden dialogue-overlay">
+  <div class="dlg-card">
+    <div class="dlg-left">
+      <div class="dlg-avatar">🧚‍♀️</div>
+      <div class="dlg-name">泡泡</div>
+    </div>
+    <div class="dlg-right">
+      <div id="dlg-text" class="dlg-text"></div>
+      <button id="dlg-next" class="btn-primary dlg-next">继续 ▶</button>
+    </div>
+  </div>
+</div>
+
+<!-- ========== 错题本 ========== -->
+<div id="errorbook-screen" class="screen hidden">
+  <div class="eb-header">
+    <button id="btn-eb-back" class="back-btn" title="返回地图">✖</button>
+    <div class="eb-title">📚 错题本</div>
+  </div>
+  <div id="eb-body" class="eb-body"></div>
+</div>
+
+<!-- ========== 设置面板 ========== -->
+<div id="settings-screen" class="screen hidden settings-overlay">
+  <div class="settings-card">
+    <h2>⚙️ 设置</h2>
+    <div class="set-row">
+      <span class="set-label">🔊 声音</span>
+      <button id="set-sound" class="toggle-btn">开 🔊</button>
+    </div>
+    <div class="set-row set-col">
+      <span class="set-label">🎙️ 朗读嗓音</span>
+      <div class="set-voice-row">
+        <select id="set-voice"></select>
+        <button id="set-voice-test" class="btn-secondary set-test-btn">试听</button>
+      </div>
+    </div>
+    <div class="set-row set-col">
+      <span class="set-label">🐢 语速 <span id="set-rate-val">0.90x</span></span>
+      <input id="set-rate" type="range" min="0.7" max="1.1" step="0.05" value="0.9">
+    </div>
+    <div class="set-row set-col">
+      <span class="set-label">⏱️ 答题限时</span>
+      <div class="seg-btns" id="set-timelimit">
+        <button data-v="0" class="active">不限</button>
+        <button data-v="5">5 秒</button>
+        <button data-v="10">10 秒</button>
+      </div>
+    </div>
+    <div class="set-row set-col">
+      <span class="set-label">✍️ 默写默认难度</span>
+      <div class="seg-btns" id="set-dict-level">
+        <button data-v="1" class="active">L1 补全</button>
+        <button data-v="2">L2 拼词</button>
+        <button data-v="3">L3 听写</button>
+      </div>
+    </div>
+    <div class="set-row">
+      <span class="set-label">📈 自动升级难度</span>
+      <button id="set-auto-level" class="toggle-btn">开</button>
+    </div>
+    <div class="set-row">
+      <span class="set-label">🔓 家长选项：解锁全部岛屿</span>
+      <button id="set-unlock" class="toggle-btn off">关</button>
+    </div>
+    <div class="set-row set-col">
+      <span class="set-label">💾 存档管理</span>
+      <div class="set-save-row">
+        <button id="set-export" class="btn-secondary">💾 导出存档</button>
+        <label class="btn-secondary set-import-label">
+          📁 导入存档
+          <input type="file" id="set-import" accept=".json" style="display:none">
+        </label>
+      </div>
+      <small class="set-save-hint">出游前导出存档，到新设备上再导入即可继续冒险</small>
+    </div>
+    <div class="set-row">
+      <button id="set-reset" class="btn-danger">🗑️ 清空记录，重新开始</button>
+    </div>
+    <button id="set-close" class="btn-primary set-close">完成</button>
+  </div>
+</div>
+
+<!-- ========== 单词炸弹 ========== -->
+<div id="bomb-screen" class="screen hidden">
+  <div class="bomb-header">
+    <button id="btn-bomb-back-map" class="back-btn" title="返回地图">✖</button>
+    <div class="bomb-title">🎈 单词气球保卫战</div>
+    <div class="bomb-hud">
+      <span id="bomb-lives">❤️❤️❤️</span>
+      <span id="bomb-score">0</span>
+      <span id="bomb-combo"></span>
+      <span id="bomb-highscore" class="bomb-highscore"></span>
+    </div>
+  </div>
+  <div class="balloon-sky" id="balloon-sky">
+    <div class="balloon-question-area">
+      <div id="balloon-q-type" class="q-type"></div>
+      <div id="balloon-q-prompt" class="q-prompt"></div>
+      <button id="balloon-q-speak" class="q-speak hidden">🔊</button>
+    </div>
+    <div id="balloon-container" class="balloon-container"></div>
+    <div class="balloon-ground">🌿</div>
+  </div>
+</div>
+
+<!-- ========== 单词斗地主 ========== -->
+<div id="landlord-screen" class="screen hidden">
+  <div class="mg-header">
+    <button id="btn-landlord-back" class="back-btn" title="返回地图">✖</button>
+    <div class="mg-title">🎴 单词斗地主</div>
+  </div>
+  <div id="landlord-body" class="mg-body"></div>
+  <div id="landlord-toast" class="mg-toast hidden"></div>
+</div>
+<div id="landlord-result-screen" class="screen hidden">
+  <div class="result-card">
+    <div class="result-emoji">🎴</div>
+    <h2 id="ll-result-title" class="result-title"></h2>
+    <div id="ll-result-stars" class="result-stars"></div>
+    <p id="ll-result-msg" class="result-msg"></p>
+    <div class="result-btns">
+      <button id="btn-ll-again" class="btn-secondary">再来一局</button>
+      <button id="btn-ll-map" class="btn-primary">回到地图</button>
+    </div>
+  </div>
+</div>
+
+<!-- ========== 单词抢答 ========== -->
+<div id="rush-screen" class="screen hidden">
+  <div class="mg-header">
+    <button id="btn-rush-back" class="back-btn" title="返回地图">✖</button>
+    <div class="mg-title">⚡ 单词抢答</div>
+    <div class="rush-timer"><div id="rush-timer-bar" class="rush-timer-bar"></div></div>
+    <div id="rush-time-text" class="rush-time-text">45秒</div>
+  </div>
+  <div id="rush-body" class="mg-body"></div>
+</div>
+<div id="rush-result-screen" class="screen hidden">
+  <div class="result-card">
+    <div class="result-emoji">⚡</div>
+    <h2 id="rush-result-title" class="result-title"></h2>
+    <div id="rush-result-stars" class="result-stars"></div>
+    <p id="rush-result-msg" class="result-msg"></p>
+    <div class="result-btns">
+      <button id="btn-rush-again" class="btn-secondary">再来一局</button>
+      <button id="btn-rush-map" class="btn-primary">回到地图</button>
+    </div>
+  </div>
+</div>
+
+<!-- ========== 单词射击 ========== -->
+<div id="strike-screen" class="screen hidden">
+  <div class="mg-header">
+    <button id="btn-strike-back" class="back-btn" title="返回地图">✖</button>
+    <div class="mg-title">🎯 单词射击</div>
+    <div class="strike-hud">
+      <span id="strike-score">🎯 0</span>
+      <span id="strike-time">⏱️ 30</span>
+      <span id="strike-bullets">🔫 20</span>
+    </div>
+  </div>
+  <div class="strike-canvas-wrap">
+    <canvas id="strike-canvas" class="strike-canvas"></canvas>
+    <div class="strike-legend">
+      <span class="strike-leg-real">⭕ 真单词 → 射击</span>
+      <span class="strike-leg-fake">❌ 假单词 → 避开</span>
+    </div>
+  </div>
+</div>
+<div id="strike-result-screen" class="screen hidden">
+  <div class="result-card">
+    <div class="result-emoji">🎯</div>
+    <h2 id="strike-result-title" class="result-title"></h2>
+    <div id="strike-result-stars" class="result-stars"></div>
+    <p id="strike-result-msg" class="result-msg"></p>
+    <div class="result-btns">
+      <button id="btn-strike-again" class="btn-secondary">再来一局</button>
+      <button id="btn-strike-map" class="btn-primary">回到地图</button>
+    </div>
+  </div>
+</div>
+
+<!-- ========== 打印预览（复习卡片） ========== -->
+<div id="print-overlay" class="print-overlay hidden">
+  <div class="print-header">
+    <button id="btn-print-close" class="back-btn">✖ 关闭</button>
+    <button id="btn-print-do" class="print-btn">🖨️ 打印</button>
+  </div>
+  <div id="print-cards" class="print-cards"></div>
+</div>
+
+<script src="data/words-data.js?v=8"></script>
+<script src="game.js?v=10"></script>
+<script src="minigames.js?v=2"></script>
+</body>
+</html>

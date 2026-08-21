@@ -1,0 +1,1222 @@
+{
+  "unitId": "u5u6-doctor-challenge",
+  "title": "U5 Seeing a doctor & U6 Rise to the challenge 词汇讲义",
+  "sourceImages": [
+    "IMG_1222.JPG",
+    "IMG_1223.JPG",
+    "IMG_1224.JPG",
+    "IMG_1225.JPG"
+  ],
+  "pageMap": {
+    "IMG_1222.JPG": 1,
+    "IMG_1223.JPG": 2,
+    "IMG_1224.JPG": 3,
+    "IMG_1225.JPG": 4
+  },
+  "missingPages": "",
+  "dictationExtra": [
+    {
+      "text": "disappear",
+      "phonetic": "/ˌdɪsəˈpɪə(r)/",
+      "pos": "v.",
+      "meaning": "消失（校内默写易错：dissoppear ✗）"
+    }
+  ],
+  "entries": [
+    {
+      "id": "u56-01",
+      "no": 1,
+      "type": "word",
+      "text": "treat",
+      "phonetic": "/triːt/",
+      "pos": "v.",
+      "meaning": "治疗；对待；请客",
+      "door": 1,
+      "phrases": [
+        {
+          "text": "treat a patient",
+          "meaning": "治疗病人"
+        },
+        {
+          "text": "treat sb. with respect",
+          "meaning": "以尊重的态度对待某人"
+        },
+        {
+          "text": "treat sb. to dinner",
+          "meaning": "请某人吃晚饭"
+        }
+      ],
+      "examples": [
+        {
+          "en": "He treats the wound carefully.",
+          "zh": "他仔细地处理伤口。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "treatment",
+          "pos": "n.",
+          "meaning": "治疗；对待",
+          "phrases": [
+            {
+              "text": "medical treatment",
+              "meaning": "医疗"
+            },
+            {
+              "text": "get special treatment",
+              "meaning": "受到特殊对待"
+            }
+          ]
+        },
+        {
+          "text": "treatable",
+          "pos": "adj.",
+          "meaning": "可治疗的"
+        }
+      ]
+    },
+    {
+      "id": "u56-02",
+      "no": 2,
+      "type": "phrase",
+      "text": "runny nose",
+      "phonetic": "/ˈrʌni nəʊz/",
+      "pos": "短语",
+      "meaning": "流鼻涕",
+      "door": 1,
+      "examples": [
+        {
+          "en": "I have a runny nose.",
+          "zh": "我正在流鼻涕。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "runny",
+          "pos": "adj.",
+          "meaning": "流鼻涕的；水分过多的",
+          "phrases": [
+            {
+              "text": "runny eyes",
+              "meaning": "流泪的眼睛"
+            },
+            {
+              "text": "runny honey",
+              "meaning": "稀蜂蜜"
+            }
+          ]
+        }
+      ],
+      "notes": "runny 由 run(v. 流动) + -y 构成形容词"
+    },
+    {
+      "id": "u56-03",
+      "no": 3,
+      "type": "word",
+      "text": "cough",
+      "phonetic": "/kɒf/",
+      "pos": "v. & n.",
+      "meaning": "咳嗽；咳出",
+      "door": 1,
+      "phrases": [
+        {
+          "text": "cough badly",
+          "meaning": "咳得厉害"
+        },
+        {
+          "text": "have a bad cough",
+          "meaning": "咳嗽得厉害"
+        }
+      ],
+      "examples": [
+        {
+          "en": "My nose is runny and I cough badly.",
+          "zh": "我流鼻涕，而且咳嗽得很厉害。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "coughing",
+          "pos": "n.",
+          "meaning": "咳嗽"
+        }
+      ]
+    },
+    {
+      "id": "u56-04",
+      "no": 4,
+      "type": "word",
+      "text": "nurse",
+      "phonetic": "/nɜːs/",
+      "pos": "n. 护士；v. 看护；照料",
+      "meaning": "护士；看护",
+      "door": 1,
+      "examples": [
+        {
+          "en": "The nurse takes care of the patients carefully every day.",
+          "zh": "护士每天细心照料病人。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "nursing",
+          "pos": "n.",
+          "meaning": "护理专业；看护工作",
+          "phrases": [
+            {
+              "text": "nursing home",
+              "meaning": "疗养院"
+            }
+          ]
+        }
+      ],
+      "notes": "过去式：nursed - nursed"
+    },
+    {
+      "id": "u56-05",
+      "no": 5,
+      "type": "word",
+      "text": "temperature",
+      "phonetic": "/ˈtemprətʃə(r)/",
+      "pos": "n.",
+      "meaning": "温度；体温；气温",
+      "door": 1,
+      "phrases": [
+        {
+          "text": "take one's temperature",
+          "meaning": "给某人量体温"
+        },
+        {
+          "text": "room temperature",
+          "meaning": "室温"
+        }
+      ],
+      "examples": [
+        {
+          "en": "A nurse takes my temperature.",
+          "zh": "护士为我量了体温。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "temperate",
+          "pos": "adj.",
+          "meaning": "气候温和的",
+          "phrases": [
+            {
+              "text": "temperate zone",
+              "meaning": "温带"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u56-06",
+      "no": 6,
+      "type": "word",
+      "text": "fever",
+      "phonetic": "/ˈfiːvə(r)/",
+      "pos": "n.",
+      "meaning": "发烧；发热",
+      "door": 1,
+      "phrases": [
+        {
+          "text": "have a fever",
+          "meaning": "发烧"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "feverish",
+          "pos": "adj.",
+          "meaning": "发烧的；狂热的",
+          "phrases": [
+            {
+              "text": "feverish excitement",
+              "meaning": "狂热的兴奋"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u56-07",
+      "no": 7,
+      "type": "word",
+      "text": "flu",
+      "phonetic": "/fluː/",
+      "pos": "n.（不可数）",
+      "meaning": "流感",
+      "door": 1,
+      "phrases": [
+        {
+          "text": "have the flu",
+          "meaning": "得了流感"
+        },
+        {
+          "text": "catch the flu",
+          "meaning": "传染上流感"
+        },
+        {
+          "text": "flu season",
+          "meaning": "流感季节"
+        }
+      ],
+      "examples": [
+        {
+          "en": "You have a fever. And it's the flu.",
+          "zh": "你发烧了，而且是流感。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "influenza",
+          "phonetic": "/ˌɪnfluˈenzə/",
+          "pos": "n.",
+          "meaning": "流感（完整拼写）"
+        }
+      ]
+    },
+    {
+      "id": "u56-08",
+      "no": 8,
+      "type": "word",
+      "text": "medicine",
+      "phonetic": "/ˈmedsn/",
+      "pos": "n.（不可数）",
+      "meaning": "药；医学",
+      "door": 1,
+      "phrases": [
+        {
+          "text": "take medicine",
+          "meaning": "吃药"
+        },
+        {
+          "text": "cough medicine",
+          "meaning": "止咳药"
+        },
+        {
+          "text": "Chinese medicine",
+          "meaning": "中药"
+        }
+      ],
+      "examples": [
+        {
+          "en": "Take some medicine and have a good rest.",
+          "zh": "吃点药，好好休息一下。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "medical",
+          "pos": "adj.",
+          "meaning": "医学的；医疗的",
+          "phrases": [
+            {
+              "text": "medical care",
+              "meaning": "医疗护理"
+            },
+            {
+              "text": "a medical student",
+              "meaning": "医学生"
+            },
+            {
+              "text": "medical treatment",
+              "meaning": "医疗"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u56-09",
+      "no": 9,
+      "type": "phrase",
+      "text": "take it easy",
+      "phonetic": "/teɪk ɪt ˈiːzi/",
+      "pos": "口语短语",
+      "meaning": "别急；放轻松；慢慢来",
+      "door": 1,
+      "phrases": [
+        {
+          "text": "take it easy on yourself",
+          "meaning": "别太勉强自己"
+        }
+      ],
+      "examples": [
+        {
+          "en": "Drink lots of water. And take it easy.",
+          "zh": "多喝水，放轻松。"
+        }
+      ]
+    },
+    {
+      "id": "u56-10",
+      "no": 10,
+      "type": "word",
+      "text": "check",
+      "phonetic": "/tʃek/",
+      "pos": "v. 检查；核对；n. 支票",
+      "meaning": "检查；核对；支票",
+      "door": 2,
+      "phrases": [
+        {
+          "text": "check in",
+          "meaning": "登记入住"
+        },
+        {
+          "text": "check out",
+          "meaning": "退房/查看"
+        }
+      ],
+      "examples": [
+        {
+          "en": "Let me check your eyes.",
+          "zh": "让我检查一下你的眼睛。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "checker",
+          "pos": "n.",
+          "meaning": "检查员"
+        },
+        {
+          "text": "check-up",
+          "pos": "n.",
+          "meaning": "体检"
+        }
+      ]
+    },
+    {
+      "id": "u56-11",
+      "no": 11,
+      "type": "word",
+      "text": "cycling",
+      "phonetic": "/ˈsaɪklɪŋ/",
+      "pos": "n.",
+      "meaning": "骑自行车运动",
+      "door": 2,
+      "phrases": [
+        {
+          "text": "go cycling",
+          "meaning": "去骑车"
+        }
+      ],
+      "examples": [
+        {
+          "en": "For example, you can go cycling or play football more.",
+          "zh": "比如，你可以多去骑车或多踢足球。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "cycle",
+          "pos": "v.",
+          "meaning": "骑自行车",
+          "phrases": [
+            {
+              "text": "cycle to work",
+              "meaning": "骑车上班"
+            }
+          ]
+        },
+        {
+          "text": "cyclist",
+          "pos": "n.",
+          "meaning": "骑自行车的人"
+        }
+      ]
+    },
+    {
+      "id": "u56-12",
+      "no": 12,
+      "type": "word",
+      "text": "patient",
+      "phonetic": "/ˈpeɪʃnt/",
+      "pos": "n. 病人；adj. 有耐心的",
+      "meaning": "病人；有耐心的",
+      "door": 2,
+      "phrases": [
+        {
+          "text": "be patient with sb.",
+          "meaning": "对某人有耐心"
+        }
+      ],
+      "examples": [
+        {
+          "en": "\"Ouch! Ouch!\" The patient cried loudly in the hospital bed.",
+          "zh": "“哎哟！哎哟！”病人躺在病床上大声喊道。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "patience",
+          "pos": "n.",
+          "meaning": "耐心；忍耐力"
+        },
+        {
+          "text": "patiently",
+          "pos": "adv.",
+          "meaning": "耐心地"
+        }
+      ]
+    },
+    {
+      "id": "u56-13",
+      "no": 13,
+      "type": "word",
+      "text": "reduce",
+      "phonetic": "/rɪˈdjuːs/",
+      "pos": "v.",
+      "meaning": "减少；降低",
+      "door": 2,
+      "phrases": [
+        {
+          "text": "reduce waste",
+          "meaning": "减少浪费"
+        },
+        {
+          "text": "reduce speed",
+          "meaning": "减速"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "reduction",
+          "pos": "n.",
+          "meaning": "减少；降低",
+          "phrases": [
+            {
+              "text": "a 20% reduction in costs",
+              "meaning": "成本降低20%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u56-14",
+      "no": 14,
+      "type": "word",
+      "text": "pain",
+      "phonetic": "/peɪn/",
+      "pos": "n.",
+      "meaning": "疼痛；痛苦",
+      "door": 2,
+      "examples": [
+        {
+          "en": "How can I reduce his pain during the treatment?",
+          "zh": "在治疗期间，我该如何减轻他的痛苦呢？"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "painful",
+          "pos": "adj.",
+          "meaning": "疼痛的；痛苦的",
+          "phrases": [
+            {
+              "text": "a painful knee",
+              "meaning": "疼痛的膝盖"
+            },
+            {
+              "text": "a painful memory",
+              "meaning": "痛苦的回忆"
+            }
+          ]
+        },
+        {
+          "text": "painless",
+          "pos": "adj.",
+          "meaning": "无痛的"
+        }
+      ]
+    },
+    {
+      "id": "u56-15",
+      "no": 15,
+      "type": "phrase",
+      "text": "by mistake",
+      "phonetic": "/baɪ mɪˈsteɪk/",
+      "pos": "短语",
+      "meaning": "错误地；无意中",
+      "door": 2,
+      "phrases": [
+        {
+          "text": "mistake... for...",
+          "meaning": "把……错当成……"
+        },
+        {
+          "text": "be mistaken about...",
+          "meaning": "对……搞错了"
+        }
+      ],
+      "examples": [
+        {
+          "en": "The child ate some white flowers by mistake.",
+          "zh": "孩子误吃了一些白色的花。"
+        },
+        {
+          "en": "I mistook him for his brother.",
+          "zh": "我把他错当成他哥哥了。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "mistake",
+          "pos": "v.",
+          "meaning": "弄错"
+        },
+        {
+          "text": "mistaken",
+          "pos": "adj.",
+          "meaning": "弄错的"
+        }
+      ]
+    },
+    {
+      "id": "u56-16",
+      "no": 16,
+      "type": "word",
+      "text": "operation",
+      "phonetic": "/ˌɒpəˈreɪʃn/",
+      "pos": "n.",
+      "meaning": "手术；操作",
+      "door": 2,
+      "phrases": [
+        {
+          "text": "have an operation (on sb.)",
+          "meaning": "（给某人）做手术"
+        },
+        {
+          "text": "operate a machine",
+          "meaning": "操作机器"
+        }
+      ],
+      "examples": [
+        {
+          "en": "It helped many patients in need of operation.",
+          "zh": "它帮助了许多需要手术的病人。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "operate",
+          "pos": "v.",
+          "meaning": "动手术；操作机器"
+        },
+        {
+          "text": "operator",
+          "pos": "n.",
+          "meaning": "操作员"
+        }
+      ]
+    },
+    {
+      "id": "u56-17",
+      "no": 17,
+      "type": "word",
+      "text": "challenge",
+      "phonetic": "/ˈtʃælɪndʒ/",
+      "pos": "n. 挑战；v. 挑战；质疑",
+      "meaning": "挑战；质疑",
+      "door": 2,
+      "phrases": [
+        {
+          "text": "challenge sb. to do",
+          "meaning": "向某人挑战做某事"
+        }
+      ],
+      "examples": [
+        {
+          "en": "Rise to the challenge.",
+          "zh": "直面挑战，迎难而上。"
+        },
+        {
+          "en": "She challenged his decision.",
+          "zh": "她质疑了他的决定。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "challenging",
+          "pos": "adj.",
+          "meaning": "具有挑战性的"
+        },
+        {
+          "text": "challenger",
+          "pos": "n.",
+          "meaning": "挑战者"
+        }
+      ]
+    },
+    {
+      "id": "u56-18",
+      "no": 18,
+      "type": "word",
+      "text": "impossible",
+      "phonetic": "/ɪmˈpɒsəbl/",
+      "pos": "adj.",
+      "meaning": "不可能的；办不到的",
+      "door": 3,
+      "examples": [
+        {
+          "en": "It's impossible to finish the work in one day.",
+          "zh": "一天之内完成这项工作是不可能的。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "possible",
+          "pos": "adj.",
+          "meaning": "可能的"
+        },
+        {
+          "text": "possibly",
+          "pos": "adv.",
+          "meaning": "可能"
+        },
+        {
+          "text": "possibility",
+          "pos": "n.",
+          "meaning": "可能性"
+        },
+        {
+          "text": "impossibility",
+          "pos": "n.",
+          "meaning": "不可能性"
+        }
+      ]
+    },
+    {
+      "id": "u56-19",
+      "no": 19,
+      "type": "word",
+      "text": "willing",
+      "phonetic": "/ˈwɪlɪŋ/",
+      "pos": "adj.",
+      "meaning": "积极肯干的；愿意的；乐意的",
+      "door": 3,
+      "phrases": [
+        {
+          "text": "be willing to do sth.",
+          "meaning": "愿意做某事"
+        },
+        {
+          "text": "a willing helper",
+          "meaning": "乐于助人的人"
+        }
+      ],
+      "examples": [
+        {
+          "en": "She is willing to help others in need.",
+          "zh": "她愿意帮助有需要的人。"
+        },
+        {
+          "en": "Nothing is impossible to a willing mind.",
+          "zh": "世上无难事，只怕有心人。"
+        },
+        {
+          "en": "He showed great willingness to learn.",
+          "zh": "他表现出极大的学习意愿。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "will",
+          "pos": "n. 意志；v. 愿意",
+          "meaning": "意志；愿意"
+        },
+        {
+          "text": "willingness",
+          "pos": "n.",
+          "meaning": "乐意；意愿"
+        },
+        {
+          "text": "unwilling",
+          "pos": "adj.",
+          "meaning": "不情愿的"
+        }
+      ]
+    },
+    {
+      "id": "u56-20",
+      "no": 20,
+      "type": "word",
+      "text": "will",
+      "phonetic": "/wɪl/",
+      "pos": "n. 意志；毅力；v. aux. 将（助动词）",
+      "meaning": "意志；毅力；将",
+      "door": 3,
+      "phrases": [
+        {
+          "text": "a strong will",
+          "meaning": "坚强的意志"
+        }
+      ],
+      "examples": [
+        {
+          "en": "The will can move mountains.",
+          "zh": "意志能移山。"
+        },
+        {
+          "en": "Where there is a will, there is a way.",
+          "zh": "有志者，事竟成。"
+        }
+      ]
+    },
+    {
+      "id": "u56-21",
+      "no": 21,
+      "type": "word",
+      "text": "succeed",
+      "phonetic": "/səkˈsiːd/",
+      "pos": "v.",
+      "meaning": "成功；达成",
+      "door": 3,
+      "phrases": [
+        {
+          "text": "succeed in doing sth.",
+          "meaning": "成功做成某事（= manage to do sth.）"
+        },
+        {
+          "text": "be successful in doing",
+          "meaning": "成功做某事"
+        }
+      ],
+      "examples": [
+        {
+          "en": "Those who keep themselves strong will succeed.",
+          "zh": "自强不息、始终保持强大的人终将取得成功。"
+        },
+        {
+          "en": "He succeeded in passing the difficult final exam after months of hard work.",
+          "zh": "经过数月的努力，他成功通过了这场难度很大的期末考试。"
+        },
+        {
+          "en": "Failure is the mother of success.",
+          "zh": "失败是成功之母。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "success",
+          "pos": "n.",
+          "meaning": "成功"
+        },
+        {
+          "text": "successful",
+          "pos": "adj.",
+          "meaning": "成功的"
+        },
+        {
+          "text": "successfully",
+          "pos": "adv.",
+          "meaning": "成功地"
+        }
+      ]
+    },
+    {
+      "id": "u56-22",
+      "no": 22,
+      "type": "word",
+      "text": "confident",
+      "phonetic": "/ˈkɒnfɪdənt/",
+      "pos": "adj.",
+      "meaning": "自信的；有信心的",
+      "door": 3,
+      "phrases": [
+        {
+          "text": "be confident of sth.",
+          "meaning": "对某事有把握"
+        },
+        {
+          "text": "be confident about sth.",
+          "meaning": "对某事有信心"
+        },
+        {
+          "text": "be confident in sb.",
+          "meaning": "信任某人"
+        }
+      ],
+      "examples": [
+        {
+          "en": "But you are so confident today.",
+          "zh": "但是你今天看起来非常自信。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "confidence",
+          "pos": "n.",
+          "meaning": "信心；信任"
+        },
+        {
+          "text": "confidently",
+          "pos": "adv.",
+          "meaning": "自信地"
+        }
+      ]
+    },
+    {
+      "id": "u56-23",
+      "no": 23,
+      "type": "word",
+      "text": "front",
+      "phonetic": "/frʌnt/",
+      "pos": "n. 前面；前方；adj. 前面的；前部的",
+      "meaning": "前面；前方；前面的",
+      "door": 3,
+      "phrases": [
+        {
+          "text": "in front of",
+          "meaning": "在……前面（外部方位）"
+        },
+        {
+          "text": "in the front of",
+          "meaning": "在……前部（内部前方）"
+        },
+        {
+          "text": "come to the front",
+          "meaning": "到前面来"
+        },
+        {
+          "text": "front door",
+          "meaning": "前门"
+        }
+      ]
+    },
+    {
+      "id": "u56-24",
+      "no": 24,
+      "type": "word",
+      "text": "practice",
+      "phonetic": "/ˈpræktɪs/",
+      "pos": "n. 练习；实践；v.（美式）练习",
+      "meaning": "练习；实践",
+      "door": 3,
+      "phrases": [
+        {
+          "text": "put into practice",
+          "meaning": "付诸实践"
+        },
+        {
+          "text": "practice doing sth.",
+          "meaning": "练习做某事"
+        }
+      ],
+      "examples": [
+        {
+          "en": "I learned from videos and did a lot of practice.",
+          "zh": "我从视频中学习，并且做了大量的练习。"
+        },
+        {
+          "en": "Practice makes perfect.",
+          "zh": "熟能生巧。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "practical",
+          "pos": "adj.",
+          "meaning": "实际的；实用的"
+        },
+        {
+          "text": "practically",
+          "pos": "adv.",
+          "meaning": "实际上；几乎"
+        }
+      ],
+      "notes": "动词英式拼写为 practise"
+    },
+    {
+      "id": "u56-25",
+      "no": 25,
+      "type": "word",
+      "text": "better",
+      "phonetic": "/ˈbetə(r)/",
+      "pos": "adj. 更好的；adv. 更好地；v. 改善；提高",
+      "meaning": "更好的；改善",
+      "door": 3,
+      "phrases": [
+        {
+          "text": "had better do",
+          "meaning": "最好做某事"
+        }
+      ],
+      "examples": [
+        {
+          "en": "This book is better than that one.",
+          "zh": "这本书比那本更好。"
+        },
+        {
+          "en": "Love and practice make a better you.",
+          "zh": "热爱和练习造就更好的你。"
+        }
+      ],
+      "notes": "good/well - better - the best（原级-比较级-最高级）"
+    },
+    {
+      "id": "u56-26",
+      "no": 26,
+      "type": "phrase",
+      "text": "give up",
+      "phonetic": "/ɡɪv ʌp/",
+      "pos": "短语",
+      "meaning": "放弃；认输",
+      "door": 3,
+      "phrases": [
+        {
+          "text": "give up doing sth.",
+          "meaning": "放弃做某事"
+        },
+        {
+          "text": "give up hope",
+          "meaning": "放弃希望"
+        },
+        {
+          "text": "give up one's dream",
+          "meaning": "放弃梦想"
+        }
+      ],
+      "examples": [
+        {
+          "en": "Don't give up. Draw like this!",
+          "zh": "别放弃，像这样画！"
+        }
+      ]
+    },
+    {
+      "id": "u56-27",
+      "no": 27,
+      "type": "phrase",
+      "text": "love to do / love doing",
+      "phonetic": "/lʌv tuː duː / lʌv ˈduːɪŋ/",
+      "pos": "短语",
+      "meaning": "喜欢做某事",
+      "door": 1
+    },
+    {
+      "id": "u56-28",
+      "no": 28,
+      "type": "phrase",
+      "text": "spend some time (in) doing something",
+      "phonetic": "/spend taɪm ˈduːɪŋ/",
+      "pos": "短语",
+      "meaning": "花费时间做某事",
+      "door": 1
+    },
+    {
+      "id": "u56-29",
+      "no": 29,
+      "type": "word",
+      "text": "reply",
+      "phonetic": "/rɪˈplaɪ/",
+      "pos": "v. & n.",
+      "meaning": "回复；答复",
+      "door": 1
+    },
+    {
+      "id": "u56-30",
+      "no": 30,
+      "type": "phrase",
+      "text": "stand for",
+      "phonetic": "/stænd fɔː(r)/",
+      "pos": "短语",
+      "meaning": "代表；象征",
+      "door": 1
+    },
+    {
+      "id": "u56-31",
+      "no": 31,
+      "type": "phrase",
+      "text": "take over",
+      "phonetic": "/teɪk ˈəʊvə(r)/",
+      "pos": "短语",
+      "meaning": "接管；接手",
+      "door": 1
+    },
+    {
+      "id": "u56-32",
+      "no": 32,
+      "type": "word",
+      "text": "joined",
+      "phonetic": "/dʒɔɪnd/",
+      "pos": "adj.",
+      "meaning": "团结在一起的；联合的",
+      "door": 1
+    },
+    {
+      "id": "u56-33",
+      "no": 33,
+      "type": "word",
+      "text": "everywhere",
+      "phonetic": "/ˈevriweə(r)/",
+      "pos": "adv.",
+      "meaning": "到处；处处",
+      "door": 1
+    },
+    {
+      "id": "u56-34",
+      "no": 34,
+      "type": "word",
+      "text": "call",
+      "phonetic": "/kɔːl/",
+      "pos": "v.",
+      "meaning": "把...叫做；称呼；打电话",
+      "door": 2
+    },
+    {
+      "id": "u56-35",
+      "no": 35,
+      "type": "word",
+      "text": "million",
+      "phonetic": "/ˈmɪljən/",
+      "pos": "n.",
+      "meaning": "百万",
+      "door": 2
+    },
+    {
+      "id": "u56-36",
+      "no": 36,
+      "type": "phrase",
+      "text": "stuff one's face",
+      "phonetic": "/stʌf wʌnz feɪs/",
+      "pos": "短语",
+      "meaning": "吃撑；塞满嘴巴",
+      "door": 2
+    },
+    {
+      "id": "u56-37",
+      "no": 37,
+      "type": "word",
+      "text": "squirrel",
+      "phonetic": "/ˈskwɪrəl/",
+      "pos": "n.",
+      "meaning": "松鼠",
+      "door": 2
+    },
+    {
+      "id": "u56-38",
+      "no": 38,
+      "type": "word",
+      "text": "nutty",
+      "phonetic": "/ˈnʌti/",
+      "pos": "adj.",
+      "meaning": "坚果的；疯狂的；古怪的",
+      "door": 2
+    },
+    {
+      "id": "u56-39",
+      "no": 39,
+      "type": "word",
+      "text": "bar",
+      "phonetic": "/bɑː(r)/",
+      "pos": "n.",
+      "meaning": "酒吧；条；棒",
+      "door": 2
+    },
+    {
+      "id": "u56-40",
+      "no": 40,
+      "type": "word",
+      "text": "amateur",
+      "phonetic": "/ˈæmətə(r)/",
+      "pos": "adj./n.",
+      "meaning": "业余的；业余爱好者",
+      "door": 2
+    },
+    {
+      "id": "u56-41",
+      "no": 41,
+      "type": "word",
+      "text": "woodworker",
+      "phonetic": "/ˈwʊdwɜːkə(r)/",
+      "pos": "n.",
+      "meaning": "木工；木匠",
+      "door": 3
+    },
+    {
+      "id": "u56-42",
+      "no": 42,
+      "type": "word",
+      "text": "woodworking",
+      "phonetic": "/ˈwʊdwɜːkɪŋ/",
+      "pos": "n.",
+      "meaning": "木工活；木工技艺",
+      "door": 3
+    },
+    {
+      "id": "u56-43",
+      "no": 43,
+      "type": "phrase",
+      "text": "go nuts",
+      "phonetic": "/ɡəʊ nʌts/",
+      "pos": "短语",
+      "meaning": "发疯；抓狂；狂热",
+      "door": 3
+    },
+    {
+      "id": "u56-44",
+      "no": 44,
+      "type": "phrase",
+      "text": "start doing something",
+      "phonetic": "/stɑːt ˈduːɪŋ/",
+      "pos": "短语",
+      "meaning": "开始做某事",
+      "door": 3
+    },
+    {
+      "id": "u56-45",
+      "no": 45,
+      "type": "word",
+      "text": "Ohio",
+      "phonetic": "/əʊˈhaɪəʊ/",
+      "pos": "n.",
+      "meaning": "俄亥俄州（美国）",
+      "door": 3
+    },
+    {
+      "id": "u56-46",
+      "no": 46,
+      "type": "word",
+      "text": "skill",
+      "phonetic": "/skɪl/",
+      "pos": "n.",
+      "meaning": "技能；技巧",
+      "door": 3
+    },
+    {
+      "id": "u56-47",
+      "no": 47,
+      "type": "word",
+      "text": "offer",
+      "phonetic": "/ˈɒfə(r)/",
+      "pos": "v. & n.",
+      "meaning": "提供；供应；提议",
+      "door": 3
+    },
+    {
+      "id": "u56-48",
+      "no": 48,
+      "type": "word",
+      "text": "type",
+      "phonetic": "/taɪp/",
+      "pos": "n.",
+      "meaning": "种类；类型",
+      "door": 3
+    },
+    {
+      "id": "u56-49",
+      "no": 49,
+      "type": "word",
+      "text": "business",
+      "phonetic": "/ˈbɪznəs/",
+      "pos": "n.",
+      "meaning": "商业；公司；生意",
+      "door": 3
+    }
+  ]
+}

@@ -1,0 +1,1192 @@
+{
+  "unitId": "u7u8-scientists-inventions",
+  "title": "U7 Great scientists & U8 Useful inventions 词汇讲义",
+  "sourceImages": [
+    "IMG_1296.JPG"
+  ],
+  "unitNotes": "词汇讲义单元。收录主词条+延伸词+短语搭配+例句。",
+  "entries": [
+    {
+      "id": "u78-01",
+      "no": 1,
+      "type": "word",
+      "text": "scientist",
+      "phonetic": "/ˈsaɪəntɪst/",
+      "pos": "n.",
+      "meaning": "科学家",
+      "door": 10,
+      "examples": [
+        {
+          "en": "It's really cool to be a scientist!",
+          "zh": "成为一名科学家真的很酷！"
+        },
+        {
+          "en": "Yuan Longping was a great scientist.",
+          "zh": "袁隆平是一位伟大的科学家。"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a rocket scientist",
+          "meaning": "火箭科学家"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "science",
+          "phonetic": "/ˈsaɪəns/",
+          "pos": "n.",
+          "meaning": "科学"
+        },
+        {
+          "text": "scientific",
+          "phonetic": "/ˌsaɪənˈtɪfɪk/",
+          "pos": "adj.",
+          "meaning": "科学的"
+        },
+        {
+          "text": "scientifically",
+          "phonetic": "/ˌsaɪənˈtɪfɪkli/",
+          "pos": "adv.",
+          "meaning": "科学地"
+        }
+      ]
+    },
+    {
+      "id": "u78-02",
+      "no": 2,
+      "type": "word",
+      "text": "human",
+      "phonetic": "/ˈhjuːmən/",
+      "pos": "n.",
+      "meaning": "人；人类；adj. 人的；人类的",
+      "door": 10,
+      "examples": [
+        {
+          "en": "Science opens a window for humans.",
+          "zh": "科学为人类打开了一扇窗。"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "human beings",
+          "meaning": "人类"
+        },
+        {
+          "text": "human rights",
+          "meaning": "人权"
+        }
+      ]
+    },
+    {
+      "id": "u78-03",
+      "no": 3,
+      "type": "word",
+      "text": "humanity",
+      "phonetic": "/hjuːˈmænəti/",
+      "pos": "n.",
+      "meaning": "人性",
+      "door": 10,
+      "extensions": [
+        {
+          "text": "humanize",
+          "phonetic": "/ˈhjuːmənaɪz/",
+          "pos": "v.",
+          "meaning": "使人性化"
+        },
+        {
+          "text": "humankind",
+          "phonetic": "/ˌhjuːmənˈkaɪnd/",
+          "pos": "n.",
+          "meaning": "人类（总称）"
+        },
+        {
+          "text": "explore",
+          "phonetic": "/ɪkˈsplɔː(r)/",
+          "pos": "v.",
+          "meaning": "探索；探险"
+        },
+        {
+          "text": "exploration",
+          "phonetic": "/ˌekspləˈreɪʃn/",
+          "pos": "n.",
+          "meaning": "探索"
+        },
+        {
+          "text": "explorer",
+          "phonetic": "/ɪkˈsplɔːrə(r)/",
+          "pos": "n.",
+          "meaning": "探险家；探索者"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "explore the universe",
+          "meaning": "探索宇宙"
+        },
+        {
+          "text": "explore new ways",
+          "meaning": "探索新方法"
+        },
+        {
+          "text": "space exploration",
+          "meaning": "太空探索"
+        }
+      ]
+    },
+    {
+      "id": "u78-04",
+      "no": 4,
+      "type": "word",
+      "text": "outer space",
+      "phonetic": "/ˈaʊtə speɪs/",
+      "pos": "n.",
+      "meaning": "外层空间；太空（U）",
+      "door": 10,
+      "examples": [
+        {
+          "en": "Science helps us explore outer space.",
+          "zh": "科学帮助我们探索外太空。"
+        }
+      ],
+      "notes": "构词：outer 外面的 + space 空间",
+      "phrases": [
+        {
+          "text": "space station",
+          "meaning": "空间站"
+        },
+        {
+          "text": "spacecraft",
+          "meaning": "宇宙飞船"
+        },
+        {
+          "text": "spacesuit",
+          "meaning": "宇航服"
+        }
+      ]
+    },
+    {
+      "id": "u78-05",
+      "no": 5,
+      "type": "word",
+      "text": "discover",
+      "phonetic": "/dɪˈskʌvə(r)/",
+      "pos": "v.",
+      "meaning": "发现（过去式/过去分词 discovered）",
+      "door": 10,
+      "examples": [
+        {
+          "en": "Columbus discovered America in 1492.",
+          "zh": "哥伦布于1492年发现了美洲大陆。"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "make a discovery",
+          "meaning": "作出发现"
+        },
+        {
+          "text": "a great discovery",
+          "meaning": "一个伟大的发现"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "discovery",
+          "phonetic": "/dɪˈskʌvəri/",
+          "pos": "n.",
+          "meaning": "发现；发现物"
+        },
+        {
+          "text": "discoverer",
+          "phonetic": "/dɪˈskʌvərə(r)/",
+          "pos": "n.",
+          "meaning": "发现者"
+        }
+      ]
+    },
+    {
+      "id": "u78-06",
+      "no": 6,
+      "type": "word",
+      "text": "gravity",
+      "phonetic": "/ˈɡrævəti/",
+      "pos": "n.",
+      "meaning": "重力；地球引力（不可数）",
+      "door": 10,
+      "examples": [
+        {
+          "en": "The apple falls to the ground because of gravity.",
+          "zh": "苹果因为重力掉到地上。"
+        },
+        {
+          "en": "And later he discovered the Law of Gravity.",
+          "zh": "后来他发现了万有引力定律。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "gravitational",
+          "phonetic": "/ˌɡrævɪˈteɪʃənl/",
+          "pos": "adj.",
+          "meaning": "重力的；引力的"
+        }
+      ]
+    },
+    {
+      "id": "u78-07",
+      "no": 7,
+      "type": "word",
+      "text": "rocket",
+      "phonetic": "/ˈrɒkɪt/",
+      "pos": "n.",
+      "meaning": "火箭；v. 飞速上升",
+      "door": 10,
+      "examples": [
+        {
+          "en": "Look, Qian Xuesen, a rocket scientist.",
+          "zh": "看，钱学森，一位火箭科学家。"
+        },
+        {
+          "en": "Prices rocketed overnight.",
+          "zh": "价格一夜之间飞速上涨。"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "launch a rocket",
+          "meaning": "发射火箭"
+        }
+      ]
+    },
+    {
+      "id": "u78-08",
+      "no": 8,
+      "type": "word",
+      "text": "fan",
+      "phonetic": "/fæn/",
+      "pos": "n.",
+      "meaning": "迷；狂热爱好者（复数 fans）",
+      "door": 10,
+      "examples": [
+        {
+          "en": "I'm a big fan of him.",
+          "zh": "我是他的超级粉丝。"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a big fan of...",
+          "meaning": "……的超级粉丝"
+        },
+        {
+          "text": "a fan club",
+          "meaning": "粉丝俱乐部"
+        },
+        {
+          "text": "a fan letter",
+          "meaning": "粉丝来信"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "fanatical",
+          "phonetic": "/fəˈnætɪkl/",
+          "pos": "adj.",
+          "meaning": "狂热的"
+        },
+        {
+          "text": "fanatic",
+          "phonetic": "/fəˈnætɪk/",
+          "pos": "n.",
+          "meaning": "狂热者；入迷的"
+        }
+      ]
+    },
+    {
+      "id": "u78-09",
+      "no": 9,
+      "type": "word",
+      "text": "research",
+      "phonetic": "/rɪˈsɜːtʃ/",
+      "pos": "n.",
+      "meaning": "研究；调查（U）；v. 研究；调查",
+      "door": 11,
+      "phrases": [
+        {
+          "text": "do research on...",
+          "meaning": "对……进行研究"
+        },
+        {
+          "text": "medical research",
+          "meaning": "医学研究"
+        },
+        {
+          "text": "research center",
+          "meaning": "研究中心"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "researcher",
+          "phonetic": "/rɪˈsɜːtʃə(r)/",
+          "pos": "n.",
+          "meaning": "研究者"
+        },
+        {
+          "text": "researchable",
+          "phonetic": "/rɪˈsɜːtʃəbl/",
+          "pos": "adj.",
+          "meaning": "可研究的"
+        }
+      ]
+    },
+    {
+      "id": "u78-10",
+      "no": 10,
+      "type": "word",
+      "text": "hybrid rice",
+      "phonetic": "/ˈhaɪbrɪd raɪs/",
+      "pos": "n.",
+      "meaning": "杂交水稻（不可数）",
+      "door": 11,
+      "examples": [
+        {
+          "en": "Mr Yuan began to do research on hybrid rice.",
+          "zh": "袁隆平爷爷开始研究杂交水稻。"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "grow hybrid rice",
+          "meaning": "种植杂交水稻"
+        },
+        {
+          "text": "the father of hybrid rice",
+          "meaning": "杂交水稻之父"
+        },
+        {
+          "text": "hybrid car",
+          "meaning": "混合动力汽车"
+        }
+      ],
+      "notes": "构词：hybrid n. 杂交种；adj. 混合的；rice n. 稻米"
+    },
+    {
+      "id": "u78-11",
+      "no": 11,
+      "type": "word",
+      "text": "creative",
+      "phonetic": "/kriˈeɪtɪv/",
+      "pos": "adj.",
+      "meaning": "创造性的；有创造力的",
+      "door": 11,
+      "examples": [
+        {
+          "en": "The creation of the internet changed the world.",
+          "zh": "互联网的创造改变了世界。"
+        },
+        {
+          "en": "Children have strong creativity.",
+          "zh": "孩子们有很强的创造力。"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "creative thinking",
+          "meaning": "创造性思维"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "create",
+          "phonetic": "/kriˈeɪt/",
+          "pos": "v.",
+          "meaning": "创造；制作"
+        },
+        {
+          "text": "creation",
+          "phonetic": "/kriˈeɪʃn/",
+          "pos": "n.",
+          "meaning": "创造；作品"
+        },
+        {
+          "text": "creativity",
+          "phonetic": "/ˌkriːeɪˈtɪvəti/",
+          "pos": "n.",
+          "meaning": "创造力；创意"
+        },
+        {
+          "text": "creator",
+          "phonetic": "/kriˈeɪtə(r)/",
+          "pos": "n.",
+          "meaning": "创造者"
+        }
+      ]
+    },
+    {
+      "id": "u78-12",
+      "no": 12,
+      "type": "word",
+      "text": "hard-working",
+      "phonetic": "/ˌhɑːd ˈwɜːkɪŋ/",
+      "pos": "adj.",
+      "meaning": "勤勉的；努力工作的（常用于描述人）",
+      "door": 11,
+      "examples": [
+        {
+          "en": "He was creative and hard-working.",
+          "zh": "他既有创造力又勤奋。"
+        },
+        {
+          "en": "He works hard on his studies.",
+          "zh": "他努力学习。"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a hard-working student",
+          "meaning": "勤奋的学生"
+        }
+      ],
+      "notes": "构词：work hard 动词短语 努力工作/学习"
+    },
+    {
+      "id": "u78-13",
+      "no": 13,
+      "type": "phrase",
+      "text": "be known as",
+      "phonetic": "/biː nəʊn æz/",
+      "pos": "phr.",
+      "meaning": "被认为是；被称为",
+      "door": 11,
+      "examples": [
+        {
+          "en": "Mr Yuan is known as the 'Father of Hybrid Rice'.",
+          "zh": "袁先生被称为'杂交水稻之父'。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "know",
+          "phonetic": "/nəʊ/",
+          "pos": "v.",
+          "meaning": "知道"
+        },
+        {
+          "text": "known",
+          "phonetic": "/nəʊn/",
+          "pos": "adj.",
+          "meaning": "著名的（过去分词）"
+        },
+        {
+          "text": "well-known",
+          "phonetic": "/ˌwel ˈnəʊn/",
+          "pos": "adj.",
+          "meaning": "众所周知的"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be known / well-known for...",
+          "meaning": "因……而闻名"
+        }
+      ]
+    },
+    {
+      "id": "u78-14",
+      "no": 14,
+      "type": "word",
+      "text": "invent",
+      "phonetic": "/ɪnˈvent/",
+      "pos": "v.",
+      "meaning": "发明；创造（过去式/过去分词 invented）",
+      "door": 11,
+      "examples": [
+        {
+          "en": "Edison invented the light bulb in 1879.",
+          "zh": "爱迪生在1879年发明了电灯泡。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "invention",
+          "phonetic": "/ɪnˈvenʃn/",
+          "pos": "n.",
+          "meaning": "发明；发明物"
+        },
+        {
+          "text": "inventor",
+          "phonetic": "/ɪnˈventə(r)/",
+          "pos": "n.",
+          "meaning": "发明家；创造者"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "invent something",
+          "meaning": "发明某物"
+        }
+      ]
+    },
+    {
+      "id": "u78-15",
+      "no": 15,
+      "type": "word",
+      "text": "practical",
+      "phonetic": "/ˈpræktɪkl/",
+      "pos": "adj.",
+      "meaning": "有用的；实用的",
+      "door": 11,
+      "examples": [
+        {
+          "en": "This is a practical tool.",
+          "zh": "这是一个实用的工具。"
+        },
+        {
+          "en": "He and his assistant invented the first practical telephone.",
+          "zh": "他和助手发明了世界上第一台实用电话。"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "practical skills",
+          "meaning": "实用技能"
+        },
+        {
+          "text": "practical experience",
+          "meaning": "实践经验"
+        },
+        {
+          "text": "put... into practice",
+          "meaning": "付诸实践"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "practice",
+          "phonetic": "/ˈpræktɪs/",
+          "pos": "n./v.",
+          "meaning": "练习；实践"
+        },
+        {
+          "text": "practically",
+          "phonetic": "/ˈpræktɪkli/",
+          "pos": "adv.",
+          "meaning": "实际上；几乎"
+        }
+      ]
+    },
+    {
+      "id": "u78-16",
+      "no": 16,
+      "type": "phrase",
+      "text": "the deaf",
+      "phonetic": "/ðə def/",
+      "pos": "n.",
+      "meaning": "失聪的人（复数含义）",
+      "door": 11,
+      "examples": [
+        {
+          "en": "He invented a lot of techniques to help the deaf.",
+          "zh": "他发明了很多技术来帮助失聪人士。"
+        },
+        {
+          "en": "The deaf need special care.",
+          "zh": "失聪人士需要特殊照顾。"
+        }
+      ],
+      "notes": "the + 形容词 表示一类人，作主语时谓语动词用复数",
+      "extensions": [
+        {
+          "text": "deaf",
+          "phonetic": "/def/",
+          "pos": "adj.",
+          "meaning": "聋的"
+        },
+        {
+          "text": "deafness",
+          "phonetic": "/ˈdefnəs/",
+          "pos": "n.",
+          "meaning": "耳聋"
+        },
+        {
+          "text": "deafen",
+          "phonetic": "/ˈdefn/",
+          "pos": "v.",
+          "meaning": "使震聋"
+        },
+        {
+          "text": "deafening",
+          "phonetic": "/ˈdefnɪŋ/",
+          "pos": "adj.",
+          "meaning": "震耳欲聋的"
+        }
+      ]
+    },
+    {
+      "id": "u78-17",
+      "no": 17,
+      "type": "word",
+      "text": "invention",
+      "phonetic": "/ɪnˈvenʃn/",
+      "pos": "n.",
+      "meaning": "发明；创造（可数名词）",
+      "door": 12,
+      "examples": [
+        {
+          "en": "The wheel is a great invention.",
+          "zh": "轮子是一项伟大的发明。"
+        },
+        {
+          "en": "Great inventions are everywhere around us.",
+          "zh": "伟大的发明就在我们身边。"
+        }
+      ]
+    },
+    {
+      "id": "u78-18",
+      "no": 18,
+      "type": "word",
+      "text": "problem",
+      "phonetic": "/ˈprɒbləm/",
+      "pos": "n.",
+      "meaning": "难题；问题",
+      "door": 12,
+      "examples": [
+        {
+          "en": "People invent things to solve problems.",
+          "zh": "人们发明各种东西是为了解决生活中遇到的问题。"
+        },
+        {
+          "en": "He has problems (in) remembering people's names.",
+          "zh": "他很难记住别人的名字。"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "have problems (in) doing sth.",
+          "meaning": "做某事有困难"
+        },
+        {
+          "text": "no problem",
+          "meaning": "没问题"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "problematic",
+          "phonetic": "/ˌprɒbləˈmætɪk/",
+          "pos": "adj.",
+          "meaning": "有问题的；成问题的"
+        }
+      ]
+    },
+    {
+      "id": "u78-19",
+      "no": 19,
+      "type": "word",
+      "text": "wheel",
+      "phonetic": "/wiːl/",
+      "pos": "n.",
+      "meaning": "轮子；车轮",
+      "door": 12,
+      "examples": [
+        {
+          "en": "The wheel is one of the most important inventions.",
+          "zh": "轮子是人类历史上最重要的发明之一。"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "wheel a cart",
+          "meaning": "推手推车"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "wheel",
+          "phonetic": "/wiːl/",
+          "pos": "v.",
+          "meaning": "推（车）；拉（车）"
+        },
+        {
+          "text": "wheeled",
+          "phonetic": "/wiːld/",
+          "pos": "adj.",
+          "meaning": "装有轮子的"
+        }
+      ]
+    },
+    {
+      "id": "u78-20",
+      "no": 20,
+      "type": "phrase",
+      "text": "ancient times",
+      "phonetic": "/ˈeɪnʃənt taɪmz/",
+      "pos": "phr.",
+      "meaning": "古代；古时候",
+      "door": 12,
+      "examples": [
+        {
+          "en": "In ancient times, people lived in caves.",
+          "zh": "在古代，人们居住在洞穴中。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "ancient",
+          "phonetic": "/ˈeɪnʃənt/",
+          "pos": "adj.",
+          "meaning": "古代的；古老的"
+        }
+      ]
+    },
+    {
+      "id": "u78-21",
+      "no": 21,
+      "type": "word",
+      "text": "printing",
+      "phonetic": "/ˈprɪntɪŋ/",
+      "pos": "n.",
+      "meaning": "印刷术；打印（不可数名词）",
+      "door": 12,
+      "examples": [
+        {
+          "en": "Around 1041, Bi Sheng invented movable-type printing.",
+          "zh": "大约在1041年，毕昇发明了活字印刷术。"
+        },
+        {
+          "en": "Can you print this for me?",
+          "zh": "你能帮我打印这个吗？"
+        },
+        {
+          "en": "The printer is out of ink.",
+          "zh": "打印机没墨了。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "print",
+          "phonetic": "/prɪnt/",
+          "pos": "v.",
+          "meaning": "印刷；打印"
+        },
+        {
+          "text": "printer",
+          "phonetic": "/ˈprɪntə(r)/",
+          "pos": "n.",
+          "meaning": "打印机；印刷工"
+        }
+      ]
+    },
+    {
+      "id": "u78-22",
+      "no": 22,
+      "type": "word",
+      "text": "television",
+      "phonetic": "/ˈtelɪvɪʒn/",
+      "pos": "n.",
+      "meaning": "电视机",
+      "door": 12,
+      "examples": [
+        {
+          "en": "The game was televised live.",
+          "zh": "这场比赛被电视直播了。"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "watch television / TV",
+          "meaning": "看电视"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "televise",
+          "phonetic": "/ˈtelɪvaɪz/",
+          "pos": "v.",
+          "meaning": "用电视播放"
+        }
+      ]
+    },
+    {
+      "id": "u78-23",
+      "no": 23,
+      "type": "word",
+      "text": "robot",
+      "phonetic": "/ˈrəʊbɒt/",
+      "pos": "n.",
+      "meaning": "机器人（可数名词）",
+      "door": 12,
+      "examples": [
+        {
+          "en": "There are many great inventions, such as televisions and robots.",
+          "zh": "有许多伟大的发明，如电视机和机器人。"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a cleaning robot",
+          "meaning": "扫地机器人"
+        },
+        {
+          "text": "robotic technology",
+          "meaning": "机器人技术"
+        },
+        {
+          "text": "robotic surgery",
+          "meaning": "机器人手术"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "robotic",
+          "phonetic": "/rəʊˈbɒtɪk/",
+          "pos": "adj.",
+          "meaning": "机器人的"
+        },
+        {
+          "text": "robotics",
+          "phonetic": "/rəʊˈbɒtɪks/",
+          "pos": "n.",
+          "meaning": "机器人技术"
+        }
+      ]
+    },
+    {
+      "id": "u78-24",
+      "no": 24,
+      "type": "word",
+      "text": "useful",
+      "phonetic": "/ˈjuːsfl/",
+      "pos": "adj.",
+      "meaning": "有用的；有帮助的",
+      "door": 13,
+      "examples": [
+        {
+          "en": "This is a useful invention.",
+          "zh": "这是一项有用的发明。"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a useful invention",
+          "meaning": "一项有用的发明"
+        },
+        {
+          "text": "make use of",
+          "meaning": "利用"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "use",
+          "phonetic": "/juːz/",
+          "pos": "n./v.",
+          "meaning": "使用"
+        },
+        {
+          "text": "useless",
+          "phonetic": "/ˈjuːsləs/",
+          "pos": "adj.",
+          "meaning": "无用的"
+        },
+        {
+          "text": "user",
+          "phonetic": "/ˈjuːzə(r)/",
+          "pos": "n.",
+          "meaning": "使用者"
+        }
+      ]
+    },
+    {
+      "id": "u78-25",
+      "no": 25,
+      "type": "phrase",
+      "text": "fresh water",
+      "phonetic": "/freʃ ˈwɔːtə(r)/",
+      "pos": "n.",
+      "meaning": "淡水（不可数名词）",
+      "door": 13,
+      "examples": [
+        {
+          "en": "Then you have clean fresh water!",
+          "zh": "那你就有了干净的淡水！"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "fresh",
+          "phonetic": "/freʃ/",
+          "pos": "adj.",
+          "meaning": "新鲜的；淡水的"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "fresh air",
+          "meaning": "新鲜空气"
+        }
+      ]
+    },
+    {
+      "id": "u78-26",
+      "no": 26,
+      "type": "phrase",
+      "text": "electric fan",
+      "phonetic": "/ɪˈlektrɪk fæn/",
+      "pos": "n.",
+      "meaning": "电风扇（可数名词）",
+      "door": 13,
+      "examples": [
+        {
+          "en": "The electric fan is on.",
+          "zh": "电风扇开了。"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "turn on the electric fan",
+          "meaning": "打开电风扇"
+        }
+      ],
+      "notes": "构词：electric adj. 电的；用电的；fan n. 风扇；迷"
+    },
+    {
+      "id": "u78-27",
+      "no": 27,
+      "type": "word",
+      "text": "juicer",
+      "phonetic": "/ˈdʒuːsə(r)/",
+      "pos": "n.",
+      "meaning": "榨汁机（可数名词）",
+      "door": 13,
+      "examples": [
+        {
+          "en": "We can find wheels in a juicer.",
+          "zh": "我们能在榨汁机里找到轮子。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "juice",
+          "phonetic": "/dʒuːs/",
+          "pos": "n.",
+          "meaning": "果汁；蔬菜汁（U）"
+        },
+        {
+          "text": "juicy",
+          "phonetic": "/ˈdʒuːsi/",
+          "pos": "adj.",
+          "meaning": "多汁的"
+        }
+      ]
+    },
+    {
+      "id": "u78-28",
+      "no": 28,
+      "type": "phrase",
+      "text": "washing machine",
+      "phonetic": "/ˈwɒʃɪŋ məˈʃiːn/",
+      "pos": "n.",
+      "meaning": "洗衣机（可数名词）",
+      "door": 13,
+      "examples": [
+        {
+          "en": "My mother uses a new washing machine to wash our dirty clothes every weekend.",
+          "zh": "我妈妈每个周末都用新洗衣机洗我们的脏衣服。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "wash",
+          "phonetic": "/wɒʃ/",
+          "pos": "v.",
+          "meaning": "洗"
+        },
+        {
+          "text": "washer",
+          "phonetic": "/ˈwɒʃə(r)/",
+          "pos": "n.",
+          "meaning": "洗衣机；洗涤器"
+        },
+        {
+          "text": "machine",
+          "phonetic": "/məˈʃiːn/",
+          "pos": "n.",
+          "meaning": "机器"
+        }
+      ]
+    },
+    {
+      "id": "u78-29",
+      "no": 29,
+      "type": "word",
+      "text": "housework",
+      "phonetic": "/ˈhaʊswɜːk/",
+      "pos": "n.",
+      "meaning": "家务劳动",
+      "door": 13,
+      "examples": [
+        {
+          "en": "Wheels make housework much easier.",
+          "zh": "轮子让家务变得轻松多了。"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "do housework",
+          "meaning": "做家务"
+        }
+      ],
+      "notes": "构词：house n. 房子 + work n. 工作（合成词）",
+      "extensions": [
+        {
+          "text": "housewife",
+          "phonetic": "/ˈhaʊswaɪf/",
+          "pos": "n.",
+          "meaning": "家庭主妇"
+        },
+        {
+          "text": "housekeeper",
+          "phonetic": "/ˈhaʊskiːpə(r)/",
+          "pos": "n.",
+          "meaning": "管家"
+        }
+      ]
+    },
+    {
+      "id": "u78-30",
+      "no": null,
+      "type": "word",
+      "text": "technique",
+      "phonetic": "/tekˈniːk/",
+      "pos": "n.",
+      "meaning": "技术；技巧",
+      "door": 11,
+      "examples": [
+        {
+          "en": "He invented a lot of techniques to help the deaf.",
+          "zh": "他发明了很多技术来帮助失聪人士。"
+        }
+      ]
+    },
+    {
+      "id": "u78-31",
+      "no": null,
+      "type": "word",
+      "text": "comfortably",
+      "phonetic": "/ˈkʌmftəbli/",
+      "pos": "adv.",
+      "meaning": "舒服地",
+      "door": 13,
+      "examples": [
+        {
+          "en": "We can live comfortably with these inventions.",
+          "zh": "有了这些发明，我们可以过得很舒服。"
+        }
+      ]
+    },
+    {
+      "id": "u78-32",
+      "no": null,
+      "type": "phrase",
+      "text": "on one's own",
+      "phonetic": "/ɒn wʌnz əʊn/",
+      "pos": "phr.",
+      "meaning": "独立地；独自",
+      "door": 10,
+      "examples": [
+        {
+          "en": "He finished the project on his own.",
+          "zh": "他独自完成了这个项目。"
+        }
+      ]
+    },
+    {
+      "id": "u78-33",
+      "no": null,
+      "type": "phrase",
+      "text": "allow somebody to do something",
+      "phonetic": "/əˈlaʊ ˈsʌmbədi tuː duː ˈsʌmθɪŋ/",
+      "pos": "phr.",
+      "meaning": "允许某人做某事",
+      "door": 10,
+      "examples": [
+        {
+          "en": "My parents allow me to watch TV after homework.",
+          "zh": "我父母允许我做完作业后看电视。"
+        }
+      ]
+    },
+    {
+      "id": "u78-34",
+      "no": null,
+      "type": "phrase",
+      "text": "be able to do",
+      "phonetic": "/biː ˈeɪbl tuː duː/",
+      "pos": "phr.",
+      "meaning": "能够做某事",
+      "door": 11,
+      "examples": [
+        {
+          "en": "I am able to solve this problem.",
+          "zh": "我能够解决这个问题。"
+        }
+      ]
+    },
+    {
+      "id": "u78-35",
+      "no": null,
+      "type": "phrase",
+      "text": "by itself / yourself / myself",
+      "phonetic": "/baɪ ɪtˈself jɔːˈself maɪˈself/",
+      "pos": "phr.",
+      "meaning": "独自；靠自己",
+      "door": 11,
+      "examples": [
+        {
+          "en": "The robot can work by itself.",
+          "zh": "这个机器人可以独自工作。"
+        }
+      ]
+    },
+    {
+      "id": "u78-36",
+      "no": null,
+      "type": "word",
+      "text": "since",
+      "phonetic": "/sɪns/",
+      "pos": "conj./prep.",
+      "meaning": "自从；因为；既然",
+      "door": 12,
+      "examples": [
+        {
+          "en": "I have lived here since 2010.",
+          "zh": "我从2010年起就住在这里。"
+        },
+        {
+          "en": "Since you are here, let's start.",
+          "zh": "既然你来了，我们就开始吧。"
+        }
+      ]
+    },
+    {
+      "id": "u78-37",
+      "no": null,
+      "type": "phrase",
+      "text": "it takes somebody (time) to do something",
+      "phonetic": "/ɪt teɪks ˈsʌmbədi taɪm tuː duː ˈsʌmθɪŋ/",
+      "pos": "phr.",
+      "meaning": "做某事花费某人多长时间",
+      "door": 13,
+      "examples": [
+        {
+          "en": "It takes me 30 minutes to walk to school.",
+          "zh": "我走路去学校要花30分钟。"
+        }
+      ]
+    }
+  ]
+}

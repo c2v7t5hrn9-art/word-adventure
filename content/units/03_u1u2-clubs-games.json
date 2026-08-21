@@ -1,0 +1,770 @@
+{
+  "unitId": "u1u2-clubs-games",
+  "title": "Unit 1 Clubs in our school & Unit 2 Traditional games 词汇词组练习",
+  "sourceImages": [
+    "IMG_1230.JPG",
+    "IMG_1231.JPG",
+    "IMG_1232.JPG",
+    "IMG_1233.JPG"
+  ],
+  "pageMap": {
+    "IMG_1230.JPG": 1,
+    "IMG_1231.JPG": 2,
+    "IMG_1232.JPG": 3,
+    "IMG_1233.JPG": 4
+  },
+  "unitNotes": "音标口诀：双元音有八个，前重后轻要滑动；/əʊ/ /aʊ/ 口形变，/eɪ/ /aɪ/ /ɔɪ/ 口合拢，/ɪə/ /eə/ /ʊə/ 集中式。学好音标走天下！",
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "She is interested in ______ (garden) and grows many plants at home.",
+      "answer": "gardening"
+    },
+    {
+      "type": "fill",
+      "prompt": "______ (tell) stories and often makes us laugh",
+      "answer": "（句子在照片边缘被裁切，待补全）"
+    }
+  ],
+  "entries": [
+    {
+      "id": "u12-01",
+      "no": 1,
+      "type": "word",
+      "text": "gardening",
+      "phonetic": "/ˈɡɑːdnɪŋ/",
+      "pos": "n.(U)",
+      "meaning": "园艺；园艺活动",
+      "door": 7,
+      "phrases": [
+        {
+          "text": "enjoy/love/like gardening",
+          "meaning": "喜欢园艺"
+        },
+        {
+          "text": "be into gardening",
+          "meaning": "热衷于园艺"
+        },
+        {
+          "text": "garden every morning",
+          "meaning": "每天早上做园艺"
+        },
+        {
+          "text": "work in the garden",
+          "meaning": "在花园里干活"
+        }
+      ],
+      "examples": [
+        {
+          "en": "She enjoys gardening in her free time.",
+          "zh": "她空闲时喜欢园艺。"
+        },
+        {
+          "en": "The Gardening Club is on Wednesday.",
+          "zh": "园艺俱乐部在周三活动。"
+        },
+        {
+          "en": "My grandma gardens every morning.",
+          "zh": "我奶奶每天早上打理花园。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "garden",
+          "pos": "v. 从事园艺；n. 花园/菜园",
+          "meaning": "从事园艺；花园"
+        }
+      ]
+    },
+    {
+      "id": "u12-02",
+      "no": 2,
+      "type": "word",
+      "text": "storytelling",
+      "phonetic": "/ˈstɔːritelɪŋ/",
+      "pos": "n.(U)",
+      "meaning": "讲故事；说故事（行为/艺术）",
+      "door": 7,
+      "phrases": [
+        {
+          "text": "be good at storytelling",
+          "meaning": "擅长讲故事"
+        },
+        {
+          "text": "do well in storytelling",
+          "meaning": "擅长讲故事"
+        },
+        {
+          "text": "tell an interesting story",
+          "meaning": "讲一个有趣的故事"
+        }
+      ],
+      "examples": [
+        {
+          "en": "Lily is good at storytelling to her little brother.",
+          "zh": "莉莉很会给弟弟讲故事。"
+        },
+        {
+          "en": "He is a wonderful storyteller.",
+          "zh": "他是个出色的故事讲述者。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "storyteller",
+          "pos": "n.",
+          "meaning": "讲故事的人"
+        }
+      ]
+    },
+    {
+      "id": "u12-03",
+      "no": 3,
+      "type": "word",
+      "text": "photography",
+      "phonetic": "/fəˈtɒɡrəfi/",
+      "pos": "n.(U)",
+      "meaning": "摄影；摄影术",
+      "door": 7,
+      "phrases": [
+        {
+          "text": "take up photography",
+          "meaning": "开始学摄影"
+        },
+        {
+          "text": "be interested in photography",
+          "meaning": "对摄影感兴趣"
+        },
+        {
+          "text": "take a photo",
+          "meaning": "拍照"
+        },
+        {
+          "text": "professional photographer",
+          "meaning": "专业摄影师"
+        }
+      ],
+      "examples": [
+        {
+          "en": "Photography is one of my favorite hobbies.",
+          "zh": "摄影是我最喜欢的爱好之一。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "photo(s)",
+          "pos": "n.（可数）",
+          "meaning": "照片"
+        },
+        {
+          "text": "photographer",
+          "pos": "n.",
+          "meaning": "摄影师"
+        },
+        {
+          "text": "photographic",
+          "pos": "adj.",
+          "meaning": "摄影的"
+        }
+      ],
+      "notes": "讲义原句 be interesting in photography 已订正为 be interested in photography"
+    },
+    {
+      "id": "u12-04",
+      "no": 4,
+      "type": "word",
+      "text": "join",
+      "phonetic": "/dʒɔɪn/",
+      "pos": "v.",
+      "meaning": "参加；加入（成为一员）",
+      "door": 7,
+      "phrases": [
+        {
+          "text": "join a club",
+          "meaning": "加入俱乐部"
+        },
+        {
+          "text": "join somebody",
+          "meaning": "加入某人"
+        },
+        {
+          "text": "join in",
+          "meaning": "参加某项活动"
+        }
+      ],
+      "examples": [
+        {
+          "en": "Can I join the Kung Fu Club?",
+          "zh": "我能加入功夫俱乐部吗？"
+        },
+        {
+          "en": "Can I join you?",
+          "zh": "我能加入你们吗？"
+        },
+        {
+          "en": "We all joined in the game.",
+          "zh": "我们都参加了这个游戏。"
+        }
+      ]
+    },
+    {
+      "id": "u12-05",
+      "no": 5,
+      "type": "word",
+      "text": "view",
+      "phonetic": "/vjuː/",
+      "pos": "n.（可数）",
+      "meaning": "景色；风景；视野",
+      "door": 7,
+      "phrases": [
+        {
+          "text": "a view of",
+          "meaning": "……的景色"
+        },
+        {
+          "text": "night view",
+          "meaning": "夜景"
+        },
+        {
+          "text": "review lesson",
+          "meaning": "复习功课"
+        },
+        {
+          "text": "a film review",
+          "meaning": "影评"
+        }
+      ],
+      "examples": [
+        {
+          "en": "The view from the mountain is beautiful.",
+          "zh": "从山上看景色很美。"
+        },
+        {
+          "en": "Wow, the night view of the Huangpu River.",
+          "zh": "哇，黄浦江的夜景。"
+        },
+        {
+          "en": "Let's review what we learned today.",
+          "zh": "我们复习一下今天学的内容吧。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "viewer",
+          "pos": "n.",
+          "meaning": "观看者"
+        },
+        {
+          "text": "review",
+          "pos": "v./n.",
+          "meaning": "复习/评论"
+        }
+      ]
+    },
+    {
+      "id": "u12-06",
+      "no": 6,
+      "type": "word",
+      "text": "pottery",
+      "phonetic": "/ˈpɒtəri/",
+      "pos": "n.(U)",
+      "meaning": "制陶手艺；陶器（集合名词）",
+      "door": 7,
+      "examples": [
+        {
+          "en": "Lily is learning pottery.",
+          "zh": "莉莉正在学陶艺。"
+        },
+        {
+          "en": "At the Pottery Club, we make brush pots.",
+          "zh": "在陶艺社，我们制作笔筒。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "potter",
+          "pos": "n.",
+          "meaning": "陶工/陶艺家"
+        }
+      ]
+    },
+    {
+      "id": "u12-07",
+      "no": 7,
+      "type": "phrase",
+      "text": "how about",
+      "phonetic": "/haʊ əˈbaʊt/",
+      "pos": "口语短语",
+      "meaning": "……怎么样？（提建议或征求意见）",
+      "door": 7,
+      "examples": [
+        {
+          "en": "How about going for a walk?",
+          "zh": "去散个步怎么样？"
+        },
+        {
+          "en": "How about bamboo?",
+          "zh": "那竹子呢？"
+        },
+        {
+          "en": "How about trying again?",
+          "zh": "再试一次怎么样？"
+        },
+        {
+          "en": "What about your plan?",
+          "zh": "你的计划呢？"
+        }
+      ],
+      "notes": "常用结构 how about + n./pron./doing；【对比】what about 同样表建议，也可用于询问信息"
+    },
+    {
+      "id": "u12-08",
+      "no": 8,
+      "type": "word",
+      "text": "traditional",
+      "phonetic": "/trəˈdɪʃənl/",
+      "pos": "adj.",
+      "meaning": "传统的；惯例的",
+      "door": 7,
+      "phrases": [
+        {
+          "text": "traditional food",
+          "meaning": "传统美食"
+        },
+        {
+          "text": "traditional culture",
+          "meaning": "传统文化"
+        },
+        {
+          "text": "follow a tradition",
+          "meaning": "遵循传统"
+        }
+      ],
+      "examples": [
+        {
+          "en": "There will be all kinds of interesting traditional games on the sports field.",
+          "zh": "运动场上会有各种有趣的传统游戏。"
+        },
+        {
+          "en": "Respecting the elderly is a Chinese tradition.",
+          "zh": "尊老是中国人的传统。"
+        },
+        {
+          "en": "Traditionally, we eat dumplings on New Year's Eve.",
+          "zh": "按传统，我们除夕吃饺子。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "tradition",
+          "pos": "n.",
+          "meaning": "传统；惯例"
+        },
+        {
+          "text": "traditionally",
+          "pos": "adv.",
+          "meaning": "传统上"
+        }
+      ]
+    },
+    {
+      "id": "u12-09",
+      "no": 9,
+      "type": "word",
+      "text": "Chinese yo-yo",
+      "phonetic": "/tʃaɪˈniːz ˈjəʊjəʊ/",
+      "pos": "n.",
+      "meaning": "空竹（亦称 diabolo）",
+      "door": 8,
+      "examples": [
+        {
+          "en": "I can play Chinese yo-yo.",
+          "zh": "我会玩空竹。"
+        },
+        {
+          "en": "Chinese yo-yo playing is one of the traditional games.",
+          "zh": "玩空竹是传统游戏之一。"
+        }
+      ]
+    },
+    {
+      "id": "u12-10",
+      "no": 10,
+      "type": "word",
+      "text": "kite-flying",
+      "phonetic": "/ˈkaɪtflaɪɪŋ/",
+      "pos": "n.(U)",
+      "meaning": "放风筝（活动）",
+      "door": 8,
+      "phrases": [
+        {
+          "text": "fly a kite",
+          "meaning": "放风筝"
+        }
+      ],
+      "examples": [
+        {
+          "en": "Kite-flying is my favourite sport.",
+          "zh": "放风筝是我最喜欢的运动。"
+        }
+      ],
+      "notes": "【构词】kite 风筝 + fly 放飞；讲义原句 I want to play kite-flying 已订正为 fly a kite"
+    },
+    {
+      "id": "u12-11",
+      "no": 11,
+      "type": "word",
+      "text": "dragon dance",
+      "phonetic": "/ˈdræɡən dɑːns/",
+      "pos": "n.",
+      "meaning": "舞龙",
+      "door": 8,
+      "examples": [
+        {
+          "en": "The students in the dragon dance team are training hard.",
+          "zh": "舞龙队的同学们正在刻苦训练。"
+        }
+      ],
+      "notes": "【构词】dragon 龙 + dance 跳舞"
+    },
+    {
+      "id": "u12-12",
+      "no": 12,
+      "type": "word",
+      "text": "tug of war",
+      "phonetic": "/ˌtʌɡ əv ˈwɔː(r)/",
+      "pos": "n.",
+      "meaning": "拔河",
+      "door": 8,
+      "examples": [
+        {
+          "en": "Let's have a tug of war.",
+          "zh": "我们来拔河吧。"
+        },
+        {
+          "en": "Tug of war is a popular game.",
+          "zh": "拔河是一项很受欢迎的运动。"
+        },
+        {
+          "en": "He tugged at the rope with all his might.",
+          "zh": "他拼命地拉绳子。"
+        }
+      ],
+      "notes": "【构词】tug 用力拉 + war 战争"
+    },
+    {
+      "id": "u12-13",
+      "no": 13,
+      "type": "word",
+      "text": "hopscotch",
+      "phonetic": "/ˈhɒpskɒtʃ/",
+      "pos": "n.（不可数）",
+      "meaning": "跳房子（游戏）",
+      "door": 8,
+      "examples": [
+        {
+          "en": "The girls are playing hopscotch.",
+          "zh": "女孩们正在玩跳房子。"
+        }
+      ]
+    },
+    {
+      "id": "u12-14",
+      "no": 14,
+      "type": "word",
+      "text": "stamp",
+      "phonetic": "/stæmp/",
+      "pos": "v. 盖章；盖印；n. 邮票；印章",
+      "meaning": "盖章；邮票；印章",
+      "door": 8,
+      "phrases": [
+        {
+          "text": "collect stamps",
+          "meaning": "集邮"
+        }
+      ],
+      "examples": [
+        {
+          "en": "Please stamp your name on the paper.",
+          "zh": "请在纸上盖上你的名字。"
+        }
+      ]
+    },
+    {
+      "id": "u12-15",
+      "no": 15,
+      "type": "word",
+      "text": "prize",
+      "phonetic": "/praɪz/",
+      "pos": "n.",
+      "meaning": "奖励；奖品",
+      "door": 8,
+      "phrases": [
+        {
+          "text": "win a prize",
+          "meaning": "获奖"
+        },
+        {
+          "text": "get a prize",
+          "meaning": "得到奖品"
+        },
+        {
+          "text": "give a prize",
+          "meaning": "颁奖"
+        }
+      ],
+      "examples": [
+        {
+          "en": "You can win a prize if you try your best.",
+          "zh": "如果你全力以赴，就有可能赢得奖品。"
+        },
+        {
+          "en": "After playing each game, you can stamp your card and get a prize.",
+          "zh": "玩完每个游戏后，你可以在卡片上盖章并获得奖品。"
+        }
+      ]
+    },
+    {
+      "id": "u12-16",
+      "no": 16,
+      "type": "word",
+      "text": "style",
+      "phonetic": "/staɪl/",
+      "pos": "n.",
+      "meaning": "风格；方式；样式",
+      "door": 8,
+      "examples": [
+        {
+          "en": "This is a new style of dress.",
+          "zh": "这是一种新款式的连衣裙。"
+        },
+        {
+          "en": "It's the mother of many kung fu style.",
+          "zh": "它是许多功夫流派的母拳。"
+        },
+        {
+          "en": "She has a very stylish haircut.",
+          "zh": "她剪了个很时髦的发型。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "stylish",
+          "pos": "adj.",
+          "meaning": "时髦的；有格调的"
+        }
+      ]
+    },
+    {
+      "id": "u12-17",
+      "no": 17,
+      "type": "word",
+      "text": "action",
+      "phonetic": "/ˈækʃn/",
+      "pos": "n.",
+      "meaning": "动作；行动",
+      "door": 8,
+      "phrases": [
+        {
+          "text": "take action",
+          "meaning": "采取行动"
+        },
+        {
+          "text": "act out",
+          "meaning": "表演出来"
+        },
+        {
+          "text": "be active in",
+          "meaning": "在……方面活跃"
+        }
+      ],
+      "examples": [
+        {
+          "en": "There are many kinds of actions in kung fu.",
+          "zh": "功夫里有各种各样的动作。"
+        },
+        {
+          "en": "He acts in a school play.",
+          "zh": "他在学校话剧中扮演角色。"
+        },
+        {
+          "en": "She is active in sports.",
+          "zh": "她积极参加体育运动。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "act",
+          "pos": "v.",
+          "meaning": "行动；扮演"
+        },
+        {
+          "text": "active",
+          "pos": "adj.",
+          "meaning": "积极的；活跃的"
+        },
+        {
+          "text": "actively",
+          "pos": "adv.",
+          "meaning": "积极地"
+        }
+      ]
+    },
+    {
+      "id": "u12-18",
+      "no": 18,
+      "type": "word",
+      "text": "straight",
+      "phonetic": "/streɪt/",
+      "pos": "adj. 直的；笔直的；adv. 笔直地；直接地",
+      "meaning": "直的；笔直地",
+      "door": 9,
+      "phrases": [
+        {
+          "text": "a straight line",
+          "meaning": "一条直线"
+        },
+        {
+          "text": "go straight",
+          "meaning": "直走"
+        },
+        {
+          "text": "stand straight",
+          "meaning": "站直"
+        },
+        {
+          "text": "straighten your desk",
+          "meaning": "整理书桌"
+        },
+        {
+          "text": "straighten your back",
+          "meaning": "把背挺直"
+        },
+        {
+          "text": "straighten up",
+          "meaning": "挺直"
+        }
+      ],
+      "examples": [
+        {
+          "en": "Look at us. Three straight trees!",
+          "zh": "看我们，三棵笔直的树！"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "straighten",
+          "pos": "v.",
+          "meaning": "使变直；整理"
+        }
+      ],
+      "notes": "比较级 straighter → 最高级 straightest"
+    },
+    {
+      "id": "u12-19",
+      "no": 19,
+      "type": "phrase",
+      "text": "keep up with",
+      "phonetic": "/kiːp ʌp wɪð/",
+      "pos": "短语",
+      "meaning": "跟上；赶上",
+      "door": 9,
+      "examples": [
+        {
+          "en": "I can't keep up with you.",
+          "zh": "我跟不上你。"
+        }
+      ],
+      "notes": "【对比】keep on 继续"
+    },
+    {
+      "id": "u12-20",
+      "no": 20,
+      "type": "word",
+      "text": "control",
+      "phonetic": "/kənˈtrəʊl/",
+      "pos": "n.(U) 控制；v. 控制",
+      "meaning": "控制",
+      "door": 9,
+      "phrases": [
+        {
+          "text": "lose control of",
+          "meaning": "失去对……的控制"
+        },
+        {
+          "text": "be in control of",
+          "meaning": "掌控"
+        },
+        {
+          "text": "be under control",
+          "meaning": "处于控制下"
+        }
+      ],
+      "examples": [
+        {
+          "en": "The players at the tail of the dragon lose control of the sticks.",
+          "zh": "舞龙队尾的队员常常控制不住棍子。"
+        },
+        {
+          "en": "The police are now in control of the situation.",
+          "zh": "现在警方控制了局势。"
+        },
+        {
+          "en": "Don't worry, everything is under control.",
+          "zh": "别担心，一切都控制住了。"
+        },
+        {
+          "en": "He controlled his anger and spoke calmly.",
+          "zh": "他控制住怒火，平静地说话。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "controllable",
+          "pos": "adj.",
+          "meaning": "可控制的"
+        },
+        {
+          "text": "controller",
+          "pos": "n.",
+          "meaning": "控制器"
+        }
+      ],
+      "notes": "过去式 controlled - controlled（双写 l）"
+    },
+    {
+      "id": "u12-21",
+      "no": 21,
+      "type": "word",
+      "text": "pace",
+      "phonetic": "/peɪs/",
+      "pos": "n.",
+      "meaning": "（移动的）速度；步速；节奏",
+      "door": 9,
+      "phrases": [
+        {
+          "text": "keep the same pace",
+          "meaning": "保持同速"
+        },
+        {
+          "text": "keep pace with",
+          "meaning": "与……同步"
+        },
+        {
+          "text": "set the pace",
+          "meaning": "定节奏"
+        }
+      ],
+      "examples": [
+        {
+          "en": "This time, all the players keep the same pace.",
+          "zh": "这一次，所有队员都保持相同的速度。"
+        },
+        {
+          "en": "He set a fast pace and soon left us behind.",
+          "zh": "他定下快步调，很快把我们甩在后面。"
+        }
+      ]
+    }
+  ]
+}

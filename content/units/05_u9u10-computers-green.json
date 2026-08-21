@@ -1,0 +1,1194 @@
+{
+  "unitId": "u9u10-computers-green",
+  "title": "U9 Using computers & U10 A greener life 词汇讲义",
+  "sourceImages": [
+    "The dictionary.docx"
+  ],
+  "unitNotes": "词汇讲义单元。收录U9和U10主词条+延伸词+短语搭配+例句+比较级语法。",
+  "entries": [
+    {
+      "id": "u910-01",
+      "no": 1,
+      "type": "word",
+      "text": "enemy",
+      "phonetic": "/ˈenəmi/",
+      "pos": "n.",
+      "meaning": "敌人；危害物；大敌",
+      "door": 14,
+      "examples": [
+        {
+          "en": "Heat is a computer's enemy.",
+          "zh": "高温是电脑的大敌。"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "make enemies",
+          "meaning": "树敌"
+        },
+        {
+          "text": "make friends",
+          "meaning": "交朋友"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "enemies",
+          "phonetic": "/ˈenəmiz/",
+          "pos": "n.",
+          "meaning": "敌人（复数）"
+        }
+      ]
+    },
+    {
+      "id": "u910-02",
+      "no": 2,
+      "type": "word",
+      "text": "laptop",
+      "phonetic": "/ˈlæptɒp/",
+      "pos": "n.",
+      "meaning": "笔记本电脑；便携式电脑",
+      "door": 14,
+      "examples": [
+        {
+          "en": "A laptop should be used on a person's lap.",
+          "zh": "笔记本电脑本就该放在人的腿上使用。"
+        }
+      ]
+    },
+    {
+      "id": "u910-03",
+      "no": 3,
+      "type": "word",
+      "text": "password",
+      "phonetic": "/ˈpɑːswɜːd/",
+      "pos": "n.",
+      "meaning": "口令；密码",
+      "door": 14,
+      "examples": [
+        {
+          "en": "It's safe to use your birth date to create your password.",
+          "zh": "用你的生日来创建密码是安全的。"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "set a password",
+          "meaning": "设置密码"
+        },
+        {
+          "text": "enter a password",
+          "meaning": "输入密码"
+        }
+      ],
+      "notes": "构词：pass n. 通行证 + word n. 单词"
+    },
+    {
+      "id": "u910-04",
+      "no": 4,
+      "type": "word",
+      "text": "click",
+      "phonetic": "/klɪk/",
+      "pos": "v.",
+      "meaning": "点击；n. 咔哒声",
+      "door": 14,
+      "examples": [
+        {
+          "en": "I heard a click from the machine.",
+          "zh": "我听到机器发出咔哒声。"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "double-click",
+          "meaning": "双击"
+        },
+        {
+          "text": "click and drag",
+          "meaning": "点击并拖动"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "clickable",
+          "phonetic": "/ˈklɪkəbl/",
+          "pos": "adj.",
+          "meaning": "可点击的"
+        }
+      ]
+    },
+    {
+      "id": "u910-05",
+      "no": 5,
+      "type": "word",
+      "text": "mouse",
+      "phonetic": "/maʊs/",
+      "pos": "n.",
+      "meaning": "鼠标；老鼠（复数 mice）",
+      "door": 14,
+      "examples": [
+        {
+          "en": "Click the mouse.",
+          "zh": "点击鼠标。"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "mouse pad",
+          "meaning": "鼠标垫"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "mice",
+          "phonetic": "/maɪs/",
+          "pos": "n.",
+          "meaning": "老鼠（复数）"
+        }
+      ]
+    },
+    {
+      "id": "u910-06",
+      "no": 6,
+      "type": "word",
+      "text": "store",
+      "phonetic": "/stɔː(r)/",
+      "pos": "v.",
+      "meaning": "储存；存储（stored - stored）；n. 商店；仓库",
+      "door": 14,
+      "examples": [
+        {
+          "en": "People click the right mouse button to store information.",
+          "zh": "人们点击鼠标右键来储存信息。"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "store up",
+          "meaning": "积攒"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "storage",
+          "phonetic": "/ˈstɔːrɪdʒ/",
+          "pos": "n.",
+          "meaning": "储存空间"
+        },
+        {
+          "text": "storehouse",
+          "phonetic": "/ˈstɔːhaʊs/",
+          "pos": "n.",
+          "meaning": "仓库"
+        },
+        {
+          "text": "bookstore",
+          "phonetic": "/ˈbʊkstɔː(r)/",
+          "pos": "n.",
+          "meaning": "书店"
+        }
+      ]
+    },
+    {
+      "id": "u910-07",
+      "no": 7,
+      "type": "word",
+      "text": "delete",
+      "phonetic": "/dɪˈliːt/",
+      "pos": "v.",
+      "meaning": "删去；删除（deleted - deleted；deleting）",
+      "door": 14,
+      "examples": [
+        {
+          "en": "The file was deleted by mistake.",
+          "zh": "这个文件被误删了。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "deletion",
+          "phonetic": "/dɪˈliːʃn/",
+          "pos": "n.",
+          "meaning": "删除"
+        },
+        {
+          "text": "deletable",
+          "phonetic": "/dɪˈliːtəbl/",
+          "pos": "adj.",
+          "meaning": "可删除的"
+        }
+      ]
+    },
+    {
+      "id": "u910-08",
+      "no": 8,
+      "type": "word",
+      "text": "Recycle Bin",
+      "phonetic": "/ˌriːˈsaɪkl bɪn/",
+      "pos": "n.",
+      "meaning": "回收站（可数名词，常大写首字母）",
+      "door": 14,
+      "examples": [
+        {
+          "en": "When you delete a file, it usually moves to the computer's Recycle Bin.",
+          "zh": "当你删除一个文件时，它通常会被移动到电脑的回收站。"
+        },
+        {
+          "en": "Don't worry! You can restore the important files from the Recycle Bin.",
+          "zh": "别担心！你可以从回收站恢复重要文件。"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "empty the Recycle Bin",
+          "meaning": "清空回收站"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "recycle",
+          "phonetic": "/ˌriːˈsaɪkl/",
+          "pos": "v.",
+          "meaning": "回收利用"
+        },
+        {
+          "text": "recyclable",
+          "phonetic": "/ˌriːˈsaɪkləbl/",
+          "pos": "adj.",
+          "meaning": "可回收的"
+        }
+      ]
+    },
+    {
+      "id": "u910-09",
+      "no": 9,
+      "type": "word",
+      "text": "best-known",
+      "phonetic": "/ˌbest ˈnəʊn/",
+      "pos": "adj.",
+      "meaning": "最有名的；最著名的（well-known 的最高级）",
+      "door": 15,
+      "examples": [
+        {
+          "en": "It is ENIAC, the best-known early computer.",
+          "zh": "这是埃尼阿克，最著名的早期电脑。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "well-known",
+          "phonetic": "/ˌwel ˈnəʊn/",
+          "pos": "adj.",
+          "meaning": "著名的"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "be well-known for...",
+          "meaning": "因……而闻名"
+        },
+        {
+          "text": "be well-known as...",
+          "meaning": "作为……而闻名"
+        }
+      ]
+    },
+    {
+      "id": "u910-10",
+      "no": 10,
+      "type": "word",
+      "text": "keyboard",
+      "phonetic": "/ˈkiːbɔːd/",
+      "pos": "n.",
+      "meaning": "键盘（可数名词）",
+      "door": 15,
+      "examples": [
+        {
+          "en": "I can type fast on the keyboard.",
+          "zh": "我能在键盘上快速打字。"
+        },
+        {
+          "en": "But it has no mouse or keyboard?",
+          "zh": "但它没有鼠标和键盘吗？"
+        }
+      ],
+      "notes": "构词：key n. 键；钥匙 + board n. 板"
+    },
+    {
+      "id": "u910-11",
+      "no": 11,
+      "type": "word",
+      "text": "microchip",
+      "phonetic": "/ˈmaɪkrəʊtʃɪp/",
+      "pos": "n.",
+      "meaning": "微芯片；集成电路片",
+      "door": 15,
+      "examples": [
+        {
+          "en": "Microchips are very important to computers.",
+          "zh": "微芯片对电脑来说极其重要。"
+        },
+        {
+          "en": "This new phone has a powerful microchip.",
+          "zh": "这款新手机搭载了强劲的芯片。"
+        }
+      ],
+      "notes": "构词：micro 前缀'微小的' + chip n. 芯片"
+    },
+    {
+      "id": "u910-12",
+      "no": 12,
+      "type": "phrase",
+      "text": "a grain of salt",
+      "phonetic": "/ə ɡreɪn ɒv sɔːlt/",
+      "pos": "phr.",
+      "meaning": "一粒盐；持保留态度（习语）",
+      "door": 15,
+      "examples": [
+        {
+          "en": "They were as small as a grain of salt.",
+          "zh": "它们和一粒盐一样微小。"
+        },
+        {
+          "en": "You should take his advice with a grain of salt.",
+          "zh": "你对他的建议应该持保留态度。"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "take sth. a grain of salt",
+          "meaning": "对某事持保留态度（引申义）"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "grain",
+          "phonetic": "/ɡreɪn/",
+          "pos": "n.",
+          "meaning": "颗粒"
+        },
+        {
+          "text": "salt",
+          "phonetic": "/sɔːlt/",
+          "pos": "n.",
+          "meaning": "盐"
+        }
+      ]
+    },
+    {
+      "id": "u910-13",
+      "no": 13,
+      "type": "word",
+      "text": "email",
+      "phonetic": "/ˈiːmeɪl/",
+      "pos": "n.",
+      "meaning": "电子邮件（也可拼写为 e-mail）；v. 给……发邮件",
+      "door": 15,
+      "examples": [
+        {
+          "en": "I send an email to my friend every day.",
+          "zh": "我每天给我的朋友发一封电子邮件。"
+        },
+        {
+          "en": "We send emails to search for info.",
+          "zh": "我们发邮件、查资料。"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "check email",
+          "meaning": "查看邮件"
+        },
+        {
+          "text": "an email address",
+          "meaning": "电子邮件地址"
+        },
+        {
+          "text": "email sb.",
+          "meaning": "给某人发邮件"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "e-mail",
+          "phonetic": "/ˈiː meɪl/",
+          "pos": "n.",
+          "meaning": "电子邮件（同 email）"
+        }
+      ]
+    },
+    {
+      "id": "u910-14",
+      "no": 14,
+      "type": "phrase",
+      "text": "search for information",
+      "phonetic": "/sɜːtʃ fɔː(r) ˌɪnfəˈmeɪʃn/",
+      "pos": "phr.",
+      "meaning": "搜索信息",
+      "door": 15,
+      "examples": [
+        {
+          "en": "My classmates and I can send emails, search for information and do our homework better.",
+          "zh": "我和同学们可以发邮件、搜索信息，更好地完成作业。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "search",
+          "phonetic": "/sɜːtʃ/",
+          "pos": "v.",
+          "meaning": "搜索"
+        },
+        {
+          "text": "information",
+          "phonetic": "/ˌɪnfəˈmeɪʃn/",
+          "pos": "n.",
+          "meaning": "信息（U）"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "search for answers",
+          "meaning": "寻找答案"
+        },
+        {
+          "text": "a piece of information",
+          "meaning": "一条信息"
+        }
+      ]
+    },
+    {
+      "id": "u910-15",
+      "no": 15,
+      "type": "word",
+      "text": "symbol",
+      "phonetic": "/ˈsɪmbl/",
+      "pos": "n.",
+      "meaning": "符号；象征",
+      "door": 15,
+      "examples": [
+        {
+          "en": "The dove is a symbol of peace.",
+          "zh": "鸽子是和平的象征。"
+        },
+        {
+          "en": "You can set a password by using eight different letters, numbers and symbols.",
+          "zh": "你可以使用八个不同的字母、数字和符号来设置密码。"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "symbolic meaning",
+          "meaning": "象征意义"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "symbolic",
+          "phonetic": "/sɪmˈbɒlɪk/",
+          "pos": "adj.",
+          "meaning": "象征的；符号的"
+        },
+        {
+          "text": "symbolism",
+          "phonetic": "/ˈsɪmbəlɪzəm/",
+          "pos": "n.",
+          "meaning": "象征主义"
+        }
+      ]
+    },
+    {
+      "id": "u910-16",
+      "no": 16,
+      "type": "word",
+      "text": "desktop",
+      "phonetic": "/ˈdesktɒp/",
+      "pos": "n.",
+      "meaning": "桌面；台式电脑",
+      "door": 15,
+      "examples": [
+        {
+          "en": "There are many icons on the desktop.",
+          "zh": "电脑桌面上有很多软件图标。"
+        },
+        {
+          "en": "Luckily, the desktop comes back.",
+          "zh": "幸运的是，电脑桌面恢复正常了。"
+        }
+      ],
+      "notes": "构词：desk n. 书桌 + top n. 上面（合成词）"
+    },
+    {
+      "id": "u910-17",
+      "no": 17,
+      "type": "word",
+      "text": "reuse",
+      "phonetic": "/ˌriːˈjuːz/",
+      "pos": "v.",
+      "meaning": "再次使用；重复利用（reused - reused；reusing）",
+      "door": 16,
+      "examples": [
+        {
+          "en": "Do not throw the old toys away. Give them to little kids to play with. It's a great way to reuse.",
+          "zh": "不要扔掉旧玩具，把它们送给小朋友继续玩耍，这是一种非常好的重复利用方式。"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "reuse water",
+          "meaning": "重复利用水"
+        },
+        {
+          "text": "reuse paper",
+          "meaning": "重复利用纸张"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "reusable",
+          "phonetic": "/ˌriːˈjuːzəbl/",
+          "pos": "adj.",
+          "meaning": "可重复使用的"
+        }
+      ]
+    },
+    {
+      "id": "u910-18",
+      "no": 18,
+      "type": "word",
+      "text": "recycle",
+      "phonetic": "/ˌriːˈsaɪkl/",
+      "pos": "v.",
+      "meaning": "回收利用；循环利用（recycled - recycled）",
+      "door": 16,
+      "examples": [
+        {
+          "en": "We should recycle paper and plastic.",
+          "zh": "我们应该回收利用纸张和塑料。"
+        },
+        {
+          "en": "Do not use a plastic bag day after day... It's a great way to recycle.",
+          "zh": "不要天天用塑料袋，这是践行回收利用的绝佳方式。"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "waste recycling",
+          "meaning": "废物回收"
+        },
+        {
+          "text": "recyclable bottles",
+          "meaning": "可回收瓶子"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "recycling",
+          "phonetic": "/ˌriːˈsaɪklɪŋ/",
+          "pos": "n.",
+          "meaning": "回收利用"
+        },
+        {
+          "text": "recyclable",
+          "phonetic": "/ˌriːˈsaɪkləbl/",
+          "pos": "adj.",
+          "meaning": "可回收的"
+        }
+      ]
+    },
+    {
+      "id": "u910-19",
+      "no": 19,
+      "type": "phrase",
+      "text": "throw away",
+      "phonetic": "/θrəʊ əˈweɪ/",
+      "pos": "phr.",
+      "meaning": "扔掉；丢弃",
+      "door": 16,
+      "examples": [
+        {
+          "en": "throw away old books",
+          "zh": "扔掉旧书"
+        },
+        {
+          "en": "Do not throw the old toys away.",
+          "zh": "不要扔掉旧玩具。"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "throw it away",
+          "meaning": "把它扔掉"
+        }
+      ]
+    },
+    {
+      "id": "u910-20",
+      "no": 20,
+      "type": "word",
+      "text": "plastic",
+      "phonetic": "/ˈplæstɪk/",
+      "pos": "n.",
+      "meaning": "塑料（U）；adj. 塑料制的",
+      "door": 16,
+      "examples": [
+        {
+          "en": "Baggie is a plastic bag.",
+          "zh": "巴吉是一个塑料袋。"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "reuse plastic",
+          "meaning": "可重复使用的塑料"
+        },
+        {
+          "text": "a plastic bottle",
+          "meaning": "一个塑料瓶"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "reuse",
+          "phonetic": "/ˌriːˈjuːz/",
+          "pos": "v.",
+          "meaning": "再次使用"
+        }
+      ]
+    },
+    {
+      "id": "u910-21",
+      "no": 21,
+      "type": "word",
+      "text": "cloth",
+      "phonetic": "/klɒθ/",
+      "pos": "n.",
+      "meaning": "布；布料（U）",
+      "door": 16,
+      "examples": [
+        {
+          "en": "A cloth bag or a paper one is also okay.",
+          "zh": "布袋或纸袋也可以的。"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a piece of cloth",
+          "meaning": "一块布"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "clothes",
+          "phonetic": "/kləʊðz/",
+          "pos": "n.",
+          "meaning": "衣服（复数，具体衣物）"
+        },
+        {
+          "text": "clothing",
+          "phonetic": "/ˈkləʊðɪŋ/",
+          "pos": "n.",
+          "meaning": "服装总称"
+        }
+      ]
+    },
+    {
+      "id": "u910-22",
+      "no": 22,
+      "type": "phrase",
+      "text": "turn off",
+      "phonetic": "/tɜːn ɒf/",
+      "pos": "phr.",
+      "meaning": "掉；关闭",
+      "door": 16,
+      "examples": [
+        {
+          "en": "Turn off the lights when you leave the room.",
+          "zh": "离开房间时关灯。"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "turn on",
+          "meaning": "打开（反义短语）"
+        }
+      ]
+    },
+    {
+      "id": "u910-23",
+      "no": 23,
+      "type": "word",
+      "text": "tap",
+      "phonetic": "/tæp/",
+      "pos": "n.",
+      "meaning": "水龙头；v. 轻敲；轻拍（tapped - tapped；tapping）",
+      "door": 16,
+      "examples": [
+        {
+          "en": "I turn off the tap when I brush my teeth.",
+          "zh": "我刷牙的时候关掉水龙头。"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "tap at/on the door",
+          "meaning": "轻敲门"
+        },
+        {
+          "text": "tap someone on the shoulder",
+          "meaning": "轻拍某人的肩膀"
+        }
+      ]
+    },
+    {
+      "id": "u910-24",
+      "no": 24,
+      "type": "word",
+      "text": "wood",
+      "phonetic": "/wʊd/",
+      "pos": "n.",
+      "meaning": "木头；木材（U）",
+      "door": 16,
+      "examples": [
+        {
+          "en": "You see, paper is made from wood.",
+          "zh": "你看，纸是用木头做的。"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "a piece of wood",
+          "meaning": "一块木头"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "wooden",
+          "phonetic": "/ˈwʊdn/",
+          "pos": "adj.",
+          "meaning": "木制的；木头的"
+        },
+        {
+          "text": "woods",
+          "phonetic": "/wʊdz/",
+          "pos": "n.",
+          "meaning": "树林/森林"
+        }
+      ],
+      "notes": "易混辨析：wood（木材）→ woods（树林/森林）in the woods 在树林里"
+    },
+    {
+      "id": "u910-25",
+      "no": 25,
+      "type": "word",
+      "text": "unplug",
+      "phonetic": "/ˌʌnˈplʌɡ/",
+      "pos": "v.",
+      "meaning": "拔掉……电源插头（unplugged - unplugged）",
+      "door": 16,
+      "examples": [
+        {
+          "en": "I remind my mum to unplug the TV from the wall.",
+          "zh": "我提醒妈妈把电视从墙上的插座拔掉。"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "unplug the charger",
+          "meaning": "拔掉充电器"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "plug",
+          "phonetic": "/plʌɡ/",
+          "pos": "v.",
+          "meaning": "插上插头；n. 插头"
+        },
+        {
+          "text": "unplugged",
+          "phonetic": "/ˌʌnˈplʌɡd/",
+          "pos": "adj.",
+          "meaning": "不插电的（音乐）"
+        }
+      ]
+    },
+    {
+      "id": "u910-26",
+      "no": 26,
+      "type": "word",
+      "text": "pollution",
+      "phonetic": "/pəˈluːʃn/",
+      "pos": "n.",
+      "meaning": "污染（不可数名词）",
+      "door": 17,
+      "examples": [
+        {
+          "en": "It is a good way to reduce air pollution.",
+          "zh": "这是减少空气污染的好方法。"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "water pollution",
+          "meaning": "水污染"
+        },
+        {
+          "text": "reduce pollution",
+          "meaning": "减少污染"
+        },
+        {
+          "text": "noise pollution",
+          "meaning": "噪音污染"
+        },
+        {
+          "text": "pollute the environment",
+          "meaning": "污染环境"
+        },
+        {
+          "text": "polluted water",
+          "meaning": "被污染的水"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "pollute",
+          "phonetic": "/pəˈluːt/",
+          "pos": "v.",
+          "meaning": "污染"
+        },
+        {
+          "text": "polluted",
+          "phonetic": "/pəˈluːtɪd/",
+          "pos": "adj.",
+          "meaning": "被污染的"
+        },
+        {
+          "text": "pollutant",
+          "phonetic": "/pəˈluːtənt/",
+          "pos": "n.",
+          "meaning": "污染物"
+        }
+      ]
+    },
+    {
+      "id": "u910-27",
+      "no": 27,
+      "type": "phrase",
+      "text": "swim by",
+      "phonetic": "/swɪm baɪ/",
+      "pos": "phr.",
+      "meaning": "游过；从旁边游过",
+      "door": 17,
+      "examples": [
+        {
+          "en": "A big whale swims by...",
+          "zh": "一头大鲸鱼游了过来……"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "swim",
+          "phonetic": "/swɪm/",
+          "pos": "v.",
+          "meaning": "游泳（swam - swum）"
+        },
+        {
+          "text": "by",
+          "phonetic": "/baɪ/",
+          "pos": "prep./adv.",
+          "meaning": "经过"
+        }
+      ]
+    },
+    {
+      "id": "u910-28",
+      "no": 28,
+      "type": "word",
+      "text": "swallow",
+      "phonetic": "/ˈswɒləʊ/",
+      "pos": "v.",
+      "meaning": "吞下；咽下；n. 燕子",
+      "door": 17,
+      "examples": [
+        {
+          "en": "He swallowed the medicine with water.",
+          "zh": "他用水把药片咽了下去。"
+        },
+        {
+          "en": "...a sea turtle spots Baggie and swallows it.",
+          "zh": "一只海龟发现了巴吉，把它吞了下去。"
+        },
+        {
+          "en": "The waves swallowed up the small boat.",
+          "zh": "海浪吞没了小船。"
+        }
+      ]
+    },
+    {
+      "id": "u910-29",
+      "no": 29,
+      "type": "phrase",
+      "text": "lie around",
+      "phonetic": "/laɪ əˈraʊnd/",
+      "pos": "phr.",
+      "meaning": "到处乱放；乱扔",
+      "door": 17,
+      "examples": [
+        {
+          "en": "Plastic bags should not lie around.",
+          "zh": "塑料袋不应该到处乱扔。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "lie",
+          "phonetic": "/laɪ/",
+          "pos": "v.",
+          "meaning": "躺/位于（lay - lain；lying）"
+        },
+        {
+          "text": "around",
+          "phonetic": "/əˈraʊnd/",
+          "pos": "adv.",
+          "meaning": "到处"
+        }
+      ]
+    },
+    {
+      "id": "u910-30",
+      "no": 30,
+      "type": "phrase",
+      "text": "pick up",
+      "phonetic": "/pɪk ʌp/",
+      "pos": "phr.",
+      "meaning": "拿起；捡起",
+      "door": 17,
+      "examples": [
+        {
+          "en": "Pick up the rubbish and throw it into the bin.",
+          "zh": "把垃圾捡起来扔进垃圾桶。"
+        },
+        {
+          "en": "He picks Baggie up and makes it into a kite.",
+          "zh": "他捡起巴吉，把它做成了一个风筝。"
+        }
+      ],
+      "phrases": [
+        {
+          "text": "pick up a skill",
+          "meaning": "学会一项技能"
+        },
+        {
+          "text": "pick up children from school",
+          "meaning": "从学校接孩子"
+        },
+        {
+          "text": "pick up a language",
+          "meaning": "学会一门语言"
+        }
+      ],
+      "notes": "pick up 也可表示'接人/学得'"
+    },
+    {
+      "id": "u910-31",
+      "no": 31,
+      "type": "phrase",
+      "text": "small → smaller → smallest",
+      "phonetic": "/smɔːl ˈsmɔːlə ˈsmɔːlɪst/",
+      "pos": "比较级",
+      "meaning": "小 → 更小 → 最小（单音节，直接加-er/-est）",
+      "door": 14
+    },
+    {
+      "id": "u910-32",
+      "no": 32,
+      "type": "phrase",
+      "text": "strong → stronger → strongest",
+      "phonetic": "/strɒŋ ˈstrɒŋɡə ˈstrɒŋɡɪst/",
+      "pos": "比较级",
+      "meaning": "强壮 → 更强壮 → 最强壮（单音节，直接加-er/-est）",
+      "door": 14
+    },
+    {
+      "id": "u910-33",
+      "no": 33,
+      "type": "phrase",
+      "text": "nice → nicer → nicest",
+      "phonetic": "/naɪs ˈnaɪsə ˈnaɪsɪst/",
+      "pos": "比较级",
+      "meaning": "美好 → 更美好 → 最美好（以-e结尾，加-r/-st）",
+      "door": 14
+    },
+    {
+      "id": "u910-34",
+      "no": 34,
+      "type": "phrase",
+      "text": "late → later → latest",
+      "phonetic": "/leɪt ˈleɪtə ˈleɪtɪst/",
+      "pos": "比较级",
+      "meaning": "晚 → 更晚 → 最晚（以-e结尾，加-r/-st）",
+      "door": 14
+    },
+    {
+      "id": "u910-35",
+      "no": 35,
+      "type": "phrase",
+      "text": "heavy → heavier → heaviest",
+      "phonetic": "/ˈhevi ˈheviə ˈheviɪst/",
+      "pos": "比较级",
+      "meaning": "重 → 更重 → 最重（辅音+y结尾，变y为i加-er/-est）",
+      "door": 14
+    },
+    {
+      "id": "u910-36",
+      "no": 36,
+      "type": "phrase",
+      "text": "easy → easier → easiest",
+      "phonetic": "/ˈiːzi ˈiːziə ˈiːziɪst/",
+      "pos": "比较级",
+      "meaning": "容易 → 更容易 → 最容易（辅音+y结尾，变y为i加-er/-est）",
+      "door": 15
+    },
+    {
+      "id": "u910-37",
+      "no": 37,
+      "type": "phrase",
+      "text": "big → bigger → biggest",
+      "phonetic": "/bɪɡ ˈbɪɡə ˈbɪɡɪst/",
+      "pos": "比较级",
+      "meaning": "大 → 更大 → 最大（重读闭音节，双写尾字母加-er/-est）",
+      "door": 15
+    },
+    {
+      "id": "u910-38",
+      "no": 38,
+      "type": "phrase",
+      "text": "hot → hotter → hottest",
+      "phonetic": "/hɒt ˈhɒtə ˈhɒtɪst/",
+      "pos": "比较级",
+      "meaning": "热 → 更热 → 最热（重读闭音节，双写尾字母加-er/-est）",
+      "door": 15
+    },
+    {
+      "id": "u910-39",
+      "no": 39,
+      "type": "phrase",
+      "text": "fat → fatter → fattest",
+      "phonetic": "/fæt ˈfætə ˈfætɪst/",
+      "pos": "比较级",
+      "meaning": "胖 → 更胖 → 最胖（重读闭音节，双写尾字母加-er/-est）",
+      "door": 15
+    },
+    {
+      "id": "u910-40",
+      "no": 40,
+      "type": "phrase",
+      "text": "red → redder → reddest",
+      "phonetic": "/red ˈredə ˈredɪst/",
+      "pos": "比较级",
+      "meaning": "红 → 更红 → 最红（重读闭音节，双写尾字母加-er/-est）",
+      "door": 15
+    },
+    {
+      "id": "u910-41",
+      "no": 41,
+      "type": "phrase",
+      "text": "thin → thinner → thinnest",
+      "phonetic": "/θɪn ˈθɪnə ˈθɪnɪst/",
+      "pos": "比较级",
+      "meaning": "瘦 → 更瘦 → 最瘦（重读闭音节，双写尾字母加-er/-est）",
+      "door": 16
+    },
+    {
+      "id": "u910-42",
+      "no": 42,
+      "type": "phrase",
+      "text": "important → more important → most important",
+      "phonetic": "/ɪmˈpɔːtnt mɔːr ɪmˈpɔːtnt məʊst ɪmˈpɔːtnt/",
+      "pos": "比较级",
+      "meaning": "重要 → 更重要 → 最重要（多音节，加more/most）",
+      "door": 16
+    },
+    {
+      "id": "u910-43",
+      "no": 43,
+      "type": "phrase",
+      "text": "strongly → more strongly → most strongly",
+      "phonetic": "/ˈstrɒŋli mɔːr ˈstrɒŋli məʊst ˈstrɒŋli/",
+      "pos": "比较级",
+      "meaning": "强烈地 → 更强烈地 → 最强烈地（副词，加more/most）",
+      "door": 16
+    },
+    {
+      "id": "u910-44",
+      "no": 44,
+      "type": "phrase",
+      "text": "carefully → more carefully → most carefully",
+      "phonetic": "/ˈkeəfəli mɔːr ˈkeəfəli məʊst ˈkeəfəli/",
+      "pos": "比较级",
+      "meaning": "仔细地 → 更仔细地 → 最仔细地（副词，加more/most）",
+      "door": 16
+    },
+    {
+      "id": "u910-45",
+      "no": 45,
+      "type": "phrase",
+      "text": "good / well → better → best",
+      "phonetic": "/ɡʊd wel ˈbetə best/",
+      "pos": "比较级",
+      "meaning": "好 → 更好 → 最好（不规则变化）",
+      "door": 16
+    },
+    {
+      "id": "u910-46",
+      "no": 46,
+      "type": "phrase",
+      "text": "many / much → more → most",
+      "phonetic": "/ˈmeni mʌtʃ mɔː(r) məʊst/",
+      "pos": "比较级",
+      "meaning": "多 → 更多 → 最多（不规则变化）",
+      "door": 17
+    },
+    {
+      "id": "u910-47",
+      "no": 47,
+      "type": "phrase",
+      "text": "bad / badly / ill → worse → worst",
+      "phonetic": "/bæd ˈbædli ɪl wɜːs wɜːst/",
+      "pos": "比较级",
+      "meaning": "坏 → 更坏 → 最坏（不规则变化）",
+      "door": 17
+    },
+    {
+      "id": "u910-48",
+      "no": 48,
+      "type": "phrase",
+      "text": "little → less → least",
+      "phonetic": "/ˈlɪtl les liːst/",
+      "pos": "比较级",
+      "meaning": "少 → 更少 → 最少（不规则变化）",
+      "door": 17
+    },
+    {
+      "id": "u910-49",
+      "no": 49,
+      "type": "phrase",
+      "text": "far → further → furthest",
+      "phonetic": "/fɑː(r) ˈfɜːðə ˈfɜːðɪst/",
+      "pos": "比较级",
+      "meaning": "远 → 更远 → 最远（不规则变化，表程度）",
+      "door": 17
+    },
+    {
+      "id": "u910-50",
+      "no": 50,
+      "type": "phrase",
+      "text": "old → older / elder → oldest / eldest",
+      "phonetic": "/əʊld ˈəʊldə ˈeldə ˈəʊldɪst ˈeldɪst/",
+      "pos": "比较级",
+      "meaning": "老 → 更老/年长 → 最老/最年长（older/oldest表年龄；elder/eldest表长幼）",
+      "door": 17
+    }
+  ]
+}

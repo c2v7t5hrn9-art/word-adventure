@@ -1,0 +1,52 @@
+{
+  "_说明": "这是新单元模板。复制本文件、改名为「序号_单元ID.json」（序号决定顺序，如 07_u11u12-xxx.json），然后按下 structure 填内容。下划线开头的字段会被构建脚本忽略。",
+  "unitId": "u11u12-example-theme",
+  "title": "U11-12 主题名 词汇讲义",
+  "sourceImages": ["assets/handouts/IMG_XXXX.JPG"],
+  "pageMap": {},
+  "missingPages": "",
+  "dictationExtra": [
+    {
+      "text": "校内默写补充词（可留空数组 []）",
+      "phonetic": "/音标/",
+      "pos": "词性",
+      "meaning": "中文释义"
+    }
+  ],
+  "entries": [
+    {
+      "id": "u1112-01",
+      "no": "1",
+      "type": "word",
+      "text": "example",
+      "phonetic": "/ɪɡˈzɑːmpl/",
+      "pos": "n.",
+      "meaning": "例子；榜样",
+      "door": 21,
+      "phrases": [
+        { "text": "for example", "meaning": "例如" }
+      ],
+      "examples": [
+        { "en": "This is a good example.", "zh": "这是一个好例子。" }
+      ],
+      "extensions": [],
+      "notes": ""
+    },
+    {
+      "id": "u1112-02",
+      "no": "2",
+      "type": "phrase",
+      "text": "look after",
+      "phonetic": "",
+      "pos": "phr.",
+      "meaning": "照顾；照看",
+      "door": 21,
+      "phrases": [],
+      "examples": [
+        { "en": "She looks after her little brother.", "zh": "她照顾她的弟弟。" }
+      ],
+      "extensions": [],
+      "notes": ""
+    }
+  ]
+}

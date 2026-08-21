@@ -1,0 +1,849 @@
+{
+  "unitId": "u3u4-plants-animals",
+  "title": "Unit 3 Amazing plants & Unit 4 Together with animals 词汇讲义",
+  "sourceImages": [
+    "IMG_1226.JPG",
+    "IMG_1227.JPG",
+    "IMG_1228.JPG",
+    "IMG_1229.JPG"
+  ],
+  "pageMap": {
+    "IMG_1226.JPG": 1,
+    "IMG_1227.JPG": 2,
+    "IMG_1228.JPG": 3,
+    "IMG_1229.JPG": 4
+  },
+  "missingPages": "",
+  "dictationExtra": [
+    {
+      "text": "different",
+      "phonetic": "/ˈdɪfrənt/",
+      "pos": "adj.",
+      "meaning": "不同的（校内默写易错：diffeent ✗）"
+    },
+    {
+      "text": "be different from",
+      "phonetic": "/bi ˈdɪfrənt frɒm/",
+      "pos": "短语",
+      "meaning": "与……不同"
+    },
+    {
+      "text": "manage to do",
+      "phonetic": "/ˈmænɪdʒ tə duː/",
+      "pos": "短语",
+      "meaning": "设法做成某事（校内默写易错：monger ✗）"
+    },
+    {
+      "text": "stop sb. from doing sth.",
+      "phonetic": "/stɒp frɒm/",
+      "pos": "短语",
+      "meaning": "阻止某人做某事"
+    },
+    {
+      "text": "start doing sth.",
+      "phonetic": "/stɑːt/",
+      "pos": "短语",
+      "meaning": "开始做某事"
+    },
+    {
+      "text": "get in one's way",
+      "phonetic": "/ɡet ɪn weɪ/",
+      "pos": "短语",
+      "meaning": "挡路；妨碍"
+    },
+    {
+      "text": "going nuts",
+      "phonetic": "/ˈɡəʊɪŋ nʌts/",
+      "pos": "短语",
+      "meaning": "发疯；抓狂"
+    },
+    {
+      "text": "offer",
+      "phonetic": "/ˈɒfə(r)/",
+      "pos": "v.",
+      "meaning": "主动提出；提供"
+    },
+    {
+      "text": "amateur",
+      "phonetic": "/ˈæmətə(r)/",
+      "pos": "adj./n.",
+      "meaning": "业余的；业余爱好者（注意：不是邻居）"
+    }
+  ],
+  "entries": [
+    {
+      "id": "u34-01",
+      "no": 1,
+      "type": "word",
+      "text": "root",
+      "phonetic": "/ruːt/",
+      "pos": "n. 根；根源；v. 生根；扎根",
+      "meaning": "根；根源；扎根",
+      "door": 4,
+      "phrases": [
+        {
+          "text": "take root",
+          "meaning": "扎根"
+        }
+      ],
+      "examples": [
+        {
+          "en": "Roots take in water and keep the plant in the ground.",
+          "zh": "根吸收水分，并使植物固定在土壤中。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "rooted",
+          "pos": "adj.",
+          "meaning": "根深蒂固的"
+        },
+        {
+          "text": "rootless",
+          "pos": "adj.",
+          "meaning": "无根的"
+        }
+      ]
+    },
+    {
+      "id": "u34-02",
+      "no": 2,
+      "type": "phrase",
+      "text": "take in",
+      "phonetic": "/teɪk ɪn/",
+      "pos": "短语",
+      "meaning": "吸收；理解；收留",
+      "door": 4,
+      "phrases": [
+        {
+          "text": "take in water",
+          "meaning": "吸收水分"
+        },
+        {
+          "text": "take in carbon dioxide",
+          "meaning": "吸收二氧化碳"
+        },
+        {
+          "text": "take in information",
+          "meaning": "（理解）信息"
+        }
+      ]
+    },
+    {
+      "id": "u34-03",
+      "no": 3,
+      "type": "phrase",
+      "text": "give out",
+      "phonetic": "/ɡɪv aʊt/",
+      "pos": "短语",
+      "meaning": "释放；发出",
+      "door": 4,
+      "phrases": [
+        {
+          "text": "give out oxygen",
+          "meaning": "释放氧气"
+        },
+        {
+          "text": "give out heat",
+          "meaning": "释放热量"
+        }
+      ],
+      "examples": [
+        {
+          "en": "Plants take in carbon dioxide and give out oxygen.",
+          "zh": "植物吸收二氧化碳并释放出氧气。"
+        }
+      ],
+      "notes": "【对比】take in 吸收 ↔ give out 释放"
+    },
+    {
+      "id": "u34-04",
+      "no": 4,
+      "type": "word",
+      "text": "stem",
+      "phonetic": "/stem/",
+      "pos": "n. 茎；干；v. 阻止；起源于",
+      "meaning": "茎；干；阻止；起源于",
+      "door": 4,
+      "phrases": [
+        {
+          "text": "stem from",
+          "meaning": "源于"
+        }
+      ],
+      "examples": [
+        {
+          "en": "The stem carries water from the roots to the leaves.",
+          "zh": "植物的茎将水分从根部输送到叶片中。"
+        },
+        {
+          "en": "The problem stems from lack of communication.",
+          "zh": "问题源于缺乏沟通。"
+        }
+      ],
+      "notes": "动词变化：stemmed - stemmed - stemming"
+    },
+    {
+      "id": "u34-05",
+      "no": 5,
+      "type": "word",
+      "text": "thick",
+      "phonetic": "/θɪk/",
+      "pos": "adj.",
+      "meaning": "厚的；粗的；浓的",
+      "door": 4,
+      "phrases": [
+        {
+          "text": "a thick book",
+          "meaning": "一本厚书"
+        },
+        {
+          "text": "thick hair",
+          "meaning": "浓密的头发"
+        },
+        {
+          "text": "the thickness of the wall",
+          "meaning": "墙的厚度"
+        }
+      ],
+      "examples": [
+        {
+          "en": "The fog thickened as night fell.",
+          "zh": "夜幕降临时雾变浓了。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "thickness",
+          "pos": "n.",
+          "meaning": "厚度；浓度"
+        },
+        {
+          "text": "thicken",
+          "pos": "v.",
+          "meaning": "变厚；变浓"
+        },
+        {
+          "text": "thin",
+          "pos": "adj.",
+          "meaning": "薄的；细的；稀疏的（反义词）"
+        }
+      ]
+    },
+    {
+      "id": "u34-06",
+      "no": 6,
+      "type": "word",
+      "text": "water lily",
+      "phonetic": "/ˈwɔːtə ˈlɪli/",
+      "pos": "n.",
+      "meaning": "睡莲",
+      "door": 4,
+      "phrases": [
+        {
+          "text": "lily pad",
+          "meaning": "睡莲叶"
+        }
+      ],
+      "examples": [
+        {
+          "en": "The stem of the water lily is thick.",
+          "zh": "睡莲的茎很粗。"
+        },
+        {
+          "en": "The water lily blooms in summer.",
+          "zh": "睡莲在夏季开花。"
+        }
+      ],
+      "notes": "【构词】water 水 + lily 百合/花"
+    },
+    {
+      "id": "u34-07",
+      "no": 7,
+      "type": "word",
+      "text": "react",
+      "phonetic": "/riˈækt/",
+      "pos": "v.",
+      "meaning": "反应；作出反应",
+      "door": 4,
+      "phrases": [
+        {
+          "text": "react to",
+          "meaning": "对……作出反应（固定介词 to）"
+        },
+        {
+          "text": "chemical reaction",
+          "meaning": "化学反应"
+        },
+        {
+          "text": "positive reaction",
+          "meaning": "积极反应"
+        }
+      ],
+      "examples": [
+        {
+          "en": "How did he react to the news?",
+          "zh": "他对这个消息有什么反应？"
+        },
+        {
+          "en": "Plants react to light.",
+          "zh": "植物会对光线产生反应。"
+        },
+        {
+          "en": "Her reaction to the surprise was very funny.",
+          "zh": "她对那个惊喜的反应非常有趣。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "reaction",
+          "pos": "n.",
+          "meaning": "反应；回应"
+        },
+        {
+          "text": "reactive",
+          "pos": "adj.",
+          "meaning": "反应性的"
+        }
+      ]
+    },
+    {
+      "id": "u34-08",
+      "no": 8,
+      "type": "word",
+      "text": "pine cone",
+      "phonetic": "/paɪn kəʊn/",
+      "pos": "n.",
+      "meaning": "松果",
+      "door": 4,
+      "phrases": [
+        {
+          "text": "pine tree",
+          "meaning": "松树"
+        },
+        {
+          "text": "pine needle",
+          "meaning": "松针"
+        }
+      ],
+      "examples": [
+        {
+          "en": "A pine cone is the fruit of a pine tree.",
+          "zh": "松果是松树的果实。"
+        }
+      ],
+      "notes": "【构词】pine 松树 + cone 球果"
+    },
+    {
+      "id": "u34-09",
+      "no": 9,
+      "type": "word",
+      "text": "scale",
+      "phonetic": "/skeɪl/",
+      "pos": "n. 鳞；鳞片；规模；v. 去鳞；改变…大小",
+      "meaning": "鳞；鳞片；规模",
+      "door": 5,
+      "phrases": [
+        {
+          "text": "fish scale",
+          "meaning": "鱼鳞"
+        },
+        {
+          "text": "on a large scale",
+          "meaning": "大规模地"
+        },
+        {
+          "text": "scale up",
+          "meaning": "扩大规模"
+        }
+      ],
+      "examples": [
+        {
+          "en": "The pine cone has many small scales.",
+          "zh": "这个松果有很多细小的鳞片。"
+        },
+        {
+          "en": "They are planting trees on a large scale.",
+          "zh": "他们在大规模植树。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "scaly",
+          "pos": "adj.",
+          "meaning": "有鳞片的；有皮屑的"
+        }
+      ]
+    },
+    {
+      "id": "u34-10",
+      "no": 10,
+      "type": "word",
+      "text": "morning glory",
+      "phonetic": "/ˈmɔːnɪŋ ˈɡlɔːri/",
+      "pos": "n.",
+      "meaning": "牵牛花",
+      "door": 5,
+      "examples": [
+        {
+          "en": "The morning glory climbs up the fence.",
+          "zh": "牵牛花沿着篱笆向上攀爬。"
+        }
+      ],
+      "notes": "【构词】morning 早晨 + glory 荣耀/光辉"
+    },
+    {
+      "id": "u34-11",
+      "no": 11,
+      "type": "word",
+      "text": "safari park",
+      "phonetic": "/səˈfɑːri pɑːk/",
+      "pos": "n.",
+      "meaning": "野生动物园（动物自由活动，游客在车辆中观看）",
+      "door": 5,
+      "phrases": [
+        {
+          "text": "wildlife park",
+          "meaning": "野生动物园（有较大围栏）"
+        }
+      ],
+      "examples": [
+        {
+          "en": "Welcome to the Safari Park.",
+          "zh": "欢迎来到野生动物园。"
+        }
+      ],
+      "notes": "【构词】safari 游猎 + park 公园"
+    },
+    {
+      "id": "u34-12",
+      "no": 12,
+      "type": "word",
+      "text": "tiger",
+      "phonetic": "/ˈtaɪɡə(r)/",
+      "pos": "n.",
+      "meaning": "虎；老虎",
+      "door": 5,
+      "extensions": [
+        {
+          "text": "tigress",
+          "phonetic": "/ˈtaɪɡrəs/",
+          "pos": "n.",
+          "meaning": "母虎"
+        },
+        {
+          "text": "tigerish",
+          "pos": "adj.",
+          "meaning": "凶猛的；虎一般的"
+        }
+      ]
+    },
+    {
+      "id": "u34-13",
+      "no": 13,
+      "type": "word",
+      "text": "lion",
+      "phonetic": "/ˈlaɪən/",
+      "pos": "n.",
+      "meaning": "狮子",
+      "door": 5,
+      "phrases": [
+        {
+          "text": "the lion's mane",
+          "meaning": "狮子的鬃毛"
+        }
+      ],
+      "examples": [
+        {
+          "en": "You can find out the interesting habits of animals like tigers, lions and elephants.",
+          "zh": "你可以去探索老虎、狮子和大象这类动物有趣的生活习性。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "lioness",
+          "phonetic": "/ˈlaɪənes/",
+          "pos": "n.",
+          "meaning": "母狮"
+        }
+      ],
+      "notes": "后缀 -ess 表雌性，如 actor → actress 女演员"
+    },
+    {
+      "id": "u34-14",
+      "no": 14,
+      "type": "word",
+      "text": "threat",
+      "phonetic": "/θret/",
+      "pos": "n.",
+      "meaning": "威胁；构成威胁的人或事物",
+      "door": 5,
+      "phrases": [
+        {
+          "text": "a threat to",
+          "meaning": "对……的威胁"
+        },
+        {
+          "text": "threaten to do",
+          "meaning": "威胁要做"
+        },
+        {
+          "text": "be threatened",
+          "meaning": "受到……的威胁"
+        }
+      ],
+      "examples": [
+        {
+          "en": "Pollution is a threat to animals.",
+          "zh": "污染对动物构成威胁。"
+        },
+        {
+          "en": "The storm threatens our trip.",
+          "zh": "暴风雨威胁着我们的行程。"
+        },
+        {
+          "en": "Many species are threatened with extinction.",
+          "zh": "许多物种面临灭绝的威胁。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "threaten",
+          "pos": "v.",
+          "meaning": "威胁；恐吓"
+        },
+        {
+          "text": "threatening",
+          "pos": "adj.",
+          "meaning": "威胁的"
+        }
+      ]
+    },
+    {
+      "id": "u34-15",
+      "no": 15,
+      "type": "word",
+      "text": "whale",
+      "phonetic": "/weɪl/",
+      "pos": "n.",
+      "meaning": "鲸；鲸鱼",
+      "door": 5,
+      "phrases": [
+        {
+          "text": "a whaling ship",
+          "meaning": "捕鲸船"
+        },
+        {
+          "text": "whale watching",
+          "meaning": "观赏鲸鱼"
+        }
+      ],
+      "examples": [
+        {
+          "en": "The blue whale is the largest animal in the world.",
+          "zh": "蓝鲸是世界上体型最大的动物。"
+        },
+        {
+          "en": "You can learn about the threats to sea animals like whales and dolphins.",
+          "zh": "你可以了解鲸鱼和海豚等海洋动物面临的威胁。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "whaler",
+          "pos": "n.",
+          "meaning": "捕鲸者；捕鲸船"
+        },
+        {
+          "text": "whaling",
+          "pos": "n.",
+          "meaning": "捕鲸业"
+        }
+      ]
+    },
+    {
+      "id": "u34-16",
+      "no": 16,
+      "type": "word",
+      "text": "toe",
+      "phonetic": "/təʊ/",
+      "pos": "n.",
+      "meaning": "脚趾",
+      "door": 5,
+      "phrases": [
+        {
+          "text": "stand on one's toes",
+          "meaning": "踮着脚尖"
+        }
+      ],
+      "examples": [
+        {
+          "en": "He held the chalk tightly between the toes of his left foot.",
+          "zh": "他用左脚的脚趾紧紧地攥着粉笔。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "toenail",
+          "pos": "n.",
+          "meaning": "脚趾甲"
+        }
+      ]
+    },
+    {
+      "id": "u34-17",
+      "no": 17,
+      "type": "word",
+      "text": "protect",
+      "phonetic": "/prəˈtekt/",
+      "pos": "v.",
+      "meaning": "保护；防护",
+      "door": 6,
+      "phrases": [
+        {
+          "text": "protect sb./sth. from/against sth.",
+          "meaning": "保护……免受……的侵害"
+        },
+        {
+          "text": "under the protection of",
+          "meaning": "在……的保护下"
+        },
+        {
+          "text": "protective clothing",
+          "meaning": "防护服"
+        },
+        {
+          "text": "be protective of sb. (sth.)",
+          "meaning": "保护……"
+        }
+      ],
+      "examples": [
+        {
+          "en": "Respect, care for and protect animals.",
+          "zh": "尊重、关爱和保护动物。"
+        },
+        {
+          "en": "We should protect whales from whalers.",
+          "zh": "我们应该保护鲸鱼免受捕鲸者的伤害。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "protection",
+          "pos": "n.",
+          "meaning": "保护；防护措施"
+        },
+        {
+          "text": "protective",
+          "pos": "adj.",
+          "meaning": "保护的；防护的"
+        }
+      ]
+    },
+    {
+      "id": "u34-18",
+      "no": 18,
+      "type": "word",
+      "text": "truck tour",
+      "phonetic": "/trʌk tʊə(r)/",
+      "pos": "n.",
+      "meaning": "卡车游览；观光车游览",
+      "door": 6,
+      "phrases": [
+        {
+          "text": "safari truck",
+          "meaning": "观光卡车"
+        },
+        {
+          "text": "tour guide",
+          "meaning": "导游"
+        }
+      ],
+      "examples": [
+        {
+          "en": "I love this safari truck tour. It's so exciting to see animals running free!",
+          "zh": "我喜欢这次野生动物园观光车游览。看到动物自由奔跑真是太刺激了！"
+        }
+      ]
+    },
+    {
+      "id": "u34-19",
+      "no": 19,
+      "type": "word",
+      "text": "giraffe",
+      "phonetic": "/dʒəˈrɑːf/",
+      "pos": "n.",
+      "meaning": "长颈鹿（pl. giraffes）",
+      "door": 6,
+      "examples": [
+        {
+          "en": "Look! Mommy giraffes are taking care of their babies.",
+          "zh": "看！长颈鹿妈妈们正在照顾它们的宝宝。"
+        }
+      ]
+    },
+    {
+      "id": "u34-20",
+      "no": 20,
+      "type": "word",
+      "text": "keeper",
+      "phonetic": "/ˈkiːpə(r)/",
+      "pos": "n.",
+      "meaning": "饲养员；看守人",
+      "door": 6,
+      "phrases": [
+        {
+          "text": "animal keeper",
+          "meaning": "动物饲养员"
+        },
+        {
+          "text": "zoo keeper",
+          "meaning": "动物园管理员"
+        },
+        {
+          "text": "gatekeeper",
+          "meaning": "看门人"
+        },
+        {
+          "text": "keep animals",
+          "meaning": "饲养动物"
+        },
+        {
+          "text": "keep a secret",
+          "meaning": "守秘密"
+        },
+        {
+          "text": "keep doing sth.",
+          "meaning": "保持做某事"
+        }
+      ],
+      "examples": [
+        {
+          "en": "Is that animal keeper trying to feed the giraffes?",
+          "zh": "那个动物饲养员是在尝试喂长颈鹿吗？"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "keep",
+          "pos": "v.",
+          "meaning": "保持；饲养"
+        }
+      ]
+    },
+    {
+      "id": "u34-21",
+      "no": 21,
+      "type": "phrase",
+      "text": "get close to",
+      "phonetic": "/ɡet kləʊz tuː/",
+      "pos": "短语动词",
+      "meaning": "靠近；接近；亲近",
+      "door": 6,
+      "phrases": [
+        {
+          "text": "close friend",
+          "meaning": "亲密的朋友"
+        }
+      ],
+      "examples": [
+        {
+          "en": "I feel so close to all the animals.",
+          "zh": "我感到和所有动物如此亲近。"
+        }
+      ],
+      "notes": "【对比】stay away from 远离"
+    },
+    {
+      "id": "u34-22",
+      "no": 22,
+      "type": "word",
+      "text": "hair",
+      "phonetic": "/heə(r)/",
+      "pos": "n.（不可数）",
+      "meaning": "毛发；头发",
+      "door": 6,
+      "phrases": [
+        {
+          "text": "thick hair",
+          "meaning": "浓密的头发"
+        }
+      ],
+      "examples": [
+        {
+          "en": "She isn't black and white, but pink with a little bit of white hair.",
+          "zh": "它不是黑白相间的，而是粉色的，还带着一点点白色的毛。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "hairy",
+          "pos": "adj.",
+          "meaning": "多毛的"
+        },
+        {
+          "text": "hairless",
+          "pos": "adj.",
+          "meaning": "无毛的"
+        }
+      ],
+      "notes": "hairy 比较级 hairier → 最高级 hairiest"
+    },
+    {
+      "id": "u34-23",
+      "no": 23,
+      "type": "word",
+      "text": "hippo",
+      "phonetic": "/ˈhɪpəʊ/",
+      "pos": "n.",
+      "meaning": "河马",
+      "door": 6,
+      "examples": [
+        {
+          "en": "Momo, the hippo is one month old.",
+          "zh": "河马莫莫一个月大了。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "hippopotamus",
+          "phonetic": "/ˌhɪpəˈpɒtəməs/",
+          "pos": "n.",
+          "meaning": "河马（完整学术拼写）"
+        }
+      ]
+    },
+    {
+      "id": "u34-24",
+      "no": 24,
+      "type": "word",
+      "text": "dive",
+      "phonetic": "/daɪv/",
+      "pos": "v.",
+      "meaning": "跳水；潜水",
+      "door": 6,
+      "examples": [
+        {
+          "en": "He can dive into the swimming pool.",
+          "zh": "他能跳进游泳池里。"
+        },
+        {
+          "en": "Momo is learning how to dive.",
+          "zh": "莫莫正在学习如何潜水。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "diver",
+          "pos": "n.",
+          "meaning": "潜水员；跳水运动员"
+        },
+        {
+          "text": "diving",
+          "pos": "n.",
+          "meaning": "跳水运动；潜水活动"
+        }
+      ]
+    }
+  ]
+}

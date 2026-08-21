@@ -1,0 +1,717 @@
+{
+  "unitId": "u01-school-life",
+  "title": "U1 School life 词汇讲义",
+  "sourceImages": [],
+  "pageMap": {},
+  "missingPages": "",
+  "dictationExtra": [],
+  "entries": [
+    {
+      "id": "u01-01",
+      "no": 1,
+      "type": "word",
+      "text": "life",
+      "phonetic": "/laɪf/",
+      "pos": "n.",
+      "meaning": "生活；生命",
+      "door": 18,
+      "phrases": [
+        {
+          "text": "life and death",
+          "meaning": "生与死"
+        },
+        {
+          "text": "lose one's life",
+          "meaning": "丧生"
+        },
+        {
+          "text": "save one's life",
+          "meaning": "挽救生命"
+        },
+        {
+          "text": "country/city life",
+          "meaning": "乡村/城市生活"
+        },
+        {
+          "text": "an easy/a hard life",
+          "meaning": "轻松的/艰难的生活"
+        },
+        {
+          "text": "live on sth.",
+          "meaning": "靠…为生"
+        },
+        {
+          "text": "live a peaceful life",
+          "meaning": "过着平静的生活"
+        }
+      ],
+      "examples": [
+        {
+          "en": "What a colorful school life!",
+          "zh": "多么丰富多彩的校园生活啊！"
+        },
+        {
+          "en": "In spring the countryside bursts into life.",
+          "zh": "春天，乡村焕发生机。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "live",
+          "pos": "v.",
+          "meaning": "生活；居住 (lived-lived-living)",
+          "phrases": [
+            {
+              "text": "live on sth.",
+              "meaning": "靠…为生"
+            }
+          ]
+        },
+        {
+          "text": "living",
+          "pos": "adj.",
+          "meaning": "活着的",
+          "phrases": [
+            {
+              "text": "all living things",
+              "meaning": "所有生物"
+            }
+          ]
+        },
+        {
+          "text": "alive",
+          "pos": "adj.",
+          "meaning": "活着的（不用于名词前）"
+        }
+      ],
+      "notes": "pl. lives；live adj. 现场直播的"
+    },
+    {
+      "id": "u01-02",
+      "no": 2,
+      "type": "word",
+      "text": "break",
+      "phonetic": "/breɪk/",
+      "pos": "n. 课间休息；v. 打破",
+      "meaning": "课间休息；打破",
+      "door": 18,
+      "phrases": [
+        {
+          "text": "have/take a break",
+          "meaning": "休息一下"
+        },
+        {
+          "text": "at break",
+          "meaning": "在课间"
+        },
+        {
+          "text": "break down",
+          "meaning": "出故障；分解"
+        },
+        {
+          "text": "break into",
+          "meaning": "闯入"
+        }
+      ],
+      "examples": [
+        {
+          "en": "He denied breaking the vase.",
+          "zh": "他否认打破了花瓶。"
+        }
+      ],
+      "notes": "变位: broke-broken；deny doing sth. 否认做了某事"
+    },
+    {
+      "id": "u01-03",
+      "no": 3,
+      "type": "word",
+      "text": "history",
+      "phonetic": "/ˈhɪstri/",
+      "pos": "n.",
+      "meaning": "历史；历史学",
+      "door": 18,
+      "examples": [
+        {
+          "en": "Miss Li is a history teacher.",
+          "zh": "李老师是一位历史老师。"
+        },
+        {
+          "en": "The book is based on historical events.",
+          "zh": "这本书基于历史事件。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "historical",
+          "pos": "adj.",
+          "meaning": "历史的"
+        }
+      ]
+    },
+    {
+      "id": "u01-04",
+      "no": 4,
+      "type": "word",
+      "text": "French",
+      "phonetic": "/frentʃ/",
+      "pos": "n. 法语；adj. 法国的",
+      "meaning": "法语；法国的",
+      "door": 18,
+      "examples": [
+        {
+          "en": "Can you speak French?",
+          "zh": "你会说法语吗？"
+        },
+        {
+          "en": "French cars are not very popular in our city.",
+          "zh": "法国车在我们城市不太受欢迎。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "France",
+          "phonetic": "/frɑːns/",
+          "pos": "n.",
+          "meaning": "法国"
+        },
+        {
+          "text": "Frenchman",
+          "pos": "n.",
+          "meaning": "法国人（复数 Frenchmen）"
+        }
+      ]
+    },
+    {
+      "id": "u01-05",
+      "no": 5,
+      "type": "word",
+      "text": "more",
+      "phonetic": "",
+      "pos": "adj. 更多的；adv. 再；更",
+      "meaning": "更多的；再；更",
+      "door": 18,
+      "examples": [
+        {
+          "en": "We have a lot more work to do.",
+          "zh": "我们还有很多工作要做。"
+        },
+        {
+          "en": "I only got three cards, I need more.",
+          "zh": "我只拿到三张卡片，我还需要更多。"
+        }
+      ]
+    },
+    {
+      "id": "u01-06",
+      "no": 6,
+      "type": "word",
+      "text": "instruction",
+      "phonetic": "/ɪnˈstrʌkʃn/",
+      "pos": "n.",
+      "meaning": "指示；命令；操作说明",
+      "door": 18,
+      "examples": [
+        {
+          "en": "I think you should listen to teachers' instructions.",
+          "zh": "我认为你应该听从老师的指示。"
+        },
+        {
+          "en": "Follow the instructions on the packet carefully.",
+          "zh": "仔细按照包装上的说明操作。"
+        }
+      ]
+    },
+    {
+      "id": "u01-07",
+      "no": 7,
+      "type": "word",
+      "text": "experiment",
+      "phonetic": "/ɪkˈsperɪmənt/",
+      "pos": "n.",
+      "meaning": "实验；试验",
+      "door": 18,
+      "phrases": [
+        {
+          "text": "do/conduct/perform an experiment",
+          "meaning": "做实验"
+        }
+      ],
+      "examples": [
+        {
+          "en": "We should stop experiments on animals.",
+          "zh": "我们应该停止在动物身上做实验。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "experimental",
+          "pos": "adj.",
+          "meaning": "实验性的"
+        }
+      ]
+    },
+    {
+      "id": "u01-08",
+      "no": 8,
+      "type": "word",
+      "text": "activity",
+      "phonetic": "/ækˈtɪvəti/",
+      "pos": "n. (pl. activities)",
+      "meaning": "活动",
+      "door": 18,
+      "examples": [
+        {
+          "en": "Do you like indoor activities or outdoor activities?",
+          "zh": "你喜欢室内活动还是户外活动？"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "act",
+          "pos": "v.",
+          "meaning": "行动",
+          "phrases": [
+            {
+              "text": "actor/actress",
+              "meaning": "男演员/女演员"
+            }
+          ]
+        },
+        {
+          "text": "action",
+          "pos": "n.",
+          "meaning": "行动",
+          "phrases": [
+            {
+              "text": "take action",
+              "meaning": "采取行动"
+            }
+          ]
+        },
+        {
+          "text": "active",
+          "pos": "adj.",
+          "meaning": "积极的",
+          "phrases": [
+            {
+              "text": "take an active part in",
+              "meaning": "积极参加"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u01-09",
+      "no": 9,
+      "type": "word",
+      "text": "club",
+      "phonetic": "/klʌb/",
+      "pos": "n.",
+      "meaning": "俱乐部",
+      "door": 18,
+      "phrases": [
+        {
+          "text": "a tennis club",
+          "meaning": "网球俱乐部"
+        },
+        {
+          "text": "a health club",
+          "meaning": "健身俱乐部"
+        },
+        {
+          "text": "an English club",
+          "meaning": "英语俱乐部"
+        },
+        {
+          "text": "join a club",
+          "meaning": "加入俱乐部"
+        },
+        {
+          "text": "join the Party/army",
+          "meaning": "入党/参军"
+        },
+        {
+          "text": "join in + 活动 = take part in",
+          "meaning": "参加活动"
+        }
+      ]
+    },
+    {
+      "id": "u01-10",
+      "no": 10,
+      "type": "word",
+      "text": "calligraphy",
+      "phonetic": "/kəˈlɪɡrəfi/",
+      "pos": "n.",
+      "meaning": "书法",
+      "door": 19,
+      "extensions": [
+        {
+          "text": "calligrapher",
+          "pos": "n.",
+          "meaning": "书法家"
+        }
+      ]
+    },
+    {
+      "id": "u01-11",
+      "no": 11,
+      "type": "word",
+      "text": "technology",
+      "phonetic": "/tekˈnɒlədʒi/",
+      "pos": "n.",
+      "meaning": "科技",
+      "door": 19,
+      "examples": [
+        {
+          "en": "Being an information technology worker is not an easy job.",
+          "zh": "做一名信息技术工作者不是一件容易的事。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "technological",
+          "pos": "adj.",
+          "meaning": "技术上的"
+        }
+      ]
+    },
+    {
+      "id": "u01-12",
+      "no": 12,
+      "type": "word",
+      "text": "everyone",
+      "phonetic": "",
+      "pos": "pron.",
+      "meaning": "每个人 (= everybody)",
+      "door": 19,
+      "examples": [
+        {
+          "en": "Everyone/Everybody has a chance to win.",
+          "zh": "每个人都有机会获胜。"
+        }
+      ],
+      "notes": "everyone(代词,只指人) vs every one(短语,可指人或物,后常接of)"
+    },
+    {
+      "id": "u01-13",
+      "no": 13,
+      "type": "word",
+      "text": "lab",
+      "phonetic": "/læb/",
+      "pos": "n. (= laboratory /ləˈbɒrətri/)",
+      "meaning": "实验室",
+      "door": 19,
+      "examples": [
+        {
+          "en": "Simon is doing experiments in a science lab.",
+          "zh": "西蒙正在科学实验室里做实验。"
+        }
+      ]
+    },
+    {
+      "id": "u01-14",
+      "no": 14,
+      "type": "word",
+      "text": "field",
+      "phonetic": "/fiːld/",
+      "pos": "n.",
+      "meaning": "场地；田地",
+      "door": 19,
+      "examples": [
+        {
+          "en": "Everyone goes to the sports field during the break.",
+          "zh": "课间休息时大家都去了运动场。"
+        }
+      ]
+    },
+    {
+      "id": "u01-15",
+      "no": 15,
+      "type": "word",
+      "text": "grade",
+      "phonetic": "/ɡreɪd/",
+      "pos": "n.",
+      "meaning": "年级",
+      "door": 19,
+      "examples": [
+        {
+          "en": "Which grade are you in? I'm in Grade 6.",
+          "zh": "你在几年级？我在六年级。"
+        }
+      ],
+      "notes": "英语表示\"六年级一班\"要将\"班\"置于\"年级\"前: Class 9 Grade 6"
+    },
+    {
+      "id": "u01-16",
+      "no": 16,
+      "type": "word",
+      "text": "excuse",
+      "phonetic": "/ɪkˈskjuːz/",
+      "pos": "v. 原谅；n. 借口",
+      "meaning": "原谅；借口",
+      "door": 19,
+      "phrases": [
+        {
+          "text": "make excuses for sb.",
+          "meaning": "为某人找借口"
+        }
+      ],
+      "examples": [
+        {
+          "en": "Please excuse me for being so late.",
+          "zh": "请原谅我迟到了这么久。"
+        },
+        {
+          "en": "Excuse me, is this the way to the station?",
+          "zh": "打扰一下，这是去车站的路吗？"
+        }
+      ]
+    },
+    {
+      "id": "u01-17",
+      "no": 17,
+      "type": "word",
+      "text": "project",
+      "phonetic": "/ˈprɒdʒekt/",
+      "pos": "n.",
+      "meaning": "习作项目",
+      "door": 19,
+      "phrases": [
+        {
+          "text": "set up a project",
+          "meaning": "设立一个项目"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "projector",
+          "phonetic": "/prəˈdʒektə/",
+          "pos": "n.",
+          "meaning": "投影仪"
+        }
+      ]
+    },
+    {
+      "id": "u01-18",
+      "no": 18,
+      "type": "phrase",
+      "text": "of course",
+      "phonetic": "",
+      "pos": "短语",
+      "meaning": "当然",
+      "door": 19,
+      "notes": "回答 Do you mind my doing sth.? 要用 of course not"
+    },
+    {
+      "id": "u01-19",
+      "no": 19,
+      "type": "word",
+      "text": "start",
+      "phonetic": "/stɑːt/",
+      "pos": "v.",
+      "meaning": "开始",
+      "door": 20,
+      "phrases": [
+        {
+          "text": "start to do / start doing",
+          "meaning": "开始做某事"
+        }
+      ],
+      "examples": [
+        {
+          "en": "Shall we start the meeting now?",
+          "zh": "我们现在开始开会好吗？"
+        }
+      ]
+    },
+    {
+      "id": "u01-20",
+      "no": 20,
+      "type": "word",
+      "text": "topic",
+      "phonetic": "/ˈtɒpɪk/",
+      "pos": "n.",
+      "meaning": "话题；主题",
+      "door": 20,
+      "examples": [
+        {
+          "en": "Today, we are going to talk about the topic \"School life\".",
+          "zh": "今天，我们要讨论的话题是\"校园生活\"。"
+        }
+      ]
+    },
+    {
+      "id": "u01-21",
+      "no": 21,
+      "type": "word",
+      "text": "online",
+      "phonetic": "/ˌɒnˈlaɪn/",
+      "pos": "adj. 在线的；adv. 在线",
+      "meaning": "在线的；在线",
+      "door": 20,
+      "examples": [
+        {
+          "en": "Online shopping is easy and cheap.",
+          "zh": "网购既方便又便宜。"
+        },
+        {
+          "en": "It is easy and cheap to shop online.",
+          "zh": "在网上购物既方便又便宜。"
+        }
+      ]
+    },
+    {
+      "id": "u01-22",
+      "no": 22,
+      "type": "word",
+      "text": "receive",
+      "phonetic": "/rɪˈsiːv/",
+      "pos": "v.",
+      "meaning": "接到；收到",
+      "door": 20,
+      "phrases": [
+        {
+          "text": "receive one's letter",
+          "meaning": "收到某人的来信 (= hear from)"
+        }
+      ],
+      "examples": [
+        {
+          "en": "I received my aunt's letter the other day.",
+          "zh": "前几天我收到了我姑姑的来信。"
+        }
+      ]
+    },
+    {
+      "id": "u01-23",
+      "no": 23,
+      "type": "word",
+      "text": "reply",
+      "phonetic": "/rɪˈplaɪ/",
+      "pos": "v. & n.",
+      "meaning": "回答；答复 (replied-replied-replying)",
+      "door": 20,
+      "examples": [
+        {
+          "en": "Tom will receive my reply soon.",
+          "zh": "汤姆很快就会收到我的回复。"
+        },
+        {
+          "en": "He never replied to the letters.",
+          "zh": "他从不回复信件。"
+        }
+      ]
+    },
+    {
+      "id": "u01-24",
+      "no": 24,
+      "type": "word",
+      "text": "a.m.",
+      "phonetic": "/ˌeɪˈem/",
+      "pos": "abbr.",
+      "meaning": "上午 (AmE A.M.)",
+      "door": 20,
+      "notes": "a.m. = in the morning; p.m. = in the afternoon / at night / in the evening"
+    },
+    {
+      "id": "u01-25",
+      "no": 25,
+      "type": "word",
+      "text": "end",
+      "phonetic": "/end/",
+      "pos": "v. 结束；n. 末尾",
+      "meaning": "结束；末尾",
+      "door": 20,
+      "phrases": [
+        {
+          "text": "at the end of +时间+地点",
+          "meaning": "在……末尾"
+        },
+        {
+          "text": "in the end = at last = finally",
+          "meaning": "最后"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "ending",
+          "pos": "n.",
+          "meaning": "结局"
+        },
+        {
+          "text": "endless",
+          "pos": "adj.",
+          "meaning": "无止尽的"
+        }
+      ]
+    },
+    {
+      "id": "u01-26",
+      "no": 26,
+      "type": "word",
+      "text": "difference",
+      "phonetic": "/ˈdɪfrəns/",
+      "pos": "n.",
+      "meaning": "差别",
+      "door": 20,
+      "phrases": [
+        {
+          "text": "tell the difference",
+          "meaning": "分辨出区别"
+        },
+        {
+          "text": "be different from",
+          "meaning": "与……不同"
+        }
+      ],
+      "examples": [
+        {
+          "en": "I can never tell the difference between the twins.",
+          "zh": "我永远分不清这对双胞胎。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "different",
+          "pos": "adj.",
+          "meaning": "不同的"
+        }
+      ]
+    },
+    {
+      "id": "u01-27",
+      "no": 27,
+      "type": "word",
+      "text": "during",
+      "phonetic": "/ˈdjʊərɪŋ/",
+      "pos": "prep.",
+      "meaning": "在……期间",
+      "door": 20,
+      "examples": [
+        {
+          "en": "Please remain seated during the performance.",
+          "zh": "演出期间请保持就座。"
+        }
+      ],
+      "extensions": [
+        {
+          "text": "duration",
+          "pos": "n.",
+          "meaning": "持续时间"
+        }
+      ]
+    },
+    {
+      "id": "u01-28",
+      "no": 28,
+      "type": "word",
+      "text": "outside",
+      "phonetic": "/ˌaʊtˈsaɪd/",
+      "pos": "adv. 在外面；prep. 在……外面",
+      "meaning": "在外面；在……外面",
+      "door": 20
+    }
+  ]
+}

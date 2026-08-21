@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "健康小站",
+    "theme": "doctor",
+    "entryRange": "u56-01 ~ u56-09"
+  },
+  {
+    "id": 2,
+    "name": "检查室",
+    "theme": "doctor",
+    "entryRange": "u56-10 ~ u56-17"
+  },
+  {
+    "id": 3,
+    "name": "勇气山峰",
+    "theme": "challenge",
+    "entryRange": "u56-18 ~ u56-26"
+  },
+  {
+    "id": 4,
+    "name": "植物丛林",
+    "theme": "plants",
+    "entryRange": "u34-01 ~ u34-08"
+  },
+  {
+    "id": 5,
+    "name": "花园小径",
+    "theme": "plants",
+    "entryRange": "u34-09 ~ u34-16"
+  },
+  {
+    "id": 6,
+    "name": "动物乐园",
+    "theme": "animals",
+    "entryRange": "u34-17 ~ u34-24"
+  },
+  {
+    "id": 7,
+    "name": "社团广场",
+    "theme": "clubs",
+    "entryRange": "u12-01 ~ u12-08"
+  },
+  {
+    "id": 8,
+    "name": "传统游戏场",
+    "theme": "games",
+    "entryRange": "u12-09 ~ u12-17"
+  },
+  {
+    "id": 9,
+    "name": "终点之门",
+    "theme": "games",
+    "entryRange": "u12-18 ~ u12-21"
+  },
+  {
+    "id": 10,
+    "name": "科学之门",
+    "theme": "scientists",
+    "entryRange": "u78-01 ~ u78-08"
+  },
+  {
+    "id": 11,
+    "name": "太空实验室",
+    "theme": "scientists",
+    "entryRange": "u78-09 ~ u78-16"
+  },
+  {
+    "id": 12,
+    "name": "发明工坊",
+    "theme": "inventions",
+    "entryRange": "u78-17 ~ u78-23"
+  },
+  {
+    "id": 13,
+    "name": "家电小屋",
+    "theme": "inventions",
+    "entryRange": "u78-24 ~ u78-29"
+  },
+  {
+    "id": 14,
+    "name": "电脑教室",
+    "theme": "computers",
+    "entryRange": "u910-01 ~ u910-08 (U9)"
+  },
+  {
+    "id": 15,
+    "name": "芯片世界",
+    "theme": "computers",
+    "entryRange": "u910-09 ~ u910-16 (U9)"
+  },
+  {
+    "id": 16,
+    "name": "绿色家园",
+    "theme": "green",
+    "entryRange": "u910-17 ~ u910-25 (U10)"
+  },
+  {
+    "id": 17,
+    "name": "海洋卫士",
+    "theme": "green",
+    "entryRange": "u910-26 ~ u910-30 (U10) + 语法"
+  },
+  {
+    "id": 18,
+    "name": "校园生活基础词",
+    "theme": "school",
+    "entryRange": "u01-01 ~ u01-09"
+  },
+  {
+    "id": 19,
+    "name": "校园活动与科技",
+    "theme": "school",
+    "entryRange": "u01-10 ~ u01-18"
+  },
+  {
+    "id": 20,
+    "name": "话题与通信",
+    "theme": "school",
+    "entryRange": "u01-19 ~ u01-28"
+  }
+]
