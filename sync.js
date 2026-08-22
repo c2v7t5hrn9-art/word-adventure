@@ -299,7 +299,7 @@
     }
 
     ready.then(function () {
-      return inject('game.js?v=12');
+      return inject('game.js?v=13');
     }).then(function () {
       return inject('minigames.js?v=1');
     }).then(function () {

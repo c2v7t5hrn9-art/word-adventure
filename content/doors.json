@@ -160,5 +160,29 @@
     "name": "健康饮食",
     "theme": "food",
     "entryRange": "u03-15 ~ u03-21"
+  },
+  {
+    "id": 28,
+    "name": "安全训练营",
+    "theme": "sports",
+    "entryRange": "u04-01 ~ u04-07"
+  },
+  {
+    "id": 29,
+    "name": "意外处理站",
+    "theme": "sports",
+    "entryRange": "u04-08 ~ u04-14"
+  },
+  {
+    "id": 30,
+    "name": "球场风云",
+    "theme": "sports",
+    "entryRange": "u04-15 ~ u04-21"
+  },
+  {
+    "id": 31,
+    "name": "赛事报道",
+    "theme": "sports",
+    "entryRange": "u04-22 ~ u04-29"
   }
 ]

@@ -181,6 +181,30 @@ window.WORDS_DATA = {
       "name": "健康饮食",
       "theme": "food",
       "entryRange": "u03-15 ~ u03-21"
+    },
+    {
+      "id": 28,
+      "name": "安全训练营",
+      "theme": "sports",
+      "entryRange": "u04-01 ~ u04-07"
+    },
+    {
+      "id": 29,
+      "name": "意外处理站",
+      "theme": "sports",
+      "entryRange": "u04-08 ~ u04-14"
+    },
+    {
+      "id": 30,
+      "name": "球场风云",
+      "theme": "sports",
+      "entryRange": "u04-15 ~ u04-21"
+    },
+    {
+      "id": 31,
+      "name": "赛事报道",
+      "theme": "sports",
+      "entryRange": "u04-22 ~ u04-29"
     }
   ],
   "units": [
@@ -8175,6 +8199,1132 @@ window.WORDS_DATA = {
             {
               "en": "The doctor told Tom to give up smoking and be on a diet.",
               "zh": "医生告诉汤姆要戒烟节食。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unitId": "u04-sports",
+      "title": "U4 Sports 词汇讲义",
+      "sourceImages": [
+        "assets/handouts/2026-08-22c_0001.JPG",
+        "assets/handouts/2026-08-22c_0002.JPG",
+        "assets/handouts/2026-08-22c_0003.JPG",
+        "assets/handouts/2026-08-22c_0004.JPG",
+        "assets/handouts/2026-08-22c_0005.JPG",
+        "assets/handouts/2026-08-22c_0006.JPG",
+        "assets/handouts/2026-08-22c_0007.JPG",
+        "assets/handouts/2026-08-22c_0008.JPG",
+        "assets/handouts/2026-08-22c_0009.JPG",
+        "assets/handouts/2026-08-22c_0010.JPG"
+      ],
+      "pageMap": {},
+      "missingPages": "",
+      "dictationExtra": [],
+      "entries": [
+        {
+          "id": "u04-01",
+          "no": 1,
+          "type": "word",
+          "text": "date",
+          "phonetic": "/deɪt/",
+          "pos": "n.",
+          "meaning": "日期；日子；约会",
+          "door": 28,
+          "examples": [
+            {
+              "en": "What's the date today?",
+              "zh": "今天几号？"
+            },
+            {
+              "en": "What day is it today?",
+              "zh": "今天星期几？"
+            }
+          ],
+          "notes": "问日期用 What's the date，问星期用 What day"
+        },
+        {
+          "id": "u04-02",
+          "no": 2,
+          "type": "word",
+          "text": "high",
+          "phonetic": "/haɪ/",
+          "pos": "adj. & adv.",
+          "meaning": "高的；在高处；向高处 (higher-highest)",
+          "door": 28,
+          "phrases": [
+            {
+              "text": "high jump",
+              "meaning": "跳高"
+            },
+            {
+              "text": "long jump",
+              "meaning": "跳远"
+            }
+          ],
+          "examples": [
+            {
+              "en": "The Jin Mao Tower is one of the tallest buildings in Shanghai.",
+              "zh": "金茂大厦是上海最高的建筑物之一。"
+            },
+            {
+              "en": "I can't jump high.",
+              "zh": "我跳不高。"
+            },
+            {
+              "en": "She set a new world record for the high jump.",
+              "zh": "她创造了新的跳高世界纪录。"
+            }
+          ],
+          "extensions": [
+            {
+              "text": "height",
+              "pos": "n.",
+              "meaning": "高度"
+            },
+            {
+              "text": "weight",
+              "pos": "n.",
+              "meaning": "体重"
+            }
+          ],
+          "notes": "high 只修饰物；tall 一般修饰人或物。high jump 和 long jump 中的 jump 是名词「跳；跃」。问高度：What's the height of that mountain?"
+        },
+        {
+          "id": "u04-03",
+          "no": 3,
+          "type": "word",
+          "text": "climb",
+          "phonetic": "/klaɪm/",
+          "pos": "v.",
+          "meaning": "攀登；爬（b 不发音）(climbed-climbed-climbing)",
+          "door": 28,
+          "phrases": [
+            {
+              "text": "climb a tree",
+              "meaning": "爬树"
+            },
+            {
+              "text": "climb up",
+              "meaning": "向上爬；攀登"
+            },
+            {
+              "text": "climb down",
+              "meaning": "向下爬；爬下"
+            },
+            {
+              "text": "rock climbing",
+              "meaning": "攀岩"
+            },
+            {
+              "text": "go rock climbing",
+              "meaning": "去攀岩"
+            }
+          ],
+          "examples": [
+            {
+              "en": "Shall we try rock climbing today?",
+              "zh": "我们今天去试试攀岩好吗？"
+            },
+            {
+              "en": "Climb down the ladder.",
+              "zh": "爬下梯子。"
+            }
+          ]
+        },
+        {
+          "id": "u04-04",
+          "no": 4,
+          "type": "word",
+          "text": "safety",
+          "phonetic": "/ˈseɪfti/",
+          "pos": "n.",
+          "meaning": "安全；平安；安全之处",
+          "door": 28,
+          "phrases": [
+            {
+              "text": "safety first",
+              "meaning": "安全第一"
+            },
+            {
+              "text": "be in safety",
+              "meaning": "处于安全中"
+            },
+            {
+              "text": "fasten your safety belt",
+              "meaning": "系好你的安全带"
+            }
+          ],
+          "examples": [
+            {
+              "en": "For your safety, please walk on the pavement.",
+              "zh": "为了你的安全，请在人行道上行走。"
+            },
+            {
+              "en": "The plane landed safely.",
+              "zh": "飞机安全着陆了。"
+            }
+          ],
+          "extensions": [
+            {
+              "text": "safe",
+              "phonetic": "/seɪf/",
+              "pos": "adj. 安全的 (safer-safest)；n. 保险柜 (pl. safes)",
+              "meaning": "安全的；保险柜"
+            },
+            {
+              "text": "safely",
+              "pos": "adv.",
+              "meaning": "安全地"
+            },
+            {
+              "text": "save",
+              "pos": "v.",
+              "meaning": "救，挽救；节省",
+              "phrases": [
+                {
+                  "text": "save one's life",
+                  "meaning": "拯救某人生命"
+                },
+                {
+                  "text": "save time/money",
+                  "meaning": "节省时间/钱"
+                }
+              ]
+            }
+          ],
+          "notes": "-f(e) 直接加 s 变复数的词：safe(s), roof(s), chief(s), chef(s), proof(s)"
+        },
+        {
+          "id": "u04-05",
+          "no": 5,
+          "type": "word",
+          "text": "match",
+          "phonetic": "/mætʃ/",
+          "pos": "n. & v.",
+          "meaning": "比赛，竞赛；火柴 (pl. matches)；与…匹配",
+          "door": 28,
+          "phrases": [
+            {
+              "text": "a football match",
+              "meaning": "一场足球比赛"
+            },
+            {
+              "text": "win/lose a match",
+              "meaning": "赢得/输掉比赛"
+            },
+            {
+              "text": "meet your match",
+              "meaning": "棋逢对手"
+            }
+          ],
+          "examples": [
+            {
+              "en": "The doors were painted blue to match the walls.",
+              "zh": "门漆成了蓝色与墙相配。"
+            }
+          ]
+        },
+        {
+          "id": "u04-06",
+          "no": 6,
+          "type": "word",
+          "text": "example",
+          "phonetic": "/ɪɡˈzɑːmpl/",
+          "pos": "n.",
+          "meaning": "例子；实例；榜样",
+          "door": 28,
+          "phrases": [
+            {
+              "text": "for example",
+              "meaning": "举个例子；例如"
+            },
+            {
+              "text": "set an example to/for sb.",
+              "meaning": "给某人树立一个榜样"
+            }
+          ],
+          "examples": [
+            {
+              "en": "Can you give me an example to explain what you mean?",
+              "zh": "你能给我举个实例来解释你的意思吗？"
+            },
+            {
+              "en": "There are some easy ways for you to be healthier. For example, you can eat a balanced diet and do enough exercise.",
+              "zh": "有一些简单的方法能让你更健康。例如，你可以均衡饮食并做足够的运动。"
+            },
+            {
+              "en": "I visited many cities, such as Shanghai, Beijing and Guangzhou.",
+              "zh": "我参观过许多城市，如上海、北京和广州。"
+            }
+          ],
+          "notes": "for example & such as 辨析：for example 通常加句子，可放句首、句中或句末；such as 通常加名词及名词性短语，用于列举具体例子。"
+        },
+        {
+          "id": "u04-07",
+          "no": 7,
+          "type": "phrase",
+          "text": "watch out",
+          "phonetic": "",
+          "pos": "短语",
+          "meaning": "小心；留神；注意 (= take care = be careful = look out)",
+          "door": 28,
+          "phrases": [
+            {
+              "text": "watch out for sth.",
+              "meaning": "小心；注意；提防 (= be careful of sth.)"
+            },
+            {
+              "text": "be careful of",
+              "meaning": "小心某物（提醒注意潜在危险或风险）"
+            },
+            {
+              "text": "be careful with sth.",
+              "meaning": "小心使用（小心谨慎以免出错）"
+            },
+            {
+              "text": "be careful not to do sth.",
+              "meaning": "注意不要…"
+            }
+          ],
+          "examples": [
+            {
+              "en": "Watch out! There's a car coming!",
+              "zh": "小心！汽车来了！"
+            },
+            {
+              "en": "Watch out for pedestrians!",
+              "zh": "注意行人！(= Be careful of pedestrians!)"
+            },
+            {
+              "en": "Be careful of the traffic.",
+              "zh": "注意交通安全。"
+            },
+            {
+              "en": "Be careful with my glasses.",
+              "zh": "小心不要打碎了我的眼镜！"
+            },
+            {
+              "en": "Be careful not to wake up the baby.",
+              "zh": "注意别吵醒了宝宝。"
+            }
+          ]
+        },
+        {
+          "id": "u04-08",
+          "no": 8,
+          "type": "word",
+          "text": "matter",
+          "phonetic": "/ˈmætə(r)/",
+          "pos": "n. & v.",
+          "meaning": "问题；事情；要紧事；麻烦事；要紧；有关系",
+          "door": 29,
+          "phrases": [
+            {
+              "text": "What's the matter (with...)?",
+              "meaning": "（…）怎么了？"
+            },
+            {
+              "text": "It doesn't matter.",
+              "meaning": "不要紧；没关系"
+            }
+          ],
+          "examples": [
+            {
+              "en": "They have some important matters to discuss.",
+              "zh": "他们有些重要的问题要讨论。"
+            },
+            {
+              "en": "What's the matter with your bicycle?",
+              "zh": "你的自行车怎么了？"
+            }
+          ],
+          "notes": "「What's the matter?」常用于询问某人或某事是否有问题或不适；对具体对象用 What's the matter with...?"
+        },
+        {
+          "id": "u04-09",
+          "no": 9,
+          "type": "word",
+          "text": "happen",
+          "phonetic": "/ˈhæpən/",
+          "pos": "v.（不及物）",
+          "meaning": "（偶然）发生；碰巧 (happened-happened-happening)",
+          "door": 29,
+          "phrases": [
+            {
+              "text": "happen to do sth.",
+              "meaning": "碰巧做某事"
+            },
+            {
+              "text": "happen to sb./sth.",
+              "meaning": "发生到某人/某事上"
+            }
+          ],
+          "examples": [
+            {
+              "en": "Accidents like this happen all the time.",
+              "zh": "此类事故经常发生。"
+            },
+            {
+              "en": "I happened to see him on my way home yesterday.",
+              "zh": "昨天我在回家路上碰巧见到他。"
+            },
+            {
+              "en": "I hope nothing happens to them.",
+              "zh": "我希望他们没出事。"
+            },
+            {
+              "en": "What has happened to your car?",
+              "zh": "你的车出什么毛病了？"
+            },
+            {
+              "en": "The 2024 Olympic Games took place in Paris, France.",
+              "zh": "2024 年奥运会在法国巴黎举行。"
+            }
+          ],
+          "notes": "happen & take place 辨析：均为不及物、无被动、瞬间动词（不与时间段连用）。happen 指偶然的、没有预料的「发生」，常带来不幸或麻烦；take place 指必然性的「发生」或有计划、安排之内的「举行」——Great changes have taken place in China in recent years."
+        },
+        {
+          "id": "u04-10",
+          "no": 10,
+          "type": "word",
+          "text": "just",
+          "phonetic": "/dʒʌst/",
+          "pos": "adv.",
+          "meaning": "仅仅是；只是；刚才",
+          "door": 29,
+          "phrases": [
+            {
+              "text": "just now",
+              "meaning": "刚才（用于一般过去时）"
+            }
+          ],
+          "examples": [
+            {
+              "en": "He just wants to win.",
+              "zh": "他只是想要赢。"
+            },
+            {
+              "en": "It is just a cat.",
+              "zh": "它只是一只猫。"
+            },
+            {
+              "en": "He finished his final task just now.",
+              "zh": "他刚才完成了他的最后的任务。"
+            }
+          ],
+          "notes": "位置：be 动词之后，行为动词之前。"
+        },
+        {
+          "id": "u04-11",
+          "no": 11,
+          "type": "word",
+          "text": "fall",
+          "phonetic": "/fɔːl/",
+          "pos": "v.",
+          "meaning": "突然倒下；跌倒 (fell-fallen)",
+          "door": 29,
+          "examples": [
+            {
+              "en": "Several of the books fell onto the floor.",
+              "zh": "这些书有几本掉到了地上。"
+            }
+          ],
+          "extensions": [
+            {
+              "text": "fallen",
+              "pos": "adj.",
+              "meaning": "落在地上的",
+              "phrases": [
+                {
+                  "text": "fallen leaves",
+                  "meaning": "落叶"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u04-12",
+          "no": 12,
+          "type": "word",
+          "text": "cut",
+          "phonetic": "/kʌt/",
+          "pos": "v. 切；割；n. 伤口",
+          "meaning": "切；割；伤口 (cut-cut-cutting)",
+          "door": 29,
+          "phrases": [
+            {
+              "text": "cut...into pieces",
+              "meaning": "把…切成碎片"
+            },
+            {
+              "text": "cut down",
+              "meaning": "砍倒；削减"
+            }
+          ],
+          "examples": [
+            {
+              "en": "We should stop cutting down trees.",
+              "zh": "我们应该停止砍伐树木。"
+            },
+            {
+              "en": "Be careful! Don't cut your finger.",
+              "zh": "小心！不要切到你的手指。"
+            }
+          ]
+        },
+        {
+          "id": "u04-13",
+          "no": 13,
+          "type": "word",
+          "text": "seem",
+          "phonetic": "/siːm/",
+          "pos": "v.（系动词）",
+          "meaning": "好像；似乎；看来",
+          "door": 29,
+          "phrases": [
+            {
+              "text": "seem + adj.",
+              "meaning": "似乎…"
+            },
+            {
+              "text": "seem like + n.",
+              "meaning": "好像…"
+            },
+            {
+              "text": "seem to do",
+              "meaning": "好像做某事"
+            }
+          ],
+          "examples": [
+            {
+              "en": "She seems very young although she is in her sixties.",
+              "zh": "尽管六十多岁了，她似乎很年轻。"
+            },
+            {
+              "en": "It seems like a good idea.",
+              "zh": "这似乎是个好主意。"
+            },
+            {
+              "en": "That baby seems to be asleep.",
+              "zh": "那婴儿好像是睡着了。"
+            }
+          ],
+          "notes": "in one's + 基数词复数 表示「在某人几十岁里」；fall asleep 入睡（asleep 表状态）"
+        },
+        {
+          "id": "u04-14",
+          "no": 14,
+          "type": "word",
+          "text": "problem",
+          "phonetic": "/ˈprɒbləm/",
+          "pos": "n.",
+          "meaning": "问题；难题；习题",
+          "door": 29,
+          "phrases": [
+            {
+              "text": "solve/work out the problem",
+              "meaning": "解决问题"
+            },
+            {
+              "text": "the solution to the problem",
+              "meaning": "问题的解决方法"
+            },
+            {
+              "text": "have problems (in) doing sth.",
+              "meaning": "做某事有困难 (= have difficulty (in) doing sth.)"
+            }
+          ],
+          "examples": [
+            {
+              "en": "He has problems in playing badminton.",
+              "zh": "他在打羽毛球方面有困难。"
+            }
+          ],
+          "notes": "同类结构：the key to the door（门的钥匙），to 是介词"
+        },
+        {
+          "id": "u04-15",
+          "no": 15,
+          "type": "word",
+          "text": "score",
+          "phonetic": "/skɔː(r)/",
+          "pos": "v. & n.",
+          "meaning": "得（分）；进（球）；分数",
+          "door": 30,
+          "phrases": [
+            {
+              "text": "score a goal",
+              "meaning": "进一个球"
+            },
+            {
+              "text": "score a point",
+              "meaning": "得一分"
+            },
+            {
+              "text": "get a high/low score",
+              "meaning": "得到一个高分/低分"
+            }
+          ],
+          "examples": [
+            {
+              "en": "He scored the winning goal.",
+              "zh": "他踢进了致胜一球。"
+            }
+          ],
+          "notes": "n. 分数的近义词：mark"
+        },
+        {
+          "id": "u04-16",
+          "no": 16,
+          "type": "word",
+          "text": "goal",
+          "phonetic": "/ɡəʊl/",
+          "pos": "n.",
+          "meaning": "进球得分；球门；目标",
+          "door": 30,
+          "phrases": [
+            {
+              "text": "achieve the goal",
+              "meaning": "实现目标"
+            },
+            {
+              "text": "set a goal",
+              "meaning": "设立目标"
+            },
+            {
+              "text": "one's goal is to do",
+              "meaning": "某人的目标是…"
+            }
+          ],
+          "examples": [
+            {
+              "en": "We are down by one goal.",
+              "zh": "我们落后一球。"
+            },
+            {
+              "en": "You need to set yourself some long-term goals.",
+              "zh": "你得为自己订一些长期目标。"
+            }
+          ],
+          "extensions": [
+            {
+              "text": "goalkeeper",
+              "phonetic": "/ˈɡəʊlkiːpə(r)/",
+              "pos": "n.",
+              "meaning": "守门员"
+            }
+          ],
+          "notes": "「目标」的近义词：aim, purpose"
+        },
+        {
+          "id": "u04-17",
+          "no": 17,
+          "type": "word",
+          "text": "hold",
+          "phonetic": "/həʊld/",
+          "pos": "v.",
+          "meaning": "使保持；拿着；举办；容纳 (held-held-holding)",
+          "door": 30,
+          "phrases": [
+            {
+              "text": "hold one's head up",
+              "meaning": "把头抬起来"
+            },
+            {
+              "text": "hold a class meeting",
+              "meaning": "举行一个班会"
+            },
+            {
+              "text": "hold on",
+              "meaning": "等一等（别挂电话）"
+            },
+            {
+              "text": "hold onto sth.",
+              "meaning": "抓紧；不放开"
+            },
+            {
+              "text": "hold one's breath",
+              "meaning": "屏住呼吸"
+            }
+          ],
+          "examples": [
+            {
+              "en": "The girl usually holds her father's hand when she goes out.",
+              "zh": "这个小姑娘一出门就拉着她父亲的手。"
+            },
+            {
+              "en": "This room can hold forty people.",
+              "zh": "这个房间可以容纳 40 人。"
+            }
+          ]
+        },
+        {
+          "id": "u04-18",
+          "no": 18,
+          "type": "word",
+          "text": "throw",
+          "phonetic": "/θrəʊ/",
+          "pos": "v.",
+          "meaning": "投；抛；掷 (threw-thrown-throwing)",
+          "door": 30,
+          "phrases": [
+            {
+              "text": "throw away",
+              "meaning": "扔掉"
+            },
+            {
+              "text": "throw the dice",
+              "meaning": "掷色子"
+            }
+          ],
+          "examples": [
+            {
+              "en": "Stop throwing stones at the window!",
+              "zh": "别朝窗户扔石头了！"
+            },
+            {
+              "en": "She threw the ball up and caught it again.",
+              "zh": "她把球抛起来又接住。"
+            },
+            {
+              "en": "It's your turn to throw the dice.",
+              "zh": "轮到你掷色子了。"
+            }
+          ]
+        },
+        {
+          "id": "u04-19",
+          "no": 19,
+          "type": "word",
+          "text": "point",
+          "phonetic": "/pɔɪnt/",
+          "pos": "n. & v.",
+          "meaning": "得分；点；观点；重点；用手指向",
+          "door": 30,
+          "phrases": [
+            {
+              "text": "score ten points",
+              "meaning": "得十分"
+            },
+            {
+              "text": "from my point of view",
+              "meaning": "在我看来"
+            },
+            {
+              "text": "make one's point",
+              "meaning": "把话说清楚"
+            },
+            {
+              "text": "point at/to/towards",
+              "meaning": "指向"
+            },
+            {
+              "text": "point out",
+              "meaning": "指出"
+            }
+          ],
+          "examples": [
+            {
+              "en": "Score ten points for your team!",
+              "zh": "为你的队伍得十分！"
+            },
+            {
+              "en": "I know it won't cost much, but that's not the point.",
+              "zh": "我知道那花不了多少钱，但这不是重点。"
+            },
+            {
+              "en": "The girl pointed at the moon excitedly.",
+              "zh": "小女孩兴奋地用手指向月亮。"
+            },
+            {
+              "en": "He pointed out the dangers of driving alone.",
+              "zh": "他指出单独驾车的危险性。"
+            }
+          ]
+        },
+        {
+          "id": "u04-20",
+          "no": 20,
+          "type": "word",
+          "text": "control",
+          "phonetic": "/kənˈtrəʊl/",
+          "pos": "v. & n. [u]",
+          "meaning": "控制 (controlled-controlled-controlling)",
+          "door": 30,
+          "phrases": [
+            {
+              "text": "have/lose control of",
+              "meaning": "对…能掌控/失去掌控"
+            },
+            {
+              "text": "under/in control",
+              "meaning": "在控制之中"
+            },
+            {
+              "text": "out of control",
+              "meaning": "失控"
+            }
+          ],
+          "examples": [
+            {
+              "en": "Control your mind and body!",
+              "zh": "控制你的意志和身体！"
+            },
+            {
+              "en": "He found it difficult to control his feelings.",
+              "zh": "他觉得很难克制住自己的感情。"
+            },
+            {
+              "en": "He got so angry that he lost control.",
+              "zh": "他气得失去了自制。"
+            },
+            {
+              "en": "Don't worry, everything's under control.",
+              "zh": "别担心，一切都控制住了！"
+            }
+          ],
+          "notes": "He found it difficult to... 中 it 为形式宾语"
+        },
+        {
+          "id": "u04-21",
+          "no": 21,
+          "type": "word",
+          "text": "mind",
+          "phonetic": "/maɪnd/",
+          "pos": "n. & v.",
+          "meaning": "头脑；心智，思想；当心；注意；介意",
+          "door": 30,
+          "phrases": [
+            {
+              "text": "keep...in one's mind",
+              "meaning": "一直记着…"
+            },
+            {
+              "text": "make up one's mind to do",
+              "meaning": "下定决心做某事"
+            },
+            {
+              "text": "change one's mind",
+              "meaning": "改变主意"
+            },
+            {
+              "text": "mind one's doing sth.",
+              "meaning": "介意（某人）做某事"
+            },
+            {
+              "text": "Never mind.",
+              "meaning": "没关系（用于回答对不起）"
+            }
+          ],
+          "examples": [
+            {
+              "en": "All teachers think he has a clear and bright mind.",
+              "zh": "所有的老师都认为他头脑清晰，思维敏捷。"
+            },
+            {
+              "en": "Always keep these rules in your mind.",
+              "zh": "一直记着这些规则。"
+            },
+            {
+              "en": "Mind the wet floor!",
+              "zh": "注意地面湿滑！"
+            },
+            {
+              "en": "You should mind your language in public.",
+              "zh": "在公共场合你需要注意自己的言语。"
+            },
+            {
+              "en": "— Do you mind my turning off the light? — Of course not.",
+              "zh": "— 你介意我关灯吗？— 当然不。"
+            }
+          ]
+        },
+        {
+          "id": "u04-22",
+          "no": 22,
+          "type": "word",
+          "text": "powerful",
+          "phonetic": "/ˈpaʊəfl/",
+          "pos": "adj.",
+          "meaning": "强有力的；有权势的",
+          "door": 31,
+          "examples": [
+            {
+              "en": "The clean kung fu moves are powerful.",
+              "zh": "干净利落的功夫招式是强有力的。"
+            },
+            {
+              "en": "I will do everything in my power to help you.",
+              "zh": "我将尽全力帮助你。"
+            },
+            {
+              "en": "This electric car is powered by solar power.",
+              "zh": "这个电车是由太阳能驱动的。"
+            }
+          ],
+          "extensions": [
+            {
+              "text": "power",
+              "pos": "n. [u]",
+              "meaning": "电源；能源；力量；能力",
+              "phrases": [
+                {
+                  "text": "a rich and powerful man",
+                  "meaning": "一个有钱有势的人"
+                },
+                {
+                  "text": "power station",
+                  "meaning": "发电站"
+                },
+                {
+                  "text": "solar power",
+                  "meaning": "太阳能"
+                },
+                {
+                  "text": "a power failure",
+                  "meaning": "停电"
+                }
+              ]
+            },
+            {
+              "text": "powerless",
+              "pos": "adj.",
+              "meaning": "无能为力的"
+            },
+            {
+              "text": "power",
+              "pos": "v.",
+              "meaning": "给…提供动力；驱动…"
+            }
+          ]
+        },
+        {
+          "id": "u04-23",
+          "no": 23,
+          "type": "word",
+          "text": "moment",
+          "phonetic": "/ˈməʊmənt/",
+          "pos": "n.",
+          "meaning": "片刻；瞬间",
+          "door": 31,
+          "phrases": [
+            {
+              "text": "wait a moment",
+              "meaning": "稍等一下"
+            },
+            {
+              "text": "at the moment",
+              "meaning": "现在 (= at present = now = for the time being，常用于现在进行时)"
+            },
+            {
+              "text": "at that moment",
+              "meaning": "那时候；那一刻 (= at that time，常用于过去进行时)"
+            }
+          ],
+          "examples": [
+            {
+              "en": "Could you wait a moment, please?",
+              "zh": "请您稍等一下，好吗？"
+            },
+            {
+              "en": "That was one of the happiest moments of my life.",
+              "zh": "那是我一生中最快乐的一段时光。"
+            },
+            {
+              "en": "At the moment, no one is talking to me.",
+              "zh": "此刻没人跟我说话。"
+            }
+          ]
+        },
+        {
+          "id": "u04-24",
+          "no": 24,
+          "type": "word",
+          "text": "report",
+          "phonetic": "/rɪˈpɔːt/",
+          "pos": "v. & n.",
+          "meaning": "汇报；报告；报道",
+          "door": 31,
+          "phrases": [
+            {
+              "text": "It is reported that + 句子",
+              "meaning": "据报道…"
+            },
+            {
+              "text": "book report",
+              "meaning": "读书报告"
+            },
+            {
+              "text": "news reports",
+              "meaning": "新闻报道"
+            }
+          ],
+          "examples": [
+            {
+              "en": "I reported the thief to the police.",
+              "zh": "我向警方报告了小偷。"
+            },
+            {
+              "en": "The local press reported the serious traffic accident.",
+              "zh": "当地报刊报道了这起严重的交通事故。"
+            },
+            {
+              "en": "It is reported that he has won the game.",
+              "zh": "据报道，他赢得了比赛。"
+            },
+            {
+              "en": "Do you like watching news reports?",
+              "zh": "你喜欢看新闻报道吗？"
+            }
+          ],
+          "extensions": [
+            {
+              "text": "reporter",
+              "pos": "n.",
+              "meaning": "记者 (= journalist)"
+            }
+          ]
+        },
+        {
+          "id": "u04-25",
+          "no": 25,
+          "type": "word",
+          "text": "newspaper",
+          "phonetic": "/ˈnjuːzpeɪpə(r)/",
+          "pos": "n. [C]",
+          "meaning": "报纸",
+          "door": 31,
+          "phrases": [
+            {
+              "text": "a daily/weekly newspaper",
+              "meaning": "日报/周报"
+            }
+          ],
+          "examples": [
+            {
+              "en": "I read about it in the newspaper.",
+              "zh": "我在报上看到了这件事。（read 为过去式）"
+            }
+          ],
+          "notes": "合成词：news（新闻 [u]）+ paper（纸；纸张 [u]）= newspaper（报纸，可数）"
+        },
+        {
+          "id": "u04-26",
+          "no": 26,
+          "type": "word",
+          "text": "against",
+          "phonetic": "/əˈɡenst/",
+          "pos": "prep.",
+          "meaning": "与…对阵；靠着；与…相反；反对",
+          "door": 31,
+          "phrases": [
+            {
+              "text": "play a game against",
+              "meaning": "与…进行一场比赛"
+            },
+            {
+              "text": "against the law",
+              "meaning": "违法"
+            },
+            {
+              "text": "lean against the wall",
+              "meaning": "靠着墙"
+            },
+            {
+              "text": "be against",
+              "meaning": "反对（支持：be for / in favor of）"
+            }
+          ],
+          "examples": [
+            {
+              "en": "On the basketball court, our class is playing a game against Class 4.",
+              "zh": "篮球场上，我们班正在和 4 班进行一场比赛。"
+            },
+            {
+              "en": "That's against the law.",
+              "zh": "那是违法的。"
+            },
+            {
+              "en": "When Emily told her decision to her parents, they were against it.",
+              "zh": "当 Emily 把她的决定告诉她父母的时候，他们都反对她。"
+            }
+          ]
+        },
+        {
+          "id": "u04-27",
+          "no": 27,
+          "type": "word",
+          "text": "shoot",
+          "phonetic": "/ʃuːt/",
+          "pos": "v.",
+          "meaning": "射门；投篮；射击；拍摄 (shot-shot-shooting)",
+          "door": 31,
+          "examples": [
+            {
+              "en": "He is jumping high into the air, shooting the ball at the basket.",
+              "zh": "他正高高跳起，把球朝篮筐投去。"
+            },
+            {
+              "en": "A man was shot in the leg.",
+              "zh": "一个人被射中腿部。"
+            },
+            {
+              "en": "Where was the movie shot?",
+              "zh": "那部电影是在哪儿拍的？"
+            }
+          ]
+        },
+        {
+          "id": "u04-28",
+          "no": 28,
+          "type": "word",
+          "text": "tie",
+          "phonetic": "/taɪ/",
+          "pos": "v. & n.",
+          "meaning": "（比赛或竞争中）得分相同；平局 (tied-tied-tying)",
+          "door": 31,
+          "examples": [
+            {
+              "en": "We tie the game. Bravo!",
+              "zh": "我们打成平局了。万岁！"
+            },
+            {
+              "en": "England tied 2-2 with Germany in the first round.",
+              "zh": "在第一轮比赛中英格兰队与德国队以 2:2 打成平局。"
+            },
+            {
+              "en": "The match ended in a tie.",
+              "zh": "这场比赛以平局结束。"
+            }
+          ],
+          "notes": "本单元义项为体育「平局」；U2 学过 tie n. 纽带/领带、v. 捆绑"
+        },
+        {
+          "id": "u04-29",
+          "no": 29,
+          "type": "word",
+          "text": "track",
+          "phonetic": "/træk/",
+          "pos": "n. & v.",
+          "meaning": "（赛跑、赛车等的）跑道；足迹，踪迹；追踪",
+          "door": 31,
+          "phrases": [
+            {
+              "text": "on the running track",
+              "meaning": "在跑道上"
+            }
+          ],
+          "examples": [
+            {
+              "en": "We followed the bear's tracks in the snow.",
+              "zh": "我们跟着熊在雪地上留下的足迹走。"
+            },
+            {
+              "en": "The police were tracking a criminal.",
+              "zh": "警方正在追踪一名罪犯。"
             }
           ]
         }

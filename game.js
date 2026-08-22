@@ -32,7 +32,8 @@
     { id: 'u9u10-computers-green', short: '未来岛', icon: '💻' },
     { id: 'u01-school-life', short: '校园岛', icon: '🏫' },
     { id: 'u02-family-ties', short: '亲情岛', icon: '🏡' },
-    { id: 'u03-food', short: '美食岛', icon: '🍳' }
+    { id: 'u03-food', short: '美食岛', icon: '🍳' },
+    { id: 'u04-sports', short: '运动岛', icon: '⚽' }
   ];
 
   /* 英语对话脚本：每座岛一场主题对话
@@ -243,6 +244,36 @@
           sample: 'Yes, with pleasure!' },
         { type: 'repeat', en: 'Everyone needs a balanced diet.', zh: '每个人都需要均衡的饮食。' },
         { type: 'say', en: 'Well done! Dinner is ready. Here are two stars for you!', zh: '干得好！晚餐做好了。奖励你两颗星星！' }
+      ]
+    },
+    /* 运动岛：班级足球赛。目标词：match, against, safety, watch out, track,
+       fall, just, happen, matter, mind, seem, problem, hold, control, shoot,
+       goal, score, powerful, tie, moment, report, newspaper */
+    'u04-sports': {
+      title: '班级足球赛', icon: '⚽',
+      steps: [
+        { type: 'say', en: 'Hi! I\'m Coach Bubble. Welcome to Sports Island!', zh: '嗨！我是泡泡教练。欢迎来到运动岛！' },
+        { type: 'say', en: 'Today our class has a football match against Class 4!', zh: '今天我们班要和四班踢一场足球赛！' },
+        { type: 'ask', en: 'Do you like football matches?', zh: '你喜欢足球比赛吗？',
+          accept: [['yes'], ['no']],
+          hints: ['You can say: Yes, I like football matches.', 'Or: Yes, I do.'],
+          sample: 'Yes, I like football matches.' },
+        { type: 'say', en: 'Safety first! Watch out when you run on the track.', zh: '安全第一！在跑道上跑的时候要小心。' },
+        { type: 'say', en: 'Oh no! Tom fell down just now. What happened?', zh: '哦不！汤姆刚才摔倒了。发生什么事了？' },
+        { type: 'choice', options: [
+          { en: 'Don\'t worry. It\'s not a big matter.', zh: '别担心，不是什么大问题。', correct: true },
+          { en: 'Never mind safety. Just keep running!', zh: '别管安全了，继续跑吧！', correct: false }
+        ] },
+        { type: 'say', en: 'He seems OK. No problem! The match goes on.', zh: '他好像没事。没问题！比赛继续。' },
+        { type: 'repeat', en: 'Hold the ball, control it, then shoot!', zh: '停住球，控制住，然后射门！' },
+        { type: 'say', en: 'GOAL! We scored! What a powerful shot!', zh: '进球啦！我们得分了！多么有力的一脚射门！' },
+        { type: 'ask', en: 'Do you mind being our goalkeeper?', zh: '你介意当我们的守门员吗？',
+          accept: [['yes'], ['no']],
+          hints: ['You can say: No, I don\'t mind. I\'d love to!', 'Or: Not at all!'],
+          sample: 'No, I don\'t mind. I\'d love to!' },
+        { type: 'repeat', en: 'The match is tied two to two at the moment.', zh: '此刻比赛二比二平。' },
+        { type: 'say', en: 'Hold your head up! Win or tie, we did our best.', zh: '抬起头来！无论赢球还是平局，我们都尽力了。' },
+        { type: 'say', en: 'I will write a report for the school newspaper. Two stars for you, superstar!', zh: '我要为校报写一篇报道。奖励你两颗星星，超级明星！' }
       ]
     }
   };
@@ -690,6 +721,12 @@
       '煎鸡蛋、煮牛奶、看菜单……厨房里藏着好多英语单词！',
       '学会它们，你就能用英语介绍自己最爱的一道菜啦～',
       '泡泡大厨已经戴好围裙了，快来一起下厨吧，出发！'
+    ],
+    [ // 运动岛：运动与比赛主题
+      '欢迎来到运动岛！这里有绿茵球场和红色跑道 ⚽',
+      '射门、投篮、攀岩、跳高……每项运动都超好玩！',
+      '记住：安全第一，比赛第二——友谊也很第二，哈哈！',
+      '学会这些运动单词，运动会解说就交给你啦！出发！'
     ]
   ];
   function introFor(isl) {
