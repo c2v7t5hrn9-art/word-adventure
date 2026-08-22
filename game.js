@@ -31,7 +31,8 @@
     { id: 'u7u8-scientists-inventions', short: '科学岛', icon: '🔬' },
     { id: 'u9u10-computers-green', short: '未来岛', icon: '💻' },
     { id: 'u01-school-life', short: '校园岛', icon: '🏫' },
-    { id: 'u02-family-ties', short: '亲情岛', icon: '🏡' }
+    { id: 'u02-family-ties', short: '亲情岛', icon: '🏡' },
+    { id: 'u03-food', short: '美食岛', icon: '🍳' }
   ];
 
   /* 英语对话脚本：每座岛一场主题对话
@@ -215,6 +216,33 @@
           sample: 'Happy Birthday, Grandpa!' },
         { type: 'repeat', en: 'To our joy, Grandpa is super-excited!', zh: '令我们高兴的是，爷爷超级激动！' },
         { type: 'say', en: 'Well done! The party is full of fun. Here are two stars for you!', zh: '干得好！派对充满了欢乐。奖励你两颗星星！' }
+      ]
+    },
+    /* 美食岛：泡泡小厨师。目标词：tasty, boil, fry, beat, salt, menu,
+       plenty of, a little, balanced diet, need */
+    'u03-food': {
+      title: '泡泡小厨师', icon: '🍳',
+      steps: [
+        { type: 'say', en: 'Hi! I\'m Chef Bubble. Welcome to my little kitchen!', zh: '嗨！我是泡泡大厨。欢迎来到我的小厨房！' },
+        { type: 'say', en: 'Today we will cook something tasty for Grandpa.', zh: '今天我们要给爷爷做些好吃的东西。' },
+        { type: 'ask', en: 'Do you like tasty food?', zh: '你喜欢美味的食物吗？',
+          accept: [['yes'], ['no']],
+          hints: ['You can say: Yes, I like tasty food.', 'Or: Yes, I do.'],
+          sample: 'Yes, I like tasty food.' },
+        { type: 'say', en: 'First, let me boil an egg and fry some rice.', zh: '首先，我来煮个鸡蛋、炒个饭。' },
+        { type: 'say', en: 'Don\'t add too much salt — a little is enough!', zh: '别加太多盐——一点点就够了！' },
+        { type: 'choice', options: [
+          { en: 'We need a balanced diet.', zh: '我们需要均衡的饮食。', correct: true },
+          { en: 'We only eat candy every day.', zh: '我们每天只吃糖果。', correct: false }
+        ] },
+        { type: 'repeat', en: 'First beat the eggs, then fry them in the pan.', zh: '先把鸡蛋打散，然后在锅里煎。' },
+        { type: 'say', en: 'Look at the menu! There is plenty of food: rice, fruit and vegetables.', zh: '看菜单！有好多食物：米饭、水果和蔬菜。' },
+        { type: 'ask', en: 'Will you help me cook?', zh: '你愿意帮我做饭吗？',
+          accept: [['yes'], ['no']],
+          hints: ['You can say: Yes, I will help you.', 'Or: Yes, with pleasure!'],
+          sample: 'Yes, with pleasure!' },
+        { type: 'repeat', en: 'Everyone needs a balanced diet.', zh: '每个人都需要均衡的饮食。' },
+        { type: 'say', en: 'Well done! Dinner is ready. Here are two stars for you!', zh: '干得好！晚餐做好了。奖励你两颗星星！' }
       ]
     }
   };
@@ -656,6 +684,12 @@
       '爷爷、奶奶、哥哥、妹妹……家里的每个人都是最珍贵的宝贝。',
       '学会这些关于家的单词，你就能用英语介绍自己的家人啦！',
       '今晚还有一场惊喜生日会要帮忙准备呢，出发！'
+    ],
+    [ // 美食岛：食物与烹饪主题
+      '欢迎来到美食岛！这里到处飘着香香的饭菜味道 🍳',
+      '煎鸡蛋、煮牛奶、看菜单……厨房里藏着好多英语单词！',
+      '学会它们，你就能用英语介绍自己最爱的一道菜啦～',
+      '泡泡大厨已经戴好围裙了，快来一起下厨吧，出发！'
     ]
   ];
   function introFor(isl) {

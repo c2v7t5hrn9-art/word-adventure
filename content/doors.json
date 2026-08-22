@@ -142,5 +142,23 @@
     "name": "家庭庆典",
     "theme": "family",
     "entryRange": "u02-30 ~ u02-39"
+  },
+  {
+    "id": 25,
+    "name": "词语辨析坊",
+    "theme": "food",
+    "entryRange": "u03-01 ~ u03-07"
+  },
+  {
+    "id": 26,
+    "name": "厨房行动",
+    "theme": "food",
+    "entryRange": "u03-08 ~ u03-14"
+  },
+  {
+    "id": 27,
+    "name": "健康饮食",
+    "theme": "food",
+    "entryRange": "u03-15 ~ u03-21"
   }
 ]

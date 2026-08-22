@@ -1,0 +1,510 @@
+{
+  "unitId": "u03-food",
+  "title": "U3 Food 词汇讲义",
+  "sourceImages": [
+    "assets/handouts/2026-08-22b_0001.JPG",
+    "assets/handouts/2026-08-22b_0002.JPG",
+    "assets/handouts/2026-08-22b_0003.JPG",
+    "assets/handouts/2026-08-22b_0004.JPG",
+    "assets/handouts/2026-08-22b_0005.JPG",
+    "assets/handouts/2026-08-22b_0006.JPG",
+    "assets/handouts/2026-08-22b_0007.JPG",
+    "assets/handouts/2026-08-22b_0008.JPG"
+  ],
+  "pageMap": {},
+  "missingPages": "",
+  "dictationExtra": [],
+  "entries": [
+    {
+      "id": "u03-01",
+      "no": 1,
+      "type": "word",
+      "text": "each",
+      "phonetic": "/iːtʃ/",
+      "pos": "det. & pron. & adv.",
+      "meaning": "（两个或两个以上的人或物中）各自，各个，每个",
+      "door": 25,
+      "phrases": [
+        { "text": "each other = one another", "meaning": "彼此；互相（相互代词）" },
+        { "text": "each other's", "meaning": "彼此的；互相的（所有格）" },
+        { "text": "each of + 复数名词", "meaning": "…中的每一个" }
+      ],
+      "examples": [
+        { "en": "Each student studies English.", "zh": "每个同学都学英语。（det.）" },
+        { "en": "Each of the students studies English.", "zh": "同学们每个人都学英语。（pron.）" },
+        { "en": "We each have different interests.", "zh": "我们每个人都有不同的兴趣。（同位语）" },
+        { "en": "The tickets cost 50 yuan each.", "zh": "票价为 50 元每张。（adv.）" },
+        { "en": "We should care about each other.", "zh": "我们应该互相关心。" },
+        { "en": "We need each other's care.", "zh": "我们需要彼此的关心。" }
+      ],
+      "notes": "each 和 every 辨析：① each+单数名词（≥2 人或物，强调个体）；every+单数名词（≥3 人或物，强调整体）——Each student has a new book. / Every girl has a dress. ② every 可与 almost/nearly/not 连用，each 不可——Not every child likes the idea. ③ each 作代词可单独使用、后可接 of；every 只能作限定词，须说 every one of——Each of the students = Every one of the students。另：everyone 只指人、不接 of；every one 可指人/物、可接 of。"
+    },
+    {
+      "id": "u03-02",
+      "no": 2,
+      "type": "word",
+      "text": "plenty",
+      "phonetic": "/ˈplenti/",
+      "pos": "pron.",
+      "meaning": "大量；众多；充足",
+      "door": 25,
+      "phrases": [
+        { "text": "plenty of + 不可数名词/可数名词复数", "meaning": "大量；很多的" }
+      ],
+      "examples": [
+        { "en": "We have plenty to talk about.", "zh": "我们有说不完的话。" }
+      ],
+      "notes": "「大量」短语辨析：plenty of / a lot of / lots of（谓语动词根据 of 后的名词确定）；+不可数名词：a large amount of（谓语用单数）/ large amounts of（谓语用复数）；+可数名词复数：a number of（谓语用复数）。修饰可数：many, few, a few, a number of；修饰不可数：much, little, a little, an amount of；两者皆可：some, a lot of, lots of, plenty of。"
+    },
+    {
+      "id": "u03-03",
+      "no": 3,
+      "type": "word",
+      "text": "choice",
+      "phonetic": "/tʃɔɪs/",
+      "pos": "n.",
+      "meaning": "选择；挑选；抉择",
+      "door": 25,
+      "phrases": [
+        { "text": "make a choice between A and B", "meaning": "在 A 和 B 之间做出选择" },
+        { "text": "have no choice but to do sth.", "meaning": "不得不做某事" }
+      ],
+      "examples": [
+        { "en": "Students need to make a choice between French and German.", "zh": "学生们需要在法语和德语之间做出一个选择。" },
+        { "en": "He has no choice but to leave.", "zh": "除了离开，他别无选择。" }
+      ],
+      "extensions": [
+        {
+          "text": "choose",
+          "pos": "v.",
+          "meaning": "选择；挑选；选取（chose-chosen-choosing）",
+          "phrases": [
+            { "text": "choose to do sth.", "meaning": "选择做某事" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u03-04",
+      "no": 4,
+      "type": "word",
+      "text": "list",
+      "phonetic": "/lɪst/",
+      "pos": "n.",
+      "meaning": "一览表；名单；目录；清单",
+      "door": 25,
+      "phrases": [
+        { "text": "a shopping list", "meaning": "一张购物清单" },
+        { "text": "make a list", "meaning": "制作一张清单" }
+      ]
+    },
+    {
+      "id": "u03-05",
+      "no": 5,
+      "type": "word",
+      "text": "few",
+      "phonetic": "/fjuː/",
+      "pos": "det. & adj.",
+      "meaning": "不多；很少",
+      "door": 25,
+      "phrases": [
+        { "text": "a few + 可数名词", "meaning": "有一些（肯定含义）" },
+        { "text": "few + 可数名词", "meaning": "几乎没有（否定含义）" },
+        { "text": "a little + 不可数名词", "meaning": "有一点（肯定含义）" },
+        { "text": "little + 不可数名词", "meaning": "几乎没有（否定含义）" }
+      ],
+      "examples": [
+        { "en": "I have a few friends.", "zh": "我有一些朋友。" },
+        { "en": "I have few friends.", "zh": "我几乎没有朋友。" },
+        { "en": "There is a little milk.", "zh": "有一点牛奶。" },
+        { "en": "There is little milk.", "zh": "几乎没有牛奶。" }
+      ],
+      "notes": "常用修饰语：just/only/quite a few (a little)；so/too/very few (little)"
+    },
+    {
+      "id": "u03-06",
+      "no": 6,
+      "type": "word",
+      "text": "pleasure",
+      "phonetic": "/ˈpleʒə(r)/",
+      "pos": "n.",
+      "meaning": "高兴；快乐；愉快",
+      "door": 25,
+      "phrases": [
+        { "text": "My pleasure. / It's a pleasure.", "meaning": "不客气（回答感谢，做过之后）" },
+        { "text": "With pleasure.", "meaning": "乐意效劳（回答请求，做之前）" }
+      ],
+      "extensions": [
+        {
+          "text": "please",
+          "pos": "v.",
+          "meaning": "使满意；使愉快（please sb. 取悦某人）"
+        },
+        {
+          "text": "pleasant",
+          "pos": "adj.",
+          "meaning": "令人愉快的；宜人的（修饰 sth. = enjoyable）"
+        },
+        {
+          "text": "pleased",
+          "pos": "adj.",
+          "meaning": "高兴；满意（修饰 sb.）",
+          "phrases": [
+            { "text": "be pleased with sth.", "meaning": "对某事满意" },
+            { "text": "be pleased to do sth.", "meaning": "很高兴去做某事" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u03-07",
+      "no": 7,
+      "type": "word",
+      "text": "tasty",
+      "phonetic": "/ˈteɪsti/",
+      "pos": "adj.",
+      "meaning": "美味的；可口的 (tastier-tastiest)",
+      "door": 25,
+      "phrases": [
+        { "text": "something tasty to eat", "meaning": "好吃的东西" }
+      ],
+      "extensions": [
+        {
+          "text": "taste",
+          "pos": "v.",
+          "meaning": "品尝；尝起来",
+          "phrases": [
+            { "text": "taste tasty", "meaning": "尝起来美味" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u03-08",
+      "no": 8,
+      "type": "word",
+      "text": "need",
+      "phonetic": "/niːd/",
+      "pos": "v. & n. & 情态动词",
+      "meaning": "需要；需求",
+      "door": 26,
+      "phrases": [
+        { "text": "need to do sth.", "meaning": "需要做某事（行为动词）" },
+        { "text": "need (not) do sth.", "meaning": "（不）需要做某事（情态动词，need not = needn't）" },
+        { "text": "meet the needs of", "meaning": "满足…的需求" }
+      ],
+      "examples": [
+        { "en": "You need to wash this shirt.", "zh": "你该洗这件衬衣了。" },
+        { "en": "You needn't finish that work today.", "zh": "你不必今天做完这项工作。" }
+      ],
+      "extensions": [
+        {
+          "text": "necessary",
+          "pos": "adj.",
+          "meaning": "必需的；必要的（反义词 unnecessary）",
+          "phrases": [
+            { "text": "It's necessary (for sb.) to do sth.", "meaning": "某人有必要做某事" },
+            { "text": "if necessary", "meaning": "必要的话" }
+          ]
+        }
+      ],
+      "notes": "n. 经济需求 financial needs；It's necessary for me to buy a new one. 我有必要买个新的了。（it 为形式主语）"
+    },
+    {
+      "id": "u03-09",
+      "no": 9,
+      "type": "word",
+      "text": "as",
+      "phonetic": "/æz/",
+      "pos": "prep. & adv. & conj.",
+      "meaning": "作为；当作；如同；和…一样；照…方式；因为",
+      "door": 26,
+      "phrases": [
+        { "text": "as soon as possible", "meaning": "越快越好；尽快" },
+        { "text": "as always", "meaning": "一如既往" },
+        { "text": "as for / as to", "meaning": "至于；关于" }
+      ],
+      "examples": [
+        { "en": "Treat me as a friend.", "zh": "像朋友一样对我。（prep. 作为）" },
+        { "en": "They did as I had asked.", "zh": "他们是按照我的要求做的。（conj. 照…方式）" },
+        { "en": "She may need some help as she's new.", "zh": "她是新来的，可能需要一些帮助。（conj. 因为）" },
+        { "en": "As for English, it's hard to me.", "zh": "至于英语，它对我来说很难。" }
+      ]
+    },
+    {
+      "id": "u03-10",
+      "no": 10,
+      "type": "word",
+      "text": "piece",
+      "phonetic": "/piːs/",
+      "pos": "n.",
+      "meaning": "碎片；碎块",
+      "door": 26,
+      "phrases": [
+        { "text": "a piece of paper", "meaning": "一张纸" },
+        { "text": "a piece of advice", "meaning": "一条建议" },
+        { "text": "a piece of furniture", "meaning": "一件家具" },
+        { "text": "in pieces", "meaning": "碎片状态" },
+        { "text": "a bottle of water", "meaning": "一瓶水" },
+        { "text": "a glass of water", "meaning": "一杯水（玻璃杯）" },
+        { "text": "a cup of tea", "meaning": "一杯茶" },
+        { "text": "a bowl of rice", "meaning": "一碗米饭" },
+        { "text": "a grain of rice", "meaning": "一粒米" },
+        { "text": "a can of cola", "meaning": "一听可乐" },
+        { "text": "a piece of cake", "meaning": "一块蛋糕" },
+        { "text": "a slice of cheese", "meaning": "一片奶酪" },
+        { "text": "a bar of chocolate", "meaning": "一条巧克力" },
+        { "text": "a basket of fruits", "meaning": "一篮子水果" },
+        { "text": "a dozen eggs", "meaning": "一打鸡蛋（12 个）" },
+        { "text": "a loaf of bread", "meaning": "一条面包" },
+        { "text": "a jar of jam", "meaning": "一罐果酱" },
+        { "text": "a bunch of bananas", "meaning": "一串香蕉" },
+        { "text": "a pair of chopsticks", "meaning": "一双筷子" },
+        { "text": "a bag of potato chips", "meaning": "一包薯片" }
+      ],
+      "notes": "a piece of + 不可数名词；后附讲义「量词小练习」全部量词搭配"
+    },
+    {
+      "id": "u03-11",
+      "no": 11,
+      "type": "word",
+      "text": "fry",
+      "phonetic": "/fraɪ/",
+      "pos": "v.",
+      "meaning": "油煎；油炒 (fried-fried-frying，三单 fries)",
+      "door": 26,
+      "phrases": [
+        { "text": "fried eggs", "meaning": "煎蛋" }
+      ]
+    },
+    {
+      "id": "u03-12",
+      "no": 12,
+      "type": "word",
+      "text": "finally",
+      "phonetic": "/ˈfaɪnəli/",
+      "pos": "adv.",
+      "meaning": "最后 (= at last = in the end)",
+      "door": 26,
+      "extensions": [
+        {
+          "text": "final",
+          "pos": "adj.",
+          "meaning": "最终的；期末的",
+          "phrases": [
+            { "text": "final exam", "meaning": "期末考试" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u03-13",
+      "no": 13,
+      "type": "word",
+      "text": "boil",
+      "phonetic": "/bɔɪl/",
+      "pos": "v.",
+      "meaning": "煮沸；烧开",
+      "door": 26,
+      "phrases": [
+        { "text": "boil an egg for sb. / boil sb. an egg", "meaning": "给某人煮个鸡蛋" },
+        { "text": "boil sth. up", "meaning": "把……烧开" }
+      ],
+      "extensions": [
+        {
+          "text": "boiling",
+          "pos": "adj.",
+          "meaning": "沸腾的",
+          "phrases": [
+            { "text": "boiling water", "meaning": "沸水" }
+          ]
+        },
+        {
+          "text": "boiled",
+          "pos": "adj.",
+          "meaning": "煮熟的",
+          "phrases": [
+            { "text": "boiled eggs", "meaning": "煮熟的鸡蛋" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u03-14",
+      "no": 14,
+      "type": "word",
+      "text": "side",
+      "phonetic": "/saɪd/",
+      "pos": "n.",
+      "meaning": "一边；侧面",
+      "door": 26,
+      "phrases": [
+        { "text": "look on the bright side", "meaning": "（对坏情况）持乐观态度" },
+        { "text": "on one's side", "meaning": "站在某人一边；和某人观点一致" }
+      ],
+      "examples": [
+        { "en": "There are many trees on either side of the river.", "zh": "河的两边都有许多树。（= on both sides / each side）" }
+      ]
+    },
+    {
+      "id": "u03-15",
+      "no": 15,
+      "type": "word",
+      "text": "beat",
+      "phonetic": "/biːt/",
+      "pos": "v.",
+      "meaning": "搅拌，打；赢，打败（某人）；胜过；规律作响 (beat-beaten-beating)",
+      "door": 27,
+      "phrases": [
+        { "text": "beat sth. (up)", "meaning": "搅拌（用叉等快速打）" },
+        { "text": "beat A and B together", "meaning": "把 A 和 B 搅拌在一起" },
+        { "text": "beat the world record", "meaning": "打破世界纪录" }
+      ],
+      "examples": [
+        { "en": "He beat me at chess.", "zh": "他下棋赢了我。" },
+        { "en": "Her heart is still beating.", "zh": "她的心脏还在跳动。" }
+      ],
+      "notes": "四个义项：①（用叉等）快速搅拌、打；②（比赛或竞争中）赢、打败某人；③比…更好、赛过、胜过；④（使）规律作响、作节奏运动"
+    },
+    {
+      "id": "u03-16",
+      "no": 16,
+      "type": "word",
+      "text": "menu",
+      "phonetic": "/ˈmenjuː/",
+      "pos": "n.",
+      "meaning": "菜单",
+      "door": 27,
+      "phrases": [
+        { "text": "ask for the menu", "meaning": "要菜单" },
+        { "text": "read the menu", "meaning": "看菜单" }
+      ],
+      "examples": [
+        { "en": "What's on the menu tonight?", "zh": "今晚有什么菜？" }
+      ]
+    },
+    {
+      "id": "u03-17",
+      "no": 17,
+      "type": "word",
+      "text": "something",
+      "phonetic": "/ˈsʌmθɪŋ/",
+      "pos": "pron.",
+      "meaning": "某事；某物",
+      "door": 27,
+      "phrases": [
+        { "text": "cook something healthy", "meaning": "做些健康的食物" },
+        { "text": "something else", "meaning": "别的东西" }
+      ],
+      "examples": [
+        { "en": "He wants to cook something healthy for his mother on her birthday.", "zh": "他想在母亲生日那天为她做点健康的食物。" },
+        { "en": "We can use the metal of the car to make something else.", "zh": "我们可以用汽车的金属来制造别的东西。" },
+        { "en": "Something is bothering you, isn't it?", "zh": "某些事情困扰着你，不是吗？" },
+        { "en": "My family means everything to me.", "zh": "对我来说家庭意味着一切。" },
+        { "en": "He realized right away that there was something wrong.", "zh": "他马上意识到有地方不对劲。" },
+        { "en": "Was there anything else you wanted to say?", "zh": "你还有什么要说的吗？" },
+        { "en": "I consider nothing is more important than happiness in my life.", "zh": "我认为我的生活中没有什么比快乐更重要。" },
+        { "en": "Have you seen anything unusual today?", "zh": "你今天看到什么不寻常的事了吗？" }
+      ],
+      "extensions": [
+        { "text": "everything", "pos": "pron.", "meaning": "每件事；一切事（肯定/疑问/否定句均可用）" },
+        { "text": "anything", "pos": "pron.", "meaning": "某事；任何事（一般用于否定句或疑问句）" },
+        { "text": "nothing", "pos": "pron.", "meaning": "没有什么；没有东西" }
+      ],
+      "notes": "① something 作主语时，反义疑问句用 it。② everything/something/anything/nothing 作主语时，谓语动词用单数。③ something 常用于肯定句，也可用于征求对方意见的疑问句。④ 复合不定代词+adj.（anything unusual）；复合不定代词+to do——I'm worried that there isn't anybody to take care of the children while we are away. ⑤ 其他复合不定代词：somebody/someone、anybody/anyone、everybody/everyone、nobody/no one"
+    },
+    {
+      "id": "u03-18",
+      "no": 18,
+      "type": "word",
+      "text": "salt",
+      "phonetic": "/sɔːlt/",
+      "pos": "n. [U]",
+      "meaning": "盐；食盐",
+      "door": 27,
+      "examples": [
+        { "en": "Add a little salt to the sauce.", "zh": "往酱汁里加点儿盐。" }
+      ],
+      "extensions": [
+        {
+          "text": "salty",
+          "pos": "adj.",
+          "meaning": "咸的 (saltier-saltiest)"
+        }
+      ]
+    },
+    {
+      "id": "u03-19",
+      "no": 19,
+      "type": "word",
+      "text": "product",
+      "phonetic": "/ˈprɒdʌkt/",
+      "pos": "n. [C]",
+      "meaning": "产品；制品",
+      "door": 27,
+      "phrases": [
+        { "text": "dairy products", "meaning": "乳制品" },
+        { "text": "product quality", "meaning": "产品质量" },
+        { "text": "finished product", "meaning": "成品" }
+      ],
+      "examples": [
+        { "en": "This product contains no animal fat.", "zh": "这种产品不含有动物油脂。" },
+        { "en": "We are all products of our time.", "zh": "我们都是时代的产物。" },
+        { "en": "The factory produced a large amount of modern furniture.", "zh": "这家工厂生产了大量的现代家具。" },
+        { "en": "The new model will go into production next year.", "zh": "新车型将于明年投入生产。" }
+      ],
+      "extensions": [
+        { "text": "produce", "pos": "v.", "meaning": "生产；制造；引起" },
+        {
+          "text": "production",
+          "pos": "n.",
+          "meaning": "生产；制作",
+          "phrases": [
+            { "text": "production cost", "meaning": "生产成本" },
+            { "text": "production line", "meaning": "生产线" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u03-20",
+      "no": 20,
+      "type": "word",
+      "text": "balanced",
+      "phonetic": "/ˈbælənst/",
+      "pos": "adj.",
+      "meaning": "保持平衡的",
+      "door": 27,
+      "phrases": [
+        { "text": "a balanced diet", "meaning": "均衡的饮食" }
+      ],
+      "examples": [
+        { "en": "It is essential that your diet is varied and balanced.", "zh": "重要的是你的饮食应当是多样而平衡的。" },
+        { "en": "Nature is perfectly balanced.", "zh": "大自然是完美平衡的。" },
+        { "en": "Larry has put on too much weight because of an unbalanced diet.", "zh": "Larry 因为饮食不均衡，体重增加了太多。" },
+        { "en": "Try to keep a balance between work and play.", "zh": "要努力在工作和玩中间保持平衡。" }
+      ],
+      "extensions": [
+        { "text": "unbalanced", "pos": "adj.", "meaning": "不平衡的；错乱的" },
+        { "text": "balance", "pos": "n.", "meaning": "平衡" }
+      ]
+    },
+    {
+      "id": "u03-21",
+      "no": 21,
+      "type": "word",
+      "text": "diet",
+      "phonetic": "/ˈdaɪət/",
+      "pos": "n.",
+      "meaning": "日常饮食；日常食物",
+      "door": 27,
+      "phrases": [
+        { "text": "be on a diet", "meaning": "节食；控制饮食" }
+      ],
+      "examples": [
+        { "en": "Diets vary from country to country.", "zh": "世界各国的饮食各不相同。" },
+        { "en": "The doctor told Tom to give up smoking and be on a diet.", "zh": "医生告诉汤姆要戒烟节食。" }
+      ]
+    }
+  ]
+}
