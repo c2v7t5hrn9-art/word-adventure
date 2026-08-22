@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated": "2026-08-06",
+  "updated": "2026-08-22",
   "description": "单词冒险岛词库。收录讲义全部内容：主词条 + 延伸词(派生/词转) + 短语搭配 + 例句。新增讲义时按 entries 结构追加，并更新 doors。",
   "schema": {
     "entry": {
@@ -138,6 +138,30 @@
       "name": "话题与通信",
       "theme": "school",
       "entryRange": "u01-19 ~ u01-28"
+    },
+    {
+      "id": 21,
+      "name": "家庭纽带",
+      "theme": "family",
+      "entryRange": "u02-01 ~ u02-10"
+    },
+    {
+      "id": 22,
+      "name": "家与学习",
+      "theme": "family",
+      "entryRange": "u02-11 ~ u02-20"
+    },
+    {
+      "id": 23,
+      "name": "周末时光",
+      "theme": "family",
+      "entryRange": "u02-21 ~ u02-29"
+    },
+    {
+      "id": 24,
+      "name": "家庭庆典",
+      "theme": "family",
+      "entryRange": "u02-30 ~ u02-39"
     }
   ],
   "units": [
@@ -6082,6 +6106,1191 @@
           "pos": "adv. 在外面；prep. 在……外面",
           "meaning": "在外面；在……外面",
           "door": 20
+        }
+      ]
+    },
+    {
+      "unitId": "u02-family-ties",
+      "title": "U2 Family ties 词汇讲义",
+      "sourceImages": [
+        "assets/handouts/2026-08-22_0001.JPG",
+        "assets/handouts/2026-08-22_0002.JPG",
+        "assets/handouts/2026-08-22_0003.JPG",
+        "assets/handouts/2026-08-22_0004.JPG",
+        "assets/handouts/2026-08-22_0005.JPG",
+        "assets/handouts/2026-08-22_0006.JPG"
+      ],
+      "pageMap": {},
+      "missingPages": "",
+      "dictationExtra": [],
+      "entries": [
+        {
+          "id": "u02-01",
+          "no": 1,
+          "type": "word",
+          "text": "tie",
+          "phonetic": "/taɪ/",
+          "pos": "n. 联系；关系；纽带；领带；v. 结；捆；绑",
+          "meaning": "联系；关系；纽带；领带；结；捆；绑",
+          "door": 21,
+          "phrases": [
+            {
+              "text": "family ties",
+              "meaning": "家庭关系"
+            },
+            {
+              "text": "the ties of friendship",
+              "meaning": "友谊的纽带"
+            },
+            {
+              "text": "tie...to...",
+              "meaning": "把…栓/绑在…（to 是介词）"
+            }
+          ],
+          "examples": [
+            {
+              "en": "Which tie do you like best?",
+              "zh": "你最喜欢哪条领带？"
+            },
+            {
+              "en": "They tied him to a chair with a rope.",
+              "zh": "他们用一根绳子把他绑在一把椅子上。"
+            }
+          ],
+          "notes": "v. 变位 tied-tied-tying；同类型动词现在分词规律：die-dying, lie-lying"
+        },
+        {
+          "id": "u02-02",
+          "no": 2,
+          "type": "word",
+          "text": "relation",
+          "phonetic": "/rɪˈleɪʃn/",
+          "pos": "n.",
+          "meaning": "关系；联系",
+          "door": 21,
+          "phrases": [
+            {
+              "text": "international relations",
+              "meaning": "国际关系"
+            }
+          ],
+          "extensions": [
+            {
+              "text": "relationship",
+              "pos": "n.",
+              "meaning": "关系",
+              "phrases": [
+                {
+                  "text": "the relationship between A and B",
+                  "meaning": "A 和 B 之间的关系"
+                }
+              ]
+            },
+            {
+              "text": "relative",
+              "pos": "n.",
+              "meaning": "亲戚"
+            },
+            {
+              "text": "relate",
+              "pos": "v.",
+              "meaning": "有关；涉及",
+              "phrases": [
+                {
+                  "text": "be related to",
+                  "meaning": "与…相关"
+                }
+              ]
+            }
+          ],
+          "examples": [
+            {
+              "en": "Tom is her close relative.",
+              "zh": "Tom 是她的近亲。"
+            },
+            {
+              "en": "Wealth is seldom related to happiness.",
+              "zh": "财富很少和幸福相关。"
+            }
+          ]
+        },
+        {
+          "id": "u02-03",
+          "no": 3,
+          "type": "word",
+          "text": "introduce",
+          "phonetic": "/ˌɪntrəˈdjuːs/",
+          "pos": "v.",
+          "meaning": "介绍；引进 (introduced-introduced-introducing)",
+          "door": 21,
+          "phrases": [
+            {
+              "text": "introduce A to B",
+              "meaning": "把 A 介绍给 B"
+            }
+          ],
+          "examples": [
+            {
+              "en": "The company introduced a new car last year.",
+              "zh": "去年这家公司引进了一种新型汽车。"
+            }
+          ],
+          "extensions": [
+            {
+              "text": "introduction",
+              "pos": "n.",
+              "meaning": "介绍",
+              "phrases": [
+                {
+                  "text": "self-introduction",
+                  "meaning": "自我介绍"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u02-04",
+          "no": 4,
+          "type": "word",
+          "text": "classmate",
+          "phonetic": "/ˈklɑːsmeɪt/",
+          "pos": "n.",
+          "meaning": "同班同学",
+          "door": 21,
+          "extensions": [
+            {
+              "text": "roommate",
+              "pos": "n.",
+              "meaning": "室友"
+            },
+            {
+              "text": "deskmate",
+              "pos": "n.",
+              "meaning": "同桌"
+            },
+            {
+              "text": "schoolmate",
+              "pos": "n.",
+              "meaning": "校友"
+            },
+            {
+              "text": "teammate",
+              "pos": "n.",
+              "meaning": "队友"
+            },
+            {
+              "text": "workmate",
+              "pos": "n.",
+              "meaning": "工友"
+            },
+            {
+              "text": "soulmate",
+              "pos": "n.",
+              "meaning": "知音"
+            }
+          ],
+          "notes": "-mate 后缀表示「同伴」"
+        },
+        {
+          "id": "u02-05",
+          "no": 5,
+          "type": "word",
+          "text": "only",
+          "phonetic": "/ˈəʊnli/",
+          "pos": "adj. 仅有的；唯一的；adv. 只；仅仅",
+          "meaning": "仅有的；唯一的；只；仅仅",
+          "door": 21,
+          "phrases": [
+            {
+              "text": "only child",
+              "meaning": "独生子（或女）"
+            },
+            {
+              "text": "not only...but also...",
+              "meaning": "不仅…而且…"
+            }
+          ],
+          "examples": [
+            {
+              "en": "We only waited a few minutes, but it seemed like hours.",
+              "zh": "我们只等了几分钟，但觉得像几小时。"
+            },
+            {
+              "en": "Not only the students but also the teacher is enjoying the film.",
+              "zh": "不仅学生们在欣赏这部影片，而且老师也在欣赏。"
+            }
+          ],
+          "notes": "not only...but also... 连接主语时，谓语动词单复数用就近原则"
+        },
+        {
+          "id": "u02-06",
+          "no": 6,
+          "type": "word",
+          "text": "wife",
+          "phonetic": "/waɪf/",
+          "pos": "n.",
+          "meaning": "妻子",
+          "door": 21,
+          "notes": "pl. wives；同类复数变化：life-lives, knife-knives"
+        },
+        {
+          "id": "u02-07",
+          "no": 7,
+          "type": "word",
+          "text": "other",
+          "phonetic": "/ˈʌðə(r)/",
+          "pos": "adj. 另外；其他；pron. 另外的人（或物）",
+          "meaning": "另外；其他；另外的人（或物）",
+          "door": 21,
+          "phrases": [
+            {
+              "text": "one...the other...",
+              "meaning": "一个…另一个…（两者之间）"
+            }
+          ],
+          "examples": [
+            {
+              "en": "Kate has two uncles. One is a doctor, the other is a teacher.",
+              "zh": "Kate 有两个叔叔。一个是医生，另一个是老师。"
+            }
+          ]
+        },
+        {
+          "id": "u02-08",
+          "no": 8,
+          "type": "word",
+          "text": "member",
+          "phonetic": "/ˈmembə(r)/",
+          "pos": "n.",
+          "meaning": "成员",
+          "door": 21,
+          "phrases": [
+            {
+              "text": "a member of...",
+              "meaning": "…的一员"
+            },
+            {
+              "text": "family members",
+              "meaning": "家庭成员"
+            }
+          ]
+        },
+        {
+          "id": "u02-09",
+          "no": 9,
+          "type": "word",
+          "text": "add",
+          "phonetic": "/æd/",
+          "pos": "v.",
+          "meaning": "添加；增加",
+          "door": 21,
+          "phrases": [
+            {
+              "text": "add...to...",
+              "meaning": "增加…到…（to 为介词）"
+            }
+          ],
+          "examples": [
+            {
+              "en": "Add some words to the word web.",
+              "zh": "增加一些词汇到词汇网。"
+            },
+            {
+              "en": "In addition, many German children study a third language, such as French.",
+              "zh": "此外，许多德国儿童学习第三语言，如法语。"
+            }
+          ],
+          "extensions": [
+            {
+              "text": "addition",
+              "pos": "n.",
+              "meaning": "增加；加法",
+              "phrases": [
+                {
+                  "text": "in addition",
+                  "meaning": "此外（相当于 what's more / besides）"
+                },
+                {
+                  "text": "in addition to...",
+                  "meaning": "除…之外（还包括）"
+                }
+              ]
+            },
+            {
+              "text": "additional",
+              "pos": "adj.",
+              "meaning": "另外的"
+            },
+            {
+              "text": "additionally",
+              "pos": "adv.",
+              "meaning": "另外地"
+            }
+          ],
+          "notes": "in addition to（包括）≠ except（排除）"
+        },
+        {
+          "id": "u02-10",
+          "no": 10,
+          "type": "word",
+          "text": "note",
+          "phonetic": "/nəʊt/",
+          "pos": "n. 笔记；便条；音符；钞票；v. 注意",
+          "meaning": "笔记；便条；音符；钞票；注意",
+          "door": 21,
+          "phrases": [
+            {
+              "text": "take notes",
+              "meaning": "记笔记"
+            },
+            {
+              "text": "leave a note for sb.",
+              "meaning": "给…留一张便条"
+            }
+          ]
+        },
+        {
+          "id": "u02-11",
+          "no": 11,
+          "type": "word",
+          "text": "album",
+          "phonetic": "/ˈælbəm/",
+          "pos": "n.",
+          "meaning": "相册；影集",
+          "door": 22,
+          "notes": "不定冠词用 an：an album"
+        },
+        {
+          "id": "u02-12",
+          "no": 12,
+          "type": "word",
+          "text": "teach",
+          "phonetic": "/tiːtʃ/",
+          "pos": "v.",
+          "meaning": "教（某人）；使（某人）明白或会做某事 (taught-taught-teaches)",
+          "door": 22,
+          "phrases": [
+            {
+              "text": "teach sb. sth.",
+              "meaning": "教某人某事（sb 用人称代词宾格）"
+            },
+            {
+              "text": "teach oneself",
+              "meaning": "自学"
+            }
+          ],
+          "examples": [
+            {
+              "en": "She teaches well.",
+              "zh": "她教得好。"
+            },
+            {
+              "en": "Mr Smith teaches us English.",
+              "zh": "Smith 先生教我们英语。"
+            }
+          ],
+          "extensions": [
+            {
+              "text": "teacher",
+              "pos": "n.",
+              "meaning": "老师",
+              "phrases": [
+                {
+                  "text": "teachers' office",
+                  "meaning": "老师办公室"
+                },
+                {
+                  "text": "Teachers' Day",
+                  "meaning": "教师节"
+                }
+              ]
+            },
+            {
+              "text": "teaching",
+              "pos": "n. 教学；adj. 教学的",
+              "meaning": "教学；教学的",
+              "phrases": [
+                {
+                  "text": "experimental teaching methods",
+                  "meaning": "实验性教学方法"
+                },
+                {
+                  "text": "teaching robot",
+                  "meaning": "教学机器人"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u02-13",
+          "no": 13,
+          "type": "word",
+          "text": "homework",
+          "phonetic": "/ˈhəʊmwɜːk/",
+          "pos": "un.",
+          "meaning": "（学生的）家庭作业",
+          "door": 22,
+          "phrases": [
+            {
+              "text": "do one's homework",
+              "meaning": "做家庭作业"
+            }
+          ],
+          "examples": [
+            {
+              "en": "I do my homework after dinner.",
+              "zh": "我晚饭后做家庭作业。"
+            }
+          ],
+          "notes": "不可数名词"
+        },
+        {
+          "id": "u02-14",
+          "no": 14,
+          "type": "word",
+          "text": "guitar",
+          "phonetic": "/ɡɪˈtɑː(r)/",
+          "pos": "n.",
+          "meaning": "吉他",
+          "door": 22,
+          "phrases": [
+            {
+              "text": "play the guitar",
+              "meaning": "弹吉他"
+            },
+            {
+              "text": "play the piano/violin/cello",
+              "meaning": "弹钢琴/拉小提琴/拉大提琴"
+            }
+          ],
+          "notes": "乐器前要加 the"
+        },
+        {
+          "id": "u02-15",
+          "no": 15,
+          "type": "word",
+          "text": "chess",
+          "phonetic": "/tʃes/",
+          "pos": "n.",
+          "meaning": "国际象棋",
+          "door": 22,
+          "phrases": [
+            {
+              "text": "play chess",
+              "meaning": "下国际象棋（棋类前不加 the）"
+            }
+          ],
+          "examples": [
+            {
+              "en": "My hobby is playing chess.",
+              "zh": "我的爱好是下国际象棋。"
+            }
+          ],
+          "notes": "句型：My hobby is doing sth."
+        },
+        {
+          "id": "u02-16",
+          "no": 16,
+          "type": "word",
+          "text": "elder",
+          "phonetic": "/ˈeldə(r)/",
+          "pos": "adj. 年长的；年龄较大的；n. 长辈，年长者",
+          "meaning": "年长的；年龄较大的；长辈，年长者",
+          "door": 22,
+          "phrases": [
+            {
+              "text": "my elder brother/sister",
+              "meaning": "我的哥哥/姐姐"
+            },
+            {
+              "text": "the elderly",
+              "meaning": "老年人（the + adj. 表示一类人）"
+            }
+          ],
+          "examples": [
+            {
+              "en": "My grandfather is much older than my father.",
+              "zh": "我爷爷比我爸爸年长得多。"
+            },
+            {
+              "en": "As I get older, I know what I want.",
+              "zh": "随着年龄增长，我知道自己想要什么。"
+            }
+          ],
+          "extensions": [
+            {
+              "text": "elderly",
+              "pos": "adj.",
+              "meaning": "年老的"
+            }
+          ],
+          "notes": "elder 只做定语、不与 than 连用、只修饰人（辈分比较）；older 可做定语/表语/补语、可与 than 连用。old-older-oldest；elder-eldest；反义词 younger"
+        },
+        {
+          "id": "u02-17",
+          "no": 17,
+          "type": "word",
+          "text": "sofa",
+          "phonetic": "/ˈsəʊfə/",
+          "pos": "n.",
+          "meaning": "长沙发",
+          "door": 22
+        },
+        {
+          "id": "u02-18",
+          "no": 18,
+          "type": "word",
+          "text": "round",
+          "phonetic": "/raʊnd/",
+          "pos": "adj. 圆形的；adv. 环绕地，在周围；prep. 围着",
+          "meaning": "圆形的；环绕地，在周围；围着",
+          "door": 22,
+          "phrases": [
+            {
+              "text": "a round plate/window/table",
+              "meaning": "圆盘/圆窗/圆桌"
+            }
+          ],
+          "examples": [
+            {
+              "en": "A crowd soon gathered round.",
+              "zh": "很快地围拢了一群人。"
+            },
+            {
+              "en": "They are sitting round the kitchen table.",
+              "zh": "他们正围坐在餐桌旁。"
+            }
+          ]
+        },
+        {
+          "id": "u02-19",
+          "no": 19,
+          "type": "word",
+          "text": "dark",
+          "phonetic": "/dɑːk/",
+          "pos": "adj.",
+          "meaning": "乌黑的（of skin or hair）；深色的（of a colour）；黑暗的",
+          "door": 22,
+          "phrases": [
+            {
+              "text": "dark hair",
+              "meaning": "乌黑的头发"
+            },
+            {
+              "text": "dark green/red/grey",
+              "meaning": "深绿色/深红色/深灰色"
+            },
+            {
+              "text": "a dark room/street/corner",
+              "meaning": "黑暗的房间/街道/角落"
+            }
+          ],
+          "extensions": [
+            {
+              "text": "darkness",
+              "pos": "n.",
+              "meaning": "黑暗"
+            }
+          ]
+        },
+        {
+          "id": "u02-20",
+          "no": 20,
+          "type": "word",
+          "text": "duty",
+          "phonetic": "/ˈdjuːti/",
+          "pos": "n.",
+          "meaning": "责任；义务；本分",
+          "door": 22,
+          "phrases": [
+            {
+              "text": "do one's duty",
+              "meaning": "尽职"
+            },
+            {
+              "text": "on/off duty",
+              "meaning": "值班/不值班（护士、警察等）"
+            }
+          ]
+        },
+        {
+          "id": "u02-21",
+          "no": 21,
+          "type": "word",
+          "text": "born",
+          "phonetic": "/bɔːn/",
+          "pos": "v.（仅用于被动语态，不与 by 连用）",
+          "meaning": "出生；出世",
+          "door": 23,
+          "phrases": [
+            {
+              "text": "be born",
+              "meaning": "出生"
+            },
+            {
+              "text": "be born to be/do",
+              "meaning": "注定成为/做"
+            }
+          ],
+          "examples": [
+            {
+              "en": "She was born in 1950.",
+              "zh": "她生于 1950 年。"
+            },
+            {
+              "en": "She was born on March 2nd, 1950.",
+              "zh": "她生于 1950 年 3 月 2 日。"
+            },
+            {
+              "en": "She was born to be a great writer.",
+              "zh": "她出生就注定是个伟大的作家。"
+            }
+          ],
+          "notes": "年份前用 in，具体日期前用 on"
+        },
+        {
+          "id": "u02-22",
+          "no": 22,
+          "type": "word",
+          "text": "weekend",
+          "phonetic": "/ˌwiːkˈend/",
+          "pos": "n.",
+          "meaning": "周末",
+          "door": 23,
+          "phrases": [
+            {
+              "text": "on/at weekend",
+              "meaning": "在周末"
+            }
+          ],
+          "examples": [
+            {
+              "en": "Willy and his mom don't do any housework at weekend.",
+              "zh": "Willy 和他妈妈在周末不做任何家务。"
+            },
+            {
+              "en": "The library is open on weekdays only.",
+              "zh": "这个图书馆只在工作日开放。"
+            }
+          ],
+          "extensions": [
+            {
+              "text": "week",
+              "pos": "n.",
+              "meaning": "星期；周",
+              "phrases": [
+                {
+                  "text": "last/next/this week",
+                  "meaning": "上/下/本星期"
+                }
+              ]
+            },
+            {
+              "text": "weekly",
+              "pos": "adj.",
+              "meaning": "每星期（的）；每周的",
+              "phrases": [
+                {
+                  "text": "write a weekly journal",
+                  "meaning": "写一篇周记"
+                }
+              ]
+            },
+            {
+              "text": "weekday",
+              "pos": "n.",
+              "meaning": "工作日",
+              "phrases": [
+                {
+                  "text": "on weekdays",
+                  "meaning": "在工作日"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u02-23",
+          "no": 23,
+          "type": "word",
+          "text": "thing",
+          "phonetic": "/θɪŋ/",
+          "pos": "n.",
+          "meaning": "事情；事件",
+          "door": 23
+        },
+        {
+          "id": "u02-24",
+          "no": 24,
+          "type": "word",
+          "text": "enough",
+          "phonetic": "/ɪˈnʌf/",
+          "pos": "adj. 足够的；充分的；adv. 足够地；充分地",
+          "meaning": "足够的；充分的；足够地；充分地",
+          "door": 23,
+          "phrases": [
+            {
+              "text": "enough money/time/food",
+              "meaning": "足够的钱/时间/食物（放名词前）"
+            },
+            {
+              "text": "old/big/tall enough",
+              "meaning": "足够年长/大/高（放 adj./adv. 后）"
+            },
+            {
+              "text": "adj./adv. + enough to do",
+              "meaning": "足够…而能做某事"
+            }
+          ],
+          "examples": [
+            {
+              "en": "My elder brother is old enough to help now.",
+              "zh": "我哥哥现在足够大能帮忙了。"
+            },
+            {
+              "en": "He is tall enough to reach the top shelf.",
+              "zh": "他足够高而能够到顶层架子。"
+            }
+          ],
+          "notes": "名前形后；enough to do = so + adj./adv. + that 从句（如此…以至于…）：He is so tall that he can reach the top shelf."
+        },
+        {
+          "id": "u02-25",
+          "no": 25,
+          "type": "phrase",
+          "text": "Well done",
+          "phonetic": "",
+          "pos": "短语",
+          "meaning": "做得好！干得好！",
+          "door": 23,
+          "examples": [
+            {
+              "en": "— Daddy! I came second in history. — Well done, sweetheart.",
+              "zh": "— 爸爸！我历史考了第二名。— 干得好，宝贝。"
+            }
+          ]
+        },
+        {
+          "id": "u02-26",
+          "no": 26,
+          "type": "word",
+          "text": "dish",
+          "phonetic": "/dɪʃ/",
+          "pos": "n.",
+          "meaning": "碟子；一道菜",
+          "door": 23,
+          "examples": [
+            {
+              "en": "Which dish do most of the British people like best?",
+              "zh": "大多数英国人最喜欢哪道菜？"
+            }
+          ],
+          "notes": "pl. dishes"
+        },
+        {
+          "id": "u02-27",
+          "no": 27,
+          "type": "word",
+          "text": "usually",
+          "phonetic": "/ˈjuːʒuəli/",
+          "pos": "adv.",
+          "meaning": "通常地",
+          "door": 23,
+          "phrases": [
+            {
+              "text": "as usual",
+              "meaning": "和往常一样"
+            }
+          ],
+          "examples": [
+            {
+              "en": "As usual, no one is there.",
+              "zh": "跟平常那个时刻一样，没有人在那儿。"
+            }
+          ],
+          "extensions": [
+            {
+              "text": "usual",
+              "pos": "adj.",
+              "meaning": "通常的"
+            },
+            {
+              "text": "unusual",
+              "pos": "adj.",
+              "meaning": "与众不同的（反义词）"
+            }
+          ]
+        },
+        {
+          "id": "u02-28",
+          "no": 28,
+          "type": "word",
+          "text": "quick",
+          "phonetic": "/kwɪk/",
+          "pos": "adj.",
+          "meaning": "快的；迅速的 (quicker-quickest)",
+          "door": 23,
+          "examples": [
+            {
+              "en": "They want to finish the meeting as quickly as possible.",
+              "zh": "他们想尽快结束会议。"
+            }
+          ],
+          "extensions": [
+            {
+              "text": "quickly",
+              "pos": "adv.",
+              "meaning": "迅速地 (more quickly-the most quickly)"
+            }
+          ],
+          "notes": "as...as possible 尽可能地…"
+        },
+        {
+          "id": "u02-29",
+          "no": 29,
+          "type": "word",
+          "text": "together",
+          "phonetic": "/təˈɡeðə(r)/",
+          "pos": "adv.",
+          "meaning": "在一起；共同",
+          "door": 23,
+          "phrases": [
+            {
+              "text": "together with",
+              "meaning": "和…一起"
+            }
+          ],
+          "examples": [
+            {
+              "en": "Dr. Jones, together with her husband, is going to visit Beijing this summer.",
+              "zh": "琼博士和她的丈夫今年夏天要去北京。"
+            }
+          ],
+          "notes": "就近原则：A, together with B + v.，谓语与 A 一致"
+        },
+        {
+          "id": "u02-30",
+          "no": 30,
+          "type": "word",
+          "text": "flat",
+          "phonetic": "/flæt/",
+          "pos": "n. 公寓；一套房间；adj. 平的，水平的",
+          "meaning": "公寓；一套房间；平的，水平的",
+          "door": 24,
+          "examples": [
+            {
+              "en": "We found a large flat rock to sit on.",
+              "zh": "我们找了一块可以坐的大而平滑的石头。"
+            }
+          ],
+          "notes": "flat = apartment（公寓）"
+        },
+        {
+          "id": "u02-31",
+          "no": 31,
+          "type": "word",
+          "text": "fun",
+          "phonetic": "/fʌn/",
+          "pos": "n.",
+          "meaning": "乐趣",
+          "door": 24,
+          "phrases": [
+            {
+              "text": "have fun",
+              "meaning": "玩得开心"
+            },
+            {
+              "text": "make fun of",
+              "meaning": "取笑（= laugh at）"
+            }
+          ],
+          "examples": [
+            {
+              "en": "What fun it is to jump into water on such a hot day!",
+              "zh": "在这么热的一天跳进水里是多么有趣的事啊！"
+            },
+            {
+              "en": "I think Qianlingshan Park is the best place to have fun on weekends.",
+              "zh": "我认为千灵山公园是周末游玩的最好的地方。"
+            },
+            {
+              "en": "It's impolite to stare at others or even make fun of them.",
+              "zh": "盯着别人看，甚至取笑他们是不礼貌的。"
+            }
+          ],
+          "extensions": [
+            {
+              "text": "funny",
+              "pos": "adj.",
+              "meaning": "滑稽的；可笑的"
+            }
+          ],
+          "notes": "The clown is funny. 这个小丑很滑稽。"
+        },
+        {
+          "id": "u02-32",
+          "no": 32,
+          "type": "word",
+          "text": "celebration",
+          "phonetic": "/ˌselɪˈbreɪʃn/",
+          "pos": "n.",
+          "meaning": "庆典；庆祝活动",
+          "door": 24,
+          "phrases": [
+            {
+              "text": "birthday/wedding celebrations",
+              "meaning": "生日庆典/结婚庆典"
+            }
+          ],
+          "extensions": [
+            {
+              "text": "celebrate",
+              "pos": "v.",
+              "meaning": "庆祝 (celebrated-celebrated-celebrating)"
+            }
+          ],
+          "examples": [
+            {
+              "en": "How do people celebrate New Year in your country?",
+              "zh": "你们国家的人怎样庆贺新年？"
+            }
+          ]
+        },
+        {
+          "id": "u02-33",
+          "no": 33,
+          "type": "word",
+          "text": "prepare",
+          "phonetic": "/prɪˈpeə(r)/",
+          "pos": "v.",
+          "meaning": "使做好准备 (prepared-prepared-preparing)",
+          "door": 24,
+          "phrases": [
+            {
+              "text": "prepare for sth.",
+              "meaning": "为…做准备"
+            },
+            {
+              "text": "make preparations for",
+              "meaning": "为…做准备（= prepare for）"
+            }
+          ],
+          "examples": [
+            {
+              "en": "The whole class are preparing for the exams.",
+              "zh": "全班都在准备考试。"
+            },
+            {
+              "en": "The whole class are making preparations for the exams.",
+              "zh": "全班都在为考试做准备。"
+            }
+          ],
+          "extensions": [
+            {
+              "text": "preparation",
+              "pos": "n.",
+              "meaning": "准备"
+            },
+            {
+              "text": "prepared",
+              "pos": "adj.",
+              "meaning": "准备好的"
+            }
+          ]
+        },
+        {
+          "id": "u02-34",
+          "no": 34,
+          "type": "word",
+          "text": "decorate",
+          "phonetic": "/ˈdekəreɪt/",
+          "pos": "v.",
+          "meaning": "装饰 (decorated-decorated-decorating)",
+          "door": 24,
+          "phrases": [
+            {
+              "text": "decorate A with B",
+              "meaning": "用 B 装饰 A"
+            }
+          ],
+          "examples": [
+            {
+              "en": "She decorated the flat with balloons.",
+              "zh": "她用气球装饰公寓。"
+            }
+          ],
+          "extensions": [
+            {
+              "text": "decoration",
+              "pos": "n.",
+              "meaning": "装饰"
+            }
+          ]
+        },
+        {
+          "id": "u02-35",
+          "no": 35,
+          "type": "word",
+          "text": "living room",
+          "phonetic": "/ˈlɪvɪŋ ruːm/",
+          "pos": "n.",
+          "meaning": "客厅；起居室",
+          "door": 24,
+          "notes": "living room = sitting room"
+        },
+        {
+          "id": "u02-36",
+          "no": 36,
+          "type": "word",
+          "text": "set",
+          "phonetic": "/set/",
+          "pos": "v.",
+          "meaning": "放置；摆放 (set-set-setting)",
+          "door": 24,
+          "phrases": [
+            {
+              "text": "set the table",
+              "meaning": "摆好餐具"
+            },
+            {
+              "text": "set down",
+              "meaning": "放下"
+            },
+            {
+              "text": "set out/off",
+              "meaning": "出发"
+            },
+            {
+              "text": "set up",
+              "meaning": "建立"
+            }
+          ],
+          "examples": [
+            {
+              "en": "I set down my book, cleaned my glasses and went to bed.",
+              "zh": "我放下书，擦眼镜，然后去睡觉了。"
+            },
+            {
+              "en": "The company set up a new department to focus on innovation.",
+              "zh": "这个公司建立了一个新的部门去关注改革。"
+            }
+          ]
+        },
+        {
+          "id": "u02-37",
+          "no": 37,
+          "type": "word",
+          "text": "surprised",
+          "phonetic": "/səˈpraɪzd/",
+          "pos": "adj.",
+          "meaning": "惊奇的；惊讶的",
+          "door": 24,
+          "phrases": [
+            {
+              "text": "to one's surprise",
+              "meaning": "令某人惊讶的是"
+            }
+          ],
+          "examples": [
+            {
+              "en": "To his surprise, his teammates all nodded in agreement.",
+              "zh": "令他惊讶的是，他的队友们都点头表示同意。"
+            }
+          ],
+          "extensions": [
+            {
+              "text": "surprising",
+              "pos": "adj.",
+              "meaning": "令人惊讶的"
+            },
+            {
+              "text": "surprise",
+              "pos": "n. 惊讶；v. 使惊讶",
+              "meaning": "惊讶；使惊讶"
+            }
+          ]
+        },
+        {
+          "id": "u02-38",
+          "no": 38,
+          "type": "word",
+          "text": "super-excited",
+          "phonetic": "/ˌsuːpər ɪkˈsaɪtɪd/",
+          "pos": "adj.",
+          "meaning": "超级激动的",
+          "door": 24,
+          "examples": [
+            {
+              "en": "The kids were excited to see the toy rocket flying into the sky.",
+              "zh": "看到玩具火箭飞上天，孩子们很兴奋。"
+            }
+          ],
+          "extensions": [
+            {
+              "text": "excited",
+              "pos": "adj.",
+              "meaning": "兴奋的"
+            },
+            {
+              "text": "exciting",
+              "pos": "adj.",
+              "meaning": "令人兴奋的"
+            },
+            {
+              "text": "excite",
+              "pos": "v.",
+              "meaning": "使激动"
+            },
+            {
+              "text": "excitement",
+              "pos": "n. [U]",
+              "meaning": "兴奋"
+            }
+          ]
+        },
+        {
+          "id": "u02-39",
+          "no": 39,
+          "type": "word",
+          "text": "joy",
+          "phonetic": "/dʒɔɪ/",
+          "pos": "n.",
+          "meaning": "高兴；喜悦",
+          "door": 24,
+          "phrases": [
+            {
+              "text": "to one's joy",
+              "meaning": "令某人高兴的是"
+            },
+            {
+              "text": "jump for joy",
+              "meaning": "欢呼雀跃"
+            }
+          ],
+          "examples": [
+            {
+              "en": "To his joy, he received a promotion at work.",
+              "zh": "令他高兴的是，他在工作中得到了晋升。"
+            },
+            {
+              "en": "Mr. Green and Mrs. Green enjoy taking a walk along the beach.",
+              "zh": "格林先生和格林太太喜欢沿着海滩散步。"
+            }
+          ],
+          "extensions": [
+            {
+              "text": "enjoy",
+              "pos": "v.",
+              "meaning": "享受"
+            },
+            {
+              "text": "joyful",
+              "pos": "adj.",
+              "meaning": "高兴的"
+            }
+          ]
         }
       ]
     }

@@ -118,5 +118,29 @@
     "name": "话题与通信",
     "theme": "school",
     "entryRange": "u01-19 ~ u01-28"
+  },
+  {
+    "id": 21,
+    "name": "家庭纽带",
+    "theme": "family",
+    "entryRange": "u02-01 ~ u02-10"
+  },
+  {
+    "id": 22,
+    "name": "家与学习",
+    "theme": "family",
+    "entryRange": "u02-11 ~ u02-20"
+  },
+  {
+    "id": 23,
+    "name": "周末时光",
+    "theme": "family",
+    "entryRange": "u02-21 ~ u02-29"
+  },
+  {
+    "id": 24,
+    "name": "家庭庆典",
+    "theme": "family",
+    "entryRange": "u02-30 ~ u02-39"
   }
 ]

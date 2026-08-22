@@ -30,7 +30,8 @@
     { id: 'u1u2-clubs-games', short: '社团岛', icon: '🎭' },
     { id: 'u7u8-scientists-inventions', short: '科学岛', icon: '🔬' },
     { id: 'u9u10-computers-green', short: '未来岛', icon: '💻' },
-    { id: 'u01-school-life', short: '校园岛', icon: '🏫' }
+    { id: 'u01-school-life', short: '校园岛', icon: '🏫' },
+    { id: 'u02-family-ties', short: '亲情岛', icon: '🏡' }
   ];
 
   /* 英语对话脚本：每座岛一场主题对话
@@ -186,6 +187,34 @@
           sample: 'Yes, I will pick up rubbish.' },
         { type: 'repeat', en: 'We should pick up the rubbish and keep the park clean.', zh: '我们应该捡起垃圾，保持公园干净。' },
         { type: 'say', en: 'You are a green superhero! Here are two stars for you!', zh: '你是环保小超人！奖励你两颗星星！' }
+      ]
+    },
+    /* 亲情岛：爷爷的惊喜生日会。目标词：family ties, introduce, member, elder,
+       born, prepare, celebration, decorate, living room, set the table, dish,
+       together, surprise, joy, super-excited, Well done */
+    'u02-family-ties': {
+      title: '爷爷的惊喜生日会', icon: '🏡',
+      steps: [
+        { type: 'say', en: 'Hi! Welcome to my friend\'s home. The family ties here are so warm!', zh: '嗨！欢迎来到我好朋友的家。这里的亲情好温暖啊！' },
+        { type: 'say', en: 'Let me introduce the family members to you. This is Grandpa!', zh: '让我把家庭成员介绍给你。这位是爷爷！' },
+        { type: 'ask', en: 'Do you have an elder brother or sister?', zh: '你有哥哥或姐姐吗？',
+          accept: [['yes'], ['no']],
+          hints: ['You can say: Yes, I have an elder brother.', 'Or: No, I am the only child.'],
+          sample: 'Yes, I have an elder sister.' },
+        { type: 'say', en: 'Today is Grandpa\'s birthday. He was born seventy years ago!', zh: '今天是爷爷的生日。他七十年前出生！' },
+        { type: 'say', en: 'We are preparing a surprise celebration. Let\'s decorate the living room with balloons!', zh: '我们正在准备一场惊喜庆典。我们用气球把客厅装饰起来吧！' },
+        { type: 'choice', options: [
+          { en: 'Let\'s set the table for the party.', zh: '我们为派对摆好餐具吧。', correct: true },
+          { en: 'Let\'s sleep on the sofa all day.', zh: '我们整天在沙发上睡觉吧。', correct: false }
+        ] },
+        { type: 'repeat', en: 'We decorate the living room and set the table together.', zh: '我们一起装饰客厅、摆好餐具。' },
+        { type: 'say', en: 'Mom is cooking Grandpa\'s favourite dish. It smells so good!', zh: '妈妈正在做爷爷最喜欢的一道菜。闻起来好香啊！' },
+        { type: 'ask', en: 'Will you say "Happy Birthday" to Grandpa?', zh: '你会对爷爷说「生日快乐」吗？',
+          accept: [['happy', 'birthday'], ['yes']],
+          hints: ['You can say: Happy Birthday, Grandpa!', 'Or: Yes, I will.'],
+          sample: 'Happy Birthday, Grandpa!' },
+        { type: 'repeat', en: 'To our joy, Grandpa is super-excited!', zh: '令我们高兴的是，爷爷超级激动！' },
+        { type: 'say', en: 'Well done! The party is full of fun. Here are two stars for you!', zh: '干得好！派对充满了欢乐。奖励你两颗星星！' }
       ]
     }
   };
@@ -621,6 +650,12 @@
       '上课、做实验、参加社团……校园生活真是丰富多彩！',
       '学会这些校园单词，你就能和外国同学聊天啦～',
       '准备好了吗？推开第一扇门，出发！'
+    ],
+    [ // 亲情岛：家庭与亲情主题
+      '欢迎来到亲情岛！这里有一座亮着暖暖灯光的小房子 🏡',
+      '爷爷、奶奶、哥哥、妹妹……家里的每个人都是最珍贵的宝贝。',
+      '学会这些关于家的单词，你就能用英语介绍自己的家人啦！',
+      '今晚还有一场惊喜生日会要帮忙准备呢，出发！'
     ]
   ];
   function introFor(isl) {
