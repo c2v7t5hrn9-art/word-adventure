@@ -33,7 +33,8 @@
     { id: 'u01-school-life', short: '校园岛', icon: '🏫' },
     { id: 'u02-family-ties', short: '亲情岛', icon: '🏡' },
     { id: 'u03-food', short: '美食岛', icon: '🍳' },
-    { id: 'u04-sports', short: '运动岛', icon: '⚽' }
+    { id: 'u04-sports', short: '运动岛', icon: '⚽' },
+    { id: 'u05-animals', short: '动物岛', icon: '🐾' }
   ];
 
   /* 英语对话脚本：每座岛一场主题对话
@@ -274,6 +275,34 @@
         { type: 'repeat', en: 'The match is tied two to two at the moment.', zh: '此刻比赛二比二平。' },
         { type: 'say', en: 'Hold your head up! Win or tie, we did our best.', zh: '抬起头来！无论赢球还是平局，我们都尽力了。' },
         { type: 'say', en: 'I will write a report for the school newspaper. Two stars for you, superstar!', zh: '我要为校报写一篇报道。奖励你两颗星星，超级明星！' }
+      ]
+    },
+    /* 动物岛：动物园的一天。目标词：amazing, sign, feed, friendly, pet,
+       bite, shout, care, keep quiet, noise, remember, believe, ride, keeper,
+       unforgettable */
+    'u05-animals': {
+      title: '动物园的一天', icon: '🐾',
+      steps: [
+        { type: 'say', en: 'Hi! I\'m Keeper Bubble. Welcome to our amazing zoo!', zh: '嗨！我是饲养员泡泡。欢迎来到我们神奇的动物园！' },
+        { type: 'say', en: 'Look at the sign: "Feeding animals is not allowed."', zh: '看那块牌子："禁止投喂动物"。' },
+        { type: 'ask', en: 'Do you like animals?', zh: '你喜欢动物吗？',
+          accept: [['yes'], ['no']],
+          hints: ['You can say: Yes, I like animals very much.', 'Or: Yes, I do.'],
+          sample: 'Yes, I like animals very much.' },
+        { type: 'say', en: 'The pandas are very friendly. You can pet the rabbits gently.', zh: '熊猫非常友好。你可以轻轻地抚摸小兔子。' },
+        { type: 'say', en: 'Watch out! That dog may bite. And please don\'t shout at the animals.', zh: '小心！那只狗可能会咬人。也请不要对动物们大喊大叫。' },
+        { type: 'choice', options: [
+          { en: 'We should take care of animals and keep quiet.', zh: '我们应该照顾动物并保持安静。', correct: true },
+          { en: 'We can make much noise in the zoo.', zh: '我们可以在动物园里大声喧哗。', correct: false }
+        ] },
+        { type: 'repeat', en: 'I remember to be careful with the animals.', zh: '我记得要小心对待动物们。' },
+        { type: 'say', en: 'I believe animals are our best friends.', zh: '我相信动物是我们最好的朋友。' },
+        { type: 'ask', en: 'Would you like to ride a little horse?', zh: '你想骑一骑小马吗？',
+          accept: [['yes'], ['no']],
+          hints: ['You can say: Yes, I\'d love to!', 'Or: Yes, please!'],
+          sample: 'Yes, I\'d love to!' },
+        { type: 'repeat', en: 'Feeding animals is not allowed in the zoo.', zh: '动物园里禁止投喂动物。' },
+        { type: 'say', en: 'What an unforgettable day! Here are two stars for you, my little keeper!', zh: '多么难忘的一天啊！奖励你两颗星星，我的小小饲养员！' }
       ]
     }
   };
@@ -727,6 +756,12 @@
       '射门、投篮、攀岩、跳高……每项运动都超好玩！',
       '记住：安全第一，比赛第二——友谊也很第二，哈哈！',
       '学会这些运动单词，运动会解说就交给你啦！出发！'
+    ],
+    [ // 动物岛：动物与我们主题
+      '欢迎来到动物岛！这里有好多可爱又神奇的动物朋友 🐾',
+      '喂养、抚摸、和它们做朋友……动物是我们最好的伙伴！',
+      '记住要做一名合格的饲养员：爱护动物，也要注意安全哦～',
+      '学会这些单词，去动物园就能当小讲解员啦！出发！'
     ]
   ];
   function introFor(isl) {

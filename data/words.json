@@ -204,6 +204,30 @@
       "name": "赛事报道",
       "theme": "sports",
       "entryRange": "u04-22 ~ u04-29"
+    },
+    {
+      "id": 32,
+      "name": "惊奇动物园",
+      "theme": "animals",
+      "entryRange": "u05-01 ~ u05-08"
+    },
+    {
+      "id": 33,
+      "name": "萌宠相处道",
+      "theme": "animals",
+      "entryRange": "u05-09 ~ u05-15"
+    },
+    {
+      "id": 34,
+      "name": "词语辨析馆",
+      "theme": "animals",
+      "entryRange": "u05-16 ~ u05-23"
+    },
+    {
+      "id": 35,
+      "name": "友谊与信任",
+      "theme": "animals",
+      "entryRange": "u05-24 ~ u05-30"
     }
   ],
   "units": [
@@ -9326,6 +9350,884 @@
               "zh": "警方正在追踪一名罪犯。"
             }
           ]
+        }
+      ]
+    },
+    {
+      "unitId": "u05-animals",
+      "title": "U5 Animals and us 词汇讲义",
+      "sourceImages": [
+        "assets/handouts/2026-08-22d_0001.JPG",
+        "assets/handouts/2026-08-22d_0002.JPG",
+        "assets/handouts/2026-08-22d_0003.JPG",
+        "assets/handouts/2026-08-22d_0004.JPG",
+        "assets/handouts/2026-08-22d_0005.JPG",
+        "assets/handouts/2026-08-22d_0006.JPG",
+        "assets/handouts/2026-08-22d_0007.JPG",
+        "assets/handouts/2026-08-22d_0008.JPG"
+      ],
+      "pageMap": {},
+      "missingPages": "",
+      "dictationExtra": [],
+      "entries": [
+        {
+          "id": "u05-01",
+          "no": 1,
+          "type": "word",
+          "text": "amazing",
+          "phonetic": "/əˈmeɪzɪŋ/",
+          "pos": "adj.",
+          "meaning": "令人大为惊奇的；令人惊喜或惊叹的",
+          "door": 32,
+          "phrases": [
+            {
+              "text": "be amazed at",
+              "meaning": "对…感到吃惊的"
+            },
+            {
+              "text": "be amazed to do sth.",
+              "meaning": "做某事感到惊讶"
+            },
+            {
+              "text": "to one's amazement",
+              "meaning": "令某人吃惊的是"
+            }
+          ],
+          "examples": [
+            {
+              "en": "It is amazing for a 2-year-old child to dress himself.",
+              "zh": "一个2岁的孩子自己能穿衣服真令人吃惊。"
+            },
+            {
+              "en": "We are amazed at his learning ability.",
+              "zh": "我们对于他的学习能力感到大为吃惊。"
+            },
+            {
+              "en": "To our amazement, he passed the exam.",
+              "zh": "令我们吃惊的是，他通过了这次考试。"
+            }
+          ],
+          "notes": "词族：amaze v. 使惊奇（sth. amazes sb.）；amazed adj. 感到惊讶的（修饰人），amazing 修饰物；amazement n. 惊奇，诧异"
+        },
+        {
+          "id": "u05-02",
+          "no": 2,
+          "type": "word",
+          "text": "website",
+          "phonetic": "/ˈwebsaɪt/",
+          "pos": "n.",
+          "meaning": "网站",
+          "door": 32,
+          "examples": [
+            {
+              "en": "For more information, please visit our website.",
+              "zh": "更多信息，请访问我们的网站。"
+            }
+          ],
+          "notes": "web n. 网；网状物；website = web（网）+ site（地点）"
+        },
+        {
+          "id": "u05-03",
+          "no": 3,
+          "type": "word",
+          "text": "feed",
+          "phonetic": "/fiːd/",
+          "pos": "v.",
+          "meaning": "给（人或动物）食物；喂养 (fed-fed-feeding)",
+          "door": 32,
+          "examples": [
+            {
+              "en": "Feeding animals is not allowed in the zoo.",
+              "zh": "动物园里禁止给动物喂食。"
+            }
+          ],
+          "notes": "动名词作主语：Feeding animals 作主语时谓语用单数"
+        },
+        {
+          "id": "u05-04",
+          "no": 4,
+          "type": "word",
+          "text": "remember",
+          "phonetic": "/rɪˈmembə(r)/",
+          "pos": "v.",
+          "meaning": "记得；记起",
+          "door": 32,
+          "phrases": [
+            {
+              "text": "remember to do sth.",
+              "meaning": "记得要做某事（事情还未做）"
+            },
+            {
+              "text": "remember doing sth.",
+              "meaning": "记得曾做过某事（事情已做过）"
+            },
+            {
+              "text": "forget to do sth.",
+              "meaning": "忘记要去做某事（事情还未做）"
+            },
+            {
+              "text": "forget doing sth.",
+              "meaning": "忘记做过某事（事情已做过）"
+            }
+          ],
+          "examples": [
+            {
+              "en": "Remember to turn off the lights when you leave.",
+              "zh": "离开之前记得要关灯。"
+            },
+            {
+              "en": "I remember turning off the lights when I left.",
+              "zh": "我记得走的时候关了灯。"
+            },
+            {
+              "en": "Did you remember to do the shopping?",
+              "zh": "你记得要去购物吗？"
+            },
+            {
+              "en": "I remember meeting her at a party once.",
+              "zh": "我记得在一次聚会上见过她。"
+            }
+          ],
+          "notes": "Remember to do sth. = Don't forget to do sth. 例：Remember to call your mother every day. = Don't forget to call your mother every day."
+        },
+        {
+          "id": "u05-05",
+          "no": 5,
+          "type": "word",
+          "text": "collect",
+          "phonetic": "/kəˈlekt/",
+          "pos": "v.",
+          "meaning": "收集；采集",
+          "door": 32,
+          "phrases": [
+            {
+              "text": "collect stamps",
+              "meaning": "收集邮票"
+            },
+            {
+              "text": "collect shells",
+              "meaning": "收集贝壳"
+            },
+            {
+              "text": "collect sb. = pick sb. up",
+              "meaning": "接某人（送某人：take sb. to sp.）"
+            },
+            {
+              "text": "a collection of",
+              "meaning": "一批；一系列"
+            }
+          ],
+          "examples": [
+            {
+              "en": "My father collects me from school every day.",
+              "zh": "我爸爸每天接我放学。"
+            },
+            {
+              "en": "He has a collection of stamps from all over the world.",
+              "zh": "他有一系列来自世界各地的邮票。"
+            }
+          ],
+          "notes": "词族：collection n. 收集；收藏品；collector n. 收藏家；collective adj. 集体的；共有的（make a collective decision 做出集体的决定）"
+        },
+        {
+          "id": "u05-06",
+          "no": 6,
+          "type": "word",
+          "text": "recognise",
+          "phonetic": "/ˈrekəɡnaɪz/",
+          "pos": "v.",
+          "meaning": "识别；认出（= recognize）",
+          "door": 32,
+          "phrases": [
+            {
+              "text": "facial recognition",
+              "meaning": "面部识别"
+            }
+          ],
+          "examples": [
+            {
+              "en": "He recognised me at first sight.",
+              "zh": "他第一眼就认出了我。"
+            },
+            {
+              "en": "She is a recognized expert in this field.",
+              "zh": "她是这个领域公认的专家。"
+            }
+          ],
+          "notes": "词族：recognition n. 认识；识别；recognized adj. 公认的"
+        },
+        {
+          "id": "u05-07",
+          "no": 7,
+          "type": "word",
+          "text": "care",
+          "phonetic": "/keə(r)/",
+          "pos": "n. & v.",
+          "meaning": "照顾；照看；关心；在意",
+          "door": 32,
+          "phrases": [
+            {
+              "text": "take care of = look after",
+              "meaning": "照顾"
+            },
+            {
+              "text": "with care",
+              "meaning": "小心"
+            },
+            {
+              "text": "take care",
+              "meaning": "当心；保重"
+            },
+            {
+              "text": "care for",
+              "meaning": "照顾"
+            }
+          ],
+          "examples": [
+            {
+              "en": "Though she is only 7, she can take care of herself.",
+              "zh": "虽然她只有7岁，但她能照顾自己。"
+            },
+            {
+              "en": "You must use this instrument with great care.",
+              "zh": "你必须非常小心地使用这个仪器。"
+            },
+            {
+              "en": "Take care when you cross the road.",
+              "zh": "过马路时要小心。"
+            },
+            {
+              "en": "I care for my little sister when my parents are out.",
+              "zh": "当我父母外出时，我照顾我的小妹妹。"
+            }
+          ],
+          "notes": "词族：careful adj. 小心的；仔细的 ↔ careless adj. 粗心的；carefully adv. 仔细地 ↔ carelessly adv. 粗心地；carefulness n. 仔细；慎重 ↔ carelessness n. 粗心大意"
+        },
+        {
+          "id": "u05-08",
+          "no": 8,
+          "type": "word",
+          "text": "keeper",
+          "phonetic": "/ˈkiːpə(r)/",
+          "pos": "n.",
+          "meaning": "饲养员",
+          "door": 32,
+          "phrases": [
+            {
+              "text": "a zoo keeper",
+              "meaning": "一个动物管理员"
+            },
+            {
+              "text": "keep healthy",
+              "meaning": "保持健康"
+            },
+            {
+              "text": "keep quiet",
+              "meaning": "保持安静"
+            },
+            {
+              "text": "keep away from",
+              "meaning": "避开"
+            },
+            {
+              "text": "keep off",
+              "meaning": "不接近；勿踏"
+            },
+            {
+              "text": "keep sb. from doing sth.",
+              "meaning": "阻止某人做某事；免于做…"
+            }
+          ],
+          "examples": [
+            {
+              "en": "My grandfather keeps some chickens in the yard.",
+              "zh": "我祖父在院子里养了一些鸡。"
+            },
+            {
+              "en": "The fence keeps the dog from running away.",
+              "zh": "围栏阻止狗跑掉。"
+            },
+            {
+              "en": "I'm sorry for keeping you waiting for a long time.",
+              "zh": "很抱歉让你久等。"
+            }
+          ],
+          "notes": "keep v. 保存；饲养；保持（保持类系动词还有 stay、remain）：keep + (n.) + adj.（keep the room clean 保持房间干净）；keep (sb.) doing"
+        },
+        {
+          "id": "u05-09",
+          "no": 9,
+          "type": "word",
+          "text": "prefer",
+          "phonetic": "/prɪˈfɜː(r)/",
+          "pos": "v.",
+          "meaning": "较喜欢；喜欢…多于… (preferred-preferred-preferring)",
+          "door": 33,
+          "phrases": [
+            {
+              "text": "prefer A to B = like A better than B",
+              "meaning": "喜欢A多于B"
+            },
+            {
+              "text": "prefer doing A to doing B",
+              "meaning": "比起做B更喜欢做A"
+            },
+            {
+              "text": "prefer to do sth.",
+              "meaning": "更偏爱做某事"
+            }
+          ],
+          "examples": [
+            {
+              "en": "She prefers tea to coffee.",
+              "zh": "比起咖啡，她更喜欢茶。"
+            },
+            {
+              "en": "I prefer to work alone.",
+              "zh": "我更喜欢独立工作。"
+            }
+          ],
+          "notes": "preference n. 偏爱；注意双写 r：preferred, preferring"
+        },
+        {
+          "id": "u05-10",
+          "no": 10,
+          "type": "phrase",
+          "text": "get along with",
+          "phonetic": "",
+          "pos": "短语",
+          "meaning": "（与某人）和睦相处；关系良好（= get on with sb.）；（某事物）进展",
+          "door": 33,
+          "examples": [
+            {
+              "en": "What are your neighbours like? Do you get along well with them?",
+              "zh": "你的邻居们怎么样？你和他们相处融洽吗？"
+            },
+            {
+              "en": "How do you get along with your English studies?",
+              "zh": "你的英语学习进展如何？"
+            }
+          ],
+          "notes": "接 sb. 表示相处；接 sth. 表示进展"
+        },
+        {
+          "id": "u05-11",
+          "no": 11,
+          "type": "word",
+          "text": "sign",
+          "phonetic": "/saɪn/",
+          "pos": "n. & v.",
+          "meaning": "标牌；指示牌；在（文件等）上签（名）；签字",
+          "door": 33,
+          "phrases": [
+            {
+              "text": "warning signs",
+              "meaning": "警告标志"
+            }
+          ],
+          "examples": [
+            {
+              "en": "Please sign your name here.",
+              "zh": "请在这儿签你的名字。"
+            }
+          ],
+          "notes": "signature n. 签名；签字；署名"
+        },
+        {
+          "id": "u05-12",
+          "no": 12,
+          "type": "word",
+          "text": "bite",
+          "phonetic": "/baɪt/",
+          "pos": "v. & n.",
+          "meaning": "咬 (bit-bitten-biting)；咬下的一口",
+          "door": 33,
+          "phrases": [
+            {
+              "text": "eat sth. in one bite",
+              "meaning": "将某物一口吃下去"
+            }
+          ],
+          "examples": [
+            {
+              "en": "That dog bit me in the leg just now.",
+              "zh": "那条狗刚才咬了我的腿。"
+            },
+            {
+              "en": "Stop biting your nails!",
+              "zh": "别再咬指甲了！"
+            }
+          ]
+        },
+        {
+          "id": "u05-13",
+          "no": 13,
+          "type": "word",
+          "text": "pet",
+          "phonetic": "/pet/",
+          "pos": "n. & v.",
+          "meaning": "宠物；抚摸；（爱抚地）摩挲 (petted-petted-petting)",
+          "door": 33,
+          "examples": [
+            {
+              "en": "I like to pet my cat gently.",
+              "zh": "我喜欢轻轻地抚摸我的猫。"
+            }
+          ],
+          "notes": "注意双写 t：petted, petting"
+        },
+        {
+          "id": "u05-14",
+          "no": 14,
+          "type": "word",
+          "text": "peck",
+          "phonetic": "/pek/",
+          "pos": "v.",
+          "meaning": "啄 (pecked-pecked-pecking)",
+          "door": 33,
+          "examples": [
+            {
+              "en": "The birds are pecking at seeds on the ground.",
+              "zh": "鸟儿正在地上啄食种子。"
+            }
+          ]
+        },
+        {
+          "id": "u05-15",
+          "no": 15,
+          "type": "word",
+          "text": "warning",
+          "phonetic": "/ˈwɔːnɪŋ/",
+          "pos": "n.",
+          "meaning": "警告；警示",
+          "door": 33,
+          "phrases": [
+            {
+              "text": "warn sb. of/about sth.",
+              "meaning": "提醒/警告某人某事（尤指可能有危险或有不良后果的事）"
+            },
+            {
+              "text": "warn sb. not to do sth. = warn sb. against doing sth.",
+              "meaning": "警告某人不要做某事"
+            }
+          ],
+          "examples": [
+            {
+              "en": "The policemen warned us of possible thieves.",
+              "zh": "警察提醒我们可能有小偷。"
+            },
+            {
+              "en": "They were warned not to climb the mountain in such bad weather.",
+              "zh": "已经劝过他们不要在那么坏的天气攀登那座山。"
+            }
+          ],
+          "notes": "warn v. 警告，警示"
+        },
+        {
+          "id": "u05-16",
+          "no": 16,
+          "type": "word",
+          "text": "sweet",
+          "phonetic": "/swiːt/",
+          "pos": "adj. & n.",
+          "meaning": "含糖的；甜的 (sweeter-sweetest)；糖果（常用复数 sweets）",
+          "door": 34,
+          "phrases": [
+            {
+              "text": "a packet of sweets",
+              "meaning": "一袋糖果"
+            }
+          ],
+          "examples": [
+            {
+              "en": "Mom bought me a packet of sweets.",
+              "zh": "妈妈给我买了一袋糖果。"
+            }
+          ]
+        },
+        {
+          "id": "u05-17",
+          "no": 17,
+          "type": "word",
+          "text": "loud",
+          "phonetic": "/laʊd/",
+          "pos": "adj.",
+          "meaning": "大声的；喧闹的 (louder-loudest)",
+          "door": 34,
+          "examples": [
+            {
+              "en": "That music is too loud; please turn it down.",
+              "zh": "那音乐太吵了，请把音量调低些。"
+            }
+          ],
+          "notes": "词族：loudly adv. 大声地，吵闹地；loudness n. 高声；响度，音量；loudspeaker n. 扩音器，扬声器"
+        },
+        {
+          "id": "u05-18",
+          "no": 18,
+          "type": "word",
+          "text": "noise",
+          "phonetic": "/nɔɪz/",
+          "pos": "n.",
+          "meaning": "噪音；响声",
+          "door": 34,
+          "phrases": [
+            {
+              "text": "make (much) noise",
+              "meaning": "发出（太多）噪音（不可数：a loud or unpleasant sound）"
+            },
+            {
+              "text": "make a noise",
+              "meaning": "发出一声响（可数：a sound）"
+            }
+          ],
+          "examples": [
+            {
+              "en": "The neighbours said that we were making too much noise.",
+              "zh": "邻居说我们发出了太多噪音。"
+            },
+            {
+              "en": "I heard a loud noise and ran to the window.",
+              "zh": "我听到一声巨响，跑到了窗户前。"
+            }
+          ],
+          "notes": "词族：noisy adj. 吵闹的，发出噪声的（noisier-noisiest）；noisily adv. 吵闹地"
+        },
+        {
+          "id": "u05-19",
+          "no": 19,
+          "type": "word",
+          "text": "meaning",
+          "phonetic": "/ˈmiːnɪŋ/",
+          "pos": "n.",
+          "meaning": "意义；意思",
+          "door": 34,
+          "phrases": [
+            {
+              "text": "What's the meaning of sth.? = What does sth. mean?",
+              "meaning": "…的意思是什么？"
+            },
+            {
+              "text": "mean (sth.) to sb.",
+              "meaning": "对某人而言意味着什么"
+            },
+            {
+              "text": "mean doing sth.",
+              "meaning": "意味着做某事"
+            },
+            {
+              "text": "mean to do sth.",
+              "meaning": "打算做某事"
+            }
+          ],
+          "examples": [
+            {
+              "en": "What do you mean by that strange look on your face?",
+              "zh": "你脸上那种奇怪的表情是什么意思呀？"
+            },
+            {
+              "en": "Money means nothing to him.",
+              "zh": "金钱对他来说是无所谓的。"
+            },
+            {
+              "en": "I had meant to go running this morning, but I overslept.",
+              "zh": "我本打算今天早上去跑步，但我睡过头了。"
+            },
+            {
+              "en": "Dieting also means being careful about which food you buy.",
+              "zh": "节食也意味着要留意你买的食物。"
+            }
+          ],
+          "notes": "mean v. 意思是；打算（meant-meant）；mean adj. 卑鄙的，刻薄的（Don't be so mean to your classmates. 不要总是对你的同学那么刻薄）；meaningful adj. 富有意义的；意味深长的（a meaningful debate / a meaningful look）；meaningless adj. 无意义的，无价值的"
+        },
+        {
+          "id": "u05-20",
+          "no": 20,
+          "type": "word",
+          "text": "shout",
+          "phonetic": "/ʃaʊt/",
+          "pos": "v.",
+          "meaning": "大声说；叫（不用于被动语态）",
+          "door": 34,
+          "phrases": [
+            {
+              "text": "shout to/at sb.",
+              "meaning": "向某人喊叫"
+            }
+          ],
+          "examples": [
+            {
+              "en": "He shouted to me that the boat was sinking.",
+              "zh": "他向我大声喊叫说船要沉了。"
+            }
+          ]
+        },
+        {
+          "id": "u05-21",
+          "no": 21,
+          "type": "word",
+          "text": "if",
+          "phonetic": "/ɪf/",
+          "pos": "conj.",
+          "meaning": "如果",
+          "door": 34,
+          "examples": [
+            {
+              "en": "If it rains tomorrow, our sports meeting will be held next week.",
+              "zh": "如果明天下雨，我们的运动会就下周举行。"
+            },
+            {
+              "en": "If the car doesn't come, we will miss the plane.",
+              "zh": "如果车还不来，我们就会错过飞机。"
+            }
+          ],
+          "notes": "if 引导的条件状语从句：\"主将从现\"——主句用一般将来时，从句用一般现在时"
+        },
+        {
+          "id": "u05-22",
+          "no": 22,
+          "type": "word",
+          "text": "could",
+          "phonetic": "/kʊd/",
+          "pos": "modal v.",
+          "meaning": "能；会（can 的过去式，表示过去的能力）；表示委婉语气",
+          "door": 34,
+          "examples": [
+            {
+              "en": "He could write poems when he was ten.",
+              "zh": "他十岁时就会写诗了。"
+            },
+            {
+              "en": "Could you do me a favor?",
+              "zh": "你可以帮我一个忙吗？"
+            }
+          ],
+          "notes": "could 在疑问句中表示委婉语气，此时没有过去式的意思"
+        },
+        {
+          "id": "u05-23",
+          "no": 23,
+          "type": "word",
+          "text": "diary",
+          "phonetic": "/ˈdaɪəri/",
+          "pos": "n.",
+          "meaning": "日记；日记簿",
+          "door": 34,
+          "phrases": [
+            {
+              "text": "keep a diary",
+              "meaning": "写日记"
+            }
+          ],
+          "examples": [
+            {
+              "en": "I keep a diary every day.",
+              "zh": "我每天写日记。"
+            }
+          ],
+          "notes": "形近词辨析：dairy /ˈdeəri/ n. 奶制品——diary（日记）和 dairy（奶制品）只是字母顺序不同"
+        },
+        {
+          "id": "u05-24",
+          "no": 24,
+          "type": "word",
+          "text": "direct",
+          "phonetic": "/dəˈrekt; daɪˈrekt/",
+          "pos": "v. & adj.",
+          "meaning": "指路；领路；指导；直接的",
+          "door": 35,
+          "phrases": [
+            {
+              "text": "direct sb. to sp.",
+              "meaning": "把某人带到某地"
+            },
+            {
+              "text": "in the direction of",
+              "meaning": "朝着…的方向"
+            }
+          ],
+          "examples": [
+            {
+              "en": "The teacher directs the students to the hall from the classroom.",
+              "zh": "老师把学生从教室带到了礼堂。"
+            },
+            {
+              "en": "He is walking in the direction of the bedroom.",
+              "zh": "他朝着卧室的方向在走。"
+            }
+          ],
+          "notes": "词族：direction n. 方向；direct adj. 直接的 ↔ indirect adj. 间接的"
+        },
+        {
+          "id": "u05-25",
+          "no": 25,
+          "type": "word",
+          "text": "glad",
+          "phonetic": "/ɡlæd/",
+          "pos": "adj.",
+          "meaning": "高兴；愉快",
+          "door": 35,
+          "phrases": [
+            {
+              "text": "be glad to do sth.",
+              "meaning": "高兴做某事"
+            }
+          ],
+          "examples": [
+            {
+              "en": "Glad to see you!",
+              "zh": "很高兴见到你！(= Nice to meet you.)"
+            }
+          ]
+        },
+        {
+          "id": "u05-26",
+          "no": 26,
+          "type": "word",
+          "text": "believe",
+          "phonetic": "/bɪˈliːv/",
+          "pos": "v.",
+          "meaning": "相信",
+          "door": 35,
+          "phrases": [
+            {
+              "text": "believe sb.",
+              "meaning": "相信某人（说的话）"
+            },
+            {
+              "text": "believe in sb./sth.",
+              "meaning": "信任某人/某事"
+            },
+            {
+              "text": "believe it or not",
+              "meaning": "信不信由你"
+            },
+            {
+              "text": "It is believed that...",
+              "meaning": "人们认为…"
+            }
+          ],
+          "examples": [
+            {
+              "en": "I can hardly believe it.",
+              "zh": "我几乎不敢相信。"
+            },
+            {
+              "en": "They don't believe in marriage.",
+              "zh": "他们不相信婚姻。"
+            },
+            {
+              "en": "Believe it or not, pets are loyal to their owners.",
+              "zh": "信不信由你，宠物是忠于它们的主人的。"
+            },
+            {
+              "en": "It is believed that dogs are friendly to humans.",
+              "zh": "人们认为狗狗对人类很友好。"
+            }
+          ],
+          "notes": "词族：belief n. 相信；信念（复数 beliefs）；believable adj. 可信的；unbelievable adj. 不可信的，难以置信的"
+        },
+        {
+          "id": "u05-27",
+          "no": 27,
+          "type": "word",
+          "text": "unforgettable",
+          "phonetic": "/ˌʌnfəˈɡetəbl/",
+          "pos": "adj.",
+          "meaning": "令人难忘的",
+          "door": 35,
+          "phrases": [
+            {
+              "text": "an unforgettable trip",
+              "meaning": "一次令人难忘的旅行"
+            }
+          ],
+          "examples": [
+            {
+              "en": "She has become forgetful these years.",
+              "zh": "近年来她变得十分健忘。"
+            }
+          ],
+          "notes": "反义词：forgettable adj. 易忘的；forgetful adj. 健忘的"
+        },
+        {
+          "id": "u05-28",
+          "no": 28,
+          "type": "word",
+          "text": "smooth",
+          "phonetic": "/smuːð/",
+          "pos": "adj.",
+          "meaning": "光滑的；平坦的；平整的；平稳的",
+          "door": 35,
+          "examples": [
+            {
+              "en": "The silk scarf feels smooth.",
+              "zh": "这块丝巾摸起来很光滑。"
+            },
+            {
+              "en": "The plane made a smooth landing.",
+              "zh": "飞机平稳降落。"
+            }
+          ],
+          "notes": "smoothly adv. 平稳地；光滑地"
+        },
+        {
+          "id": "u05-29",
+          "no": 29,
+          "type": "word",
+          "text": "friendly",
+          "phonetic": "/ˈfrendli/",
+          "pos": "adj.",
+          "meaning": "友爱的；友好的 (friendlier-friendliest)",
+          "door": 35,
+          "phrases": [
+            {
+              "text": "be friendly to sb.",
+              "meaning": "对某人友好"
+            },
+            {
+              "text": "make friends with sb.",
+              "meaning": "和某人交朋友"
+            }
+          ],
+          "examples": [
+            {
+              "en": "Dogs are friendly to humans.",
+              "zh": "狗狗对人类很友好。"
+            }
+          ],
+          "notes": "词族：friend n. 朋友；friendship n. 友谊"
+        },
+        {
+          "id": "u05-30",
+          "no": 30,
+          "type": "word",
+          "text": "ride",
+          "phonetic": "/raɪd/",
+          "pos": "v. & n.",
+          "meaning": "骑马；驾驶；骑车 (rode-ridden-riding)；乘骑旅行；搭乘旅行",
+          "door": 35,
+          "phrases": [
+            {
+              "text": "ride a bike",
+              "meaning": "骑自行车"
+            },
+            {
+              "text": "give sb. a ride",
+              "meaning": "让某人搭便车"
+            }
+          ],
+          "examples": [
+            {
+              "en": "Can you give me a ride to the station?",
+              "zh": "我可以搭你的便车去车站吗？"
+            },
+            {
+              "en": "It's a 15-minute ride from my home to school.",
+              "zh": "我从家到学校骑自行车15分钟。"
+            }
+          ],
+          "notes": "对路程提问：How far is it from your home to school? 从你家到学校有多远？"
         }
       ]
     }

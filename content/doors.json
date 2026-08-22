@@ -184,5 +184,29 @@
     "name": "赛事报道",
     "theme": "sports",
     "entryRange": "u04-22 ~ u04-29"
+  },
+  {
+    "id": 32,
+    "name": "惊奇动物园",
+    "theme": "animals",
+    "entryRange": "u05-01 ~ u05-08"
+  },
+  {
+    "id": 33,
+    "name": "萌宠相处道",
+    "theme": "animals",
+    "entryRange": "u05-09 ~ u05-15"
+  },
+  {
+    "id": 34,
+    "name": "词语辨析馆",
+    "theme": "animals",
+    "entryRange": "u05-16 ~ u05-23"
+  },
+  {
+    "id": 35,
+    "name": "友谊与信任",
+    "theme": "animals",
+    "entryRange": "u05-24 ~ u05-30"
   }
 ]
