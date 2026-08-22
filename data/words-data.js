@@ -229,6 +229,36 @@ window.WORDS_DATA = {
       "name": "友谊与信任",
       "theme": "animals",
       "entryRange": "u05-24 ~ u05-30"
+    },
+    {
+      "id": 36,
+      "name": "出发准备",
+      "theme": "travel",
+      "entryRange": "u06-01 ~ u06-07"
+    },
+    {
+      "id": 37,
+      "name": "山野徒步",
+      "theme": "travel",
+      "entryRange": "u06-08 ~ u06-14"
+    },
+    {
+      "id": 38,
+      "name": "冰雪之旅",
+      "theme": "travel",
+      "entryRange": "u06-15 ~ u06-21"
+    },
+    {
+      "id": 39,
+      "name": "购票出行",
+      "theme": "travel",
+      "entryRange": "u06-22 ~ u06-28"
+    },
+    {
+      "id": 40,
+      "name": "旅途感悟",
+      "theme": "travel",
+      "entryRange": "u06-29 ~ u06-35"
     }
   ],
   "units": [
@@ -10229,6 +10259,1132 @@ window.WORDS_DATA = {
             }
           ],
           "notes": "对路程提问：How far is it from your home to school? 从你家到学校有多远？"
+        }
+      ]
+    },
+    {
+      "unitId": "u06-travel",
+      "title": "U6 Travelling around China 词汇讲义",
+      "sourceImages": [
+        "assets/handouts/2026-08-22e_0001.JPG",
+        "assets/handouts/2026-08-22e_0002.JPG",
+        "assets/handouts/2026-08-22e_0003.JPG",
+        "assets/handouts/2026-08-22e_0004.JPG",
+        "assets/handouts/2026-08-22e_0005.JPG",
+        "assets/handouts/2026-08-22e_0006.JPG",
+        "assets/handouts/2026-08-22e_0007.JPG",
+        "assets/handouts/2026-08-22e_0008.JPG",
+        "assets/handouts/2026-08-22e_0009.JPG",
+        "assets/handouts/2026-08-22e_0010.JPG",
+        "assets/handouts/2026-08-22e_0011.JPG",
+        "assets/handouts/2026-08-22e_0012.JPG"
+      ],
+      "pageMap": {},
+      "missingPages": "",
+      "dictationExtra": [],
+      "entries": [
+        {
+          "id": "u06-01",
+          "no": 1,
+          "type": "word",
+          "text": "around",
+          "phonetic": "/əˈraʊnd/",
+          "pos": "prep. & adv.",
+          "meaning": "在…周围；在周围；大约",
+          "door": 36,
+          "phrases": [
+            {
+              "text": "around the world = all over the world = across the world",
+              "meaning": "全世界"
+            },
+            {
+              "text": "show sb. around sp.",
+              "meaning": "带领某人参观某地"
+            }
+          ],
+          "examples": [
+            {
+              "en": "The Earth turns around the Sun.",
+              "zh": "地球绕着太阳转。"
+            },
+            {
+              "en": "Li Bailing is showing Harry around her school.",
+              "zh": "李百灵正带着Harry参观她的学校。"
+            },
+            {
+              "en": "The students are running around outside.",
+              "zh": "学生们在外面到处跑。"
+            }
+          ],
+          "notes": "作介词表示\"在…周围\"，作副词表示\"到处；大约\""
+        },
+        {
+          "id": "u06-02",
+          "no": 2,
+          "type": "word",
+          "text": "vacation",
+          "phonetic": "/vəˈkeɪʃn/",
+          "pos": "n.",
+          "meaning": "假期",
+          "door": 36,
+          "phrases": [
+            {
+              "text": "take a vacation",
+              "meaning": "休个假"
+            },
+            {
+              "text": "be on vacation in sp.",
+              "meaning": "在某地度假"
+            },
+            {
+              "text": "summer vacation = summer holiday",
+              "meaning": "暑假"
+            }
+          ],
+          "examples": [
+            {
+              "en": "You look tired. I think you should take a vacation.",
+              "zh": "你看上去有点累。我觉得你应该休个假。"
+            },
+            {
+              "en": "They are on vacation in Germany.",
+              "zh": "他们在德国度假。"
+            }
+          ]
+        },
+        {
+          "id": "u06-03",
+          "no": 3,
+          "type": "word",
+          "text": "trip",
+          "phonetic": "/trɪp/",
+          "pos": "n. & v.",
+          "meaning": "（短途往返的）旅行；旅游；出行；绊；绊倒 (tripped-tripped)",
+          "door": 36,
+          "phrases": [
+            {
+              "text": "go on a trip to sp.",
+              "meaning": "去某地旅行"
+            },
+            {
+              "text": "a business trip",
+              "meaning": "商务旅行"
+            },
+            {
+              "text": "Have a nice trip!",
+              "meaning": "旅途愉快！"
+            }
+          ],
+          "examples": [
+            {
+              "en": "—I will visit Beijing next month. —Have a nice trip.",
+              "zh": "——我下个月要去北京。——旅途愉快。"
+            },
+            {
+              "en": "She tripped and fell.",
+              "zh": "她绊了一下摔倒了。"
+            }
+          ],
+          "notes": "辨析：trip 通常指往返旅行（a three-day trip 三日游）；journey 尤指长途旅行（the journey to the west 西天取经）；tour 指游览多地的旅行；outing 指集体远足（an autumn outing 秋游）。trip 作动词\"绊倒\"注意双写 p"
+        },
+        {
+          "id": "u06-04",
+          "no": 4,
+          "type": "word",
+          "text": "popular",
+          "phonetic": "/ˈpɒpjələ(r)/",
+          "pos": "adj.",
+          "meaning": "大众喜爱的；广受欢迎的；当红的 (more popular-most popular)",
+          "door": 36,
+          "phrases": [
+            {
+              "text": "be popular with/among sb.",
+              "meaning": "受某人的欢迎"
+            },
+            {
+              "text": "popular music/culture",
+              "meaning": "流行音乐/文化"
+            }
+          ],
+          "examples": [
+            {
+              "en": "Keeping pets is becoming popular.",
+              "zh": "养宠物正变得很流行。"
+            },
+            {
+              "en": "Our PE teacher is very popular among his students.",
+              "zh": "我们的体育老师很受学生欢迎。"
+            },
+            {
+              "en": "Rock climbing is growing in popularity these days.",
+              "zh": "攀岩这些天变得越来越受欢迎了。"
+            }
+          ],
+          "notes": "词族：popularity n. 流行（gain popularity 越来越受欢迎）；unpopular adj. 不受欢迎的"
+        },
+        {
+          "id": "u06-05",
+          "no": 5,
+          "type": "word",
+          "text": "tour",
+          "phonetic": "/tʊə(r)/",
+          "pos": "n. & v.",
+          "meaning": "旅行；旅游；在…旅游；在…巡回演出",
+          "door": 36,
+          "phrases": [
+            {
+              "text": "go on a tour to sp.",
+              "meaning": "去某地旅游"
+            },
+            {
+              "text": "a sightseeing tour",
+              "meaning": "观光游"
+            },
+            {
+              "text": "a tour guide",
+              "meaning": "导游"
+            }
+          ],
+          "examples": [
+            {
+              "en": "Shall we go on a tour to Europe this winter?",
+              "zh": "我们今年冬天去欧洲旅游好吗？"
+            },
+            {
+              "en": "We spent four weeks touring in Europe.",
+              "zh": "我们花四个星期周游欧洲。"
+            }
+          ],
+          "notes": "词族：tourist n. 游客；tourism n. 旅游业"
+        },
+        {
+          "id": "u06-06",
+          "no": 6,
+          "type": "word",
+          "text": "tip",
+          "phonetic": "/tɪp/",
+          "pos": "n.",
+          "meaning": "指点，实用的提示；小费",
+          "door": 36,
+          "phrases": [
+            {
+              "text": "leave a tip",
+              "meaning": "留小费"
+            },
+            {
+              "text": "tips on how to do sth.",
+              "meaning": "如何做某事的窍门"
+            }
+          ],
+          "examples": [
+            {
+              "en": "Here are a few useful tips on how to save money.",
+              "zh": "这里有几个省钱的窍门。"
+            },
+            {
+              "en": "The book introduces many gardening tips.",
+              "zh": "这本书介绍了很多园艺技巧。"
+            }
+          ],
+          "notes": "近义词：suggestion（可数）、advice（不可数）。习语：on the tip of your tongue 话到嘴边（却一时想不起来）；the tip of the iceberg 冰山一角"
+        },
+        {
+          "id": "u06-07",
+          "no": 7,
+          "type": "word",
+          "text": "footprint",
+          "phonetic": "/ˈfʊtprɪnt/",
+          "pos": "n.",
+          "meaning": "脚印，足迹",
+          "door": 36,
+          "examples": [
+            {
+              "en": "I left chains of footprints on the beach.",
+              "zh": "我在沙滩上留下了串串脚印。"
+            }
+          ],
+          "notes": "合成词：foot（脚）+ print（印迹）"
+        },
+        {
+          "id": "u06-08",
+          "no": 8,
+          "type": "word",
+          "text": "hike",
+          "phonetic": "/haɪk/",
+          "pos": "v.",
+          "meaning": "徒步旅行",
+          "door": 37,
+          "phrases": [
+            {
+              "text": "go hiking",
+              "meaning": "去远足；去徒步"
+            }
+          ],
+          "examples": [
+            {
+              "en": "They hike on Mount Huangshan.",
+              "zh": "他们在黄山徒步。"
+            },
+            {
+              "en": "If the weather is fine, we will go hiking this weekend.",
+              "zh": "如果天气好，我们这周末去远足。"
+            }
+          ],
+          "notes": "hiker n. 徒步旅行者；hitchhiker n. 搭便车的人"
+        },
+        {
+          "id": "u06-09",
+          "no": 9,
+          "type": "word",
+          "text": "nature",
+          "phonetic": "/ˈneɪtʃə(r)/",
+          "pos": "n.",
+          "meaning": "大自然",
+          "door": 37,
+          "phrases": [
+            {
+              "text": "enjoy nature on horseback",
+              "meaning": "在马背上享受自然"
+            }
+          ],
+          "examples": [
+            {
+              "en": "Water is one of the most important natural resources.",
+              "zh": "水是最重要的自然资源之一。"
+            },
+            {
+              "en": "Naturally, I get upset when I don't get along with my classmates.",
+              "zh": "当我和同学合不来时，我当然会不开心。"
+            }
+          ],
+          "notes": "词族：natural adj. 自然的 ↔ unnatural adj. 不自然的；naturally adv. 自然地；当然"
+        },
+        {
+          "id": "u06-10",
+          "no": 10,
+          "type": "word",
+          "text": "enjoy",
+          "phonetic": "/ɪnˈdʒɔɪ/",
+          "pos": "v.",
+          "meaning": "享受；欣赏",
+          "door": 37,
+          "phrases": [
+            {
+              "text": "enjoy local snacks",
+              "meaning": "享受当地小吃"
+            },
+            {
+              "text": "enjoy doing sth.",
+              "meaning": "喜欢做某事"
+            },
+            {
+              "text": "enjoy oneself = have a good time = have fun",
+              "meaning": "玩得开心"
+            }
+          ],
+          "examples": [
+            {
+              "en": "I enjoy playing basketball and tennis.",
+              "zh": "我喜欢打篮球和网球。"
+            },
+            {
+              "en": "To our great joy, we won the football match.",
+              "zh": "令我们大为高兴的是，我们赢得了足球比赛。"
+            },
+            {
+              "en": "We live an enjoyable school life.",
+              "zh": "我们过着愉快的学校生活。"
+            }
+          ],
+          "notes": "词族：joy n. 乐趣（jump for joy 欢呼雀跃）；enjoyable adj. 令人愉快的"
+        },
+        {
+          "id": "u06-11",
+          "no": 11,
+          "type": "word",
+          "text": "local",
+          "phonetic": "/ˈləʊkl/",
+          "pos": "adj. & n.",
+          "meaning": "当地的；当地人",
+          "door": 37,
+          "phrases": [
+            {
+              "text": "a local farmer",
+              "meaning": "一个当地农民"
+            },
+            {
+              "text": "a local newspaper",
+              "meaning": "一家地方报纸"
+            },
+            {
+              "text": "be located in",
+              "meaning": "坐落于；位于…"
+            }
+          ],
+          "examples": [
+            {
+              "en": "Shanghai is located in the east of China.",
+              "zh": "上海位于中国的东部。"
+            },
+            {
+              "en": "Can you tell me the location of the fire exit?",
+              "zh": "你能告诉我消防出口的位置吗？"
+            }
+          ],
+          "notes": "词族：locate v. 定位；location n. 位置；方位；local 作名词指\"当地人\""
+        },
+        {
+          "id": "u06-12",
+          "no": 12,
+          "type": "word",
+          "text": "lazy",
+          "phonetic": "/ˈleɪzi/",
+          "pos": "adj.",
+          "meaning": "懒散的；悠闲的 (lazier-laziest)",
+          "door": 37,
+          "phrases": [
+            {
+              "text": "enjoy some lazy days on the beach",
+              "meaning": "在海滩享受几天悠闲时光"
+            }
+          ],
+          "examples": [
+            {
+              "en": "He woke up and stretched lazily.",
+              "zh": "他醒来伸了个懒腰。"
+            }
+          ],
+          "notes": "反义词：hardworking adj. 工作努力的。变 y 为 i 的词形变化：lazy→lazily/laziness；同类：easy→easily, busy→busily/business, heavy→heavily, happy→happily/happiness, noisy→noisily, lonely→loneliness"
+        },
+        {
+          "id": "u06-13",
+          "no": 13,
+          "type": "word",
+          "text": "horseback",
+          "phonetic": "/ˈhɔːsbæk/",
+          "pos": "n.",
+          "meaning": "马背",
+          "door": 37,
+          "phrases": [
+            {
+              "text": "on horseback",
+              "meaning": "在马背上；骑着马"
+            }
+          ],
+          "examples": [
+            {
+              "en": "The kids pulled him off the horseback.",
+              "zh": "孩子们把他从马背上拉了下来。"
+            }
+          ],
+          "notes": "合成词：horse（马）+ back（背）"
+        },
+        {
+          "id": "u06-14",
+          "no": 14,
+          "type": "word",
+          "text": "roof",
+          "phonetic": "/ruːf/",
+          "pos": "n.",
+          "meaning": "屋顶；顶部（复数 roofs）",
+          "door": 37,
+          "examples": [
+            {
+              "en": "Look at the red walls and yellow roofs.",
+              "zh": "看那些红墙黄屋顶。"
+            }
+          ],
+          "notes": "习语：hit the roof = become very angry 勃然大怒。以 f 结尾变复数直接 +s 的名词：roof→roofs 屋顶、proof→proofs 证据、belief→beliefs 信念、chief→chiefs 首领、cliff→cliffs 悬崖"
+        },
+        {
+          "id": "u06-15",
+          "no": 15,
+          "type": "word",
+          "text": "ski",
+          "phonetic": "/skiː/",
+          "pos": "v. & n.",
+          "meaning": "滑雪 (skied-skied-skiing)；滑雪板",
+          "door": 38,
+          "phrases": [
+            {
+              "text": "go skiing",
+              "meaning": "去滑雪"
+            },
+            {
+              "text": "cross-country skiing",
+              "meaning": "越野滑雪"
+            },
+            {
+              "text": "a pair of skis",
+              "meaning": "一副滑雪板"
+            }
+          ],
+          "examples": [
+            {
+              "en": "Lu Yao went skiing with her family in France last February.",
+              "zh": "陆瑶去年二月和家人去法国滑雪了。"
+            },
+            {
+              "en": "I want to try skiing in Harbin.",
+              "zh": "我想在哈尔滨试试滑雪。"
+            },
+            {
+              "en": "It's easy to take up cross-country skiing.",
+              "zh": "从事越野滑雪是容易的。"
+            }
+          ],
+          "notes": "skier n. 滑雪者"
+        },
+        {
+          "id": "u06-16",
+          "no": 16,
+          "type": "word",
+          "text": "reason",
+          "phonetic": "/ˈriːzn/",
+          "pos": "n.",
+          "meaning": "原因；理由",
+          "door": 38,
+          "phrases": [
+            {
+              "text": "for these reasons",
+              "meaning": "由于这些原因"
+            },
+            {
+              "text": "without giving a reason",
+              "meaning": "没有说明理由"
+            }
+          ],
+          "examples": [
+            {
+              "en": "He left without giving a reason.",
+              "zh": "他没有说明理由就走了。"
+            },
+            {
+              "en": "For these reasons, Lu Yao chose to go to Chengdu for a vacation.",
+              "zh": "由于这些原因，陆瑶选择去成都度假。"
+            }
+          ],
+          "notes": "词族：reasonable adj. 合理的 ↔ unreasonable adj. 不合理的；reasonably adv. 合理地。形容词前加 un 变反义词：happy→unhappy、lucky→unlucky、kind→unkind、important→unimportant、comfortable→uncomfortable、tidy→untidy、usual→unusual、necessary→unnecessary"
+        },
+        {
+          "id": "u06-17",
+          "no": 17,
+          "type": "word",
+          "text": "book",
+          "phonetic": "/bʊk/",
+          "pos": "v. & n.",
+          "meaning": "预约；预定；书",
+          "door": 38,
+          "phrases": [
+            {
+              "text": "book a table for two",
+              "meaning": "订一张二人餐桌"
+            },
+            {
+              "text": "booking office",
+              "meaning": "（车站、剧院等的）售票处"
+            },
+            {
+              "text": "book in advance",
+              "meaning": "提前预订"
+            }
+          ],
+          "examples": [
+            {
+              "en": "I'd like to book a table for two tonight.",
+              "zh": "我想订一张今晚的二人餐桌。"
+            }
+          ],
+          "notes": "book 除了\"书\"，作动词常考\"预订\""
+        },
+        {
+          "id": "u06-18",
+          "no": 18,
+          "type": "word",
+          "text": "drive",
+          "phonetic": "/draɪv/",
+          "pos": "v. & n.",
+          "meaning": "驾驶；开车 (drove-driven-driving)；车程",
+          "door": 38,
+          "phrases": [
+            {
+              "text": "a three-hour drive",
+              "meaning": "三小时车程"
+            },
+            {
+              "text": "driving licence (英式) / driver's licence (美式)",
+              "meaning": "驾照"
+            }
+          ],
+          "examples": [
+            {
+              "en": "Don't drive so fast!",
+              "zh": "不要开那么快！"
+            },
+            {
+              "en": "It's a three-hour drive to London.",
+              "zh": "到伦敦要三小时车程。"
+            }
+          ],
+          "notes": "driver n. 司机；drive 作名词表示\"车程\""
+        },
+        {
+          "id": "u06-19",
+          "no": 19,
+          "type": "word",
+          "text": "shall",
+          "phonetic": "/ʃæl; ʃəl/",
+          "pos": "modal v.",
+          "meaning": "（同 I 和 we 连用，表示将来）将要；将会",
+          "door": 38,
+          "examples": [
+            {
+              "en": "—Shall I book a plane ticket for you? —That's kind of you.",
+              "zh": "——要我为你订一张机票吗？——你真好。"
+            },
+            {
+              "en": "—Shall we go to Chengdu by plane? —That's a good idea.",
+              "zh": "——我们乘飞机去成都如何？——真是个好主意。"
+            }
+          ],
+          "notes": "Shall 与 I/we 连用、用于疑问句，表示提供帮助或提出建议"
+        },
+        {
+          "id": "u06-20",
+          "no": 20,
+          "type": "word",
+          "text": "afraid",
+          "phonetic": "/əˈfreɪd/",
+          "pos": "adj.",
+          "meaning": "害怕；畏惧",
+          "door": 38,
+          "phrases": [
+            {
+              "text": "be afraid of + n./doing",
+              "meaning": "害怕；惧怕…"
+            },
+            {
+              "text": "be afraid to do",
+              "meaning": "不敢做…"
+            },
+            {
+              "text": "I'm afraid (so/not).",
+              "meaning": "我恐怕（是这样/不是这样）——礼貌地说出令人不快或遗憾的事"
+            }
+          ],
+          "examples": [
+            {
+              "en": "I'm afraid it is a little too expensive.",
+              "zh": "我恐怕有点太贵了。"
+            },
+            {
+              "en": "—Does it hurt? —I'm afraid so.",
+              "zh": "——痛不痛？——恐怕会痛。"
+            },
+            {
+              "en": "Many people are afraid of spiders.",
+              "zh": "很多人害怕蜘蛛。"
+            },
+            {
+              "en": "I'm afraid of going out alone at night.",
+              "zh": "我害怕夜间单独外出。"
+            }
+          ],
+          "notes": "另外两个表示害怕的词：frightened、scared"
+        },
+        {
+          "id": "u06-21",
+          "no": 21,
+          "type": "word",
+          "text": "expensive",
+          "phonetic": "/ɪkˈspensɪv/",
+          "pos": "adj.",
+          "meaning": "昂贵的；价格高的 (more expensive-most expensive)",
+          "door": 38,
+          "examples": [
+            {
+              "en": "Everything is so expensive now, isn't it?",
+              "zh": "现在什么东西都那么贵，是不是？"
+            }
+          ],
+          "notes": "近义词：dear；反义词：cheap（cheaper-cheapest）；expense n. 费用；开销（通常用复数：living/medical expenses 生活/医疗费用）"
+        },
+        {
+          "id": "u06-22",
+          "no": 22,
+          "type": "word",
+          "text": "price",
+          "phonetic": "/praɪs/",
+          "pos": "n.",
+          "meaning": "价格；价钱",
+          "door": 39,
+          "phrases": [
+            {
+              "text": "at a high/low price",
+              "meaning": "以高/低价"
+            },
+            {
+              "text": "pay full price",
+              "meaning": "买全价票；付全价"
+            }
+          ],
+          "examples": [
+            {
+              "en": "The price of a one-way ticket is over 1300 yuan.",
+              "zh": "单程票的价格是1300多元。"
+            },
+            {
+              "en": "He sold his car at a high price.",
+              "zh": "他以高价出售了他的小汽车。"
+            }
+          ],
+          "notes": "问价格：How much does one cabbage cost? = What's the price of one cabbage? = How much is it? priceless adj. 无价的；极珍贵的（priceless information = valuable information）"
+        },
+        {
+          "id": "u06-23",
+          "no": 23,
+          "type": "word",
+          "text": "one-way",
+          "phonetic": "/ˌwʌn ˈweɪ/",
+          "pos": "adj.",
+          "meaning": "单程的",
+          "door": 39,
+          "phrases": [
+            {
+              "text": "a one-way ticket",
+              "meaning": "一张单程票"
+            },
+            {
+              "text": "a return ticket",
+              "meaning": "一张返程票"
+            },
+            {
+              "text": "a round-trip ticket",
+              "meaning": "一张往返票"
+            }
+          ],
+          "examples": [
+            {
+              "en": "Don't enter. Here is the one-way traffic.",
+              "zh": "不要进入。这里是单行道。"
+            }
+          ]
+        },
+        {
+          "id": "u06-24",
+          "no": 24,
+          "type": "word",
+          "text": "ticket",
+          "phonetic": "/ˈtɪkɪt/",
+          "pos": "n.",
+          "meaning": "票；入场券",
+          "door": 39,
+          "phrases": [
+            {
+              "text": "a ticket for + 活动",
+              "meaning": "…的票（two tickets for tonight's film 两张今晚的电影票）"
+            },
+            {
+              "text": "a ticket to + 地点",
+              "meaning": "去…的票（a plane ticket to Beijing 去北京的机票）"
+            },
+            {
+              "text": "a parking/speeding ticket",
+              "meaning": "违章停车/超速驾驶罚款单"
+            }
+          ],
+          "examples": [
+            {
+              "en": "I have got two tickets for tonight's film.",
+              "zh": "我有两张今晚的电影票。"
+            },
+            {
+              "en": "Shall I book a plane ticket to Beijing for you?",
+              "zh": "要我为你订一张去北京的机票吗？"
+            }
+          ]
+        },
+        {
+          "id": "u06-25",
+          "no": 25,
+          "type": "word",
+          "text": "better",
+          "phonetic": "/ˈbetə(r)/",
+          "pos": "adj. & adv.",
+          "meaning": "（good 的比较级）较好的；更好的；（well 的比较级）更好",
+          "door": 39,
+          "phrases": [
+            {
+              "text": "had better (not) do sth.",
+              "meaning": "最好（不要）做某事"
+            },
+            {
+              "text": "better and better",
+              "meaning": "越来越好"
+            }
+          ],
+          "examples": [
+            {
+              "en": "We are hoping for better weather tomorrow.",
+              "zh": "我们希望明天天气好转。"
+            },
+            {
+              "en": "Her work is getting better and better.",
+              "zh": "她的工作正变得越来越好。"
+            },
+            {
+              "en": "Lu Yao sings much better than I do.",
+              "zh": "陆瑶唱歌比我好得多。"
+            },
+            {
+              "en": "You'd better go to the doctor at once if a dog or cat bites you.",
+              "zh": "如果狗或猫咬了你，你最好立刻去看医生。"
+            },
+            {
+              "en": "You'd better not go to bed too late, or you will feel sleepy in class.",
+              "zh": "你最好不要睡得太晚，否则你会在课堂上打瞌睡。"
+            }
+          ],
+          "notes": "不规则比较级表：good/well→better→best；many/much→more→most；little→less→least；bad/badly/ill→worse→worst；far→farther/further→farthest/furthest。You'd better = You had better"
+        },
+        {
+          "id": "u06-26",
+          "no": 26,
+          "type": "word",
+          "text": "convenient",
+          "phonetic": "/kənˈviːnɪənt/",
+          "pos": "adj.",
+          "meaning": "方便的；便利的；省事的 (more convenient-most convenient)",
+          "door": 39,
+          "examples": [
+            {
+              "en": "It's convenient to travel by high-speed train in China.",
+              "zh": "在中国，乘高铁出行是很方便的。"
+            },
+            {
+              "en": "A bicycle is more convenient than a car in the town.",
+              "zh": "在小镇上自行车常常比小汽车更方便。"
+            }
+          ],
+          "notes": "词族：convenience n. 方便（convenience store 便利店）；inconvenient adj. 不方便的"
+        },
+        {
+          "id": "u06-27",
+          "no": 27,
+          "type": "word",
+          "text": "speed",
+          "phonetic": "/spiːd/",
+          "pos": "n. & v.",
+          "meaning": "速度；快速前行；加速 (sped-sped 或 speeded-speeded)",
+          "door": 39,
+          "phrases": [
+            {
+              "text": "at a speed of",
+              "meaning": "以…的速度"
+            },
+            {
+              "text": "at high/low speed",
+              "meaning": "以高速/低速"
+            },
+            {
+              "text": "speed up",
+              "meaning": "加速"
+            }
+          ],
+          "examples": [
+            {
+              "en": "The car runs at a speed of 80 miles per hour.",
+              "zh": "轿车以每小时八十英里的速度行驶。"
+            },
+            {
+              "en": "The ambulance sped to the hospital.",
+              "zh": "救护车快速开往医院。"
+            },
+            {
+              "en": "We'd better speed up if we want to get there in time.",
+              "zh": "如果我们想准时到达那里，我们最好加快速度。"
+            }
+          ],
+          "notes": "high-speed adj. 高速的：They are planning to build a new high-speed railway line between the two cities. 他们计划在这两个城市之间建设一条新的高速铁路线。"
+        },
+        {
+          "id": "u06-28",
+          "no": 28,
+          "type": "word",
+          "text": "comfortable",
+          "phonetic": "/ˈkʌmftəbl/",
+          "pos": "adj.",
+          "meaning": "使人舒服的；舒适的 (more comfortable-most comfortable)",
+          "door": 39,
+          "examples": [
+            {
+              "en": "I feel much more comfortable in my new clothes.",
+              "zh": "我穿上新衣服感觉舒服多了。"
+            },
+            {
+              "en": "They can sit comfortably in the large armchairs.",
+              "zh": "他们可以舒服地坐在宽大的扶手椅上。"
+            },
+            {
+              "en": "There's nothing like the comfort of a warm bed on a cold night.",
+              "zh": "在寒冷的夜晚，没有什么比一张温暖的床更让人感到舒适的了。"
+            },
+            {
+              "en": "I tried to comfort her with a packet of sweets.",
+              "zh": "我试图用一包糖果去安慰她。"
+            }
+          ],
+          "notes": "词族：comfortably adv. 舒服地；comfort n. 舒适；安慰，v. 安慰某人（comfort sb. = give sb. comfort）；uncomfortable adj. 不舒服的"
+        },
+        {
+          "id": "u06-29",
+          "no": 29,
+          "type": "word",
+          "text": "view",
+          "phonetic": "/vjuː/",
+          "pos": "n.",
+          "meaning": "景色；（尤指）乡间美景；视野；（个人的）看法",
+          "door": 40,
+          "phrases": [
+            {
+              "text": "in view of",
+              "meaning": "鉴于…；考虑到…"
+            },
+            {
+              "text": "come into view",
+              "meaning": "进入视线；看得见"
+            },
+            {
+              "text": "out of view",
+              "meaning": "看不见；在视线之外"
+            },
+            {
+              "text": "from one's point of view",
+              "meaning": "依据某人的看法"
+            }
+          ],
+          "examples": [
+            {
+              "en": "We have a beautiful view of the lake from our hotel room.",
+              "zh": "从我们的酒店房间可以看到湖的美丽景色。"
+            },
+            {
+              "en": "In view of the recent accidents, safety tips should be taught at school.",
+              "zh": "鉴于最近的事故，学校应该教授一些安全贴士。"
+            },
+            {
+              "en": "The actress disappeared out of view into the crowd.",
+              "zh": "这个女演员消失在人群中，看不见了。"
+            }
+          ]
+        },
+        {
+          "id": "u06-30",
+          "no": 30,
+          "type": "word",
+          "text": "carry",
+          "phonetic": "/ˈkæri/",
+          "pos": "v.",
+          "meaning": "拿；提；搬运；运送；输送；传播 (carried-carried-carrying)",
+          "door": 40,
+          "phrases": [
+            {
+              "text": "carry out",
+              "meaning": "执行；实施"
+            },
+            {
+              "text": "carry on",
+              "meaning": "继续进行"
+            }
+          ],
+          "examples": [
+            {
+              "en": "She carried the heavy box up the stairs.",
+              "zh": "她把沉重的箱子搬上了楼梯。"
+            },
+            {
+              "en": "The train carries passengers from one city to another.",
+              "zh": "火车把乘客从一个城市运送到另一个城市。"
+            },
+            {
+              "en": "Mosquitoes can carry diseases.",
+              "zh": "蚊子可以传播疾病。"
+            },
+            {
+              "en": "They carried out the plan successfully.",
+              "zh": "他们成功地执行了计划。"
+            }
+          ],
+          "notes": "辨析：take 从说话者所在处带走；bring 带到说话者所在处；fetch 去某地取回（往返）；carry 侧重物理上的搬运/支撑，不强调方向"
+        },
+        {
+          "id": "u06-31",
+          "no": 31,
+          "type": "word",
+          "text": "plan",
+          "phonetic": "/plæn/",
+          "pos": "n. & v.",
+          "meaning": "计划；方案；打算；计划；打算 (planned-planned-planning)",
+          "door": 40,
+          "phrases": [
+            {
+              "text": "a travel/business plan",
+              "meaning": "一个旅行/商业计划"
+            },
+            {
+              "text": "make a plan",
+              "meaning": "制定计划"
+            },
+            {
+              "text": "stick to the plan",
+              "meaning": "坚持计划"
+            },
+            {
+              "text": "change one's plan",
+              "meaning": "改变计划"
+            },
+            {
+              "text": "plan to do sth.",
+              "meaning": "计划去做某事"
+            }
+          ],
+          "examples": [
+            {
+              "en": "I plan to go to the movies tomorrow.",
+              "zh": "我打算明天去看电影。"
+            },
+            {
+              "en": "They planned a surprise party for her birthday.",
+              "zh": "他们为她的生日计划了一个惊喜派对。"
+            }
+          ],
+          "notes": "注意双写 n：planned, planning"
+        },
+        {
+          "id": "u06-32",
+          "no": 32,
+          "type": "word",
+          "text": "own",
+          "phonetic": "/əʊn/",
+          "pos": "adj. & pron.",
+          "meaning": "（用于强调）自己的；本人的",
+          "door": 40,
+          "phrases": [
+            {
+              "text": "on one's own",
+              "meaning": "独自地；独立地"
+            },
+            {
+              "text": "sth. of one's own",
+              "meaning": "属于某人自己的…"
+            }
+          ],
+          "examples": [
+            {
+              "en": "She likes to work on her own.",
+              "zh": "她喜欢独自工作。"
+            },
+            {
+              "en": "He bought a house of his own.",
+              "zh": "他买了一栋属于自己的房子。"
+            },
+            {
+              "en": "The ownership of the company has changed hands several times.",
+              "zh": "这家公司的所有权已经几次易手。"
+            }
+          ],
+          "notes": "词族：owner n. 所有者；物主（a business owner 企业主）；ownership n. 所有权；物主身份"
+        },
+        {
+          "id": "u06-33",
+          "no": 33,
+          "type": "word",
+          "text": "national",
+          "phonetic": "/ˈnæʃnəl/",
+          "pos": "adj.",
+          "meaning": "国家的；全国的",
+          "door": 40,
+          "examples": [
+            {
+              "en": "The national team is preparing for the World Cup.",
+              "zh": "国家队正在为世界杯做准备。"
+            },
+            {
+              "en": "English is an international language.",
+              "zh": "英语是一门国际语言。"
+            }
+          ],
+          "notes": "词族：nation n. 国家；nationally adv. 全国性地；nationality n. 国籍；international adj. 国际的"
+        },
+        {
+          "id": "u06-34",
+          "no": 34,
+          "type": "word",
+          "text": "volunteer",
+          "phonetic": "/ˌvɒlənˈtɪə(r)/",
+          "pos": "n. & v.",
+          "meaning": "志愿者；义务工作者；自愿提供；自愿参加",
+          "door": 40,
+          "phrases": [
+            {
+              "text": "voluntary work",
+              "meaning": "志愿工作"
+            },
+            {
+              "text": "volunteer service",
+              "meaning": "志愿服务"
+            },
+            {
+              "text": "volunteer organization",
+              "meaning": "志愿者组织"
+            },
+            {
+              "text": "volunteer for sth.",
+              "meaning": "自愿参加某事"
+            }
+          ],
+          "examples": [
+            {
+              "en": "I volunteered for the project.",
+              "zh": "我自愿参加了这个项目。"
+            }
+          ],
+          "notes": "voluntary adj. 自愿的（voluntary donation 自愿捐赠）"
+        },
+        {
+          "id": "u06-35",
+          "no": 35,
+          "type": "phrase",
+          "text": "enjoy oneself",
+          "phonetic": "",
+          "pos": "短语",
+          "meaning": "过得快乐；玩得高兴（= have a good time = have fun）",
+          "door": 40,
+          "phrases": [
+            {
+              "text": "help oneself (to sth.)",
+              "meaning": "请自便；自取（食物、饮料等）"
+            },
+            {
+              "text": "teach oneself",
+              "meaning": "自学"
+            },
+            {
+              "text": "dress oneself",
+              "meaning": "自己穿衣服"
+            },
+            {
+              "text": "look at oneself in the mirror",
+              "meaning": "照镜子"
+            }
+          ],
+          "examples": [
+            {
+              "en": "We are going to a concert tonight, and I am really looking forward to enjoying myself.",
+              "zh": "我们今晚要去听音乐会，我非常期待玩得开心。"
+            }
+          ],
+          "notes": "look forward to + doing（to 是介词）：looking forward to enjoying myself = looking forward to having fun / having a good time"
         }
       ]
     }

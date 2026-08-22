@@ -34,7 +34,8 @@
     { id: 'u02-family-ties', short: '亲情岛', icon: '🏡' },
     { id: 'u03-food', short: '美食岛', icon: '🍳' },
     { id: 'u04-sports', short: '运动岛', icon: '⚽' },
-    { id: 'u05-animals', short: '动物岛', icon: '🐾' }
+    { id: 'u05-animals', short: '动物岛', icon: '🐾' },
+    { id: 'u06-travel', short: '旅行岛', icon: '🗺️' }
   ];
 
   /* 英语对话脚本：每座岛一场主题对话
@@ -303,6 +304,34 @@
           sample: 'Yes, I\'d love to!' },
         { type: 'repeat', en: 'Feeding animals is not allowed in the zoo.', zh: '动物园里禁止投喂动物。' },
         { type: 'say', en: 'What an unforgettable day! Here are two stars for you, my little keeper!', zh: '多么难忘的一天啊！奖励你两颗星星，我的小小饲养员！' }
+      ]
+    },
+    /* 旅行岛：黄山之旅。目标词：trip, around, book, ticket, convenient,
+       high-speed, popular, hike, nature, enjoy, carry, view, roof, afraid,
+       had better, speed */
+    'u06-travel': {
+      title: '黄山之旅', icon: '🗺️',
+      steps: [
+        { type: 'say', en: 'Hi! I\'m Guide Bubble. Welcome to Travel Island!', zh: '嗨！我是导游泡泡。欢迎来到旅行岛！' },
+        { type: 'say', en: 'This winter holiday, we will go on a trip to Mount Huangshan!', zh: '这个寒假，我们要去黄山旅行！' },
+        { type: 'ask', en: 'Do you like travelling around China?', zh: '你喜欢环游中国吗？',
+          accept: [['yes'], ['no']],
+          hints: ['You can say: Yes, I like travelling around China.', 'Or: Yes, I do.'],
+          sample: 'Yes, I like travelling around China.' },
+        { type: 'say', en: 'First, let\'s book the train tickets. It\'s convenient to travel by high-speed train.', zh: '首先，我们来订火车票。乘高铁出行很方便。' },
+        { type: 'say', en: 'Mount Huangshan is popular with visitors. We will hike and enjoy nature there.', zh: '黄山很受游客欢迎。我们将在那里徒步旅行、享受大自然。' },
+        { type: 'choice', options: [
+          { en: 'We\'d better carry some water and food.', zh: '我们最好带些水和食物。', correct: true },
+          { en: 'We\'d better carry nothing at all.', zh: '我们最好什么都不带。', correct: false }
+        ] },
+        { type: 'repeat', en: 'We will enjoy ourselves on the trip.', zh: '我们在旅途中会玩得很开心。' },
+        { type: 'say', en: 'Look! Yellow roofs and white snow — what a beautiful view!', zh: '看！黄色的屋顶、白白的雪——多美的景色啊！' },
+        { type: 'ask', en: 'Are you afraid of hiking?', zh: '你害怕徒步旅行吗？',
+          accept: [['yes'], ['no']],
+          hints: ['You can say: No, I\'m not afraid at all.', 'Or: Yes, a little.'],
+          sample: 'No, I\'m not afraid at all.' },
+        { type: 'repeat', en: 'The train runs at a speed of 300 kilometres per hour.', zh: '火车以每小时300公里的速度行驶。' },
+        { type: 'say', en: 'Have a nice trip! Here are two stars for you, little traveller!', zh: '祝你旅途愉快！奖励你两颗星星，小小旅行家！' }
       ]
     }
   };
@@ -762,6 +791,12 @@
       '喂养、抚摸、和它们做朋友……动物是我们最好的伙伴！',
       '记住要做一名合格的饲养员：爱护动物，也要注意安全哦～',
       '学会这些单词，去动物园就能当小讲解员啦！出发！'
+    ],
+    [ // 旅行岛：环游中国主题
+      '欢迎来到旅行岛！这里有高铁、雪山和美丽的大自然 🗺️',
+      '背上行囊，我们一起环游中国：滑雪、徒步、看风景！',
+      '记住：旅行前要订好票，旅途中要照顾好自己哦～',
+      '学会这些旅行单词，下次出游你就是小导游！出发！'
     ]
   ];
   function introFor(isl) {

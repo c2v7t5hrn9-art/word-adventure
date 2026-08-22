@@ -208,5 +208,35 @@
     "name": "友谊与信任",
     "theme": "animals",
     "entryRange": "u05-24 ~ u05-30"
+  },
+  {
+    "id": 36,
+    "name": "出发准备",
+    "theme": "travel",
+    "entryRange": "u06-01 ~ u06-07"
+  },
+  {
+    "id": 37,
+    "name": "山野徒步",
+    "theme": "travel",
+    "entryRange": "u06-08 ~ u06-14"
+  },
+  {
+    "id": 38,
+    "name": "冰雪之旅",
+    "theme": "travel",
+    "entryRange": "u06-15 ~ u06-21"
+  },
+  {
+    "id": 39,
+    "name": "购票出行",
+    "theme": "travel",
+    "entryRange": "u06-22 ~ u06-28"
+  },
+  {
+    "id": 40,
+    "name": "旅途感悟",
+    "theme": "travel",
+    "entryRange": "u06-29 ~ u06-35"
   }
 ]
