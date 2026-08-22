@@ -50,5 +50,5 @@ jobs:
         continue-on-error: true
         run: |
           sleep 100
-          curl -sf --max-time 20 https://word-adventure.xiaolu-pan.workers.dev/ | grep -q "单词冒险岛" && echo "✓ 首页可达"
-          curl -s --max-time 20 https://word-adventure.xiaolu-pan.workers.dev/api/progress/0000 | grep -q "no_save" && echo "✓ 同步 API 正常（404 no_save 为预期）"
+          curl -sf --max-time 20 https://jasmine-study.top/ | grep -q "单词冒险岛" && echo "✓ 首页可达"
+          curl -s --max-time 20 https://jasmine-study.top/api/progress/0000 | grep -q "no_save" && echo "✓ 同步 API 正常（404 no_save 为预期）"
