@@ -68,27 +68,95 @@ button { font-family: inherit; cursor: pointer; border: none; }
 .sea-deco-3 { bottom: 8%; right: 30%; animation: bob 2.8s ease-in-out infinite 1s; }
 @keyframes bob { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
 
-/* ========== 世界地图：岛屿卡片 ========== */
+/* ========== 世界地图：蜿蜒航海路线（纵向滚动，岛屿左右错落） ========== */
 .world {
-  position: absolute; left: 50%; top: 52%; transform: translate(-50%, -50%);
-  width: min(96vw, 1180px); height: min(70vh, 600px);
-  display: flex; gap: 22px; justify-content: flex-start; justify-content: safe center; align-items: stretch;
-  overflow-x: auto; overflow-y: hidden;
-  padding: 8px 6px 18px; z-index: 5;
-  scroll-snap-type: x proximity;
+  position: absolute; top: 92px; bottom: 0; left: 0; right: 0;
+  overflow-y: auto; overflow-x: hidden;
+  padding: 16px 0 150px; z-index: 5;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
 }
-.world::-webkit-scrollbar { height: 8px; }
+.world::-webkit-scrollbar { width: 8px; }
 .world::-webkit-scrollbar-thumb { background: rgba(255,255,255,.65); border-radius: 8px; }
+
+/* 航线画布：虚线海路铺在岛屿后面，由 JS 按岛屿实际位置绘制 */
+.sea-route {
+  position: absolute; top: 0; left: 0; z-index: 0;
+  width: 100%; pointer-events: none;
+}
+/* 游戏脚本加载期间的占位提示（buildMap 渲染后会被清空） */
+.world-loading {
+  width: fit-content; margin: 18vh auto 0;
+  background: rgba(255,255,255,.92); border-radius: 999px;
+  padding: 12px 26px; font-size: 17px; font-weight: 800; color: #2c6e9e;
+  box-shadow: 0 6px 14px rgba(0,60,100,.25);
+  animation: bob 2.4s ease-in-out infinite;
+}
+/* 小船：标记当前航行到的岛屿 */
+.sea-boat {
+  position: absolute; z-index: 2; font-size: 32px;
+  transform: translate(-50%, -50%);
+  transition: top .9s ease-in-out, left .9s ease-in-out;
+  animation: boatBob 2.6s ease-in-out infinite;
+  filter: drop-shadow(0 4px 5px rgba(0,50,90,.35));
+  pointer-events: none;
+}
+@keyframes boatBob {
+  0%, 100% { margin-top: 0; }
+  50%      { margin-top: -7px; }
+}
+
 .island-card {
-  position: relative; flex: 1 1 200px; min-width: 200px; max-width: 340px;
-  scroll-snap-align: center;
+  position: relative; z-index: 1;
+  width: min(330px, 78vw); height: 360px;
+  margin: 0 auto 52px;
   border-radius: 40px;
   padding: 14px 12px 18px;
   display: flex; flex-direction: column;
   overflow: hidden;
   transition: transform .3s, box-shadow .3s;
+  animation: islandIn .5s cubic-bezier(.33, 1, .68, 1) backwards;
 }
-.island-card:hover { transform: translateY(-4px); }
+/* 三条泳道：左 / 右 / 中，随岛屿序号循环，形成蜿蜒动线 */
+.island-card.lane-0 { margin-left: max(5%, calc(50% - 470px)); margin-right: auto; transform: rotate(-1.2deg); }
+.island-card.lane-1 { margin-left: auto; margin-right: max(5%, calc(50% - 470px)); transform: rotate(1.2deg); }
+.island-card.lane-2 { margin-left: auto; margin-right: auto; transform: rotate(-.6deg); }
+.island-card:hover { transform: translateY(-5px) rotate(0deg); }
+@keyframes islandIn {
+  from { opacity: 0; transform: translateY(30px) scale(.94); }
+  to   { opacity: 1; transform: translateY(0)    scale(1); }
+}
+/* 当前进行中的岛：描边光环 + 小旗 */
+.island-card.island-current {
+  outline: 4px solid rgba(255, 238, 130, .95);
+  outline-offset: 5px;
+}
+.island-current .island-title { margin-top: 30px; }
+.current-flag {
+  position: absolute; top: 12px; left: 50%; z-index: 8;
+  transform: translateX(-50%);
+  background: #ffd94d; color: #5d470f;
+  border: 2.5px solid #8a6d1a; border-radius: 999px;
+  font-size: 12.5px; font-weight: 800; padding: 4px 11px;
+  box-shadow: 0 3px 0 #8a6d1a;
+  white-space: nowrap;
+  animation: flagWave 2.2s ease-in-out infinite;
+}
+@keyframes flagWave {
+  0%, 100% { transform: translateX(-50%) rotate(-2deg); }
+  50%      { transform: translateX(-50%) rotate(2.5deg) translateY(-2px); }
+}
+/* 回到当前岛的罗盘按钮 */
+.locate-btn {
+  position: fixed; right: 20px; bottom: 24px; z-index: 26;
+  width: 54px; height: 54px; border-radius: 50%;
+  background: #ffffff; border: 3px solid #1565a8; font-size: 25px;
+  box-shadow: 0 5px 0 #1565a8, 0 10px 18px rgba(0, 60, 100, .3);
+  transition: transform .18s cubic-bezier(.33, 1, .68, 1), box-shadow .18s;
+  animation: islandIn .35s cubic-bezier(.33, 1, .68, 1);
+}
+.locate-btn:hover { transform: translateY(-2px) scale(1.06); box-shadow: 0 7px 0 #1565a8; }
+.locate-btn:active { transform: translateY(3px) scale(.95); box-shadow: 0 1px 0 #1565a8; }
 .island-title {
   align-self: center;
   font-size: 21px; font-weight: 800; color: #5d3a17;
@@ -857,13 +925,12 @@ button { font-family: inherit; cursor: pointer; border: none; }
 @media (max-width: 720px) {
   .hud-title { font-size: 20px; }
   .hud-pill { font-size: 14px; padding: 6px 12px; }
-  .world {
-    flex-direction: column; align-items: center;
-    overflow-y: auto; overflow-x: hidden;
-    left: 50%; top: 64px; bottom: 96px; height: auto;
-    transform: translateX(-50%);
-  }
-  .island-card { flex: none; width: min(90vw, 360px); min-height: 320px; }
+  .world { top: 72px; padding-bottom: 120px; }
+  .island-card { width: min(78vw, 320px); height: 330px; margin-bottom: 40px; }
+  .island-card.lane-0 { margin-left: 4%; }
+  .island-card.lane-1 { margin-right: 4%; }
+  .sea-boat { font-size: 26px; }
+  .locate-btn { width: 46px; height: 46px; font-size: 21px; right: 14px; bottom: 18px; }
   .guide-avatar { font-size: 48px; }
   .guide-bubble { font-size: 15px; max-width: 62vw; }
   .q-options { grid-template-columns: 1fr; }

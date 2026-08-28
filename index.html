@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>单词冒险岛 🏝️</title>
-<link rel="stylesheet" href="style.css?v=13">
-<link rel="stylesheet" href="layout-v2.css?v=13">
+<link rel="stylesheet" href="style.css?v=15">
+<link rel="stylesheet" href="layout-v2.css?v=15">
 </head>
 <body>
 
@@ -55,7 +55,9 @@
     <div class="sea-deco sea-deco-2">⛵</div>
     <div class="sea-deco sea-deco-3">🐠</div>
 
-    <div id="world" class="world"></div>
+    <div id="world" class="world">
+      <div class="world-loading">🌊 正在扬帆出海…</div>
+    </div>
     <div id="map-decos" class="map-decos"></div>
 
     <div id="guide" class="guide">
@@ -64,6 +66,8 @@
       <div id="guide-bubble" class="guide-bubble"></div>
     </div>
   </div>
+
+  <button id="btn-locate" class="locate-btn hidden" title="回到当前岛">🧭</button>
 
   <!-- 门的行动菜单（闯关 / 连连看） -->
   <div id="door-menu" class="door-menu hidden"></div>
@@ -483,10 +487,10 @@
   </div>
 </div>
 
-<script src="data/words-data.js?v=13"></script>
+<script src="data/words-data.js?v=15"></script>
 <!-- 游戏脚本由 sync.js 在完成云端进度对账后按序注入（game → minigames → flow），
      请勿在此静态引用 game.js / minigames.js / flow.js，否则会被加载两遍。 -->
-<script src="sync.js?v=13"></script>
+<script src="sync.js?v=15"></script>
 <script>
 /* 版式 V2 · 百宝箱开合 */
 (function () {

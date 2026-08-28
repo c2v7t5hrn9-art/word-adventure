@@ -613,7 +613,106 @@
     return DATA.doors.filter((d) => doorDue(d.id));
   }
 
-  /* ---------------- 地图渲染（世界地图） ---------------- */
+  /* ---------------- 地图渲染（世界地图：蜿蜒航海路线） ---------------- */
+  // 当前岛：第一座"已解锁但未全通关"的岛；全部通关则停在最後一座
+  function currentIslandIdx() {
+    for (let i = 0; i < ISLANDS.length; i++) {
+      if (islandUnlocked(ISLANDS[i].idx) && !islandFullyCleared(ISLANDS[i])) return i;
+    }
+    return ISLANDS.length - 1;
+  }
+
+  // 按岛屿实际布局位置绘制虚线海路 + 小船标记
+  function drawSeaRoute() {
+    const world = $('world');
+    if (!world) return;
+    const oldRoute = world.querySelector('.sea-route');
+    if (oldRoute) oldRoute.remove();
+    const oldBoat = world.querySelector('.sea-boat');
+    if (oldBoat) oldBoat.remove();
+
+    const cards = Array.from(world.querySelectorAll('.island-card'));
+    if (!cards.length) return;
+
+    const w = world.clientWidth;
+    const h = world.scrollHeight;
+    const pts = cards.map((c) => ({
+      x: c.offsetLeft + c.offsetWidth / 2,
+      y: c.offsetTop + c.offsetHeight / 2
+    }));
+
+    const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    svg.setAttribute('class', 'sea-route');
+    svg.setAttribute('width', w);
+    svg.setAttribute('height', h);
+    svg.setAttribute('viewBox', '0 0 ' + w + ' ' + h);
+
+    // 起始于第一座岛上方海面的 S 形虚线航线
+    let dAttr = 'M ' + pts[0].x + ' ' + Math.max(0, pts[0].y - cards[0].offsetHeight / 2 - 34);
+    pts.forEach((p, i) => {
+      if (i === 0) { dAttr += ' L ' + p.x + ' ' + p.y; return; }
+      const prev = pts[i - 1];
+      const midY = (prev.y + p.y) / 2;
+      dAttr += ' C ' + prev.x + ' ' + midY + ', ' + p.x + ' ' + midY + ', ' + p.x + ' ' + p.y;
+    });
+    const last = pts[pts.length - 1];
+    dAttr += ' L ' + last.x + ' ' + (last.y + cards[cards.length - 1].offsetHeight / 2 + 60);
+
+    svg.innerHTML =
+      '<path d="' + dAttr + '" fill="none" stroke="#fff6dc" stroke-width="5" ' +
+      'stroke-linecap="round" stroke-dasharray="0.1 16" opacity="0.85"/>';
+    world.insertBefore(svg, world.firstChild);
+
+    // 小船停在当前岛的入港航线上（第一座岛上方没有航线，停在岛下方）
+    const curCard = cards[Number(world.dataset.current) || 0] || cards[0];
+    const boat = document.createElement('div');
+    boat.className = 'sea-boat';
+    boat.textContent = '⛵';
+    boat.style.left = (curCard.offsetLeft + curCard.offsetWidth / 2) + 'px';
+    boat.style.top = (curCard.offsetTop > 80
+      ? curCard.offsetTop - 28
+      : curCard.offsetTop + curCard.offsetHeight + 30) + 'px';
+    world.appendChild(boat);
+  }
+
+  // 滚动到当前岛；smooth 为 true 时平滑滚动
+  function scrollToCurrentIsland(smooth) {
+    const world = $('world');
+    if (!world) return;
+    const cur = world.querySelector('.island-card.island-current');
+    if (!cur) return;
+    const target = Math.max(0, cur.offsetTop - world.clientHeight * 0.38);
+    if (smooth && world.scrollTo) {
+      world.scrollTo({ top: target, behavior: 'smooth' });
+    } else {
+      world.scrollTop = target;
+    }
+  }
+
+  function updateLocateBtn() {
+    const world = $('world');
+    const btn = $('btn-locate');
+    if (!world || !btn) return;
+    const cur = world.querySelector('.island-card.island-current');
+    if (!cur) { btn.classList.add('hidden'); return; }
+    const viewTop = world.scrollTop;
+    const viewBottom = viewTop + world.clientHeight;
+    const inView = cur.offsetTop >= viewTop - 10 &&
+      cur.offsetTop + cur.offsetHeight <= viewBottom + 10;
+    btn.classList.toggle('hidden', inView);
+  }
+
+  let mapChromeWired = false;
+  function wireMapChrome() {
+    if (mapChromeWired) return;
+    mapChromeWired = true;
+    const world = $('world');
+    if (world) world.addEventListener('scroll', updateLocateBtn, { passive: true });
+    window.addEventListener('resize', () => { drawSeaRoute(); updateLocateBtn(); });
+    const btn = $('btn-locate');
+    if (btn) btn.addEventListener('click', () => scrollToCurrentIsland(true));
+  }
+
   // 岛内简化小径布局：门从左下开始 zigzag 向上，终点是岛顶宝藏
   function miniPositions(n) {
     const pts = [];
@@ -629,10 +728,14 @@
   function buildMap() {
     const world = $('world');
     world.innerHTML = '';
-    ISLANDS.forEach((isl) => {
+    const curIdx = currentIslandIdx();
+    world.dataset.current = curIdx;
+    ISLANDS.forEach((isl, i) => {
       const unlocked = islandUnlocked(isl.idx);
       const card = document.createElement('div');
-      card.className = 'island-card island-' + isl.idx + (unlocked ? '' : ' island-locked');
+      card.className = 'island-card island-' + (isl.idx % 6) + ' lane-' + (i % 3) +
+        (unlocked ? '' : ' island-locked') + (i === curIdx ? ' island-current' : '');
+      card.style.animationDelay = (i * 0.06) + 's';
 
       const hasShard = save.shards.indexOf(isl.id) >= 0;
       const title = document.createElement('div');
@@ -640,6 +743,13 @@
       title.innerHTML = isl.icon + ' ' + esc(isl.short) +
         ' <span class="title-shard ' + (hasShard ? 'on' : 'off') + '">💠</span>';
       card.appendChild(title);
+
+      if (i === curIdx) {
+        const flag = document.createElement('div');
+        flag.className = 'current-flag';
+        flag.textContent = save.shards.length ? '🚩 继续冒险' : '🚩 从这里出发';
+        card.appendChild(flag);
+      }
 
       const inner = document.createElement('div');
       inner.className = 'island-inner';
@@ -697,6 +807,10 @@
     renderGuideGear();
     renderMapDecos();
     updateHud();
+    wireMapChrome();
+    drawSeaRoute();
+    scrollToCurrentIsland(false);
+    updateLocateBtn();
   }
 
   function updateHud() {

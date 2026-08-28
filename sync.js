@@ -93,7 +93,7 @@
       var act = e.target.dataset && e.target.dataset.act;
       if (act === 'close') panel.remove();
       if (act === 'leave') {
-        localStorage.removeItem(CODE_KEY);
+        try { localStorage.removeItem(CODE_KEY); } catch (e) {}
         lsSet(MODE_KEY, 'local');
         setDot('local');
         panel.remove();
@@ -234,14 +234,20 @@
   }
 
   /* ---------------- 劫持存档写入（加时间戳 + 触发推送） ---------------- */
-  var origSetItem = localStorage.setItem.bind(localStorage);
-  localStorage.setItem = function (key, value) {
-    origSetItem(key, value);
-    if (key === SAVE_KEY) {
-      origSetItem(TS_KEY, String(Date.now()));
-      schedulePush();
-    }
-  };
+  // 注意：某些嵌入式 webview / 隐私模式下访问 localStorage 会直接抛异常，
+  // 这里必须包 try/catch，否则整个 sync.js 中断，游戏脚本永远不会被注入，
+  // 页面只剩大海背景，看起来像"一直在 loading"。
+  var origSetItem = null;
+  try {
+    origSetItem = localStorage.setItem.bind(localStorage);
+    localStorage.setItem = function (key, value) {
+      origSetItem(key, value);
+      if (key === SAVE_KEY) {
+        origSetItem(TS_KEY, String(Date.now()));
+        schedulePush();
+      }
+    };
+  } catch (e) { /* localStorage 不可用：仅本机内存模式，照常启动 */ }
 
   /* ---------------- API 可用性探测 ---------------- */
   // 静态托管（如 GitHub Pages）上没有 /api 接口：404 返回的是 HTML 而非 JSON。
@@ -273,6 +279,22 @@
   }
 
   /* ---------------- 启动主流程 ---------------- */
+  function showBootError(msg) {
+    var world = document.getElementById('world');
+    if (world) {
+      world.innerHTML = '<div style="width:min(480px,90vw);margin:60px auto;padding:26px;' +
+        'background:#fff;border-radius:18px;color:#c53030;font-size:16px;line-height:1.8;' +
+        'box-shadow:0 10px 26px rgba(0,50,90,.25);">' +
+        '<h3>😅 ' + msg + '</h3>' +
+        '<p>请检查网络后刷新页面（Cmd+Shift+R / Ctrl+F5）。</p></div>';
+    }
+  }
+
+  // 启动看门狗：8 秒后游戏脚本还没就绪，就给出明确提示而不是无声空海
+  var bootWatchdog = setTimeout(function () {
+    if (!window.WA) showBootError('游戏加载超时');
+  }, 8000);
+
   function boot() {
     ensureDot();
     var mode = lsGet(MODE_KEY);
@@ -305,16 +327,13 @@
     }).then(function () {
       return inject('flow.js?v=1');
     }).then(function () {
+      clearTimeout(bootWatchdog);
       ensureDot();
       setDot(lsGet(MODE_KEY) === 'cloud' ? 'synced' : 'local');
     }).catch(function (e) {
       console.error('启动失败:', e);
-      var world = document.getElementById('world');
-      if (world) {
-        world.innerHTML = '<div style="padding:30px;color:#c53030;font-size:16px;line-height:1.8;">' +
-          '<h3>😅 游戏脚本加载失败</h3>' +
-          '<p>请检查网络后刷新页面（Cmd+Shift+R / Ctrl+F5）。</p></div>';
-      }
+      clearTimeout(bootWatchdog);
+      showBootError('游戏脚本加载失败');
     });
   }
 
@@ -330,9 +349,17 @@
 
   window.WASync = { pushNow: pushNow, pullLatest: pullLatest, showSetup: showSetup };
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', boot);
-  } else {
-    boot();
+  try {
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', function () {
+        try { boot(); } catch (e) { console.error('启动失败:', e); clearTimeout(bootWatchdog); showBootError('游戏初始化失败'); }
+      });
+    } else {
+      boot();
+    }
+  } catch (e) {
+    console.error('启动失败:', e);
+    clearTimeout(bootWatchdog);
+    showBootError('游戏初始化失败');
   }
 })();
