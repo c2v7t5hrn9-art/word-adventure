@@ -2971,6 +2971,8 @@
 
   /* ---------------- 语音与音效 ---------------- */
   let enVoices = [];
+  let currentUtterance = null; // 当前 utterance 引用（防 GC）
+  let speakTimer = null;       // cancel → speak 的延迟定时器
   function loadVoices() {
     if (!window.speechSynthesis) return;
     enVoices = speechSynthesis.getVoices().filter((v) => /^en/i.test(v.lang));
@@ -2991,13 +2993,26 @@
     if (!window.speechSynthesis) return;
     if (!force && !save.settings.sound) return;
     try {
-      speechSynthesis.cancel();
+      if (!enVoices.length) loadVoices(); // 嗓音列表可能尚未异步就绪
       const u = new SpeechSynthesisUtterance(String(text).replace(/…|\.{3}/g, ' '));
       u.lang = 'en-US';
       const v = pickVoice();
       if (v) u.voice = v;
       u.rate = Number(save.settings.rate) || 0.9;
-      speechSynthesis.speak(u);
+      u.onerror = (e) => {
+        if (e.error !== 'interrupted' && e.error !== 'canceled') console.warn('朗读失败:', e.error);
+      };
+      currentUtterance = u; // 持有引用：防 Chrome 把 utterance 回收导致中途失声
+      if (speakTimer) clearTimeout(speakTimer);
+      speechSynthesis.cancel();
+      // cancel 后同帧 speak 在 iOS/Safari 会卡死队列、Chrome 会偶发丢句，延迟一拍再播
+      speakTimer = setTimeout(() => {
+        speakTimer = null;
+        try {
+          if (speechSynthesis.paused) speechSynthesis.resume(); // Chrome 队列假死修复
+          speechSynthesis.speak(u);
+        } catch (e) { /* 忽略语音失败 */ }
+      }, 60);
     } catch (e) { /* 忽略语音失败 */ }
   }
 
@@ -3308,6 +3323,16 @@
     speechSynthesis.addEventListener('voiceschanged', () => {
       loadVoices();
       if (!$('settings-screen').classList.contains('hidden')) refreshVoiceSelect();
+    });
+    // 浏览器自动播放策略：首个真实点击时用静音 utterance 解锁语音通道，
+    // 之后定时器/回调里的自动朗读（对话示范、听题）才不会被拦截
+    document.addEventListener('pointerdown', function unlockSpeech() {
+      document.removeEventListener('pointerdown', unlockSpeech);
+      try {
+        const u = new SpeechSynthesisUtterance(' ');
+        u.volume = 0;
+        speechSynthesis.speak(u);
+      } catch (e) { /* 忽略 */ }
     });
   }
 
