@@ -2978,18 +2978,6 @@
     if (!window.speechSynthesis) return;
     enVoices = speechSynthesis.getVoices().filter((v) => /^en/i.test(v.lang));
   }
-  // 智能选嗓音：排除搞怪音色，优先自然 / 高品质英文嗓音
-  function pickVoice() {
-    const uri = save.settings.voiceURI;
-    if (uri) {
-      const v = enVoices.find((x) => x.voiceURI === uri);
-      if (v) return v;
-    }
-    const PREF = /(Samantha|Victoria|Serena|Google US English|Microsoft (Aria|Jenny|Michelle)|Natural|Enhanced|Premium)/i;
-    const BAD = /(Albert|Bad News|Bahh|Bells|Boing|Bubbles|Cellos|Deranged|Good News|Hysterical|Pipe Organ|Trinoids|Whisper|Zarvox)/i;
-    const good = enVoices.filter((v) => !BAD.test(v.name));
-    return good.find((v) => PREF.test(v.name)) || good[0] || enVoices[0] || null;
-  }
   function speak(text, force) {
     if (!window.speechSynthesis) return;
     if (!force && !save.settings.sound) return;
@@ -2997,43 +2985,57 @@
     function makeUtterance() {
       const u = new SpeechSynthesisUtterance(clean);
       u.lang = 'en-US';
-      const v = pickVoice();
-      if (v) u.voice = v;
+      // 只在用户明确选择过嗓音时才指定 voice：
+      // iOS 上自动挑的"增强嗓音"若未下载，speak 会静默无声且不报错
+      const uri = save.settings.voiceURI;
+      if (uri) {
+        const v = enVoices.find((x) => x.voiceURI === uri);
+        if (v) u.voice = v;
+      }
       u.rate = Number(save.settings.rate) || 0.9;
       u.onerror = (e) => {
         if (e.error !== 'interrupted' && e.error !== 'canceled') console.warn('朗读失败:', e.error);
       };
       return u;
     }
+    // 发出朗读 + 自愈看门狗：口令发出后被静默丢弃（iOS 常见）则重建重试一次
+    function issue(u) {
+      currentUtterance = u; // 持有引用：防 Chrome 把 utterance 回收导致中途失声
+      let started = false;
+      u.onstart = () => { started = true; };
+      try {
+        if (speechSynthesis.paused) speechSynthesis.resume(); // Chrome 队列假死修复
+        speechSynthesis.speak(u);
+      } catch (e) { return; }
+      speakWatchdog = setTimeout(() => {
+        speakWatchdog = null;
+        if (started || currentUtterance !== u) return;
+        if (speechSynthesis.speaking || speechSynthesis.pending) return; // 有别的在播，不算丢
+        try {
+          speechSynthesis.cancel();
+          const u2 = makeUtterance();
+          currentUtterance = u2;
+          setTimeout(() => {
+            try { speechSynthesis.speak(u2); } catch (e) { /* 忽略 */ }
+          }, 120);
+        } catch (e) { /* 忽略 */ }
+      }, 800);
+    }
     try {
       if (!enVoices.length) loadVoices(); // 嗓音列表可能尚未异步就绪
-      stopSpeaking(); // 清掉上一个待播定时器/看门狗，并在需要时 cancel（iOS 上多余 cancel 会弄坏音频会话）
-      // cancel 与 speak 同帧会丢句/卡死队列，延迟一拍再播（iOS 需要更长的间隔）
-      speakTimer = setTimeout(() => {
-        speakTimer = null;
-        const u = makeUtterance();
-        currentUtterance = u; // 持有引用：防 Chrome 把 utterance 回收导致中途失声
-        let started = false;
-        u.onstart = () => { started = true; };
-        try {
-          if (speechSynthesis.paused) speechSynthesis.resume(); // Chrome 队列假死修复
-          speechSynthesis.speak(u);
-        } catch (e) { return; }
-        // 自愈看门狗：口令发出后被静默丢弃（iOS 常见），自动重建 utterance 重试一次
-        speakWatchdog = setTimeout(() => {
-          speakWatchdog = null;
-          if (started || currentUtterance !== u) return;
-          if (speechSynthesis.speaking || speechSynthesis.pending) return; // 有别的在播，不算丢
-          try {
-            speechSynthesis.cancel();
-            const u2 = makeUtterance();
-            currentUtterance = u2;
-            setTimeout(() => {
-              try { speechSynthesis.speak(u2); } catch (e) { /* 忽略 */ }
-            }, 120);
-          } catch (e) { /* 忽略 */ }
-        }, 800);
-      }, 120);
+      const busy = speechSynthesis.speaking || speechSynthesis.pending;
+      stopSpeaking(); // 清掉待播定时器/看门狗，仅在 busy 时 cancel（iOS 上多余 cancel 会弄坏音频会话）
+      if (!busy) {
+        // 空闲：同帧直接播。iOS 要求语音在用户手势的同步调用栈里发出，
+        // 延迟到 setTimeout 会被静默拦截（扬声器按钮点了也没声就是这个原因）
+        issue(makeUtterance());
+      } else {
+        // 需要打断上一句：cancel 后隔一拍再播，防 iOS 卡死队列 / Chrome 丢句
+        speakTimer = setTimeout(() => {
+          speakTimer = null;
+          issue(makeUtterance());
+        }, 120);
+      }
     } catch (e) { /* 忽略语音失败 */ }
   }
 
