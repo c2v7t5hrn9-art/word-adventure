@@ -3010,7 +3010,8 @@
       speakWatchdog = setTimeout(() => {
         speakWatchdog = null;
         if (started || currentUtterance !== u) return;
-        if (speechSynthesis.speaking || speechSynthesis.pending) return; // 有别的在播，不算丢
+        if (speechSynthesis.speaking) return; // 有别的在播（本句排队中），不算丢
+        // pending 但迟迟不开播 = 队列卡住，正是要自愈的故障，继续重试
         try {
           speechSynthesis.cancel();
           const u2 = makeUtterance();
@@ -3355,16 +3356,6 @@
     speechSynthesis.addEventListener('voiceschanged', () => {
       loadVoices();
       if (!$('settings-screen').classList.contains('hidden')) refreshVoiceSelect();
-    });
-    // 浏览器自动播放策略：首个真实点击时用静音 utterance 解锁语音通道，
-    // 之后定时器/回调里的自动朗读（对话示范、听题）才不会被拦截
-    document.addEventListener('pointerdown', function unlockSpeech() {
-      document.removeEventListener('pointerdown', unlockSpeech);
-      try {
-        const u = new SpeechSynthesisUtterance(' ');
-        u.volume = 0;
-        speechSynthesis.speak(u);
-      } catch (e) { /* 忽略 */ }
     });
     // Chrome 长朗读约 15 秒被截断且队列假死的已知 bug：播放中周期性 resume 保活
     setInterval(() => {
