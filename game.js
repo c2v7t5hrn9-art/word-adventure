@@ -2978,6 +2978,35 @@
     if (!window.speechSynthesis) return;
     enVoices = speechSynthesis.getVoices().filter((v) => /^en/i.test(v.lang));
   }
+  // 智能选嗓音：优先本地自然嗓音。
+  // 网络嗓音（Google/Microsoft 在线合成）在弱网下会沙哑断续，搞怪嗓音不适合学习场景。
+  // 只挑本地嗓音也规避了 iOS 上"增强嗓音未下载导致静默无声"的问题。
+  function pickVoice() {
+    const uri = save.settings.voiceURI;
+    if (uri) {
+      const v = enVoices.find((x) => x.voiceURI === uri);
+      if (v) return v;
+    }
+    // 喜好名单按优先级排序（Samantha 是 macOS/iOS 品质最好的美式嗓音）
+    const PREF = ['Samantha', 'Victoria', 'Serena', 'Allison', 'Ava', 'Susan', 'Kathy', 'Karen', 'Daniel', 'Moira', 'Tessa'];
+    const NOVELTY = /(Albert|Bad News|Bahh|Bells|Boing|Bubbles|Cellos|Deranged|Eddy|Flo|Fred|Good News|Grandma|Grandpa|Jester|Junior|Organ|Reed|Rocko|Sandy|Shelley|Superstar|Trinoids|Whisper|Wobble|Zarvox)/i;
+    const local = enVoices.filter((v) => v.localService && !NOVELTY.test(v.name));
+    const anyGood = enVoices.filter((v) => !NOVELTY.test(v.name));
+    // 优先 en-US（学习场景统一美式发音），再按喜好名单优先级挑
+    const localUS = local.filter((v) => /en[-_]US/i.test(v.lang));
+    const goodUS = anyGood.filter((v) => /en[-_]US/i.test(v.lang));
+    function pickPref(list) {
+      for (let i = 0; i < PREF.length; i++) {
+        const hit = list.find((v) => v.name.indexOf(PREF[i]) >= 0);
+        if (hit) return hit;
+      }
+      return null;
+    }
+    return pickPref(localUS) || localUS[0] ||
+      pickPref(local) || local[0] ||
+      pickPref(goodUS) || goodUS[0] ||
+      anyGood[0] || enVoices[0] || null;
+  }
   function speak(text, force) {
     if (!window.speechSynthesis) return;
     if (!force && !save.settings.sound) return;
@@ -2985,13 +3014,8 @@
     function makeUtterance() {
       const u = new SpeechSynthesisUtterance(clean);
       u.lang = 'en-US';
-      // 只在用户明确选择过嗓音时才指定 voice：
-      // iOS 上自动挑的"增强嗓音"若未下载，speak 会静默无声且不报错
-      const uri = save.settings.voiceURI;
-      if (uri) {
-        const v = enVoices.find((x) => x.voiceURI === uri);
-        if (v) u.voice = v;
-      }
+      const v = pickVoice(); // 本地自然嗓音优先；用户显式选择的嗓音最优先
+      if (v) u.voice = v;
       u.rate = Number(save.settings.rate) || 0.9;
       u.onerror = (e) => {
         if (e.error !== 'interrupted' && e.error !== 'canceled') console.warn('朗读失败:', e.error);
