@@ -2973,6 +2973,7 @@
   let enVoices = [];
   let currentUtterance = null; // 当前 utterance 引用（防 GC）
   let speakTimer = null;       // cancel → speak 的延迟定时器
+  let speakWatchdog = null;    // 朗读静默丢失的自愈重试定时器
   function loadVoices() {
     if (!window.speechSynthesis) return;
     enVoices = speechSynthesis.getVoices().filter((v) => /^en/i.test(v.lang));
@@ -2992,9 +2993,9 @@
   function speak(text, force) {
     if (!window.speechSynthesis) return;
     if (!force && !save.settings.sound) return;
-    try {
-      if (!enVoices.length) loadVoices(); // 嗓音列表可能尚未异步就绪
-      const u = new SpeechSynthesisUtterance(String(text).replace(/…|\.{3}/g, ' '));
+    const clean = String(text).replace(/…|\.{3}/g, ' ');
+    function makeUtterance() {
+      const u = new SpeechSynthesisUtterance(clean);
       u.lang = 'en-US';
       const v = pickVoice();
       if (v) u.voice = v;
@@ -3002,18 +3003,47 @@
       u.onerror = (e) => {
         if (e.error !== 'interrupted' && e.error !== 'canceled') console.warn('朗读失败:', e.error);
       };
-      currentUtterance = u; // 持有引用：防 Chrome 把 utterance 回收导致中途失声
-      if (speakTimer) clearTimeout(speakTimer);
-      speechSynthesis.cancel();
-      // cancel 后同帧 speak 在 iOS/Safari 会卡死队列、Chrome 会偶发丢句，延迟一拍再播
+      return u;
+    }
+    try {
+      if (!enVoices.length) loadVoices(); // 嗓音列表可能尚未异步就绪
+      stopSpeaking(); // 清掉上一个待播定时器/看门狗，并在需要时 cancel（iOS 上多余 cancel 会弄坏音频会话）
+      // cancel 与 speak 同帧会丢句/卡死队列，延迟一拍再播（iOS 需要更长的间隔）
       speakTimer = setTimeout(() => {
         speakTimer = null;
+        const u = makeUtterance();
+        currentUtterance = u; // 持有引用：防 Chrome 把 utterance 回收导致中途失声
+        let started = false;
+        u.onstart = () => { started = true; };
         try {
           if (speechSynthesis.paused) speechSynthesis.resume(); // Chrome 队列假死修复
           speechSynthesis.speak(u);
-        } catch (e) { /* 忽略语音失败 */ }
-      }, 60);
+        } catch (e) { return; }
+        // 自愈看门狗：口令发出后被静默丢弃（iOS 常见），自动重建 utterance 重试一次
+        speakWatchdog = setTimeout(() => {
+          speakWatchdog = null;
+          if (started || currentUtterance !== u) return;
+          if (speechSynthesis.speaking || speechSynthesis.pending) return; // 有别的在播，不算丢
+          try {
+            speechSynthesis.cancel();
+            const u2 = makeUtterance();
+            currentUtterance = u2;
+            setTimeout(() => {
+              try { speechSynthesis.speak(u2); } catch (e) { /* 忽略 */ }
+            }, 120);
+          } catch (e) { /* 忽略 */ }
+        }, 800);
+      }, 120);
     } catch (e) { /* 忽略语音失败 */ }
+  }
+
+  // 停止一切待播/在播的朗读（离开场景时调用）
+  function stopSpeaking() {
+    if (speakTimer) { clearTimeout(speakTimer); speakTimer = null; }
+    if (speakWatchdog) { clearTimeout(speakWatchdog); speakWatchdog = null; }
+    if (window.speechSynthesis && (speechSynthesis.speaking || speechSynthesis.pending)) {
+      try { speechSynthesis.cancel(); } catch (e) { /* 忽略 */ }
+    }
   }
 
   let audioCtx = null;
@@ -3113,7 +3143,7 @@
   /* ---------------- 事件绑定 ---------------- */
   on('btn-quiz-back', 'click', () => {
     stopTimer();
-    if (window.speechSynthesis) speechSynthesis.cancel();
+    stopSpeaking();
     showScreen('map-screen');
     say('下次再来挑战这扇门吧～');
   });
@@ -3203,7 +3233,7 @@
   });
   on('btn-chat-back', 'click', () => {
     stopChatRecog();
-    if (window.speechSynthesis) speechSynthesis.cancel();
+    stopSpeaking();
     chat = null;
     showScreen('map-screen');
     say('下次再和泡泡聊天吧～💬');
@@ -3334,6 +3364,10 @@
         speechSynthesis.speak(u);
       } catch (e) { /* 忽略 */ }
     });
+    // Chrome 长朗读约 15 秒被截断且队列假死的已知 bug：播放中周期性 resume 保活
+    setInterval(() => {
+      try { if (speechSynthesis.speaking) speechSynthesis.resume(); } catch (e) { /* 忽略 */ }
+    }, 5000);
   }
 
   /* ---------------- 存档导出/导入 ---------------- */
