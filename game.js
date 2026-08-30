@@ -3007,10 +3007,57 @@
       pickPref(goodUS) || goodUS[0] ||
       anyGood[0] || enVoices[0] || null;
   }
+  /* -------- 朗读主通道：预合成音频（Samantha 高品质） --------
+     浏览器 speechSynthesis 存在进程级卡死缺陷（speaking=true 但无声，刷新无效，
+     必须退出浏览器），孩子无法自行恢复。因此改为播放服务器上的预合成音频文件，
+     语音服务完全可控；音频缺失或播放失败时才回退浏览器语音（speakViaSynth）。 */
+  let ttsAudio = null;       // 共享 Audio 元素（复用同一元素以满足 iOS 手势解锁）
+  let ttsGuard = 0;          // 兜底防重：每次 speak 递增，过期回调直接丢弃
+  let ttsPending = null;     // 自动播放被浏览器拦截时，待下次手势补播的文本
+  let ttsPendingAt = 0;
+
+  function normSpeakText(text) {
+    return String(text).replace(/…|\.{3}/g, ' ').replace(/\s+/g, ' ').trim();
+  }
+  // 与 tools/gen_tts.py 完全一致的 FNV-1a 64 位哈希（按 UTF-16 码元迭代）
+  function ttsHash(t) {
+    let h = 0xcbf29ce484222325n;
+    const P = 0x100000001b3n, M = 0xffffffffffffffffn;
+    for (let i = 0; i < t.length; i++) {
+      h ^= BigInt(t.charCodeAt(i));
+      h = (h * P) & M;
+    }
+    return h.toString(16).padStart(16, '0');
+  }
+
   function speak(text, force) {
-    if (!window.speechSynthesis) return;
     if (!force && !save.settings.sound) return;
-    const clean = String(text).replace(/…|\.{3}/g, ' ');
+    const clean = normSpeakText(text);
+    if (!clean) return;
+    try {
+      if (!ttsAudio) ttsAudio = new Audio();
+      const a = ttsAudio;
+      const guard = ++ttsGuard;
+      const fallback = () => { if (guard === ttsGuard) speakViaSynth(clean); };
+      a.onerror = fallback; // 404（未预合成的文本）或网络失败 → 浏览器语音兜底
+      a.src = 'assets/tts/' + ttsHash(clean) + '.m4a';
+      a.playbackRate = (Number(save.settings.rate) || 0.9) / 0.9; // 生成语速≈0.9
+      const p = a.play();
+      if (p && p.catch) p.catch((err) => {
+        if (err && err.name === 'NotAllowedError') {
+          // 浏览器拦截自动播放（页面刚打开、尚无手势）：记住文本，下次点击补播
+          ttsPending = clean;
+          ttsPendingAt = Date.now();
+        }
+        fallback();
+      });
+    } catch (e) {
+      speakViaSynth(clean);
+    }
+  }
+
+  function speakViaSynth(clean) {
+    if (!window.speechSynthesis) return;
     function makeUtterance() {
       const u = new SpeechSynthesisUtterance(clean);
       u.lang = 'en-US';
@@ -3066,6 +3113,8 @@
 
   // 停止一切待播/在播的朗读（离开场景时调用）
   function stopSpeaking() {
+    ttsGuard++; // 使在途的音频兜底回调失效
+    if (ttsAudio) { try { ttsAudio.pause(); } catch (e) { /* 忽略 */ } }
     if (speakTimer) { clearTimeout(speakTimer); speakTimer = null; }
     if (speakWatchdog) { clearTimeout(speakWatchdog); speakWatchdog = null; }
     if (window.speechSynthesis && (speechSynthesis.speaking || speechSynthesis.pending)) {
@@ -3386,6 +3435,17 @@
       try { if (speechSynthesis.speaking) speechSynthesis.resume(); } catch (e) { /* 忽略 */ }
     }, 5000);
   }
+
+  // 自动播放被拦截后的补播：页面打开后第一次点击/触摸时，补播被拦下的那句（5 秒内有效）
+  document.addEventListener('pointerdown', () => {
+    if (ttsPending && Date.now() - ttsPendingAt < 5000) {
+      const t = ttsPending;
+      ttsPending = null;
+      speak(t);
+    } else {
+      ttsPending = null;
+    }
+  });
 
   /* ---------------- 存档导出/导入 ---------------- */
   function exportSave() {

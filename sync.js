@@ -321,11 +321,11 @@
     }
 
     ready.then(function () {
-      return inject('game.js?v=21');
+      return inject('game.js?v=22');
     }).then(function () {
-      return inject('minigames.js?v=21');
+      return inject('minigames.js?v=22');
     }).then(function () {
-      return inject('flow.js?v=21');
+      return inject('flow.js?v=22');
     }).then(function () {
       clearTimeout(bootWatchdog);
       ensureDot();
