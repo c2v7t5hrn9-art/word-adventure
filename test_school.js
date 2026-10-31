@@ -138,6 +138,31 @@ header = elements['dictation-door-name'].textContent;
 check('U4 批次错词特训（10 个词条均找到）', header.indexOf('默写 10 词') >= 0, header);
 check('U4 错词特训队列', elements['dictation-progress'].textContent === '1/10', elements['dictation-progress'].textContent);
 
+/* ---------- U2 补充错词：20 个独立训练目标 ---------- */
+sandbox.window.SCHOOL_MISTAKES = {
+  'U2（补充错词）': [
+    'tie', 'husband', 'member', 'round', 'circle', 'introduce', 'introduction', 'album',
+    'helpless', 'endless', 'share something with somebody', 'help somebody with something',
+    'tell lies', 'ago', 'later', 'ask somebody to do', 'make somebody do something',
+    'look confident', 'I bought nothing', "I didn't buy anything"
+  ]
+};
+check('U2 补充错词计数', WA.schoolMistakeCount() === 20, String(WA.schoolMistakeCount()));
+WA.startSchoolMistakes();
+header = elements['dictation-door-name'].textContent;
+check('U2 补充错词均找到（每轮抽 10 词）', header.indexOf('默写 10 词') >= 0, header);
+check('U2 补充错词特训队列', elements['dictation-progress'].textContent === '1/10', elements['dictation-progress'].textContent);
+
+/* ---------- 真实完整错词本：42 个词条全部可匹配 ---------- */
+load('data/school-mistakes.js');
+check('完整校内错词本计数', WA.schoolMistakeCount() === 42, String(WA.schoolMistakeCount()));
+const missingWarnings = [];
+const originalWarn = sandbox.console.warn;
+sandbox.console.warn = function (...args) { missingWarnings.push(args.join(' ')); };
+WA.startSchoolMistakes();
+sandbox.console.warn = originalWarn;
+check('完整错词本无缺失词条', missingWarnings.length === 0, missingWarnings.join('；'));
+
 /* ---------- 首页版块渲染 ---------- */
 sandbox.window.WAFlow.renderToday();
 const todayHtml = elements['today-screen'] ? elements['today-screen'].innerHTML : '';

@@ -12,7 +12,106 @@
   ],
   "pageMap": {},
   "missingPages": "",
-  "dictationExtra": [],
+  "dictationExtra": [
+    {
+      "text": "circle",
+      "phonetic": "/ˈsɜːkl/",
+      "pos": "n.",
+      "meaning": "圆；圆圈（名词；round 常作形容词“圆形的”）",
+      "type": "word"
+    },
+    {
+      "text": "introduction",
+      "phonetic": "/ˌɪntrəˈdʌkʃn/",
+      "pos": "n.",
+      "meaning": "介绍；引言（名词；introduce 是动词）",
+      "type": "word"
+    },
+    {
+      "text": "helpless",
+      "phonetic": "/ˈhelpləs/",
+      "pos": "adj.",
+      "meaning": "无助的；无能为力的",
+      "type": "word"
+    },
+    {
+      "text": "endless",
+      "phonetic": "/ˈendləs/",
+      "pos": "adj.",
+      "meaning": "无止境的；无尽的",
+      "type": "word"
+    },
+    {
+      "text": "share something with somebody",
+      "phonetic": "/ʃeə(r) ˈsʌmθɪŋ wɪð ˈsʌmbədi/",
+      "pos": "phrase",
+      "meaning": "与某人分享某物（share sth. with sb.）",
+      "type": "phrase"
+    },
+    {
+      "text": "help somebody with something",
+      "phonetic": "/help ˈsʌmbədi wɪð ˈsʌmθɪŋ/",
+      "pos": "phrase",
+      "meaning": "在某事上帮助某人（help sb. with sth.）",
+      "type": "phrase"
+    },
+    {
+      "text": "tell lies",
+      "phonetic": "/tel laɪz/",
+      "pos": "phrase",
+      "meaning": "说谎",
+      "type": "phrase"
+    },
+    {
+      "text": "ago",
+      "phonetic": "/əˈɡəʊ/",
+      "pos": "adv.",
+      "meaning": "……以前（用于过去时：two days ago＝两天前）",
+      "type": "word"
+    },
+    {
+      "text": "later",
+      "phonetic": "/ˈleɪtə(r)/",
+      "pos": "adv.",
+      "meaning": "后来；之后（two days later＝两天后）",
+      "type": "word"
+    },
+    {
+      "text": "ask somebody to do",
+      "phonetic": "/ɑːsk ˈsʌmbədi tə duː/",
+      "pos": "phrase",
+      "meaning": "请/让某人做某事（ask sb. to do sth.）",
+      "type": "phrase"
+    },
+    {
+      "text": "make somebody do something",
+      "phonetic": "/meɪk ˈsʌmbədi duː ˈsʌmθɪŋ/",
+      "pos": "phrase",
+      "meaning": "让某人做某事（make 后接动词原形）",
+      "type": "phrase"
+    },
+    {
+      "text": "look confident",
+      "phonetic": "/lʊk ˈkɒnfɪdənt/",
+      "pos": "phrase",
+      "meaning": "看起来自信",
+      "type": "phrase"
+    },
+    {
+      "text": "I bought nothing",
+      "phonetic": "/aɪ ˈbɔːt ˈnʌθɪŋ/",
+      "pos": "sentence",
+      "meaning": "我什么也没买（nothing 本身含否定）",
+      "type": "sentence"
+    },
+    {
+      "text": "I didn't buy anything",
+      "phonetic": "/aɪ ˈdɪdnt baɪ ˈeniθɪŋ/",
+      "pos": "sentence",
+      "meaning": "我什么也没买（didn't 后接动词原形 buy，并用 anything）",
+      "type": "sentence"
+    }
+  ],
   "entries": [
     {
       "id": "u02-01",

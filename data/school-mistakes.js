@@ -39,4 +39,27 @@ window.SCHOOL_MISTAKES = {
     "a little bit of white hair",
     "I'd like to join the Safari Park Kids Club."
   ],
+  // U2 补充错词：拼写、词形辨析、固定搭配和否定句型，拆成 20 个独立训练目标
+  "U2（补充错词）": [
+    "tie",
+    "husband",
+    "member",
+    "round",
+    "circle",
+    "introduce",
+    "introduction",
+    "album",
+    "helpless",
+    "endless",
+    "share something with somebody",
+    "help somebody with something",
+    "tell lies",
+    "ago",
+    "later",
+    "ask somebody to do",
+    "make somebody do something",
+    "look confident",
+    "I bought nothing",
+    "I didn't buy anything"
+  ],
 };
