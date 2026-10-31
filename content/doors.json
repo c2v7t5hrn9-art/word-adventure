@@ -3,19 +3,19 @@
     "id": 1,
     "name": "健康小站",
     "theme": "doctor",
-    "entryRange": "u56-01 ~ u56-09"
+    "entryRange": "u56-01 ~ u56-33"
   },
   {
     "id": 2,
     "name": "检查室",
     "theme": "doctor",
-    "entryRange": "u56-10 ~ u56-17"
+    "entryRange": "u56-10 ~ u56-40"
   },
   {
     "id": 3,
     "name": "勇气山峰",
     "theme": "challenge",
-    "entryRange": "u56-18 ~ u56-26"
+    "entryRange": "u56-18 ~ u56-49"
   },
   {
     "id": 4,
@@ -57,73 +57,85 @@
     "id": 10,
     "name": "科学之门",
     "theme": "scientists",
-    "entryRange": "u78-01 ~ u78-08"
+    "entryRange": "u78-01 ~ u78-33"
   },
   {
     "id": 11,
     "name": "太空实验室",
     "theme": "scientists",
-    "entryRange": "u78-09 ~ u78-16"
+    "entryRange": "u78-09 ~ u78-35"
   },
   {
     "id": 12,
     "name": "发明工坊",
     "theme": "inventions",
-    "entryRange": "u78-17 ~ u78-23"
+    "entryRange": "u78-17 ~ u78-36"
   },
   {
     "id": 13,
     "name": "家电小屋",
     "theme": "inventions",
-    "entryRange": "u78-24 ~ u78-29"
+    "entryRange": "u78-24 ~ u78-37"
   },
   {
     "id": 14,
     "name": "电脑教室",
     "theme": "computers",
-    "entryRange": "u910-01 ~ u910-08 (U9)"
+    "entryRange": "u910-01 ~ u910-35 (U9)"
   },
   {
     "id": 15,
     "name": "芯片世界",
     "theme": "computers",
-    "entryRange": "u910-09 ~ u910-16 (U9)"
+    "entryRange": "u910-09 ~ u910-40 (U9)"
   },
   {
     "id": 16,
     "name": "绿色家园",
     "theme": "green",
-    "entryRange": "u910-17 ~ u910-25 (U10)"
+    "entryRange": "u910-17 ~ u910-45 (U10)"
   },
   {
     "id": 17,
     "name": "海洋卫士",
     "theme": "green",
-    "entryRange": "u910-26 ~ u910-30 (U10) + 语法"
+    "entryRange": "u910-26 ~ u910-50 (U10) + 语法"
   },
   {
     "id": 18,
     "name": "校园生活基础词",
     "theme": "school",
-    "entryRange": "u01-01 ~ u01-09"
+    "entryRange": "u01-01 ~ u01-37"
   },
   {
     "id": 19,
     "name": "校园活动与科技",
     "theme": "school",
-    "entryRange": "u01-10 ~ u01-18"
+    "entryRange": "u01-10 ~ u01-33"
   },
   {
     "id": 20,
     "name": "话题与通信",
     "theme": "school",
-    "entryRange": "u01-19 ~ u01-28"
+    "entryRange": "u01-19 ~ u01-39"
+  },
+  {
+    "id": 41,
+    "name": "语音词法屋",
+    "theme": "school",
+    "entryRange": "u01-40 ~ u01-53"
+  },
+  {
+    "id": 42,
+    "name": "代词情态台",
+    "theme": "school",
+    "entryRange": "u01-54 ~ u01-62"
   },
   {
     "id": 21,
     "name": "家庭纽带",
     "theme": "family",
-    "entryRange": "u02-01 ~ u02-10"
+    "entryRange": "u02-01 ~ u02-45"
   },
   {
     "id": 22,
@@ -141,67 +153,67 @@
     "id": 24,
     "name": "家庭庆典",
     "theme": "family",
-    "entryRange": "u02-30 ~ u02-39"
+    "entryRange": "u02-30 ~ u02-47"
   },
   {
     "id": 25,
     "name": "词语辨析坊",
     "theme": "food",
-    "entryRange": "u03-01 ~ u03-07"
+    "entryRange": "u03-01 ~ u03-26"
   },
   {
     "id": 26,
     "name": "厨房行动",
     "theme": "food",
-    "entryRange": "u03-08 ~ u03-14"
+    "entryRange": "u03-08 ~ u03-33"
   },
   {
     "id": 27,
     "name": "健康饮食",
     "theme": "food",
-    "entryRange": "u03-15 ~ u03-21"
+    "entryRange": "u03-15 ~ u03-52"
   },
   {
     "id": 28,
     "name": "安全训练营",
     "theme": "sports",
-    "entryRange": "u04-01 ~ u04-07"
+    "entryRange": "u04-01 ~ u04-41"
   },
   {
     "id": 29,
     "name": "意外处理站",
     "theme": "sports",
-    "entryRange": "u04-08 ~ u04-14"
+    "entryRange": "u04-08 ~ u04-46"
   },
   {
     "id": 30,
     "name": "球场风云",
     "theme": "sports",
-    "entryRange": "u04-15 ~ u04-21"
+    "entryRange": "u04-15 ~ u04-57"
   },
   {
     "id": 31,
     "name": "赛事报道",
     "theme": "sports",
-    "entryRange": "u04-22 ~ u04-29"
+    "entryRange": "u04-22 ~ u04-59"
   },
   {
     "id": 32,
     "name": "惊奇动物园",
     "theme": "animals",
-    "entryRange": "u05-01 ~ u05-08"
+    "entryRange": "u05-01 ~ u05-35"
   },
   {
     "id": 33,
     "name": "萌宠相处道",
     "theme": "animals",
-    "entryRange": "u05-09 ~ u05-15"
+    "entryRange": "u05-09 ~ u05-39"
   },
   {
     "id": 34,
     "name": "词语辨析馆",
     "theme": "animals",
-    "entryRange": "u05-16 ~ u05-23"
+    "entryRange": "u05-16 ~ u05-40"
   },
   {
     "id": 35,
@@ -219,7 +231,7 @@
     "id": 37,
     "name": "山野徒步",
     "theme": "travel",
-    "entryRange": "u06-08 ~ u06-14"
+    "entryRange": "u06-08 ~ u06-37"
   },
   {
     "id": 38,
@@ -231,12 +243,12 @@
     "id": 39,
     "name": "购票出行",
     "theme": "travel",
-    "entryRange": "u06-22 ~ u06-28"
+    "entryRange": "u06-22 ~ u06-39"
   },
   {
     "id": 40,
     "name": "旅途感悟",
     "theme": "travel",
-    "entryRange": "u06-29 ~ u06-35"
+    "entryRange": "u06-29 ~ u06-47"
   }
 ]

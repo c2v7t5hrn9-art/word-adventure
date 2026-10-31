@@ -1521,6 +1521,113 @@
     renderDictation();
   }
 
+  /* 薄弱词特训（今日任务）：跨单元默写常错词，最多 10 个，按错误次数降序 */
+  const WEAK_DICTATION_MAX = 10;
+  function startWeakDictation() {
+    const weak = [];
+    for (const key in (save.spellStats || {})) {
+      const s = save.spellStats[key];
+      if (!(s && (s.wrong > s.correct || s.wrong >= 2))) continue;
+      let entry = null;
+      for (const e of allEntries) {
+        if (getSpellKey(e.text) === key) { entry = e; break; }
+      }
+      if (!entry) {
+        for (const u of DATA.units) {
+          if (u.dictationExtra) {
+            for (const e of u.dictationExtra) {
+              if (getSpellKey(e.text) === key) { entry = e; break; }
+            }
+          }
+          if (entry) break;
+        }
+      }
+      if (entry) weak.push({ entry: entry, wrong: s.wrong });
+    }
+    weak.sort((a, b) => b.wrong - a.wrong);
+    const pool = weak.slice(0, WEAK_DICTATION_MAX).map((w) => w.entry);
+    if (!pool.length) {
+      say('暂无薄弱词，保持住！');
+      return;
+    }
+    dictation = {
+      doorId: null, weakMode: true,
+      pool: shuffle(pool),
+      level: save.settings.dictationDefaultLevel || 1,
+      idx: 0, wrong: 0, wrongEntries: [],
+      restart: startWeakDictation
+    };
+    showScreen('dictation-screen');
+    $('dictation-door-name').textContent = '💪 薄弱词特训 · 默写 ' + pool.length + ' 词';
+    renderDictation();
+  }
+
+  /* ---------------- 校内默写加强 ---------------- */
+  const SCHOOL_DICTATION_ROUND = 10; // 校内默写每轮词数
+
+  // 按单元整卷默写：单元全部词条（含教材词）+ 默写补充词，随机抽 10 个一轮，可反复重练
+  function startSchoolDictation(unitId) {
+    const unit = DATA.units.find((u) => u.unitId === unitId);
+    if (!unit) return;
+    const poolAll = unit.entries.concat(unit.dictationExtra || []);
+    if (!poolAll.length) { say('这个单元还没有词条'); return; }
+    dictation = {
+      doorId: null, schoolMode: true,
+      pool: shuffle(poolAll).slice(0, SCHOOL_DICTATION_ROUND),
+      level: save.settings.dictationDefaultLevel || 1,
+      idx: 0, wrong: 0, wrongEntries: [],
+      restart: () => startSchoolDictation(unitId)
+    };
+    showScreen('dictation-screen');
+    $('dictation-door-name').textContent = '🏫 校内默写 · ' + (unit.title || unitId);
+    renderDictation();
+  }
+
+  // 校内错词特训：只练校内默写错过的词（data/school-mistakes.js 按单元录入）
+  function startSchoolMistakes() {
+    const book = window.SCHOOL_MISTAKES || {};
+    const pool = [];
+    const seen = new Set();
+    Object.keys(book).forEach((unitId) => {
+      const unit = DATA.units.find((u) => u.unitId === unitId);
+      const unitEntries = unit ? unit.entries.concat(unit.dictationExtra || []) : [];
+      (book[unitId] || []).forEach((text) => {
+        const key = getSpellKey(text);
+        if (seen.has(key)) return;
+        let entry = unitEntries.find((e) => getSpellKey(e.text) === key) ||
+          allEntries.find((e) => getSpellKey(e.text) === key);
+        if (!entry) {
+          // 再到全库默写补充词里找（校内默写常包含词库外的补充词）
+          for (const u of DATA.units) {
+            const extra = (u.dictationExtra || []).find((e) => getSpellKey(e.text) === key);
+            if (extra) { entry = extra; break; }
+          }
+        }
+        if (entry) { pool.push(entry); seen.add(key); }
+        else console.warn('校内错词未找到词条:', text);
+      });
+    });
+    if (!pool.length) {
+      say('还没有录入校内错词，先把默写订正结果整理好加进来吧～');
+      return;
+    }
+    dictation = {
+      doorId: null, schoolMode: true,
+      pool: shuffle(pool).slice(0, SCHOOL_DICTATION_ROUND),
+      level: save.settings.dictationDefaultLevel || 1,
+      idx: 0, wrong: 0, wrongEntries: [],
+      restart: startSchoolMistakes
+    };
+    showScreen('dictation-screen');
+    $('dictation-door-name').textContent = '🏫 校内错词特训 · 默写 ' + dictation.pool.length + ' 词';
+    renderDictation();
+  }
+
+  function schoolMistakeCount() {
+    const book = window.SCHOOL_MISTAKES || {};
+    return Object.keys(book).reduce((n, k) => n + (book[k] || []).length, 0);
+  }
+
   function renderDictation() {
     if (dictation.idx >= dictation.pool.length) return finishDictation();
     const e = dictation.pool[dictation.idx];
@@ -1793,9 +1900,11 @@
     const stars = wrong === 0 ? 3 : (wrong <= 2 ? 2 : 1);
     const perfect = wrong === 0;
     const doorId = dictation.doorId;
+    const isWeakMode = !!dictation.weakMode;
+    const noMastery = isWeakMode || !!dictation.schoolMode;
 
-    // 难度自动升级（持久化连胜计数）
-    if (perfect) {
+    // 难度自动升级（持久化连胜计数；薄弱词特训/校内默写跨门进行，不参与单门升级）
+    if (!noMastery && perfect) {
       save.dictationConsecutivePerfect[doorId] = (save.dictationConsecutivePerfect[doorId] || 0) + 1;
       if (save.settings.dictationAutoLevel && save.dictationConsecutivePerfect[doorId] >= 2) {
         const curLevel = save.dictationMastery[doorId] || save.settings.dictationDefaultLevel || 1;
@@ -1804,7 +1913,7 @@
           persist();
         }
       }
-    } else {
+    } else if (!noMastery) {
       save.dictationConsecutivePerfect[doorId] = 0;
     }
 
@@ -1816,7 +1925,8 @@
 
     showScreen('dictation-result-screen');
     const door = DOOR_BY_ID[doorId];
-    $('dict-result-door').textContent = door ? (door.id + '. ' + door.name) : '';
+    $('dict-result-door').textContent = door ? (door.id + '. ' + door.name) :
+      (isWeakMode ? '💪 薄弱词特训' : (dictation.schoolMode ? '🏫 校内默写' : ''));
     $('dict-result-stars').textContent = '⭐'.repeat(stars) + '☆'.repeat(3 - stars);
     $('dict-result-level').textContent = 'L' + dictation.level + ' ' + DICTATION_LEVELS[dictation.level];
     let msg = perfect ? '太棒了！全对！⭐⭐⭐' : (wrong <= 2 ? '不错哦，只错了 ' + wrong + ' 个～' : '继续加油，错了 ' + wrong + ' 个，下次一定行！');
@@ -3404,7 +3514,9 @@
     say('下次再来默写吧～');
   });
   on('btn-dict-replay', 'click', () => {
-    if (dictation && dictation.doorId) startDictation(dictation.doorId);
+    if (!dictation) return;
+    if (dictation.doorId) startDictation(dictation.doorId);
+    else if (dictation.restart) dictation.restart();
   });
   on('btn-dict-map', 'click', () => {
     showScreen('map-screen');
@@ -3506,6 +3618,10 @@
     startMatch: startMatch,
     startDictation: startDictation,
     startFlashcard: startFlashcard,
+    startWeakDictation: startWeakDictation,
+    startSchoolDictation: startSchoolDictation,
+    startSchoolMistakes: startSchoolMistakes,
+    schoolMistakeCount: schoolMistakeCount,
     startLandlord: function(doorId) { if(window.WAMinigames) window.WAMinigames.startLandlord(doorId); },
     startRush: function(doorId) { if(window.WAMinigames) window.WAMinigames.startRush(doorId); },
     startStrike: function(doorId) { if(window.WAMinigames) window.WAMinigames.startStrike(doorId); },

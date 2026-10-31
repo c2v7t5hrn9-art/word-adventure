@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated": "2026-08-22",
+  "updated": "2026-10-29",
   "description": "单词冒险岛词库。收录讲义全部内容：主词条 + 延伸词(派生/词转) + 短语搭配 + 例句。新增讲义时按 entries 结构追加，并更新 doors。",
   "schema": {
     "entry": {
@@ -23,19 +23,19 @@
       "id": 1,
       "name": "健康小站",
       "theme": "doctor",
-      "entryRange": "u56-01 ~ u56-09"
+      "entryRange": "u56-01 ~ u56-33"
     },
     {
       "id": 2,
       "name": "检查室",
       "theme": "doctor",
-      "entryRange": "u56-10 ~ u56-17"
+      "entryRange": "u56-10 ~ u56-40"
     },
     {
       "id": 3,
       "name": "勇气山峰",
       "theme": "challenge",
-      "entryRange": "u56-18 ~ u56-26"
+      "entryRange": "u56-18 ~ u56-49"
     },
     {
       "id": 4,
@@ -77,73 +77,85 @@
       "id": 10,
       "name": "科学之门",
       "theme": "scientists",
-      "entryRange": "u78-01 ~ u78-08"
+      "entryRange": "u78-01 ~ u78-33"
     },
     {
       "id": 11,
       "name": "太空实验室",
       "theme": "scientists",
-      "entryRange": "u78-09 ~ u78-16"
+      "entryRange": "u78-09 ~ u78-35"
     },
     {
       "id": 12,
       "name": "发明工坊",
       "theme": "inventions",
-      "entryRange": "u78-17 ~ u78-23"
+      "entryRange": "u78-17 ~ u78-36"
     },
     {
       "id": 13,
       "name": "家电小屋",
       "theme": "inventions",
-      "entryRange": "u78-24 ~ u78-29"
+      "entryRange": "u78-24 ~ u78-37"
     },
     {
       "id": 14,
       "name": "电脑教室",
       "theme": "computers",
-      "entryRange": "u910-01 ~ u910-08 (U9)"
+      "entryRange": "u910-01 ~ u910-35 (U9)"
     },
     {
       "id": 15,
       "name": "芯片世界",
       "theme": "computers",
-      "entryRange": "u910-09 ~ u910-16 (U9)"
+      "entryRange": "u910-09 ~ u910-40 (U9)"
     },
     {
       "id": 16,
       "name": "绿色家园",
       "theme": "green",
-      "entryRange": "u910-17 ~ u910-25 (U10)"
+      "entryRange": "u910-17 ~ u910-45 (U10)"
     },
     {
       "id": 17,
       "name": "海洋卫士",
       "theme": "green",
-      "entryRange": "u910-26 ~ u910-30 (U10) + 语法"
+      "entryRange": "u910-26 ~ u910-50 (U10) + 语法"
     },
     {
       "id": 18,
       "name": "校园生活基础词",
       "theme": "school",
-      "entryRange": "u01-01 ~ u01-09"
+      "entryRange": "u01-01 ~ u01-37"
     },
     {
       "id": 19,
       "name": "校园活动与科技",
       "theme": "school",
-      "entryRange": "u01-10 ~ u01-18"
+      "entryRange": "u01-10 ~ u01-33"
     },
     {
       "id": 20,
       "name": "话题与通信",
       "theme": "school",
-      "entryRange": "u01-19 ~ u01-28"
+      "entryRange": "u01-19 ~ u01-39"
+    },
+    {
+      "id": 41,
+      "name": "语音词法屋",
+      "theme": "school",
+      "entryRange": "u01-40 ~ u01-53"
+    },
+    {
+      "id": 42,
+      "name": "代词情态台",
+      "theme": "school",
+      "entryRange": "u01-54 ~ u01-62"
     },
     {
       "id": 21,
       "name": "家庭纽带",
       "theme": "family",
-      "entryRange": "u02-01 ~ u02-10"
+      "entryRange": "u02-01 ~ u02-45"
     },
     {
       "id": 22,
@@ -161,67 +173,67 @@
       "id": 24,
       "name": "家庭庆典",
       "theme": "family",
-      "entryRange": "u02-30 ~ u02-39"
+      "entryRange": "u02-30 ~ u02-47"
     },
     {
       "id": 25,
       "name": "词语辨析坊",
       "theme": "food",
-      "entryRange": "u03-01 ~ u03-07"
+      "entryRange": "u03-01 ~ u03-26"
     },
     {
       "id": 26,
       "name": "厨房行动",
       "theme": "food",
-      "entryRange": "u03-08 ~ u03-14"
+      "entryRange": "u03-08 ~ u03-33"
     },
     {
       "id": 27,
       "name": "健康饮食",
       "theme": "food",
-      "entryRange": "u03-15 ~ u03-21"
+      "entryRange": "u03-15 ~ u03-52"
     },
     {
       "id": 28,
       "name": "安全训练营",
       "theme": "sports",
-      "entryRange": "u04-01 ~ u04-07"
+      "entryRange": "u04-01 ~ u04-41"
     },
     {
       "id": 29,
       "name": "意外处理站",
       "theme": "sports",
-      "entryRange": "u04-08 ~ u04-14"
+      "entryRange": "u04-08 ~ u04-46"
     },
     {
       "id": 30,
       "name": "球场风云",
       "theme": "sports",
-      "entryRange": "u04-15 ~ u04-21"
+      "entryRange": "u04-15 ~ u04-57"
     },
     {
       "id": 31,
       "name": "赛事报道",
       "theme": "sports",
-      "entryRange": "u04-22 ~ u04-29"
+      "entryRange": "u04-22 ~ u04-59"
     },
     {
       "id": 32,
       "name": "惊奇动物园",
       "theme": "animals",
-      "entryRange": "u05-01 ~ u05-08"
+      "entryRange": "u05-01 ~ u05-35"
     },
     {
       "id": 33,
       "name": "萌宠相处道",
       "theme": "animals",
-      "entryRange": "u05-09 ~ u05-15"
+      "entryRange": "u05-09 ~ u05-39"
     },
     {
       "id": 34,
       "name": "词语辨析馆",
       "theme": "animals",
-      "entryRange": "u05-16 ~ u05-23"
+      "entryRange": "u05-16 ~ u05-40"
     },
     {
       "id": 35,
@@ -239,7 +251,7 @@
       "id": 37,
       "name": "山野徒步",
       "theme": "travel",
-      "entryRange": "u06-08 ~ u06-14"
+      "entryRange": "u06-08 ~ u06-37"
     },
     {
       "id": 38,
@@ -251,13 +263,13 @@
       "id": 39,
       "name": "购票出行",
       "theme": "travel",
-      "entryRange": "u06-22 ~ u06-28"
+      "entryRange": "u06-22 ~ u06-39"
     },
     {
       "id": 40,
       "name": "旅途感悟",
       "theme": "travel",
-      "entryRange": "u06-29 ~ u06-35"
+      "entryRange": "u06-29 ~ u06-47"
     }
   ],
   "units": [
@@ -1553,6 +1565,104 @@
           "phonetic": "/ˈæmətə(r)/",
           "pos": "adj./n.",
           "meaning": "业余的；业余爱好者（注意：不是邻居）"
+        },
+        {
+          "text": "tomato",
+          "phonetic": "/təˈmɑːtəʊ/",
+          "pos": "n.",
+          "meaning": "番茄；西红柿",
+          "type": "word"
+        },
+        {
+          "text": "a sunny day",
+          "phonetic": "/ə ˈsʌni deɪ/",
+          "pos": "phrase",
+          "meaning": "晴朗的一天",
+          "type": "phrase"
+        },
+        {
+          "text": "look for",
+          "phonetic": "/lʊk fɔː(r)/",
+          "pos": "phrase",
+          "meaning": "寻找",
+          "type": "phrase"
+        },
+        {
+          "text": "botanical garden",
+          "phonetic": "/bəˈtænɪkl ˈɡɑːdn/",
+          "pos": "phrase",
+          "meaning": "植物园",
+          "type": "phrase"
+        },
+        {
+          "text": "habit",
+          "phonetic": "/ˈhæbɪt/",
+          "pos": "n.",
+          "meaning": "习惯",
+          "type": "word"
+        },
+        {
+          "text": "flamingo",
+          "phonetic": "/fləˈmɪŋɡəʊ/",
+          "pos": "n.",
+          "meaning": "火烈鸟",
+          "type": "word"
+        },
+        {
+          "text": "injection",
+          "phonetic": "/ɪnˈdʒekʃn/",
+          "pos": "n.",
+          "meaning": "注射；打针",
+          "type": "word"
+        },
+        {
+          "text": "birth",
+          "phonetic": "/bɜːθ/",
+          "pos": "n.",
+          "meaning": "出生；诞生",
+          "type": "word"
+        },
+        {
+          "text": "minute",
+          "phonetic": "/ˈmɪnɪt/",
+          "pos": "n.",
+          "meaning": "分钟",
+          "type": "word"
+        },
+        {
+          "text": "a short film",
+          "phonetic": "/ə ʃɔːt fɪlm/",
+          "pos": "phrase",
+          "meaning": "一部短片",
+          "type": "phrase"
+        },
+        {
+          "text": "try to",
+          "phonetic": "/traɪ tə/",
+          "pos": "phrase",
+          "meaning": "尝试；设法",
+          "type": "phrase"
+        },
+        {
+          "text": "a panda cub",
+          "phonetic": "/ə ˈpændə kʌb/",
+          "pos": "phrase",
+          "meaning": "一只熊猫幼崽",
+          "type": "phrase"
+        },
+        {
+          "text": "a little bit of white hair",
+          "phonetic": "/ə ˈlɪtl bɪt əv waɪt heə(r)/",
+          "pos": "phrase",
+          "meaning": "一点点白色的毛",
+          "type": "phrase"
+        },
+        {
+          "text": "I'd like to join the Safari Park Kids Club.",
+          "phonetic": "/aɪd laɪk tə dʒɔɪn ðə səˈfɑːri pɑːk kɪdz klʌb/",
+          "pos": "sentence",
+          "meaning": "我想加入野生动物园儿童俱乐部。",
+          "type": "sentence"
         }
       ],
       "entries": [
@@ -2358,6 +2468,50 @@
           "type": "fill",
           "prompt": "______ (tell) stories and often makes us laugh",
           "answer": "（句子在照片边缘被裁切，待补全）"
+        }
+      ],
+      "dictationExtra": [
+        {
+          "text": "excited",
+          "phonetic": "/ɪkˈsaɪtɪd/",
+          "pos": "adj.",
+          "meaning": "感到兴奋的",
+          "type": "word"
+        },
+        {
+          "text": "strength",
+          "phonetic": "/streŋθ/",
+          "pos": "n.",
+          "meaning": "力量；力气",
+          "type": "word"
+        },
+        {
+          "text": "favourite",
+          "phonetic": "/ˈfeɪvərɪt/",
+          "pos": "adj.",
+          "meaning": "最喜欢的",
+          "type": "word"
+        },
+        {
+          "text": "come to life",
+          "phonetic": "/kʌm tə laɪf/",
+          "pos": "phrase",
+          "meaning": "苏醒；变得生动",
+          "type": "phrase"
+        },
+        {
+          "text": "as fast as the wind",
+          "phonetic": "/əz fɑːst əz ðə wɪnd/",
+          "pos": "phrase",
+          "meaning": "像风一样快",
+          "type": "phrase"
+        },
+        {
+          "text": "interesting",
+          "phonetic": "/ˈɪntrəstɪŋ/",
+          "pos": "adj.",
+          "meaning": "有趣的",
+          "type": "word"
         }
       ],
       "entries": [
@@ -4301,6 +4455,14 @@
         "The dictionary.docx"
       ],
       "unitNotes": "词汇讲义单元。收录U9和U10主词条+延伸词+短语搭配+例句+比较级语法。",
+      "dictationExtra": [
+        {
+          "text": "easy",
+          "phonetic": "/ˈiːzi/",
+          "pos": "adj.",
+          "meaning": "容易的（比较级 easier，最高级 easiest）"
+        }
+      ],
       "entries": [
         {
           "id": "u910-01",
@@ -5490,8 +5652,11 @@
     },
     {
       "unitId": "u01-school-life",
-      "title": "U1 School life 词汇讲义",
-      "sourceImages": [],
+      "title": "U1 School life 词汇讲义＋教材单词表",
+      "sourceImages": [
+        "assets/handouts/6AU1 School Life词汇讲义.pdf",
+        "assets/handouts/6A英语教材单词表.pdf"
+      ],
       "pageMap": {},
       "missingPages": "",
       "dictationExtra": [],
@@ -5572,6 +5737,21 @@
               "text": "alive",
               "pos": "adj.",
               "meaning": "活着的（不用于名词前）"
+            },
+            {
+              "text": "lively",
+              "pos": "adj.",
+              "meaning": "活泼的；生动的",
+              "phrases": [
+                {
+                  "text": "a lively girl",
+                  "meaning": "一个活泼的女孩"
+                },
+                {
+                  "text": "a lively class",
+                  "meaning": "生动的一堂课"
+                }
+              ]
             }
           ],
           "notes": "pl. lives；live adj. 现场直播的"
@@ -5668,8 +5848,19 @@
               "text": "Frenchman",
               "pos": "n.",
               "meaning": "法国人（复数 Frenchmen）"
+            },
+            {
+              "text": "Englishman",
+              "pos": "n.",
+              "meaning": "英国人（复数 Englishmen）"
+            },
+            {
+              "text": "German",
+              "pos": "n.",
+              "meaning": "德国人（复数 Germans）"
             }
-          ]
+          ],
+          "notes": "国人复数口诀：中日瑞士都不变，英法却要变，其余国人都加s"
         },
         {
           "id": "u01-05",
@@ -5862,6 +6053,11 @@
           "extensions": [
             {
               "text": "technological",
+              "pos": "adj.",
+              "meaning": "技术上的"
+            },
+            {
+              "text": "technical",
               "pos": "adj.",
               "meaning": "技术上的"
             }
@@ -6202,19 +6398,450 @@
           "pos": "adv. 在外面；prep. 在……外面",
           "meaning": "在外面；在……外面",
           "door": 20
+        },
+        {
+          "id": "u01-29",
+          "no": 29,
+          "type": "word",
+          "text": "ICT",
+          "phonetic": "",
+          "pos": "n.",
+          "meaning": "信息通信技术（课程）(= information and communications technology)",
+          "door": 18,
+          "notes": "教材单词表 p.14"
+        },
+        {
+          "id": "u01-30",
+          "no": 30,
+          "type": "word",
+          "text": "geography",
+          "phonetic": "/dʒiˈɒɡrəfi/",
+          "pos": "n.",
+          "meaning": "地理",
+          "door": 18,
+          "notes": "教材单词表 p.14"
+        },
+        {
+          "id": "u01-31",
+          "no": 31,
+          "type": "word",
+          "text": "join",
+          "phonetic": "/dʒɔɪn/",
+          "pos": "v.",
+          "meaning": "加入",
+          "door": 19,
+          "notes": "教材单词表 p.16",
+          "phrases": [
+            {
+              "text": "join a club",
+              "meaning": "加入俱乐部"
+            },
+            {
+              "text": "join the Party/army",
+              "meaning": "入党/参军"
+            },
+            {
+              "text": "join in + 活动 = take part in",
+              "meaning": "参加活动"
+            }
+          ],
+          "examples": [
+            {
+              "en": "Join in / Take part in indoor activities.",
+              "zh": "参加室内活动。"
+            }
+          ]
+        },
+        {
+          "id": "u01-32",
+          "no": 32,
+          "type": "phrase",
+          "text": "excuse me",
+          "phonetic": "",
+          "pos": "短语",
+          "meaning": "（因打扰别人或失礼表示歉意）对不起；劳驾",
+          "door": 18,
+          "notes": "教材单词表 p.17"
+        },
+        {
+          "id": "u01-33",
+          "no": 33,
+          "type": "word",
+          "text": "group",
+          "phonetic": "/ɡruːp/",
+          "pos": "n.",
+          "meaning": "组；群；批；类",
+          "door": 19,
+          "notes": "教材单词表 p.18"
+        },
+        {
+          "id": "u01-34",
+          "no": 34,
+          "type": "word",
+          "text": "most",
+          "phonetic": "/məʊst/",
+          "pos": "adv.",
+          "meaning": "最",
+          "door": 18,
+          "notes": "教材单词表 p.18"
+        },
+        {
+          "id": "u01-35",
+          "no": 35,
+          "type": "word",
+          "text": "p.m.",
+          "phonetic": "",
+          "pos": "abbr.",
+          "meaning": "下午 (AmE P.M.)",
+          "door": 18,
+          "notes": "教材单词表 p.18"
+        },
+        {
+          "id": "u01-36",
+          "no": 36,
+          "type": "word",
+          "text": "same",
+          "phonetic": "/seɪm/",
+          "pos": "adj.",
+          "meaning": "一样的",
+          "door": 18,
+          "notes": "教材单词表 p.18"
+        },
+        {
+          "id": "u01-37",
+          "no": 37,
+          "type": "word",
+          "text": "noon",
+          "phonetic": "/nuːn/",
+          "pos": "n.",
+          "meaning": "正午；中午",
+          "door": 18,
+          "notes": "教材单词表 p.18"
+        },
+        {
+          "id": "u01-38",
+          "no": 38,
+          "type": "word",
+          "text": "connect",
+          "phonetic": "/kəˈnekt/",
+          "pos": "v.",
+          "meaning": "连接",
+          "door": 20,
+          "notes": "教材单词表 p.18"
+        },
+        {
+          "id": "u01-39",
+          "no": 39,
+          "type": "word",
+          "text": "comment",
+          "phonetic": "/ˈkɒment/",
+          "pos": "n. & v.",
+          "meaning": "议论；评论；解释；表达意见",
+          "door": 20,
+          "notes": "教材单词表 p.18"
+        },
+        {
+          "id": "u01-40",
+          "no": 40,
+          "type": "phrase",
+          "text": "48 个音标",
+          "phonetic": "",
+          "pos": "音标",
+          "meaning": "英语共 48 个音标：元音 20 个（7 短元音 + 5 长元音 + 8 双元音），辅音 28 个",
+          "door": 41,
+          "notes": "6AU1讲义·语法复习"
+        },
+        {
+          "id": "u01-41",
+          "no": 41,
+          "type": "phrase",
+          "text": "7 个短元音",
+          "phonetic": "",
+          "pos": "音标",
+          "meaning": "/ɪ/ /e/ /æ/ /ɒ/ /ʊ/ /ʌ/ /ə/",
+          "door": 41,
+          "notes": "6AU1讲义·语法复习"
+        },
+        {
+          "id": "u01-42",
+          "no": 42,
+          "type": "phrase",
+          "text": "5 个长元音",
+          "phonetic": "",
+          "pos": "音标",
+          "meaning": "/iː/ /ɑː/ /ɔː/ /uː/ /ɜː/",
+          "door": 41,
+          "notes": "6AU1讲义·语法复习"
+        },
+        {
+          "id": "u01-43",
+          "no": 43,
+          "type": "phrase",
+          "text": "8 个双元音",
+          "phonetic": "",
+          "pos": "音标",
+          "meaning": "/eɪ/ /aɪ/ /ɔɪ/ /əʊ/ /aʊ/ /ɪə/ /eə/ /ʊə/",
+          "door": 41,
+          "notes": "6AU1讲义·语法复习"
+        },
+        {
+          "id": "u01-44",
+          "no": 44,
+          "type": "phrase",
+          "text": "28 个辅音",
+          "phonetic": "",
+          "pos": "音标",
+          "meaning": "10 清辅音 /p/ /t/ /k/ /f/ /s/ /ʃ/ /θ/ /ts/ /tʃ/ /tr/；10 浊辅音 /b/ /d/ /g/ /v/ /z/ /ʒ/ /ð/ /dz/ /dʒ/ /dr/；3 鼻辅音 /m/ /n/ /ŋ/；5 其他 /w/ /j/ /r/ /h/ /l/",
+          "door": 41,
+          "notes": "6AU1讲义·语法复习"
+        },
+        {
+          "id": "u01-45",
+          "no": 45,
+          "type": "phrase",
+          "text": "10 大词性",
+          "phonetic": "",
+          "pos": "词性",
+          "meaning": "名词 n.、代词 pron.、冠词 art.、形容词 adj.、数词 num.、动词 v.、副词 adv.、介词 prep.、连词 conj.、感叹词 int.",
+          "door": 41,
+          "notes": "6AU1讲义·语法复习",
+          "examples": [
+            {
+              "en": "Oh, I really love yummy apples because one apple a day keeps the doctors away.",
+              "zh": "噢，我真喜欢美味的苹果，因为一天一苹果，医生远离我。（一句含多词性）"
+            }
+          ]
+        },
+        {
+          "id": "u01-46",
+          "no": 46,
+          "type": "phrase",
+          "text": "名词的分类",
+          "phonetic": "",
+          "pos": "名词",
+          "meaning": "分为专有名词 (proper noun) 和普通名词 (common noun)；普通名词又分为可数名词 (C) 和不可数名词 (U)",
+          "door": 41,
+          "notes": "6AU1讲义·语法复习"
+        },
+        {
+          "id": "u01-47",
+          "no": 47,
+          "type": "phrase",
+          "text": "复数规则① 一般加 -s",
+          "phonetic": "",
+          "pos": "名词",
+          "meaning": "可数名词复数一般直接加 -s",
+          "door": 41,
+          "notes": "6AU1讲义·语法复习",
+          "examples": [
+            {
+              "en": "photo → photos",
+              "zh": "照片（-o 结尾无生命，加 -s）"
+            }
+          ]
+        },
+        {
+          "id": "u01-48",
+          "no": 48,
+          "type": "phrase",
+          "text": "复数规则② 加 -es",
+          "phonetic": "",
+          "pos": "名词",
+          "meaning": "以 -s / -x / -sh / -ch 结尾加 -es；部分 -o 结尾（有生命）也加 -es",
+          "door": 41,
+          "notes": "6AU1讲义·语法复习",
+          "examples": [
+            {
+              "en": "bus → buses, fox → foxes, wish → wishes, watch → watches, potato → potatoes",
+              "zh": "公交车 / 狐狸 / 祝愿 / 手表 / 土豆"
+            }
+          ]
+        },
+        {
+          "id": "u01-49",
+          "no": 49,
+          "type": "phrase",
+          "text": "复数规则③ 变 y、变 f",
+          "phonetic": "",
+          "pos": "名词",
+          "meaning": "辅音字母 + y 结尾：变 y 为 i 加 -es；以 -f / -fe 结尾：变 f 为 v 加 -es",
+          "door": 41,
+          "notes": "6AU1讲义·语法复习",
+          "examples": [
+            {
+              "en": "baby → babies; life → lives, leaf → leaves",
+              "zh": "婴儿；生命 / 树叶"
+            }
+          ]
+        },
+        {
+          "id": "u01-50",
+          "no": 50,
+          "type": "phrase",
+          "text": "冠词的分类",
+          "phonetic": "",
+          "pos": "冠词",
+          "meaning": "定冠词 the（特指）/ 不定冠词 a, an（一个不特指）/ 不用冠词又叫零冠词",
+          "door": 41,
+          "notes": "6AU1讲义·语法复习"
+        },
+        {
+          "id": "u01-51",
+          "no": 51,
+          "type": "phrase",
+          "text": "a 还是 an",
+          "phonetic": "",
+          "pos": "冠词",
+          "meaning": "看开头音素不看字母：a 用在辅音音素前，an 用在元音音素前",
+          "door": 41,
+          "notes": "6AU1讲义·语法复习",
+          "examples": [
+            {
+              "en": "a useful book; an hour",
+              "zh": "useful 开头音素 /j/ 是辅音用 a；hour 的 h 不发音、开头音素 /aʊ/ 是元音用 an"
+            }
+          ]
+        },
+        {
+          "id": "u01-52",
+          "no": 52,
+          "type": "phrase",
+          "text": "the 的用法",
+          "phonetic": "",
+          "pos": "冠词",
+          "meaning": "① 上文已提及 ② 双方皆熟悉 ③ 世界独一无二 ④ 序数词、最高级前 ⑤ 乐器前",
+          "door": 41,
+          "notes": "6AU1讲义·语法复习",
+          "examples": [
+            {
+              "en": "I have a dog. The dog is cute. / Open the door, please. / the sun, the moon / the first, the best / play the piano",
+              "zh": "我有一只狗，这只狗很可爱。/ 请开门。/ 太阳、月亮 / 第一、最好 / 弹钢琴"
+            }
+          ]
+        },
+        {
+          "id": "u01-53",
+          "no": 53,
+          "type": "phrase",
+          "text": "零冠词口诀",
+          "phonetic": "",
+          "pos": "冠词",
+          "meaning": "球类棋类 (play basketball/chess)、月份 (in October)、三餐四季 (in autumn)、五颜六色 (in white)、一周七天 (on Thursday)、by+交通 (by bus)、头衔身份 (Chairman Xi)、学科语言 (history, math, English)",
+          "door": 41,
+          "notes": "6AU1讲义·语法复习"
+        },
+        {
+          "id": "u01-54",
+          "no": 54,
+          "type": "phrase",
+          "text": "代词的分类",
+          "phonetic": "",
+          "pos": "代词",
+          "meaning": "人称代词、物主代词、反身代词、指示代词 this/that/these/those、疑问代词 who/whose/whom、不定代词 some/any/every/no/many、相互代词 each other/one another",
+          "door": 42,
+          "notes": "6AU1讲义·语法复习"
+        },
+        {
+          "id": "u01-55",
+          "no": 55,
+          "type": "phrase",
+          "text": "第一人称变化表",
+          "phonetic": "",
+          "pos": "代词",
+          "meaning": "单数：主格 I、宾格 me、形容词性 my、名词性 mine、反身 myself；复数：we、us、our、ours、ourselves",
+          "door": 42,
+          "notes": "6AU1讲义·语法复习"
+        },
+        {
+          "id": "u01-56",
+          "no": 56,
+          "type": "phrase",
+          "text": "第二人称变化表",
+          "phonetic": "",
+          "pos": "代词",
+          "meaning": "单数：you、you、your、yours、yourself；复数：you、you、your、yours、yourselves",
+          "door": 42,
+          "notes": "6AU1讲义·语法复习"
+        },
+        {
+          "id": "u01-57",
+          "no": 57,
+          "type": "phrase",
+          "text": "第三人称变化表",
+          "phonetic": "",
+          "pos": "代词",
+          "meaning": "he/him/his/his/himself；she/her/her/hers/herself；it/it/its/its/itself；复数 they/them/their/theirs/themselves",
+          "door": 42,
+          "notes": "6AU1讲义·语法复习"
+        },
+        {
+          "id": "u01-58",
+          "no": 58,
+          "type": "phrase",
+          "text": "情态动词的特征",
+          "phonetic": "",
+          "pos": "情态动词",
+          "meaning": "① 不表示正在发生或已经发生的事情，只表示期待或估计某事的发生 ② 后面必须加动词原形 ③ 没有人称、数的变化（三单不加 -s）④ 没有非谓语形式（无不定式、分词）",
+          "door": 42,
+          "notes": "6AU1讲义·语法复习"
+        },
+        {
+          "id": "u01-59",
+          "no": 59,
+          "type": "phrase",
+          "text": "常见情态动词",
+          "phonetic": "",
+          "pos": "情态动词",
+          "meaning": "can (could)、may (might)、must、shall (should)、will (would)、dare、need；have to、had better、ought to、be able to 也当作情态动词使用",
+          "door": 42,
+          "notes": "6AU1讲义·语法复习"
+        },
+        {
+          "id": "u01-60",
+          "no": 60,
+          "type": "phrase",
+          "text": "can 的用法",
+          "phonetic": "",
+          "pos": "情态动词",
+          "meaning": "① 表现在能力“能，会”② 表请求、允许：Can ...? — Yes, ... can. / No, ... can't. / I'm afraid not. ③ 表推测（多用于否定句、疑问句）：cannot = 不可能；can't 和 mustn't 一样可表示“不准，不允许”",
+          "door": 42,
+          "notes": "6AU1讲义·语法复习"
+        },
+        {
+          "id": "u01-61",
+          "no": 61,
+          "type": "phrase",
+          "text": "could 的用法",
+          "phonetic": "",
+          "pos": "情态动词",
+          "meaning": "① 表过去的能力（can 的过去式）② 委婉客气地提出请求（不表过去时态）：Could ...? — Yes, ... can. / No, ... can't.（回答用 can 不用 could）",
+          "door": 42,
+          "notes": "6AU1讲义·语法复习"
+        },
+        {
+          "id": "u01-62",
+          "no": 62,
+          "type": "phrase",
+          "text": "随堂练：can't",
+          "phonetic": "",
+          "pos": "情态动词",
+          "meaning": "Millie is very busy writing a novel these days, so she ___ watch the game on TV.（A. must B. may C. can't D. needn't）→ 选 C：忙着写小说，所以“不能”看球赛",
+          "door": 42,
+          "notes": "6AU1讲义·语法复习"
         }
       ]
     },
     {
       "unitId": "u02-family-ties",
-      "title": "U2 Family ties 词汇讲义",
+      "title": "U2 Family ties 词汇讲义＋教材单词表",
       "sourceImages": [
         "assets/handouts/2026-08-22_0001.JPG",
         "assets/handouts/2026-08-22_0002.JPG",
         "assets/handouts/2026-08-22_0003.JPG",
         "assets/handouts/2026-08-22_0004.JPG",
         "assets/handouts/2026-08-22_0005.JPG",
-        "assets/handouts/2026-08-22_0006.JPG"
+        "assets/handouts/2026-08-22_0006.JPG",
+        "assets/handouts/6A英语教材单词表.pdf"
       ],
       "pageMap": {},
       "missingPages": "",
@@ -7387,12 +8014,100 @@
               "meaning": "高兴的"
             }
           ]
+        },
+        {
+          "id": "u02-40",
+          "no": 40,
+          "type": "word",
+          "text": "relative",
+          "phonetic": "/ˈrelətɪv/",
+          "pos": "n.",
+          "meaning": "亲戚；亲属",
+          "door": 21,
+          "notes": "教材单词表 p.28"
+        },
+        {
+          "id": "u02-41",
+          "no": 41,
+          "type": "phrase",
+          "text": "only child",
+          "phonetic": "",
+          "pos": "短语",
+          "meaning": "独生子（或女）",
+          "door": 21,
+          "notes": "教材单词表 p.28"
+        },
+        {
+          "id": "u02-42",
+          "no": 42,
+          "type": "word",
+          "text": "twin",
+          "phonetic": "/twɪn/",
+          "pos": "n.",
+          "meaning": "双胞胎之一",
+          "door": 21,
+          "notes": "教材单词表 p.28"
+        },
+        {
+          "id": "u02-43",
+          "no": 43,
+          "type": "word",
+          "text": "husband",
+          "phonetic": "/ˈhʌzbənd/",
+          "pos": "n.",
+          "meaning": "丈夫",
+          "door": 21,
+          "notes": "教材单词表 p.28"
+        },
+        {
+          "id": "u02-44",
+          "no": 44,
+          "type": "word",
+          "text": "son",
+          "phonetic": "/sʌn/",
+          "pos": "n.",
+          "meaning": "儿子",
+          "door": 21,
+          "notes": "教材单词表 p.28"
+        },
+        {
+          "id": "u02-45",
+          "no": 45,
+          "type": "word",
+          "text": "daughter",
+          "phonetic": "/ˈdɔːtə(r)/",
+          "pos": "n.",
+          "meaning": "女儿",
+          "door": 21,
+          "notes": "教材单词表 p.28"
+        },
+        {
+          "id": "u02-46",
+          "no": 46,
+          "type": "word",
+          "text": "balloon",
+          "phonetic": "/bəˈluːn/",
+          "pos": "n.",
+          "meaning": "气球",
+          "door": 24,
+          "notes": "教材单词表 p.36"
+        },
+        {
+          "id": "u02-47",
+          "no": 47,
+          "type": "phrase",
+          "text": "jump for joy",
+          "phonetic": "",
+          "pos": "短语",
+          "meaning": "欢呼雀跃",
+          "door": 24,
+          "notes": "教材单词表 p.37"
         }
       ]
     },
     {
       "unitId": "u03-food",
-      "title": "U3 Food 词汇讲义",
+      "title": "U3 Food 词汇讲义＋教材单词表",
       "sourceImages": [
         "assets/handouts/2026-08-22b_0001.JPG",
         "assets/handouts/2026-08-22b_0002.JPG",
@@ -7401,7 +8116,8 @@
         "assets/handouts/2026-08-22b_0005.JPG",
         "assets/handouts/2026-08-22b_0006.JPG",
         "assets/handouts/2026-08-22b_0007.JPG",
-        "assets/handouts/2026-08-22b_0008.JPG"
+        "assets/handouts/2026-08-22b_0008.JPG",
+        "assets/handouts/6A英语教材单词表.pdf"
       ],
       "pageMap": {},
       "missingPages": "",
@@ -8254,12 +8970,353 @@
               "zh": "医生告诉汤姆要戒烟节食。"
             }
           ]
+        },
+        {
+          "id": "u03-22",
+          "no": 22,
+          "type": "phrase",
+          "text": "plenty of",
+          "phonetic": "",
+          "pos": "短语",
+          "meaning": "大量；很多的",
+          "door": 25,
+          "notes": "教材单词表 p.43"
+        },
+        {
+          "id": "u03-23",
+          "no": 23,
+          "type": "phrase",
+          "text": "a few",
+          "phonetic": "",
+          "pos": "短语",
+          "meaning": "有些；几个（用于可数名词之前）",
+          "door": 25,
+          "notes": "教材单词表 p.44"
+        },
+        {
+          "id": "u03-24",
+          "no": 24,
+          "type": "word",
+          "text": "surprise",
+          "phonetic": "/səˈpraɪz/",
+          "pos": "n. & v.",
+          "meaning": "意想不到（或突然）的事；使惊奇；使诧异；使感到意外",
+          "door": 25,
+          "notes": "教材单词表 p.46"
+        },
+        {
+          "id": "u03-25",
+          "no": 25,
+          "type": "word",
+          "text": "blog",
+          "phonetic": "/blɒɡ/",
+          "pos": "n.",
+          "meaning": "博客；网志 (= weblog)",
+          "door": 25,
+          "notes": "教材单词表 p.46"
+        },
+        {
+          "id": "u03-26",
+          "no": 26,
+          "type": "word",
+          "text": "into",
+          "phonetic": "/ˈɪntuː; ˈɪntə/",
+          "pos": "prep.",
+          "meaning": "（表示状态的变化）；进入",
+          "door": 25,
+          "notes": "教材单词表 p.46"
+        },
+        {
+          "id": "u03-27",
+          "no": 27,
+          "type": "word",
+          "text": "ingredient",
+          "phonetic": "/ɪnˈɡriːdiənt/",
+          "pos": "n.",
+          "meaning": "（尤指烹饪）材料；成分",
+          "door": 26,
+          "notes": "教材单词表 p.44"
+        },
+        {
+          "id": "u03-28",
+          "no": 28,
+          "type": "word",
+          "text": "fridge",
+          "phonetic": "/frɪdʒ/",
+          "pos": "n.",
+          "meaning": "冰箱 (= refrigerator)",
+          "door": 26,
+          "notes": "教材单词表 p.45"
+        },
+        {
+          "id": "u03-29",
+          "no": 29,
+          "type": "word",
+          "text": "soy sauce",
+          "phonetic": "/ˌsɔɪ ˈsɔːs/",
+          "pos": "n.",
+          "meaning": "酱油 (= soya sauce)",
+          "door": 26,
+          "notes": "教材单词表 p.46"
+        },
+        {
+          "id": "u03-30",
+          "no": 30,
+          "type": "word",
+          "text": "side dish",
+          "phonetic": "",
+          "pos": "n.",
+          "meaning": "（随同主菜一起上的）配菜",
+          "door": 26,
+          "notes": "教材单词表 p.46"
+        },
+        {
+          "id": "u03-31",
+          "no": 31,
+          "type": "word",
+          "text": "recipe",
+          "phonetic": "/ˈresəpi/",
+          "pos": "n.",
+          "meaning": "食谱；烹饪法",
+          "door": 26,
+          "notes": "教材单词表 p.47"
+        },
+        {
+          "id": "u03-32",
+          "no": 32,
+          "type": "word",
+          "text": "chopsticks",
+          "phonetic": "/ˈtʃɒpstɪks/",
+          "pos": "n. (pl.)",
+          "meaning": "筷子",
+          "door": 26,
+          "notes": "教材单词表 p.50"
+        },
+        {
+          "id": "u03-33",
+          "no": 33,
+          "type": "word",
+          "text": "bowl",
+          "phonetic": "/bəʊl/",
+          "pos": "n.",
+          "meaning": "碗",
+          "door": 26,
+          "notes": "教材单词表 p.50"
+        },
+        {
+          "id": "u03-34",
+          "no": 34,
+          "type": "word",
+          "text": "beef",
+          "phonetic": "/biːf/",
+          "pos": "n.",
+          "meaning": "牛肉",
+          "door": 27,
+          "notes": "教材单词表 p.42"
+        },
+        {
+          "id": "u03-35",
+          "no": 35,
+          "type": "word",
+          "text": "tofu",
+          "phonetic": "/ˈtəʊfuː/",
+          "pos": "n.",
+          "meaning": "豆腐",
+          "door": 27,
+          "notes": "教材单词表 p.42"
+        },
+        {
+          "id": "u03-36",
+          "no": 36,
+          "type": "word",
+          "text": "pepper",
+          "phonetic": "/ˈpepə(r)/",
+          "pos": "n.",
+          "meaning": "甜椒",
+          "door": 27,
+          "notes": "教材单词表 p.42"
+        },
+        {
+          "id": "u03-37",
+          "no": 37,
+          "type": "word",
+          "text": "cabbage",
+          "phonetic": "/ˈkæbɪdʒ/",
+          "pos": "n.",
+          "meaning": "卷心菜",
+          "door": 27,
+          "notes": "教材单词表 p.42"
+        },
+        {
+          "id": "u03-38",
+          "no": 38,
+          "type": "word",
+          "text": "onion",
+          "phonetic": "/ˈʌnjən/",
+          "pos": "n.",
+          "meaning": "洋葱",
+          "door": 27,
+          "notes": "教材单词表 p.42"
+        },
+        {
+          "id": "u03-39",
+          "no": 39,
+          "type": "word",
+          "text": "carrot",
+          "phonetic": "/ˈkærət/",
+          "pos": "n.",
+          "meaning": "胡萝卜",
+          "door": 27,
+          "notes": "教材单词表 p.42"
+        },
+        {
+          "id": "u03-40",
+          "no": 40,
+          "type": "word",
+          "text": "watermelon",
+          "phonetic": "/ˈwɔːtəmelən/",
+          "pos": "n.",
+          "meaning": "西瓜",
+          "door": 27,
+          "notes": "教材单词表 p.42"
+        },
+        {
+          "id": "u03-41",
+          "no": 41,
+          "type": "word",
+          "text": "cucumber",
+          "phonetic": "/ˈkjuːkʌmbə(r)/",
+          "pos": "n.",
+          "meaning": "黄瓜",
+          "door": 27,
+          "notes": "教材单词表 p.42"
+        },
+        {
+          "id": "u03-42",
+          "no": 42,
+          "type": "word",
+          "text": "strawberry",
+          "phonetic": "/ˈstrɔːbəri/",
+          "pos": "n.",
+          "meaning": "草莓",
+          "door": 27,
+          "notes": "教材单词表 p.42"
+        },
+        {
+          "id": "u03-43",
+          "no": 43,
+          "type": "word",
+          "text": "pear",
+          "phonetic": "/peə(r)/",
+          "pos": "n.",
+          "meaning": "梨",
+          "door": 27,
+          "notes": "教材单词表 p.42"
+        },
+        {
+          "id": "u03-44",
+          "no": 44,
+          "type": "word",
+          "text": "yogurt",
+          "phonetic": "/ˈjɒɡət/",
+          "pos": "n.",
+          "meaning": "酸奶；一份酸奶",
+          "door": 27,
+          "notes": "教材单词表 p.42"
+        },
+        {
+          "id": "u03-45",
+          "no": 45,
+          "type": "word",
+          "text": "cheese",
+          "phonetic": "/tʃiːz/",
+          "pos": "n.",
+          "meaning": "干酪；奶酪",
+          "door": 27,
+          "notes": "教材单词表 p.42"
+        },
+        {
+          "id": "u03-46",
+          "no": 46,
+          "type": "word",
+          "text": "corn",
+          "phonetic": "/kɔːn/",
+          "pos": "n.",
+          "meaning": "（小麦等）谷物；玉米",
+          "door": 27,
+          "notes": "教材单词表 p.42"
+        },
+        {
+          "id": "u03-47",
+          "no": 47,
+          "type": "word",
+          "text": "butter",
+          "phonetic": "/ˈbʌtə(r)/",
+          "pos": "n.",
+          "meaning": "黄油",
+          "door": 27,
+          "notes": "教材单词表 p.42"
+        },
+        {
+          "id": "u03-48",
+          "no": 48,
+          "type": "word",
+          "text": "oil",
+          "phonetic": "/ɔɪl/",
+          "pos": "n.",
+          "meaning": "食用油",
+          "door": 27,
+          "notes": "教材单词表 p.42"
+        },
+        {
+          "id": "u03-49",
+          "no": 49,
+          "type": "word",
+          "text": "bean",
+          "phonetic": "/biːn/",
+          "pos": "n.",
+          "meaning": "豆；豆科植物",
+          "door": 27,
+          "notes": "教材单词表 p.42"
+        },
+        {
+          "id": "u03-50",
+          "no": 50,
+          "type": "word",
+          "text": "grain",
+          "phonetic": "/ɡreɪn/",
+          "pos": "n.",
+          "meaning": "谷物；谷粒",
+          "door": 27,
+          "notes": "教材单词表 p.42"
+        },
+        {
+          "id": "u03-51",
+          "no": 51,
+          "type": "word",
+          "text": "rainbow",
+          "phonetic": "/ˈreɪnbəʊ/",
+          "pos": "n.",
+          "meaning": "虹；彩虹",
+          "door": 27,
+          "notes": "教材单词表 p.43"
+        },
+        {
+          "id": "u03-52",
+          "no": 52,
+          "type": "word",
+          "text": "mutton",
+          "phonetic": "/ˈmʌtn/",
+          "pos": "n.",
+          "meaning": "羊肉",
+          "door": 27,
+          "notes": "教材单词表 p.46"
         }
       ]
     },
     {
       "unitId": "u04-sports",
-      "title": "U4 Sports 词汇讲义",
+      "title": "U4 Sports 词汇讲义＋教材单词表",
       "sourceImages": [
         "assets/handouts/2026-08-22c_0001.JPG",
         "assets/handouts/2026-08-22c_0002.JPG",
@@ -8270,7 +9327,8 @@
         "assets/handouts/2026-08-22c_0007.JPG",
         "assets/handouts/2026-08-22c_0008.JPG",
         "assets/handouts/2026-08-22c_0009.JPG",
-        "assets/handouts/2026-08-22c_0010.JPG"
+        "assets/handouts/2026-08-22c_0010.JPG",
+        "assets/handouts/6A英语教材单词表.pdf"
       ],
       "pageMap": {},
       "missingPages": "",
@@ -9380,12 +10438,342 @@
               "zh": "警方正在追踪一名罪犯。"
             }
           ]
+        },
+        {
+          "id": "u04-30",
+          "no": 30,
+          "type": "word",
+          "text": "gear",
+          "phonetic": "/ɡɪə(r)/",
+          "pos": "n.",
+          "meaning": "（某种活动的）设备，用具，衣服",
+          "door": 28,
+          "notes": "教材单词表 p.58"
+        },
+        {
+          "id": "u04-31",
+          "no": 31,
+          "type": "phrase",
+          "text": "warm up",
+          "phonetic": "",
+          "pos": "短语",
+          "meaning": "（为体育活动或表演）做适应性练习，做准备活动；热身",
+          "door": 28,
+          "notes": "教材单词表 p.58"
+        },
+        {
+          "id": "u04-32",
+          "no": 32,
+          "type": "word",
+          "text": "rope",
+          "phonetic": "/rəʊp/",
+          "pos": "n.",
+          "meaning": "绳",
+          "door": 28,
+          "notes": "教材单词表 p.56"
+        },
+        {
+          "id": "u04-33",
+          "no": 33,
+          "type": "word",
+          "text": "kick",
+          "phonetic": "/kɪk/",
+          "pos": "v.",
+          "meaning": "踢",
+          "door": 28,
+          "notes": "教材单词表 p.56"
+        },
+        {
+          "id": "u04-34",
+          "no": 34,
+          "type": "word",
+          "text": "rock",
+          "phonetic": "/rɒk/",
+          "pos": "n.",
+          "meaning": "岩石",
+          "door": 28,
+          "notes": "教材单词表 p.56"
+        },
+        {
+          "id": "u04-35",
+          "no": 35,
+          "type": "word",
+          "text": "rock climbing",
+          "phonetic": "",
+          "pos": "n.",
+          "meaning": "攀岩",
+          "door": 28,
+          "notes": "教材单词表 p.56"
+        },
+        {
+          "id": "u04-36",
+          "no": 36,
+          "type": "word",
+          "text": "kung fu",
+          "phonetic": "/ˌkʌŋ ˈfuː/",
+          "pos": "n.",
+          "meaning": "功夫（中国拳术）",
+          "door": 28,
+          "notes": "教材单词表 p.56"
+        },
+        {
+          "id": "u04-37",
+          "no": 37,
+          "type": "word",
+          "text": "active",
+          "phonetic": "/ˈæktɪv/",
+          "pos": "adj.",
+          "meaning": "活跃的；充满活力的；积极的",
+          "door": 28,
+          "notes": "教材单词表 p.56"
+        },
+        {
+          "id": "u04-38",
+          "no": 38,
+          "type": "word",
+          "text": "part",
+          "phonetic": "/pɑːt/",
+          "pos": "n.",
+          "meaning": "部分",
+          "door": 28,
+          "notes": "教材单词表 p.57"
+        },
+        {
+          "id": "u04-39",
+          "no": 39,
+          "type": "phrase",
+          "text": "take part in",
+          "phonetic": "",
+          "pos": "短语",
+          "meaning": "参加",
+          "door": 28,
+          "notes": "教材单词表 p.57"
+        },
+        {
+          "id": "u04-40",
+          "no": 40,
+          "type": "word",
+          "text": "pull",
+          "phonetic": "/pʊl/",
+          "pos": "v.",
+          "meaning": "拉；拔出",
+          "door": 28,
+          "notes": "教材单词表 p.57"
+        },
+        {
+          "id": "u04-41",
+          "no": 41,
+          "type": "word",
+          "text": "jog",
+          "phonetic": "/dʒɒɡ/",
+          "pos": "v.",
+          "meaning": "慢跑",
+          "door": 28,
+          "notes": "教材单词表 p.57"
+        },
+        {
+          "id": "u04-42",
+          "no": 42,
+          "type": "word",
+          "text": "ankle",
+          "phonetic": "/ˈæŋkl/",
+          "pos": "n.",
+          "meaning": "踝；踝关节",
+          "door": 29,
+          "notes": "教材单词表 p.58"
+        },
+        {
+          "id": "u04-43",
+          "no": 43,
+          "type": "word",
+          "text": "knee",
+          "phonetic": "/niː/",
+          "pos": "n.",
+          "meaning": "膝盖",
+          "door": 29,
+          "notes": "教材单词表 p.59"
+        },
+        {
+          "id": "u04-44",
+          "no": 44,
+          "type": "phrase",
+          "text": "What's the matter?",
+          "phonetic": "",
+          "pos": "短语",
+          "meaning": "怎么了？",
+          "door": 29,
+          "notes": "教材单词表 p.59"
+        },
+        {
+          "id": "u04-45",
+          "no": 45,
+          "type": "phrase",
+          "text": "How come?",
+          "phonetic": "",
+          "pos": "短语",
+          "meaning": "怎么回事？怎么发生的？",
+          "door": 29,
+          "notes": "教材单词表 p.59"
+        },
+        {
+          "id": "u04-46",
+          "no": 46,
+          "type": "word",
+          "text": "guess",
+          "phonetic": "/ɡes/",
+          "pos": "v.",
+          "meaning": "猜测；估计",
+          "door": 29,
+          "notes": "教材单词表 p.59"
+        },
+        {
+          "id": "u04-47",
+          "no": 47,
+          "type": "word",
+          "text": "ground",
+          "phonetic": "/ɡraʊnd/",
+          "pos": "n.",
+          "meaning": "（特定用途的）场地；地面",
+          "door": 30,
+          "notes": "教材单词表 p.56"
+        },
+        {
+          "id": "u04-48",
+          "no": 48,
+          "type": "word",
+          "text": "sports ground",
+          "phonetic": "",
+          "pos": "n.",
+          "meaning": "运动场；操场",
+          "door": 30,
+          "notes": "教材单词表 p.56"
+        },
+        {
+          "id": "u04-49",
+          "no": 49,
+          "type": "word",
+          "text": "gym",
+          "phonetic": "/dʒɪm/",
+          "pos": "n.",
+          "meaning": "健身房；体育馆 (= gymnasium)",
+          "door": 30,
+          "notes": "教材单词表 p.56"
+        },
+        {
+          "id": "u04-50",
+          "no": 50,
+          "type": "word",
+          "text": "team",
+          "phonetic": "/tiːm/",
+          "pos": "n.",
+          "meaning": "（游戏或运动的）队",
+          "door": 30,
+          "notes": "教材单词表 p.56"
+        },
+        {
+          "id": "u04-51",
+          "no": 51,
+          "type": "word",
+          "text": "baseball",
+          "phonetic": "/ˈbeɪsbɔːl/",
+          "pos": "n.",
+          "meaning": "棒球运动",
+          "door": 30,
+          "notes": "教材单词表 p.57"
+        },
+        {
+          "id": "u04-52",
+          "no": 52,
+          "type": "word",
+          "text": "volleyball",
+          "phonetic": "/ˈvɒlibɔːl/",
+          "pos": "n.",
+          "meaning": "排球；排球运动",
+          "door": 30,
+          "notes": "教材单词表 p.57"
+        },
+        {
+          "id": "u04-53",
+          "no": 53,
+          "type": "word",
+          "text": "badminton",
+          "phonetic": "/ˈbædmɪntən/",
+          "pos": "n.",
+          "meaning": "羽毛球运动",
+          "door": 30,
+          "notes": "教材单词表 p.57"
+        },
+        {
+          "id": "u04-54",
+          "no": 54,
+          "type": "word",
+          "text": "tennis",
+          "phonetic": "/ˈtenɪs/",
+          "pos": "n.",
+          "meaning": "网球",
+          "door": 30,
+          "notes": "教材单词表 p.57"
+        },
+        {
+          "id": "u04-55",
+          "no": 55,
+          "type": "word",
+          "text": "court",
+          "phonetic": "/kɔːt/",
+          "pos": "n.",
+          "meaning": "球场",
+          "door": 30,
+          "notes": "教材单词表 p.64"
+        },
+        {
+          "id": "u04-56",
+          "no": 56,
+          "type": "word",
+          "text": "basket",
+          "phonetic": "/ˈbɑːskɪt/",
+          "pos": "n.",
+          "meaning": "（篮球运动的）篮；筐",
+          "door": 30,
+          "notes": "教材单词表 p.64"
+        },
+        {
+          "id": "u04-57",
+          "no": 57,
+          "type": "word",
+          "text": "goalkeeper",
+          "phonetic": "/ˈɡəʊlkiːpə(r)/",
+          "pos": "n.",
+          "meaning": "守门员",
+          "door": 30,
+          "notes": "教材单词表 p.60"
+        },
+        {
+          "id": "u04-58",
+          "no": 58,
+          "type": "phrase",
+          "text": "for example",
+          "phonetic": "",
+          "pos": "短语",
+          "meaning": "例如",
+          "door": 31,
+          "notes": "教材单词表 p.58"
+        },
+        {
+          "id": "u04-59",
+          "no": 59,
+          "type": "word",
+          "text": "style",
+          "phonetic": "/staɪl/",
+          "pos": "n.",
+          "meaning": "风格；样式",
+          "door": 31,
+          "notes": "教材单词表 p.60"
         }
       ]
     },
     {
       "unitId": "u05-animals",
-      "title": "U5 Animals and us 词汇讲义",
+      "title": "U5 Animals and us 词汇讲义＋教材单词表",
       "sourceImages": [
         "assets/handouts/2026-08-22d_0001.JPG",
         "assets/handouts/2026-08-22d_0002.JPG",
@@ -9394,7 +10782,8 @@
         "assets/handouts/2026-08-22d_0005.JPG",
         "assets/handouts/2026-08-22d_0006.JPG",
         "assets/handouts/2026-08-22d_0007.JPG",
-        "assets/handouts/2026-08-22d_0008.JPG"
+        "assets/handouts/2026-08-22d_0008.JPG",
+        "assets/handouts/6A英语教材单词表.pdf"
       ],
       "pageMap": {},
       "missingPages": "",
@@ -10258,12 +11647,122 @@
             }
           ],
           "notes": "对路程提问：How far is it from your home to school? 从你家到学校有多远？"
+        },
+        {
+          "id": "u05-31",
+          "no": 31,
+          "type": "word",
+          "text": "herd",
+          "phonetic": "/hɜːd/",
+          "pos": "v.",
+          "meaning": "牧放（牲畜、兽群）",
+          "door": 32,
+          "notes": "教材单词表 p.70"
+        },
+        {
+          "id": "u05-32",
+          "no": 32,
+          "type": "word",
+          "text": "goat",
+          "phonetic": "/ɡəʊt/",
+          "pos": "n.",
+          "meaning": "山羊",
+          "door": 32,
+          "notes": "教材单词表 p.70"
+        },
+        {
+          "id": "u05-33",
+          "no": 33,
+          "type": "word",
+          "text": "calf",
+          "phonetic": "/kɑːf/",
+          "pos": "n.",
+          "meaning": "小牛；牛犊",
+          "door": 32,
+          "notes": "教材单词表 p.72"
+        },
+        {
+          "id": "u05-34",
+          "no": 34,
+          "type": "word",
+          "text": "hen",
+          "phonetic": "/hen/",
+          "pos": "n.",
+          "meaning": "母鸡",
+          "door": 32,
+          "notes": "教材单词表 p.73"
+        },
+        {
+          "id": "u05-35",
+          "no": 35,
+          "type": "word",
+          "text": "neck",
+          "phonetic": "/nek/",
+          "pos": "n.",
+          "meaning": "颈；脖子",
+          "door": 32,
+          "notes": "教材单词表 p.78"
+        },
+        {
+          "id": "u05-36",
+          "no": 36,
+          "type": "phrase",
+          "text": "take care of",
+          "phonetic": "",
+          "pos": "短语",
+          "meaning": "照顾；照料",
+          "door": 33,
+          "notes": "教材单词表 p.71"
+        },
+        {
+          "id": "u05-37",
+          "no": 37,
+          "type": "word",
+          "text": "snack",
+          "phonetic": "/snæk/",
+          "pos": "n.",
+          "meaning": "点心；小吃",
+          "door": 33,
+          "notes": "教材单词表 p.73"
+        },
+        {
+          "id": "u05-38",
+          "no": 38,
+          "type": "word",
+          "text": "cookie",
+          "phonetic": "/ˈkʊki/",
+          "pos": "n.",
+          "meaning": "曲奇饼",
+          "door": 33,
+          "notes": "教材单词表 p.74"
+        },
+        {
+          "id": "u05-39",
+          "no": 39,
+          "type": "word",
+          "text": "yard",
+          "phonetic": "/jɑːd/",
+          "pos": "n.",
+          "meaning": "（某种用途的）区域，场地",
+          "door": 33,
+          "notes": "教材单词表 p.74"
+        },
+        {
+          "id": "u05-40",
+          "no": 40,
+          "type": "word",
+          "text": "jacket",
+          "phonetic": "/ˈdʒækɪt/",
+          "pos": "n.",
+          "meaning": "夹克衫；短上衣",
+          "door": 34,
+          "notes": "教材单词表 p.73"
         }
       ]
     },
     {
       "unitId": "u06-travel",
-      "title": "U6 Travelling around China 词汇讲义",
+      "title": "U6 Travelling around China 词汇讲义＋教材单词表",
       "sourceImages": [
         "assets/handouts/2026-08-22e_0001.JPG",
         "assets/handouts/2026-08-22e_0002.JPG",
@@ -10276,7 +11775,8 @@
         "assets/handouts/2026-08-22e_0009.JPG",
         "assets/handouts/2026-08-22e_0010.JPG",
         "assets/handouts/2026-08-22e_0011.JPG",
-        "assets/handouts/2026-08-22e_0012.JPG"
+        "assets/handouts/2026-08-22e_0012.JPG",
+        "assets/handouts/6A英语教材单词表.pdf"
       ],
       "pageMap": {},
       "missingPages": "",
@@ -11384,6 +12884,138 @@
             }
           ],
           "notes": "look forward to + doing（to 是介词）：looking forward to enjoying myself = looking forward to having fun / having a good time"
+        },
+        {
+          "id": "u06-36",
+          "no": 36,
+          "type": "word",
+          "text": "forest",
+          "phonetic": "/ˈfɒrɪst/",
+          "pos": "n.",
+          "meaning": "森林；林区",
+          "door": 37,
+          "notes": "教材单词表 p.88"
+        },
+        {
+          "id": "u06-37",
+          "no": 37,
+          "type": "word",
+          "text": "mountain",
+          "phonetic": "/ˈmaʊntən/",
+          "pos": "n.",
+          "meaning": "山；高山",
+          "door": 37,
+          "notes": "教材单词表 p.88"
+        },
+        {
+          "id": "u06-38",
+          "no": 38,
+          "type": "word",
+          "text": "high-speed",
+          "phonetic": "/ˌhaɪ ˈspiːd/",
+          "pos": "adj.",
+          "meaning": "高速的",
+          "door": 39,
+          "notes": "教材单词表 p.87"
+        },
+        {
+          "id": "u06-39",
+          "no": 39,
+          "type": "phrase",
+          "text": "I'm afraid",
+          "phonetic": "",
+          "pos": "短语",
+          "meaning": "我怕；恐怕；很遗憾；对不起",
+          "door": 39,
+          "notes": "教材单词表 p.86"
+        },
+        {
+          "id": "u06-40",
+          "no": 40,
+          "type": "word",
+          "text": "historical",
+          "phonetic": "/hɪˈstɒrɪkl/",
+          "pos": "adj.",
+          "meaning": "（有关）历史的",
+          "door": 40,
+          "notes": "教材单词表 p.88"
+        },
+        {
+          "id": "u06-41",
+          "no": 41,
+          "type": "word",
+          "text": "such",
+          "phonetic": "/sʌtʃ/",
+          "pos": "det. & pron.",
+          "meaning": "这样的；那样的；类似的",
+          "door": 40,
+          "notes": "教材单词表 p.88"
+        },
+        {
+          "id": "u06-42",
+          "no": 42,
+          "type": "phrase",
+          "text": "such as",
+          "phonetic": "",
+          "pos": "短语",
+          "meaning": "例如；诸如",
+          "door": 40,
+          "notes": "教材单词表 p.88"
+        },
+        {
+          "id": "u06-43",
+          "no": 43,
+          "type": "word",
+          "text": "palace",
+          "phonetic": "/ˈpæləs/",
+          "pos": "n.",
+          "meaning": "宫殿",
+          "door": 40,
+          "notes": "教材单词表 p.88"
+        },
+        {
+          "id": "u06-44",
+          "no": 44,
+          "type": "word",
+          "text": "museum",
+          "phonetic": "/mjuˈziːəm/",
+          "pos": "n.",
+          "meaning": "博物馆",
+          "door": 40,
+          "notes": "教材单词表 p.88"
+        },
+        {
+          "id": "u06-45",
+          "no": 45,
+          "type": "word",
+          "text": "postcard",
+          "phonetic": "/ˈpəʊstkɑːd/",
+          "pos": "n.",
+          "meaning": "明信片",
+          "door": 40,
+          "notes": "教材单词表 p.92"
+        },
+        {
+          "id": "u06-46",
+          "no": 46,
+          "type": "word",
+          "text": "opera",
+          "phonetic": "/ˈɒprə/",
+          "pos": "n.",
+          "meaning": "歌剧",
+          "door": 40,
+          "notes": "教材单词表 p.92"
+        },
+        {
+          "id": "u06-47",
+          "no": 47,
+          "type": "word",
+          "text": "myself",
+          "phonetic": "/maɪˈself/",
+          "pos": "pron.",
+          "meaning": "（用于动作影响说话人或作者时）我自己",
+          "door": 40,
+          "notes": "教材单词表 p.93"
         }
       ]
     }

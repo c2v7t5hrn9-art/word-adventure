@@ -1,7 +1,10 @@
 {
   "unitId": "u01-school-life",
-  "title": "U1 School life 词汇讲义",
-  "sourceImages": [],
+  "title": "U1 School life 词汇讲义＋教材单词表",
+  "sourceImages": [
+    "assets/handouts/6AU1 School Life词汇讲义.pdf",
+    "assets/handouts/6A英语教材单词表.pdf"
+  ],
   "pageMap": {},
   "missingPages": "",
   "dictationExtra": [],
@@ -82,6 +85,21 @@
           "text": "alive",
           "pos": "adj.",
           "meaning": "活着的（不用于名词前）"
+        },
+        {
+          "text": "lively",
+          "pos": "adj.",
+          "meaning": "活泼的；生动的",
+          "phrases": [
+            {
+              "text": "a lively girl",
+              "meaning": "一个活泼的女孩"
+            },
+            {
+              "text": "a lively class",
+              "meaning": "生动的一堂课"
+            }
+          ]
         }
       ],
       "notes": "pl. lives；live adj. 现场直播的"
@@ -178,8 +196,19 @@
           "text": "Frenchman",
           "pos": "n.",
           "meaning": "法国人（复数 Frenchmen）"
+        },
+        {
+          "text": "Englishman",
+          "pos": "n.",
+          "meaning": "英国人（复数 Englishmen）"
+        },
+        {
+          "text": "German",
+          "pos": "n.",
+          "meaning": "德国人（复数 Germans）"
         }
-      ]
+      ],
+      "notes": "国人复数口诀：中日瑞士都不变，英法却要变，其余国人都加s"
     },
     {
       "id": "u01-05",
@@ -372,6 +401,11 @@
       "extensions": [
         {
           "text": "technological",
+          "pos": "adj.",
+          "meaning": "技术上的"
+        },
+        {
+          "text": "technical",
           "pos": "adj.",
           "meaning": "技术上的"
         }
@@ -712,6 +746,436 @@
       "pos": "adv. 在外面；prep. 在……外面",
       "meaning": "在外面；在……外面",
       "door": 20
+    },
+    {
+      "id": "u01-29",
+      "no": 29,
+      "type": "word",
+      "text": "ICT",
+      "phonetic": "",
+      "pos": "n.",
+      "meaning": "信息通信技术（课程）(= information and communications technology)",
+      "door": 18,
+      "notes": "教材单词表 p.14"
+    },
+    {
+      "id": "u01-30",
+      "no": 30,
+      "type": "word",
+      "text": "geography",
+      "phonetic": "/dʒiˈɒɡrəfi/",
+      "pos": "n.",
+      "meaning": "地理",
+      "door": 18,
+      "notes": "教材单词表 p.14"
+    },
+    {
+      "id": "u01-31",
+      "no": 31,
+      "type": "word",
+      "text": "join",
+      "phonetic": "/dʒɔɪn/",
+      "pos": "v.",
+      "meaning": "加入",
+      "door": 19,
+      "notes": "教材单词表 p.16",
+      "phrases": [
+        {
+          "text": "join a club",
+          "meaning": "加入俱乐部"
+        },
+        {
+          "text": "join the Party/army",
+          "meaning": "入党/参军"
+        },
+        {
+          "text": "join in + 活动 = take part in",
+          "meaning": "参加活动"
+        }
+      ],
+      "examples": [
+        {
+          "en": "Join in / Take part in indoor activities.",
+          "zh": "参加室内活动。"
+        }
+      ]
+    },
+    {
+      "id": "u01-32",
+      "no": 32,
+      "type": "phrase",
+      "text": "excuse me",
+      "phonetic": "",
+      "pos": "短语",
+      "meaning": "（因打扰别人或失礼表示歉意）对不起；劳驾",
+      "door": 18,
+      "notes": "教材单词表 p.17"
+    },
+    {
+      "id": "u01-33",
+      "no": 33,
+      "type": "word",
+      "text": "group",
+      "phonetic": "/ɡruːp/",
+      "pos": "n.",
+      "meaning": "组；群；批；类",
+      "door": 19,
+      "notes": "教材单词表 p.18"
+    },
+    {
+      "id": "u01-34",
+      "no": 34,
+      "type": "word",
+      "text": "most",
+      "phonetic": "/məʊst/",
+      "pos": "adv.",
+      "meaning": "最",
+      "door": 18,
+      "notes": "教材单词表 p.18"
+    },
+    {
+      "id": "u01-35",
+      "no": 35,
+      "type": "word",
+      "text": "p.m.",
+      "phonetic": "",
+      "pos": "abbr.",
+      "meaning": "下午 (AmE P.M.)",
+      "door": 18,
+      "notes": "教材单词表 p.18"
+    },
+    {
+      "id": "u01-36",
+      "no": 36,
+      "type": "word",
+      "text": "same",
+      "phonetic": "/seɪm/",
+      "pos": "adj.",
+      "meaning": "一样的",
+      "door": 18,
+      "notes": "教材单词表 p.18"
+    },
+    {
+      "id": "u01-37",
+      "no": 37,
+      "type": "word",
+      "text": "noon",
+      "phonetic": "/nuːn/",
+      "pos": "n.",
+      "meaning": "正午；中午",
+      "door": 18,
+      "notes": "教材单词表 p.18"
+    },
+    {
+      "id": "u01-38",
+      "no": 38,
+      "type": "word",
+      "text": "connect",
+      "phonetic": "/kəˈnekt/",
+      "pos": "v.",
+      "meaning": "连接",
+      "door": 20,
+      "notes": "教材单词表 p.18"
+    },
+    {
+      "id": "u01-39",
+      "no": 39,
+      "type": "word",
+      "text": "comment",
+      "phonetic": "/ˈkɒment/",
+      "pos": "n. & v.",
+      "meaning": "议论；评论；解释；表达意见",
+      "door": 20,
+      "notes": "教材单词表 p.18"
+    },
+    {
+      "id": "u01-40",
+      "no": 40,
+      "type": "phrase",
+      "text": "48 个音标",
+      "phonetic": "",
+      "pos": "音标",
+      "meaning": "英语共 48 个音标：元音 20 个（7 短元音 + 5 长元音 + 8 双元音），辅音 28 个",
+      "door": 41,
+      "notes": "6AU1讲义·语法复习"
+    },
+    {
+      "id": "u01-41",
+      "no": 41,
+      "type": "phrase",
+      "text": "7 个短元音",
+      "phonetic": "",
+      "pos": "音标",
+      "meaning": "/ɪ/ /e/ /æ/ /ɒ/ /ʊ/ /ʌ/ /ə/",
+      "door": 41,
+      "notes": "6AU1讲义·语法复习"
+    },
+    {
+      "id": "u01-42",
+      "no": 42,
+      "type": "phrase",
+      "text": "5 个长元音",
+      "phonetic": "",
+      "pos": "音标",
+      "meaning": "/iː/ /ɑː/ /ɔː/ /uː/ /ɜː/",
+      "door": 41,
+      "notes": "6AU1讲义·语法复习"
+    },
+    {
+      "id": "u01-43",
+      "no": 43,
+      "type": "phrase",
+      "text": "8 个双元音",
+      "phonetic": "",
+      "pos": "音标",
+      "meaning": "/eɪ/ /aɪ/ /ɔɪ/ /əʊ/ /aʊ/ /ɪə/ /eə/ /ʊə/",
+      "door": 41,
+      "notes": "6AU1讲义·语法复习"
+    },
+    {
+      "id": "u01-44",
+      "no": 44,
+      "type": "phrase",
+      "text": "28 个辅音",
+      "phonetic": "",
+      "pos": "音标",
+      "meaning": "10 清辅音 /p/ /t/ /k/ /f/ /s/ /ʃ/ /θ/ /ts/ /tʃ/ /tr/；10 浊辅音 /b/ /d/ /g/ /v/ /z/ /ʒ/ /ð/ /dz/ /dʒ/ /dr/；3 鼻辅音 /m/ /n/ /ŋ/；5 其他 /w/ /j/ /r/ /h/ /l/",
+      "door": 41,
+      "notes": "6AU1讲义·语法复习"
+    },
+    {
+      "id": "u01-45",
+      "no": 45,
+      "type": "phrase",
+      "text": "10 大词性",
+      "phonetic": "",
+      "pos": "词性",
+      "meaning": "名词 n.、代词 pron.、冠词 art.、形容词 adj.、数词 num.、动词 v.、副词 adv.、介词 prep.、连词 conj.、感叹词 int.",
+      "door": 41,
+      "notes": "6AU1讲义·语法复习",
+      "examples": [
+        {
+          "en": "Oh, I really love yummy apples because one apple a day keeps the doctors away.",
+          "zh": "噢，我真喜欢美味的苹果，因为一天一苹果，医生远离我。（一句含多词性）"
+        }
+      ]
+    },
+    {
+      "id": "u01-46",
+      "no": 46,
+      "type": "phrase",
+      "text": "名词的分类",
+      "phonetic": "",
+      "pos": "名词",
+      "meaning": "分为专有名词 (proper noun) 和普通名词 (common noun)；普通名词又分为可数名词 (C) 和不可数名词 (U)",
+      "door": 41,
+      "notes": "6AU1讲义·语法复习"
+    },
+    {
+      "id": "u01-47",
+      "no": 47,
+      "type": "phrase",
+      "text": "复数规则① 一般加 -s",
+      "phonetic": "",
+      "pos": "名词",
+      "meaning": "可数名词复数一般直接加 -s",
+      "door": 41,
+      "notes": "6AU1讲义·语法复习",
+      "examples": [
+        {
+          "en": "photo → photos",
+          "zh": "照片（-o 结尾无生命，加 -s）"
+        }
+      ]
+    },
+    {
+      "id": "u01-48",
+      "no": 48,
+      "type": "phrase",
+      "text": "复数规则② 加 -es",
+      "phonetic": "",
+      "pos": "名词",
+      "meaning": "以 -s / -x / -sh / -ch 结尾加 -es；部分 -o 结尾（有生命）也加 -es",
+      "door": 41,
+      "notes": "6AU1讲义·语法复习",
+      "examples": [
+        {
+          "en": "bus → buses, fox → foxes, wish → wishes, watch → watches, potato → potatoes",
+          "zh": "公交车 / 狐狸 / 祝愿 / 手表 / 土豆"
+        }
+      ]
+    },
+    {
+      "id": "u01-49",
+      "no": 49,
+      "type": "phrase",
+      "text": "复数规则③ 变 y、变 f",
+      "phonetic": "",
+      "pos": "名词",
+      "meaning": "辅音字母 + y 结尾：变 y 为 i 加 -es；以 -f / -fe 结尾：变 f 为 v 加 -es",
+      "door": 41,
+      "notes": "6AU1讲义·语法复习",
+      "examples": [
+        {
+          "en": "baby → babies; life → lives, leaf → leaves",
+          "zh": "婴儿；生命 / 树叶"
+        }
+      ]
+    },
+    {
+      "id": "u01-50",
+      "no": 50,
+      "type": "phrase",
+      "text": "冠词的分类",
+      "phonetic": "",
+      "pos": "冠词",
+      "meaning": "定冠词 the（特指）/ 不定冠词 a, an（一个不特指）/ 不用冠词又叫零冠词",
+      "door": 41,
+      "notes": "6AU1讲义·语法复习"
+    },
+    {
+      "id": "u01-51",
+      "no": 51,
+      "type": "phrase",
+      "text": "a 还是 an",
+      "phonetic": "",
+      "pos": "冠词",
+      "meaning": "看开头音素不看字母：a 用在辅音音素前，an 用在元音音素前",
+      "door": 41,
+      "notes": "6AU1讲义·语法复习",
+      "examples": [
+        {
+          "en": "a useful book; an hour",
+          "zh": "useful 开头音素 /j/ 是辅音用 a；hour 的 h 不发音、开头音素 /aʊ/ 是元音用 an"
+        }
+      ]
+    },
+    {
+      "id": "u01-52",
+      "no": 52,
+      "type": "phrase",
+      "text": "the 的用法",
+      "phonetic": "",
+      "pos": "冠词",
+      "meaning": "① 上文已提及 ② 双方皆熟悉 ③ 世界独一无二 ④ 序数词、最高级前 ⑤ 乐器前",
+      "door": 41,
+      "notes": "6AU1讲义·语法复习",
+      "examples": [
+        {
+          "en": "I have a dog. The dog is cute. / Open the door, please. / the sun, the moon / the first, the best / play the piano",
+          "zh": "我有一只狗，这只狗很可爱。/ 请开门。/ 太阳、月亮 / 第一、最好 / 弹钢琴"
+        }
+      ]
+    },
+    {
+      "id": "u01-53",
+      "no": 53,
+      "type": "phrase",
+      "text": "零冠词口诀",
+      "phonetic": "",
+      "pos": "冠词",
+      "meaning": "球类棋类 (play basketball/chess)、月份 (in October)、三餐四季 (in autumn)、五颜六色 (in white)、一周七天 (on Thursday)、by+交通 (by bus)、头衔身份 (Chairman Xi)、学科语言 (history, math, English)",
+      "door": 41,
+      "notes": "6AU1讲义·语法复习"
+    },
+    {
+      "id": "u01-54",
+      "no": 54,
+      "type": "phrase",
+      "text": "代词的分类",
+      "phonetic": "",
+      "pos": "代词",
+      "meaning": "人称代词、物主代词、反身代词、指示代词 this/that/these/those、疑问代词 who/whose/whom、不定代词 some/any/every/no/many、相互代词 each other/one another",
+      "door": 42,
+      "notes": "6AU1讲义·语法复习"
+    },
+    {
+      "id": "u01-55",
+      "no": 55,
+      "type": "phrase",
+      "text": "第一人称变化表",
+      "phonetic": "",
+      "pos": "代词",
+      "meaning": "单数：主格 I、宾格 me、形容词性 my、名词性 mine、反身 myself；复数：we、us、our、ours、ourselves",
+      "door": 42,
+      "notes": "6AU1讲义·语法复习"
+    },
+    {
+      "id": "u01-56",
+      "no": 56,
+      "type": "phrase",
+      "text": "第二人称变化表",
+      "phonetic": "",
+      "pos": "代词",
+      "meaning": "单数：you、you、your、yours、yourself；复数：you、you、your、yours、yourselves",
+      "door": 42,
+      "notes": "6AU1讲义·语法复习"
+    },
+    {
+      "id": "u01-57",
+      "no": 57,
+      "type": "phrase",
+      "text": "第三人称变化表",
+      "phonetic": "",
+      "pos": "代词",
+      "meaning": "he/him/his/his/himself；she/her/her/hers/herself；it/it/its/its/itself；复数 they/them/their/theirs/themselves",
+      "door": 42,
+      "notes": "6AU1讲义·语法复习"
+    },
+    {
+      "id": "u01-58",
+      "no": 58,
+      "type": "phrase",
+      "text": "情态动词的特征",
+      "phonetic": "",
+      "pos": "情态动词",
+      "meaning": "① 不表示正在发生或已经发生的事情，只表示期待或估计某事的发生 ② 后面必须加动词原形 ③ 没有人称、数的变化（三单不加 -s）④ 没有非谓语形式（无不定式、分词）",
+      "door": 42,
+      "notes": "6AU1讲义·语法复习"
+    },
+    {
+      "id": "u01-59",
+      "no": 59,
+      "type": "phrase",
+      "text": "常见情态动词",
+      "phonetic": "",
+      "pos": "情态动词",
+      "meaning": "can (could)、may (might)、must、shall (should)、will (would)、dare、need；have to、had better、ought to、be able to 也当作情态动词使用",
+      "door": 42,
+      "notes": "6AU1讲义·语法复习"
+    },
+    {
+      "id": "u01-60",
+      "no": 60,
+      "type": "phrase",
+      "text": "can 的用法",
+      "phonetic": "",
+      "pos": "情态动词",
+      "meaning": "① 表现在能力“能，会”② 表请求、允许：Can ...? — Yes, ... can. / No, ... can't. / I'm afraid not. ③ 表推测（多用于否定句、疑问句）：cannot = 不可能；can't 和 mustn't 一样可表示“不准，不允许”",
+      "door": 42,
+      "notes": "6AU1讲义·语法复习"
+    },
+    {
+      "id": "u01-61",
+      "no": 61,
+      "type": "phrase",
+      "text": "could 的用法",
+      "phonetic": "",
+      "pos": "情态动词",
+      "meaning": "① 表过去的能力（can 的过去式）② 委婉客气地提出请求（不表过去时态）：Could ...? — Yes, ... can. / No, ... can't.（回答用 can 不用 could）",
+      "door": 42,
+      "notes": "6AU1讲义·语法复习"
+    },
+    {
+      "id": "u01-62",
+      "no": 62,
+      "type": "phrase",
+      "text": "随堂练：can't",
+      "phonetic": "",
+      "pos": "情态动词",
+      "meaning": "Millie is very busy writing a novel these days, so she ___ watch the game on TV.（A. must B. may C. can't D. needn't）→ 选 C：忙着写小说，所以“不能”看球赛",
+      "door": 42,
+      "notes": "6AU1讲义·语法复习"
     }
   ]
 }

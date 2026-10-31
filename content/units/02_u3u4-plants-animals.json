@@ -68,6 +68,104 @@
       "phonetic": "/ˈæmətə(r)/",
       "pos": "adj./n.",
       "meaning": "业余的；业余爱好者（注意：不是邻居）"
+    },
+    {
+      "text": "tomato",
+      "phonetic": "/təˈmɑːtəʊ/",
+      "pos": "n.",
+      "meaning": "番茄；西红柿",
+      "type": "word"
+    },
+    {
+      "text": "a sunny day",
+      "phonetic": "/ə ˈsʌni deɪ/",
+      "pos": "phrase",
+      "meaning": "晴朗的一天",
+      "type": "phrase"
+    },
+    {
+      "text": "look for",
+      "phonetic": "/lʊk fɔː(r)/",
+      "pos": "phrase",
+      "meaning": "寻找",
+      "type": "phrase"
+    },
+    {
+      "text": "botanical garden",
+      "phonetic": "/bəˈtænɪkl ˈɡɑːdn/",
+      "pos": "phrase",
+      "meaning": "植物园",
+      "type": "phrase"
+    },
+    {
+      "text": "habit",
+      "phonetic": "/ˈhæbɪt/",
+      "pos": "n.",
+      "meaning": "习惯",
+      "type": "word"
+    },
+    {
+      "text": "flamingo",
+      "phonetic": "/fləˈmɪŋɡəʊ/",
+      "pos": "n.",
+      "meaning": "火烈鸟",
+      "type": "word"
+    },
+    {
+      "text": "injection",
+      "phonetic": "/ɪnˈdʒekʃn/",
+      "pos": "n.",
+      "meaning": "注射；打针",
+      "type": "word"
+    },
+    {
+      "text": "birth",
+      "phonetic": "/bɜːθ/",
+      "pos": "n.",
+      "meaning": "出生；诞生",
+      "type": "word"
+    },
+    {
+      "text": "minute",
+      "phonetic": "/ˈmɪnɪt/",
+      "pos": "n.",
+      "meaning": "分钟",
+      "type": "word"
+    },
+    {
+      "text": "a short film",
+      "phonetic": "/ə ʃɔːt fɪlm/",
+      "pos": "phrase",
+      "meaning": "一部短片",
+      "type": "phrase"
+    },
+    {
+      "text": "try to",
+      "phonetic": "/traɪ tə/",
+      "pos": "phrase",
+      "meaning": "尝试；设法",
+      "type": "phrase"
+    },
+    {
+      "text": "a panda cub",
+      "phonetic": "/ə ˈpændə kʌb/",
+      "pos": "phrase",
+      "meaning": "一只熊猫幼崽",
+      "type": "phrase"
+    },
+    {
+      "text": "a little bit of white hair",
+      "phonetic": "/ə ˈlɪtl bɪt əv waɪt heə(r)/",
+      "pos": "phrase",
+      "meaning": "一点点白色的毛",
+      "type": "phrase"
+    },
+    {
+      "text": "I'd like to join the Safari Park Kids Club.",
+      "phonetic": "/aɪd laɪk tə dʒɔɪn ðə səˈfɑːri pɑːk kɪdz klʌb/",
+      "pos": "sentence",
+      "meaning": "我想加入野生动物园儿童俱乐部。",
+      "type": "sentence"
     }
   ],
   "entries": [

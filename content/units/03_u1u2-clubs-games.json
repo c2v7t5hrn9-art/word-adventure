@@ -26,6 +26,50 @@
       "answer": "（句子在照片边缘被裁切，待补全）"
     }
   ],
+  "dictationExtra": [
+    {
+      "text": "excited",
+      "phonetic": "/ɪkˈsaɪtɪd/",
+      "pos": "adj.",
+      "meaning": "感到兴奋的",
+      "type": "word"
+    },
+    {
+      "text": "strength",
+      "phonetic": "/streŋθ/",
+      "pos": "n.",
+      "meaning": "力量；力气",
+      "type": "word"
+    },
+    {
+      "text": "favourite",
+      "phonetic": "/ˈfeɪvərɪt/",
+      "pos": "adj.",
+      "meaning": "最喜欢的",
+      "type": "word"
+    },
+    {
+      "text": "come to life",
+      "phonetic": "/kʌm tə laɪf/",
+      "pos": "phrase",
+      "meaning": "苏醒；变得生动",
+      "type": "phrase"
+    },
+    {
+      "text": "as fast as the wind",
+      "phonetic": "/əz fɑːst əz ðə wɪnd/",
+      "pos": "phrase",
+      "meaning": "像风一样快",
+      "type": "phrase"
+    },
+    {
+      "text": "interesting",
+      "phonetic": "/ˈɪntrəstɪŋ/",
+      "pos": "adj.",
+      "meaning": "有趣的",
+      "type": "word"
+    }
+  ],
   "entries": [
     {
       "id": "u12-01",

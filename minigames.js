@@ -58,24 +58,17 @@
       alert('词库单词太少，先去闯关解锁更多单词吧！');
       return;
     }
-    // 先抽题目池 16 张，其余用于手牌
-    const questionPool = shuffle(pool.slice(0, 16));
-    const remaining = pool.slice(16);
-
-    // 把剩余牌分成"关联牌"（能和题目池匹配）和"干扰牌"
-    const related = [], unrelated = [];
-    for (const card of remaining) {
-      let rel = false;
-      for (const q of questionPool) {
-        if (isWordMatch(card, q) || scoreMatch(card, q) >= 0.15) { rel = true; break; }
-      }
-      (rel ? related : unrelated).push(card);
-    }
-    // 手牌优先用关联牌，再用干扰牌补足，确保 playable 牌足够多
-    const allCards = shuffle(related.concat(unrelated)).slice(0, 54);
-    const playerHand = shuffle(allCards.slice(0, 18));
-    const ai1Hand   = shuffle(allCards.slice(18, 36));
-    const ai2Hand   = shuffle(allCards.slice(36, 54));
+    // 先抽题目池 16 张
+    const questionPool = pool.slice(0, 16);
+    // 为每道题配一张"同词牌"：打出与题目完全相同的单词必定可出，
+    // 否则手牌里永远抽不到题目词（题目池和手牌来自不同的词），只能"过"
+    const matchCards = shuffle(questionPool.map(q => ({ text: q.text, meaning: q.meaning, pos: q.pos })));
+    // 其余词作填充牌
+    const fillers = shuffle(pool.slice(16));
+    // 同词牌分配：玩家 10 张，两个 AI 各 3 张；再用填充牌补足手牌
+    const playerHand = shuffle(matchCards.slice(0, 10).concat(fillers.slice(0, 8)));
+    const ai1Hand   = shuffle(matchCards.slice(10, 13).concat(fillers.slice(8, 23)));
+    const ai2Hand   = shuffle(matchCards.slice(13, 16).concat(fillers.slice(23, 38)));
 
     landlord = {
       doorId, playerHand, ai1Hand, ai2Hand, questionPool,
@@ -644,10 +637,10 @@
     strike = {
       doorId, targets, obstacles,
       score: 0, bullets: 20,
-      timeLeft: 30,
+      timeLeft: 40,
       started: true,
       mouseX: 0, mouseY: 0,
-      lastSpawn: 0, spawnInterval: 1400,
+      lastSpawn: 0, spawnInterval: 1800,
       screenShake: 0,
       muzzleFlash: 0,
       hits: [], // 命中记录（用于画弹痕）
@@ -774,10 +767,10 @@
         // 从屏幕四周边缘生成
         const side = Math.floor(Math.random() * 4);
         const margin = 0.05;
-        if (side === 0) { t.x = margin + Math.random() * (1 - margin * 2); t.y = -0.1; t.vx = (Math.random() - 0.5) * 0.15; t.vy = 0.12 + Math.random() * 0.08; }
-        else if (side === 1) { t.x = 1.1; t.y = margin + Math.random() * (1 - margin * 2); t.vx = -(0.12 + Math.random() * 0.08); t.vy = (Math.random() - 0.5) * 0.15; }
-        else if (side === 2) { t.x = margin + Math.random() * (1 - margin * 2); t.y = 1.1; t.vx = (Math.random() - 0.5) * 0.15; t.vy = -(0.12 + Math.random() * 0.08); }
-        else { t.x = -0.1; t.y = margin + Math.random() * (1 - margin * 2); t.vx = 0.12 + Math.random() * 0.08; t.vy = (Math.random() - 0.5) * 0.15; }
+        if (side === 0) { t.x = margin + Math.random() * (1 - margin * 2); t.y = -0.1; t.vx = (Math.random() - 0.5) * 0.06; t.vy = 0.05 + Math.random() * 0.04; }
+        else if (side === 1) { t.x = 1.1; t.y = margin + Math.random() * (1 - margin * 2); t.vx = -(0.05 + Math.random() * 0.04); t.vy = (Math.random() - 0.5) * 0.06; }
+        else if (side === 2) { t.x = margin + Math.random() * (1 - margin * 2); t.y = 1.1; t.vx = (Math.random() - 0.5) * 0.06; t.vy = -(0.05 + Math.random() * 0.04); }
+        else { t.x = -0.1; t.y = margin + Math.random() * (1 - margin * 2); t.vx = 0.05 + Math.random() * 0.04; t.vy = (Math.random() - 0.5) * 0.06; }
       }
     }
 
@@ -787,10 +780,10 @@
       t.x += t.vx * dt;
       t.y += t.vy * dt;
       // z 随时间增加（向玩家靠近）
-      t.z = Math.min(1, t.z + dt * 0.08);
-      // 轻微向中心吸引
-      t.vx += (0.5 - t.x) * 0.008;
-      t.vy += (0.5 - t.y) * 0.008;
+      t.z = Math.min(1, t.z + dt * 0.05);
+      // 轻微向中心吸引（按 dt 缩放，帧率无关）
+      t.vx += (0.5 - t.x) * 0.25 * dt;
+      t.vy += (0.5 - t.y) * 0.25 * dt;
       // 飞出屏幕太远则标记为漏掉
       if (t.x < -0.3 || t.x > 1.3 || t.y < -0.3 || t.y > 1.3) {
         t.hit = true;

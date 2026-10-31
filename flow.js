@@ -89,7 +89,7 @@
     html += '<div class="today-task-title">💪 薄弱词特训 <span class="today-task-sub">默写常错的单词</span></div>';
     if (weakCount) {
       html += '<button class="today-chip today-chip-weak" data-act="weak">' +
-        '<span class="chip-emoji">🃏</span>' +
+        '<span class="chip-emoji">✍️</span>' +
         '<span class="chip-name">' + weakCount + ' 个单词等你攻克</span>' +
         '<span class="chip-isl">开始特训 ➜</span>' +
         '</button>';
@@ -99,6 +99,46 @@
     html += '</div>';
 
     html += '</div>'; /* today-tasks */
+
+    /* 校内默写加强 */
+    html += '<div class="today-free">';
+    html += '<div class="today-free-label">🏫 校内默写加强 <span class="today-task-sub">按单元整卷默写，每轮 10 词</span></div>';
+    html += '<div class="today-free-btns">';
+    var SCHOOL_UNITS = [
+      ['u01-school-life', 'U1 校园生活'],
+      ['u02-family-ties', 'U2 家庭纽带'],
+      ['u03-food', 'U3 美食厨房'],
+      ['u04-sports', 'U4 运动赛场']
+    ];
+    SCHOOL_UNITS.forEach(function (u) {
+      html += '<button class="today-free-btn" data-act="school" data-unit="' + u[0] + '">✍️ ' + u[1] + '</button>';
+    });
+    var schoolWrongN = WA.schoolMistakeCount ? WA.schoolMistakeCount() : 0;
+    html += '<button class="today-free-btn" data-act="school-weak">📒 校内错词特训' +
+      (schoolWrongN ? '（' + schoolWrongN + ' 词）' : '') + '</button>';
+    html += '</div>';
+    html += '<details class="school-plan">';
+    html += '<summary>📊 错因分析 · 7 天提高计划</summary>';
+    html += '<div class="school-plan-body">';
+    html += '<p class="school-plan-lead">根据 4 次校内默写整理的 <b>' + schoolWrongN + ' 个订正词条</b>，每天训练 8–10 分钟，先解决高频错误，再做混合验收。</p>';
+    html += '<div class="school-analysis">';
+    html += '<div class="school-analysis-row"><b>① 拼写细节不稳</b><span>easy、strength、tomato、flamingo、injection、minute、film</span><small>重点核对元音、字母顺序和双写字母，用“听读音 → 分音节 → 遮盖默写”练习。</small></div>';
+    html += '<div class="school-analysis-row"><b>② 词义与词性混淆</b><span>exciting / excited，find out / look for，born / birth，have a try / try to</span><small>先辨中文意思和词性，再记固定搭配，避免只背英文外形。</small></div>';
+    html += '<div class="school-analysis-row"><b>③ 短语与句子不完整</b><span>a sunny day、a short film、a panda cub 容易漏 a；长句注意 join 后不加 in，Kids 用复数。</span><small>短语要整块朗读、整块默写，写完后专项检查冠词、介词和单复数。</small></div>';
+    html += '</div>';
+    html += '<ol class="school-plan-days">';
+    html += '<li><b>第 1 天｜诊断</b> 校内错词特训 1 轮，圈出仍然出错的词。</li>';
+    html += '<li><b>第 2 天｜拼写</b> 练 7 个拼写易错词，每个词听音、分音节、默写各 1 次。</li>';
+    html += '<li><b>第 3 天｜词义词性</b> 练 4 组易混词，口头对比造句后再默写。</li>';
+    html += '<li><b>第 4 天｜短语</b> 重点检查 a、to、of，把所有易错短语整块默写 1 次。</li>';
+    html += '<li><b>第 5 天｜句子</b> 练 join / Kids 句和 a little bit of white hair，朗读 2 遍后遮盖默写。</li>';
+    html += '<li><b>第 6 天｜混合复习</b> 校内错词特训 2 轮，每轮结束后只重练错词。</li>';
+    html += '<li><b>第 7 天｜模拟验收</b> 最薄弱单元整卷 10 词＋校内错词特训 10 词。</li>';
+    html += '</ol>';
+    html += '<div class="school-plan-goal"><b>过关标准：</b>同一批错词连续 2 轮全对；第 7 天正确率达到 90%。未达标的词保留到下周，不追求一次刷完全部。</div>';
+    html += '<button class="today-free-btn school-plan-start" data-act="school-weak">✍️ 开始今天：校内错词特训</button>';
+    html += '</div></details>';
+    html += '</div>';
 
     /* 趣味挑战区 */
     html += '<div class="today-free">';
@@ -135,7 +175,9 @@
       var door = doorId && WA.DOOR_BY_ID[doorId];
       if (act === 'review' && door) go(function () { WA.startQuiz(door); });
       else if (act === 'new' && door) go(function () { WA.startQuiz(door); });
-      else if (act === 'weak') go(function () { WA.startFlashcard(); });
+      else if (act === 'weak') go(function () { WA.startWeakDictation && WA.startWeakDictation(); });
+      else if (act === 'school') go(function () { WA.startSchoolDictation && WA.startSchoolDictation(btn.dataset.unit); });
+      else if (act === 'school-weak') go(function () { WA.startSchoolMistakes && WA.startSchoolMistakes(); });
       else if (act === 'flashcard') go(function () { WA.startFlashcard(); });
       else if (act === 'landlord') go(function () { WA.startLandlord && WA.startLandlord(); });
       else if (act === 'rush') go(function () { WA.startRush && WA.startRush(); });

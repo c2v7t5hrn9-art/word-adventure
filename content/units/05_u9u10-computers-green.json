@@ -5,6 +5,14 @@
     "The dictionary.docx"
   ],
   "unitNotes": "词汇讲义单元。收录U9和U10主词条+延伸词+短语搭配+例句+比较级语法。",
+  "dictationExtra": [
+    {
+      "text": "easy",
+      "phonetic": "/ˈiːzi/",
+      "pos": "adj.",
+      "meaning": "容易的（比较级 easier，最高级 easiest）"
+    }
+  ],
   "entries": [
     {
       "id": "u910-01",
