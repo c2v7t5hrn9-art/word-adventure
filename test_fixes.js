@@ -73,6 +73,7 @@ function check(name, ok, detail) {
 }
 
 load('data/words-data.js');
+load('data/grammar-exercises.js');
 load('game.js');
 load('minigames.js');
 load('flow.js');

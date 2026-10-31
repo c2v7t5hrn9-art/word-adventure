@@ -1569,12 +1569,14 @@
   function startSchoolDictation(unitId) {
     const unit = DATA.units.find((u) => u.unitId === unitId);
     if (!unit) return;
-    const poolAll = unit.entries.concat(unit.dictationExtra || []);
-    if (!poolAll.length) { say('这个单元还没有词条'); return; }
+    const poolAll = unit.entries.concat(unit.dictationExtra || []).filter((e) =>
+      !isGrammarEntry(e) && /[A-Za-z]/.test(e.text || '')
+    );
+    if (!poolAll.length) { say('这个单元还没有可默写的词条'); return; }
     dictation = {
       doorId: null, schoolMode: true,
       pool: shuffle(poolAll).slice(0, SCHOOL_DICTATION_ROUND),
-      level: save.settings.dictationDefaultLevel || 1,
+      level: 3,
       idx: 0, wrong: 0, wrongEntries: [],
       restart: () => startSchoolDictation(unitId)
     };
@@ -1614,7 +1616,7 @@
     dictation = {
       doorId: null, schoolMode: true,
       pool: shuffle(pool).slice(0, SCHOOL_DICTATION_ROUND),
-      level: save.settings.dictationDefaultLevel || 1,
+      level: 3,
       idx: 0, wrong: 0, wrongEntries: [],
       restart: startSchoolMistakes
     };
@@ -1628,13 +1630,24 @@
     return Object.keys(book).reduce((n, k) => n + (book[k] || []).length, 0);
   }
 
+  // 校内默写只保留中文提示：去掉含英文的括号说明，以及括号外残留的英文。
+  function dictationPrompt(e) {
+    if (!dictation.schoolMode) return e.meaning;
+    return String(e.meaning || '')
+      .replace(/[（(][^（）()]*[A-Za-z][^（）()]*[）)]/g, '')
+      .replace(/[A-Za-z]+(?:['’.-][A-Za-z]+)*/g, '')
+      .replace(/[（(]\s*[）)]/g, '')
+      .replace(/\s{2,}/g, ' ')
+      .trim();
+  }
+
   function renderDictation() {
     if (dictation.idx >= dictation.pool.length) return finishDictation();
     const e = dictation.pool[dictation.idx];
     dictation.current = e;
     $('dictation-level').textContent = 'L' + dictation.level + ' ' + DICTATION_LEVELS[dictation.level];
     $('dictation-progress').textContent = (dictation.idx + 1) + '/' + dictation.pool.length;
-    $('dictation-meaning').textContent = e.meaning;
+    $('dictation-meaning').textContent = dictationPrompt(e);
     $('dictation-input-area').innerHTML = '';
     $('dictation-feedback').textContent = '';
     $('dictation-feedback').className = 'dictation-feedback';
@@ -1823,7 +1836,7 @@
     const html =
       '<div class="dict-l3-top">' +
       '<button class="speak-btn" id="dict-speak">🔊 朗读</button>' +
-      '<span class="dict-l3-mean">' + esc(e.meaning) + '</span>' +
+      '<span class="dict-l3-mean">' + esc(dictationPrompt(e)) + '</span>' +
       '</div>' +
       '<input type="text" class="dict-input" id="dict-input" autocomplete="off" spellcheck="false">' +
       '<button class="btn-primary dict-submit" id="dict-submit">提交</button>';
@@ -2179,7 +2192,31 @@
     return shuffle([correct].concat(picked)).map((t) => ({ text: t, correct: t === correct }));
   }
 
+  function isGrammarEntry(e) {
+    return !!(e && ((e.notes && e.notes.indexOf('语法复习') >= 0) || e.pos === '比较级'));
+  }
+
+  function makeGrammarQuestion(e) {
+    const bank = window.GRAMMAR_EXERCISES || {};
+    const ex = bank[e.id];
+    // 语法条目绝不回退成“标题 ↔ 长释义”的普通词汇题。
+    if (!ex || !ex.options || ex.options.indexOf(ex.answer) < 0) return null;
+    return {
+      kind: 'grammar', typeLabel: '语法闯关：先看例句，再做同类题',
+      promptHTML:
+        '<div class="grammar-topic">' + esc(e.text) + '</div>' +
+        '<div class="grammar-example"><span>📖 例句</span>' + esc(ex.example) +
+        (ex.exampleZh ? '<small>' + esc(ex.exampleZh) + '</small>' : '') + '</div>' +
+        '<div class="grammar-question"><span>✏️ 练一练</span>' + esc(ex.question) +
+        (ex.questionZh ? '<small>' + esc(ex.questionZh) + '</small>' : '') + '</div>',
+      entryText: e.text, entryMeaning: e.meaning,
+      explanation: ex.explanation || '',
+      options: shuffle(ex.options.slice()).map((text) => ({ text: text, correct: text === ex.answer }))
+    };
+  }
+
   function makeQuestion(e, mode, pool) {
+    if (isGrammarEntry(e)) return makeGrammarQuestion(e);
     if (mode === 'zh2en') {
       return {
         kind: 'zh2en', typeLabel: '选出正确的英文',
@@ -2268,7 +2305,7 @@
     const qs = [];
     entries.forEach((e, i) => {
       const q = makeQuestion(e, modes[i % modes.length], pool) || makeQuestion(e, 'en2zh', pool);
-      qs.push(q);
+      if (q) qs.push(q);
     });
     // 词条少的门补足题量（换题型再出一轮）
     let guard = 0;
@@ -2358,12 +2395,22 @@
     if (timerRAF) cancelAnimationFrame(timerRAF);
     timerRAF = null;
   }
-  // 超时 = 答错处理：标出正确答案、插回队列、计 wrong，1.9 秒后自动下一题
+  function showGrammarExplanation(q) {
+    if (!q || q.kind !== 'grammar' || !q.explanation) return;
+    const note = document.createElement('div');
+    note.className = 'grammar-explanation';
+    note.textContent = '💡 ' + q.explanation;
+    $('q-prompt').appendChild(note);
+  }
+
+  // 超时 = 答错处理：标出正确答案、插回队列、计 wrong；语法题留出读解析的时间
   function onTimeout() {
     if (!quiz || quiz.locked) return;
     quiz.locked = true;
     quiz.wrong++;
-        if (quiz.current && quiz.current.entryText) { recordSpellStats(quiz.current.entryText, false); }
+    if (quiz.current && quiz.current.entryText && quiz.current.kind !== 'grammar') {
+      recordSpellStats(quiz.current.entryText, false);
+    }
     beep('wrong');
     quizSay(randPick(LINES.timeout));
     const box = $('q-options');
@@ -2371,9 +2418,10 @@
     Array.from(box.querySelectorAll('.opt-btn')).forEach((b) => {
       if (b.textContent === correctText) b.classList.add('opt-correct');
     });
+    showGrammarExplanation(quiz.current);
     const pos = Math.min(2, quiz.queue.length);
     quiz.queue.splice(pos, 0, quiz.current);
-    setTimeout(() => { quiz.locked = false; nextQuestion(); }, 1900);
+    setTimeout(() => { quiz.locked = false; nextQuestion(); }, quiz.current.kind === 'grammar' ? 3400 : 1900);
   }
 
   function onAnswer(q, opt, btn, box) {
@@ -2388,20 +2436,22 @@
       burst(btn);
       quizSay(randPick(LINES.correct));
       if (q.speak && !q.speakAuto) speak(q.speak);
+      showGrammarExplanation(q);
       renderDots();
-      setTimeout(() => { quiz.locked = false; nextQuestion(); }, 1050);
+      setTimeout(() => { quiz.locked = false; nextQuestion(); }, q.kind === 'grammar' ? 2200 : 1050);
     } else {
       btn.classList.add('opt-wrong');
       quiz.wrong++;
-      if (q.entryText) recordSpellStats(q.entryText, false);
+      if (q.entryText && q.kind !== 'grammar') recordSpellStats(q.entryText, false);
       beep('wrong');
       quizSay(randPick(LINES.wrong));
       const correctText = q.options.find((o) => o.correct).text;
       buttons.forEach((b) => { if (b.textContent === correctText) b.classList.add('opt-correct'); });
+      showGrammarExplanation(q);
       // 答错的题插回队列稍后重练
       const pos = Math.min(2, quiz.queue.length);
       quiz.queue.splice(pos, 0, q);
-      setTimeout(() => { quiz.locked = false; nextQuestion(); }, 1900);
+      setTimeout(() => { quiz.locked = false; nextQuestion(); }, q.kind === 'grammar' ? 3400 : 1900);
     }
   }
 
@@ -3613,6 +3663,8 @@
     doorDue: doorDue,
     islandUnlocked: islandUnlocked,
     entriesOfDoor: entriesOfDoor,
+    isGrammarEntry: isGrammarEntry,
+    buildQuestions: buildQuestions,
     todayStr: todayStr,
     startQuiz: startQuiz,
     startMatch: startMatch,

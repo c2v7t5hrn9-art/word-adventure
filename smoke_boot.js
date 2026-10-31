@@ -1,6 +1,7 @@
 /* 冒烟测试：用最小 DOM 桩按真实加载链路验证启动流程。
  * 真实链路（与 index.html 一致）：
- *   静态加载 words-data.js + sync.js → sync.js 探测 API（这里模拟纯静态托管返回 HTML 404）
+ *   静态加载 words-data.js + school-mistakes.js + grammar-exercises.js + sync.js
+ *   → sync.js 探测 API（这里模拟纯静态托管返回 HTML 404）
  *   → 进入仅本机模式 → 按序注入 game.js → minigames.js → flow.js
  * 断言：注入顺序正确、WA/WAFlow 桥接导出、岛屿渲染、HUD 更新、今日首页渲染。
  * SIMULATE_MISSING=a,b 可模拟页面缺失元素，验证启动不中断。失败时 exit 1。 */
@@ -115,7 +116,7 @@ vm.createContext(sandbox);
 
 async function main() {
   // 与 index.html 一致的静态脚本
-  for (const f of ['data/words-data.js', 'sync.js']) {
+  for (const f of ['data/words-data.js', 'data/school-mistakes.js', 'data/grammar-exercises.js', 'sync.js']) {
     vm.runInContext(fs.readFileSync(f, 'utf8'), sandbox, { filename: f });
     console.log('✓ 静态加载:', f);
   }

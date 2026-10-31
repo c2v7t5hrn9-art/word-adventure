@@ -74,6 +74,7 @@ function check(name, ok, detail) {
 
 load('data/words-data.js');
 load('data/school-mistakes.js');
+load('data/grammar-exercises.js');
 load('game.js');
 load('minigames.js');
 load('flow.js');
@@ -86,6 +87,27 @@ WA.startSchoolDictation('u01-school-life');
 let header = elements['dictation-door-name'].textContent;
 check('单元默写 header', header.indexOf('校内默写') >= 0 && header.indexOf('U1') >= 0, header);
 check('每轮 10 词', elements['dictation-progress'].textContent === '1/10', elements['dictation-progress'].textContent);
+check('校内整卷固定 L3 完整默写', elements['dictation-level'].textContent.indexOf('L3') === 0, elements['dictation-level'].textContent);
+check('校内整卷提示不含英文字母', !/[A-Za-z]/.test(elements['dictation-meaning'].textContent), elements['dictation-meaning'].textContent);
+
+/* 反复抽题：语法/音标题不会混入校内默写，且所有题目均保持 L3。 */
+let schoolPoolClean = true;
+for (let i = 0; i < 40; i++) {
+  WA.startSchoolDictation('u01-school-life');
+  const prompt = elements['dictation-meaning'].textContent;
+  if (elements['dictation-level'].textContent.indexOf('L3') !== 0 || /[A-Za-z]/.test(prompt) ||
+      /英语共 48 个音标|人称代词|情态动词/.test(prompt)) schoolPoolClean = false;
+}
+check('校内词池排除语法条目且无英文提示', schoolPoolClean);
+
+/* 单条目测试：I bought nothing 不能出现在提交前的可见文本中。 */
+sandbox.window.SCHOOL_MISTAKES = { 'U2（答案泄露测试）': ['I bought nothing'] };
+WA.startSchoolMistakes();
+const visibleBeforeAnswer = (elements['dictation-meaning'].textContent + ' ' +
+  elements['dictation-input-area'].innerHTML.replace(/<[^>]*>/g, ' ')).toLowerCase();
+check('校内错词固定 L3 完整默写', elements['dictation-level'].textContent.indexOf('L3') === 0);
+check('提交前不显示目标答案', visibleBeforeAnswer.indexOf('bought') < 0 && visibleBeforeAnswer.indexOf('nothing') < 0,
+  visibleBeforeAnswer.trim());
 
 /* ---------- 校内错词特训 ---------- */
 sandbox.window.SCHOOL_MISTAKES = { 'u01-school-life': ['life', 'break', 'history', '不存在的词xyz'] };

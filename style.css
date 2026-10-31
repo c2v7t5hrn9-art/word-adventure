@@ -432,6 +432,30 @@ button { font-family: inherit; cursor: pointer; border: none; }
 .q-prompt .phonetic { font-size: .55em; font-weight: 500; opacity: .85; margin-left: 12px; }
 .q-prompt.spell { letter-spacing: 6px; }
 .q-prompt .spell-hint { display: block; font-size: .5em; letter-spacing: 0; font-weight: 600; margin-top: 10px; opacity: .9; }
+/* 语法闯关：例句与同类题分区呈现，避免沿用超大单词字号 */
+.q-prompt .grammar-topic { font-size: 18px; margin-bottom: 10px; color: #fff1a8; }
+.q-prompt .grammar-example, .q-prompt .grammar-question {
+  display: block; padding: 12px 18px; margin-top: 10px; border-radius: 16px;
+  background: rgba(255,255,255,.94); color: #33475b; text-shadow: none;
+  font-size: clamp(20px, 2.6vw, 29px); font-weight: 750; line-height: 1.4;
+}
+.q-prompt .grammar-example > span, .q-prompt .grammar-question > span {
+  display: block; margin-bottom: 4px; color: #5a4fcf; font-size: 14px; font-weight: 800;
+}
+.q-prompt .grammar-example small, .q-prompt .grammar-question small {
+  display: block; margin-top: 5px; color: #66788a; font-size: 15px; font-weight: 500;
+}
+.q-prompt .grammar-explanation {
+  margin-top: 10px; padding: 10px 14px; border-radius: 12px;
+  background: #fff1a8; color: #5a4610; text-shadow: none;
+  font-size: 16px; font-weight: 650; line-height: 1.5;
+}
+@media (max-width: 600px) {
+  .q-prompt .grammar-topic { font-size: 15px; margin-bottom: 5px; }
+  .q-prompt .grammar-example, .q-prompt .grammar-question { padding: 9px 12px; margin-top: 7px; font-size: 19px; }
+  .q-prompt .grammar-example small, .q-prompt .grammar-question small { font-size: 13px; }
+  .q-prompt .grammar-explanation { font-size: 14px; }
+}
 .speak-btn {
   background: rgba(255,255,255,.92); color: #5a4fcf;
   font-size: 18px; font-weight: 700; padding: 10px 24px; border-radius: 999px;
