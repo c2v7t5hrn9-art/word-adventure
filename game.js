@@ -368,7 +368,7 @@
   function onAll(id, selector, ev, fn) {
     const root = $(id);
     if (!root) { console.error('[单词冒险岛] 绑定失败：页面缺少元素 #' + id); return; }
-    root.querySelectorAll(selector).forEach((el) => el.addEventListener(ev, fn));
+    root.querySelectorAll(selector).forEach((el) => el.addEventListener(ev, () => fn(el)));
   }
   function todayStr() {
     const d = new Date();
@@ -2342,6 +2342,7 @@
 
   function nextQuestion() {
     if (quiz.done >= quiz.total) return finishQuiz();
+    stopSpeaking();
     const q = quiz.queue.shift();
     quiz.current = q;
     renderQuestion(q);
@@ -2407,6 +2408,7 @@
   function onTimeout() {
     if (!quiz || quiz.locked) return;
     quiz.locked = true;
+    stopSpeaking();
     quiz.wrong++;
     if (quiz.current && quiz.current.entryText && quiz.current.kind !== 'grammar') {
       recordSpellStats(quiz.current.entryText, false);
@@ -2428,6 +2430,7 @@
     if (quiz.locked) return;
     quiz.locked = true;
     stopTimer(); // 答题锁定期间清除计时器，防重复触发
+    stopSpeaking();
     const buttons = Array.from(box.querySelectorAll('.opt-btn'));
     if (opt.correct) {
       btn.classList.add('opt-correct');
@@ -2502,9 +2505,12 @@
         }
       }
     } else {
-      msg = '这次答错了 ' + quiz.wrong + ' 次。下次复习：' +
+      // 首次通关的星星记录在该门最高评星中；复习奖励则累计到额外星星余额。
+      save.bonusStars = (save.bonusStars || 0) + stars;
+      msg = '本次复习奖励 +' + stars + ' ⭐！这次答错了 ' + quiz.wrong + ' 次。下次复习：' +
         save.doors[id].nextDue + '，记得回来哦～';
     }
+    updateHud();
     persist();
 
     // 碎片庆祝对话排入队列，回到地图后依次播放
@@ -2514,7 +2520,8 @@
     showScreen('result-screen');
     $('result-emoji').textContent = shardGained ? '💠' : '🎉';
     $('result-title').textContent = firstClear ? '闯关成功！' : '复习完成！';
-    $('result-stars').textContent = '⭐'.repeat(stars) + '☆'.repeat(3 - stars);
+    $('result-stars').textContent = '⭐'.repeat(stars) + '☆'.repeat(3 - stars) +
+      (firstClear ? '' : '　+' + stars + ' ⭐');
     $('result-msg').textContent = msg;
     $('btn-replay').classList.remove('hidden');
     beep('complete');
@@ -3175,6 +3182,7 @@
   let ttsGuard = 0;          // 兜底防重：每次 speak 递增，过期回调直接丢弃
   let ttsPending = null;     // 自动播放被浏览器拦截时，待下次手势补播的文本
   let ttsPendingAt = 0;
+  let speakRetryTimer = null; // 浏览器语音重建后的延迟重试，切题时必须取消
 
   function normSpeakText(text) {
     return String(text).replace(/…|\.{3}/g, ' ').replace(/\s+/g, ' ').trim();
@@ -3191,9 +3199,11 @@
   }
 
   function speak(text, force) {
-    if (!force && !save.settings.sound) return;
+    if (!force && !save.settings.sound) { stopSpeaking(); return; }
     const clean = normSpeakText(text);
     if (!clean) return;
+    // 新句播放前同时停止预合成音频、浏览器语音及所有旧回调，避免两题串播。
+    stopSpeaking();
     try {
       if (!ttsAudio) ttsAudio = new Audio();
       const a = ttsAudio;
@@ -3204,8 +3214,9 @@
       a.playbackRate = (Number(save.settings.rate) || 0.9) / 0.9; // 生成语速≈0.9
       const p = a.play();
       if (p && p.catch) p.catch((err) => {
+        if (guard !== ttsGuard) return; // 已切题/离开页面，旧 Promise 不再产生任何播放
         if (err && err.name === 'NotAllowedError') {
-          // 浏览器拦截自动播放（页面刚打开、尚无手势）：记住文本，下次点击补播
+          // 只保留当前句的补播；新句或切题会立即清掉它。
           ttsPending = clean;
           ttsPendingAt = Date.now();
         }
@@ -3247,7 +3258,9 @@
           speechSynthesis.cancel();
           const u2 = makeUtterance();
           currentUtterance = u2;
-          setTimeout(() => {
+          speakRetryTimer = setTimeout(() => {
+            speakRetryTimer = null;
+            if (currentUtterance !== u2) return; // 切题后旧重试不得再发声
             try { speechSynthesis.speak(u2); } catch (e) { /* 忽略 */ }
           }, 120);
         } catch (e) { /* 忽略 */ }
@@ -3274,9 +3287,13 @@
   // 停止一切待播/在播的朗读（离开场景时调用）
   function stopSpeaking() {
     ttsGuard++; // 使在途的音频兜底回调失效
+    ttsPending = null;
+    ttsPendingAt = 0;
+    currentUtterance = null;
     if (ttsAudio) { try { ttsAudio.pause(); } catch (e) { /* 忽略 */ } }
     if (speakTimer) { clearTimeout(speakTimer); speakTimer = null; }
     if (speakWatchdog) { clearTimeout(speakWatchdog); speakWatchdog = null; }
+    if (speakRetryTimer) { clearTimeout(speakRetryTimer); speakRetryTimer = null; }
     if (window.speechSynthesis && (speechSynthesis.speaking || speechSynthesis.pending)) {
       try { speechSynthesis.cancel(); } catch (e) { /* 忽略 */ }
     }
@@ -3368,6 +3385,7 @@
     'strike-screen', 'strike-result-screen'
   ];
   function showScreen(id) {
+    stopSpeaking(); // 任何学习场景切换都不得带走上一页的单词或问题语音
     ALL_SCREENS.forEach((s) => $(s).classList.toggle('hidden', s !== id));
     hideDoorMenu();
     hideChatMenu();
@@ -3455,6 +3473,7 @@
   on('btn-eb-back', 'click', () => showScreen('map-screen'));
   on('btn-sound', 'click', () => {
     save.settings.sound = !save.settings.sound;
+    if (!save.settings.sound) stopSpeaking();
     persist();
     updateHud();
     if (save.settings.sound) beep('correct');
@@ -3504,6 +3523,7 @@
   // 设置面板
   on('set-sound', 'click', () => {
     save.settings.sound = !save.settings.sound;
+    if (!save.settings.sound) stopSpeaking();
     persist();
     refreshSettingsUI();
     updateHud();
@@ -3665,6 +3685,7 @@
     entriesOfDoor: entriesOfDoor,
     isGrammarEntry: isGrammarEntry,
     buildQuestions: buildQuestions,
+    get quiz() { return quiz; },
     todayStr: todayStr,
     startQuiz: startQuiz,
     startMatch: startMatch,

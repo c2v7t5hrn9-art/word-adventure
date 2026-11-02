@@ -1,7 +1,7 @@
 // 自动生成自 content/ 目录，请勿手改。修改词库请编辑 content/ 后运行 tools/build-content.py
 window.WORDS_DATA = {
   "version": 2,
-  "updated": "2026-10-31",
+  "updated": "2026-11-02",
   "description": "单词冒险岛词库。收录讲义全部内容：主词条 + 延伸词(派生/词转) + 短语搭配 + 例句。新增讲义时按 entries 结构追加，并更新 doors。",
   "schema": {
     "entry": {
